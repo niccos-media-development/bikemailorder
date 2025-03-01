@@ -1905,11 +1905,24 @@ if (window.OverlayScrollbarsGlobal) {
 document.addEventListener("DOMContentLoaded", function () {
     const panelContainer = document.querySelector(".panel-buttons-container");
     const panelButtons = document.querySelectorAll(".panel-button");
-    const mainNavItems = document.querySelectorAll(".the-main-nav li");
+    const mainNavItems = document.querySelectorAll(".the-main-nav > li");
 
     let activeTab = localStorage.getItem("activeTab") || "1";
     panelContainer.setAttribute("data-active-tab", activeTab);
     document.body.setAttribute("data-show", activeTab);
+
+    function updateMenuVisibility(selectedTab) {
+        mainNavItems.forEach((item) => {
+            let tabIndex = item.getAttribute("data-show");
+            if (tabIndex === selectedTab) {
+                item.style.display = "list-item";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    }
+
+    updateMenuVisibility(activeTab);
 
     panelButtons.forEach((button) => {
         button.addEventListener("click", function () {
@@ -1917,17 +1930,16 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("activeTab", selectedTab);
             panelContainer.setAttribute("data-active-tab", selectedTab);
             document.body.setAttribute("data-show", selectedTab);
+            updateMenuVisibility(selectedTab);
         });
     });
 
-    mainNavItems.forEach((item) => {
-        let tabIndex = item.getAttribute("data-show");
-        if (tabIndex && tabIndex === activeTab) {
-            item.style.display = "list-item";
-            item.style.opacity = "1";
-        }
-    });
+    const activeButton = document.querySelector(`.panel-button[tabindex="${activeTab}"]`);
+    if (activeButton) {
+        activeButton.click();
+    }
 });
+
 
 
 
