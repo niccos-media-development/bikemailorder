@@ -1,0 +1,22 @@
+{% comment %}
+  Make sure to only load the widget on relevant product pages. If your type doesn't match or you don't use type you might use another condition here.
+{% endcomment %}
+
+{% if product.type == 'Bike' %}
+  <oz-widget
+    id="onlinesizing-widget"
+    onselect="confirmSize"
+    global-id="{{ product.selected_or_first_available_variant.barcode }}"
+    variant-id="{{ product.selected_or_first_available_variant.id }}"
+    name="{{ product.title }}"
+    image="{{ product.featured_image | image_url: width: 600 }}"
+    price="{{ product.selected_or_first_available_variant.price | divided_by: 100.00 }}"
+    product-type="Bike"
+  >
+    <button style="visibility: hidden" class="btn btn--secondary"></button>
+  </oz-widget>
+
+  <script>
+    const product = {{ product | json }};
+  </script>
+{% endif %}

@@ -1,0 +1,17 @@
+{% if product.type == 'Bike' %}
+
+<oz-Geometry 
+  variant-id="{{ product.selected_or_first_available_variant.id }}"
+  global-id="{{ product.selected_or_first_available_variant.barcode }}"
+  name="{{ product.title }}" 
+  price="{{ product.selected_or_first_available_variant.price | divided_by: 100.00 }}"
+  image="{{ product.featured_image.src | img_url: 'grande' }}">
+
+  <button 
+    style="visibility: hidden;"
+    class="btn btn--secondary">
+  </button>
+
+</oz-Geometry>
+
+{% endif %}
