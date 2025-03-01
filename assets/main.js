@@ -1905,29 +1905,23 @@ if (window.OverlayScrollbarsGlobal) {
 document.addEventListener("DOMContentLoaded", function () {
     const panelContainer = document.querySelector(".panel-buttons-container");
     const panelButtons = document.querySelectorAll(".panel-button");
-    const mainNavItems = document.querySelectorAll(".the-main-nav li");
+
+    panelContainer.style.visibility = "hidden";
 
     let activeTab = localStorage.getItem("activeTab") || "1";
     panelContainer.setAttribute("data-active-tab", activeTab);
-    document.body.setAttribute("data-show", activeTab);
+
+    setTimeout(() => {
+        panelContainer.style.visibility = "visible";
+    }, 10);
 
     panelButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let selectedTab = this.getAttribute("tabindex");
             localStorage.setItem("activeTab", selectedTab);
             panelContainer.setAttribute("data-active-tab", selectedTab);
-            document.body.setAttribute("data-show", selectedTab);
         });
     });
-
-    mainNavItems.forEach((item) => {
-        let tabIndex = item.getAttribute("data-show");
-        if (tabIndex && tabIndex === activeTab) {
-            item.style.display = "list-item";
-            item.style.opacity = "1";
-        }
-    });
 });
-
 
 
