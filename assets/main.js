@@ -1906,22 +1906,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const panelContainer = document.querySelector(".panel-buttons-container");
     const panelButtons = document.querySelectorAll(".panel-button");
 
-    // Load the active tab from localStorage (default to "1" if not set)
-    let activeTab = localStorage.getItem("activeTab") || "1";
+    panelContainer.style.visibility = "hidden";
 
-    // Set the active tab on page load
+    let activeTab = localStorage.getItem("activeTab") || "1";
     panelContainer.setAttribute("data-active-tab", activeTab);
+
+    setTimeout(() => {
+        panelContainer.style.visibility = "visible";
+    }, 10);
 
     panelButtons.forEach((button) => {
         button.addEventListener("click", function () {
             let selectedTab = this.getAttribute("tabindex");
-
-            // Store selected tab in localStorage
             localStorage.setItem("activeTab", selectedTab);
-
-            // Update the active tab in the DOM
             panelContainer.setAttribute("data-active-tab", selectedTab);
         });
     });
 });
+
 
