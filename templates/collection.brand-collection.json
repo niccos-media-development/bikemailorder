@@ -83,8 +83,7 @@
         "collection_eqWj4a": {
           "type": "collection",
           "settings": {
-            "collection": "mtb-trikots",
-            "image": "{{ block.settings.collection.metafields.custom.collection_categorie_banner_04.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
           }
         },
         "collection_LPgy89": {
