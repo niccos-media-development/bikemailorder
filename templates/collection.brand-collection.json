@@ -71,15 +71,13 @@
         "collection_ARBtqV": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_02.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.collection_categorie_banner_02.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
           }
         },
         "collection_kxGnfm": {
           "type": "collection",
           "settings": {
-            "collection": "mtb-hosen-herren",
-            "image": "{{ block.settings.collection.metafields.custom.collection_categorie_banner_03.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
           }
         },
         "collection_eqWj4a": {
