@@ -60,13 +60,13 @@
         "collection_VrYUwU": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
           }
         },
         "collection_agwVdF": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
           }
         }
       },
