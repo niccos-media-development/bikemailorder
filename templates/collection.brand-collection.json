@@ -91,6 +91,12 @@
           "settings": {
             "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
           }
+        },
+        "collection_bGkg4F": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+          }
         }
       },
       "block_order": [
@@ -98,7 +104,8 @@
         "collection_ARBtqV",
         "collection_kxGnfm",
         "collection_eqWj4a",
-        "collection_LPgy89"
+        "collection_LPgy89",
+        "collection_bGkg4F"
       ],
       "custom_css": [
         ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
