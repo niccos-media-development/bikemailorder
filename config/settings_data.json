@@ -357,7 +357,7 @@
     "heading_uppercase": true,
     "subheading_uppercase": false,
     "button_text_uppercase": false,
-    "heading_scale_start": "4",
+    "heading_scale_start": "2",
     "body_font": "pt_sans_n4",
     "body_font_size": 17,
     "navigation_font": "poppins_n7",
