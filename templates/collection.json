@@ -36,6 +36,66 @@
         "color_scheme": "default"
       }
     },
+    "collection_list_GjXfbJ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EDQU7M": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_mBCMQn": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_DAU7CB": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_VrYUwU": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_agwVdF": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_EDQU7M",
+        "collection_mBCMQn",
+        "collection_DAU7CB",
+        "collection_VrYUwU",
+        "collection_agwVdF"
+      ],
+      "custom_css": [
+        ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
+        ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
+        ".card__media.relative {height: 160px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": true,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection-products": {
       "type": "main-collection-products",
       "settings": {
@@ -58,6 +118,7 @@
   "order": [
     "niccos_breadcrumbs_LNPFaj",
     "collection-banner",
+    "collection_list_GjXfbJ",
     "collection-products"
   ]
 }
