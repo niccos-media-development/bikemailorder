@@ -98,8 +98,9 @@
     <div class="container">
       <ul class="{% if carousel %}slider__grid {% endif %}grid {{ grid_classes }} gap-x-theme gap-y-10" role="list">
         {%- for block in section.blocks -%}
-          <li{% if carousel %} class="slider__item"{% endif %}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
-            {% render 'collection-card',
+          {%- if block.settings.collection != blank or block.settings.image != blank -%}
+            <li{% if carousel %} class="slider__item"{% endif %}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
+              {% render 'collection-card',
               collection: block.settings.collection,
               image: block.settings.image,
               image_ratio: image_ratio,
@@ -108,7 +109,8 @@
               show_border: section.settings.show_border
             %}
           </li>
-        {%- else -%}
+        {%- endif -%}
+      {%- else -%}
           {%- for i in (1..section.settings.products_to_show) -%}
             <li{% if carousel %} class="slider__item"{% endif %}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
               {% render 'collection-card', image_ratio: image_ratio, circle_image: circle_image %}
