@@ -89,8 +89,7 @@
         "collection_LPgy89": {
           "type": "collection",
           "settings": {
-            "collection": "fahrradschuhe",
-            "image": "{{ block.settings.collection.metafields.custom.collection_categorie_banner_05.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
           }
         }
       },
