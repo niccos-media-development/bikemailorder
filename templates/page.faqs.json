@@ -112,8 +112,8 @@
           "type": "question",
           "settings": {
             "icon": "chat_bubble",
-            "heading": "What if I want to speak to someone?",
-            "text": "<p>We want to speak to you too! Contact us with any questions, concerns, or feedback. We will be sure to get back to you within 48 hours. However, please note that inquiries sent on Fridays will receive a reply the following Monday, but possibly sooner.</p>"
+            "heading": "Ich interessiere mich für ein Bike oder E-Bike und hätte gerne eine individuelle Beratung. ",
+            "text": "<p>Du wünscht eine persönliche Beratung zu deinem Komplettrad? Schreibe uns eine Nachricht über unser <a href=\"https://www.bike-mailorder.de/kontaktformular/\" target=\"_blank\">Kontaktformular </a>und unsere Service-Mitarbeiter setzen sich mit dir in Verbindung und beraten dich.</p>"
           }
         },
         "faq-category-2": {
