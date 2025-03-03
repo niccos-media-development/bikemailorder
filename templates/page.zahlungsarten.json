@@ -128,6 +128,9 @@
         "text_w6D6d9",
         "button_DwpGpJ"
       ],
+      "custom_css": [
+        ".media-with-text {height: 200px; /* Beispielhöhe */}"
+      ],
       "settings": {
         "video_external": "",
         "video_description": "",
