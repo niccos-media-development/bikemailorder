@@ -82,7 +82,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 50%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/paypal_logo_5e71fdd3-ee4c-49d2-93fb-78579dfa74cf.png",
@@ -124,7 +124,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 50%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Marketing_Badge_With_Clear_Space_1.png",
@@ -166,7 +166,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 40%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Apple_Pay_Mark_RGB_041619.svg",
@@ -208,7 +208,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 40%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Google_Pay_Logo_svg.png",
@@ -250,7 +250,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 50%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Shop_Pay_logo_purple.png",
@@ -292,7 +292,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 60%;}"
+        "img.img-fit {object-fit: contain; width: 50%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/creditcards.png",
