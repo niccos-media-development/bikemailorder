@@ -159,18 +159,13 @@
 
   body .the-main-nav > li {
     opacity: 0;
+    
   }
 
   body.nav-hidden .the-main-nav > li {
     display: none;
   }
 
-  body.nav-hidden[data-show="1"] li[data-show="1"],
-  body.nav-hidden[data-show="2"] li[data-show="2"],
-  body.nav-hidden[data-show="3"] li[data-show="3"] {
-    display: list-item;
-    opacity: 1;
-  }
 
   .panel-button[tabindex] {
     cursor: pointer;
@@ -180,14 +175,38 @@
     pointer-events: none;
   }
 
-  .panel-buttons-container[data-active-tab="1"] .panel-button[tabindex="1"],
-  .panel-buttons-container[data-active-tab="2"] .panel-button[tabindex="2"],
-  .panel-buttons-container[data-active-tab="3"] .panel-button[tabindex="3"] {
-    background: #333;
-    border-color: #0888AC;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
+body.nav-hidden[data-show="1"] li[data-show="1"],
+body.nav-hidden[data-show="2"] li[data-show="2"],
+body.nav-hidden[data-show="3"] li[data-show="3"] {
+  display: list-item;
+  opacity: 1;
+}
+  
+.panel-buttons-container[data-active-tab="1"] .panel-button[tabindex="1"],
+.panel-buttons-container[data-active-tab="2"] .panel-button[tabindex="2"],
+.panel-buttons-container[data-active-tab="3"] .panel-button[tabindex="3"] {
+background: #333;
+border-color: #0888AC;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+  /* While data-loading="true", override or hide them */
+body[data-loading="true"][data-show="1"] li[data-show="1"],
+body[data-loading="true"][data-show="2"] li[data-show="2"],
+body[data-loading="true"][data-show="3"] li[data-show="3"] {
+  display: none;
+  opacity: 0;
+}
+
+body[data-loading="true"] .panel-buttons-container[data-active-tab="1"] .panel-button[tabindex="1"],
+body[data-loading="true"] .panel-buttons-container[data-active-tab="2"] .panel-button[tabindex="2"],
+body[data-loading="true"] .panel-buttons-container[data-active-tab="3"] .panel-button[tabindex="3"] {
+  background: none;
+  border-color: transparent;
+  border-radius: 0;
+}
+
+
 {%- endstyle -%}
 
 <store-header class="header bg-theme-bg text-theme-text{% if section.settings.enable_sticky or search_is_minimised %} has-motion{% endif %}{% if search_is_minimised %} search-is-collapsed{% endif %}"
@@ -905,52 +924,80 @@
   <link rel="stylesheet" href="{{ 'navigation-promos.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-{% javascript %}
-  document.querySelectorAll('.panel-button[tabindex]').forEach(btn => btn.addEventListener('click', e => {
-    const newIndex = e.target.getAttribute('tabindex');
-    e.target.parentElement.setAttribute('data-active-tab', newIndex);
-    document.body.setAttribute('data-show', newIndex)
-  }))
-
-  function setCurrentMenuHeight() {
-    const mainNavHeight = document.querySelector('.main-nav').clientHeight;
-    document.querySelector('store-header').style.setProperty('--current-menu-height', mainNavHeight + "px");
-  }
-
-  setCurrentMenuHeight();
-  window.addEventListener('resize', setCurrentMenuHeight);
-
-  customElements.whenDefined('details-disclosure').then(() => {
-    class NavMenu extends DetailsDisclosure {
-      constructor() {
-        super();
-
-        if(this.matches('.js-mega-nav')) {
-          this.reset(false);
-          window.addEventListener('on:breakpoint-change', this.reset.bind(this));
-        }
-      }
-
-      reset(resize = true) {
-        const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
-        this.disclosure.open = isLargeScreen;
-        if (isLargeScreen) {
-          this.toggle.setAttribute('tabindex', '-1');
-        } else {
-          this.toggle.removeAttribute('tabindex');
-        }
-      }
-
-      handleToggle(e) {
-        if (!(this.matches('.js-mega-nav') && window.matchMedia(theme.mediaQueries.md).matches)) {
-          super.handleToggle(e);
-        }
-      }
+<script>
+  // Wait until DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    /* -----------------------------------------------------------
+       1) Restore the saved index from localStorage, if any
+    ----------------------------------------------------------- */
+    const savedIndex = localStorage.getItem('activeMenuIndex');
+    if (savedIndex) {
+      document.body.setAttribute('data-show', savedIndex);
+      document.querySelector('.panel-buttons-container')
+        .setAttribute('data-active-tab', savedIndex);
     }
 
-    customElements.define('nav-menu', NavMenu);
+    /* -----------------------------------------------------------
+       2) Remove data-loading so CSS transitions can show content
+    ----------------------------------------------------------- */
+    document.body.removeAttribute('data-loading');
+
+    /* -----------------------------------------------------------
+       3) Set up the panel-button tab click logic (your existing)
+    ----------------------------------------------------------- */
+    document.querySelectorAll('.panel-button[tabindex]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const newIndex = e.target.getAttribute('tabindex');
+        e.target.parentElement.setAttribute('data-active-tab', newIndex);
+        document.body.setAttribute('data-show', newIndex);
+        localStorage.setItem('activeMenuIndex', newIndex);
+      });
+    });
+
+    /* -----------------------------------------------------------
+       4) Keep your setCurrentMenuHeight logic
+    ----------------------------------------------------------- */
+    function setCurrentMenuHeight() {
+      const mainNavHeight = document.querySelector('.main-nav').clientHeight;
+      document.querySelector('store-header')
+        .style.setProperty('--current-menu-height', mainNavHeight + "px");
+    }
+
+    setCurrentMenuHeight();
+    window.addEventListener('resize', setCurrentMenuHeight);
+
+    /* -----------------------------------------------------------
+       5) (Optional) Define your custom element logic
+    ----------------------------------------------------------- */
+    customElements.whenDefined('details-disclosure').then(() => {
+      class NavMenu extends DetailsDisclosure {
+        constructor() {
+          super();
+          if (this.matches('.js-mega-nav')) {
+            this.reset(false);
+            window.addEventListener('on:breakpoint-change', this.reset.bind(this));
+          }
+        }
+        reset(resize = true) {
+          const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
+          this.disclosure.open = isLargeScreen;
+          if (isLargeScreen) {
+            this.toggle.setAttribute('tabindex', '-1');
+          } else {
+            this.toggle.removeAttribute('tabindex');
+          }
+        }
+        handleToggle(e) {
+          if (!(this.matches('.js-mega-nav') && window.matchMedia(theme.mediaQueries.md).matches)) {
+            super.handleToggle(e);
+          }
+        }
+      }
+      customElements.define('nav-menu', NavMenu);
+    });
   });
-{% endjavascript %}
+  </script>
+
 
 {% render 'structured-data-header' %}
 
