@@ -5639,18 +5639,19 @@ ul.child-nav.lg\:grid-cols-4 {
 
 body .the-main-nav > li {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     transform: translateY(-10px);
-}
-
-body.nav-hidden .the-main-nav > li {
-    display: none;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
 }
 
 body.nav-hidden[data-show="1"] li[data-show="1"], 
 body.nav-hidden[data-show="2"] li[data-show="2"], 
 body.nav-hidden[data-show="3"] li[data-show="3"] {
-    display: list-item;
     opacity: 1;
     transform: translateY(0);
+    visibility: visible;
+    height: auto;
+    overflow: visible;
 }
