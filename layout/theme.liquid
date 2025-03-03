@@ -330,7 +330,7 @@
 {%- endif -%}
 </head>
 
-<body data-show="1" {% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
+<body data-show="1"  data-loading="true" {% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
   <a class="skip-link btn btn--primary visually-hidden" href="#main-content" data-ce-role="skip">
     {{- 'accessibility.skip_to_content' | t -}}
   </a>
