@@ -3118,7 +3118,7 @@ details-disclosure + details-disclosure .disclosure--row {
   .main-nav > li,
 .child-nav > li,
 .grandchild-nav > li {
-    border-bottom: 1px solid var(--nav-line-color);
+    border-bottom: 1px solid gray;
   }
   .main-nav__item {
     display: block;
