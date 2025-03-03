@@ -71,130 +71,22 @@
   endif
 -%}
 
-{% comment %} Metaobject image output check {% endcomment %}
-
-{%- assign metaobject_block = section.blocks | where: 'type', 'metaobject-logo-output' | first -%}
-
-{% if metaobject_block != blank %}
-  {% assign pvd = product.vendor | downcase %}
-  {% assign pvd = pvd | replace: '%', '-percent' %}
-  {% assign pvd = pvd | replace: ' ', '-' %}
-
-  {%- assign metaobject_brand = shop.metaobjects.marken[pvd] -%}
-
-  {% if metaobject_brand != blank %}
-    {%- assign metaobject_logo_display = metaobject_brand.logo -%}
-    {%- assign metaobject_name_display = metaobject_brand.name -%}
-  {% endif %}
-{% endif %}
-
 {%- style -%}
-  @media(min-width: 796px) {
-    .product-price.with-sku {
-      flex-direction: row;
-    }
-  }
-
-    .product-price.with-sku {
-      display: flex;
-  flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-    }
-    {% if metaobject_logo_display %}
-      {% if metaobject_block.settings.display_location == 'title' %}
-      .product-info__title.product-info__title--withLogo {
-        margin-bottom: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-      }
-
-      .product-info__title.product-info__title--withLogo + .product-price {
-        margin-top: 0;
-      }
-
-      .product-info__title.product-info__title--withLogo .product-info__title--logo {
-        width: 50%;
-        text-align: right;
-      }
-
-      {% comment %}Image has whitepsace, the margin-top: -15% is for testing, best to update image and add "white-space"/padding via CSS {% endcomment %}
-
-      .product-info__title.product-info__title--withLogo .product-info__title--logo img {
-        margin-top: var(--product-details-block-margin-sm);
-        max-width: 100%;
-        height: auto;
-      }
-
-      @media(min-width: 768px) {
-        .product-info__title.product-info__title--withLogo .product-info__title--logo {
-          padding-left: 10px;
-          width: 200px;
-        }
-
-        .product-info__title.product-info__title--withLogo .product-info__title--logo img {
-          margin-top: var(--product-details-block-margin-sm);
-          max-width: 100%;
-          height: auto;
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 1100px) {
-        {% comment %}Image has whitepsace, the margin-left: -10px & margin-top: -10px are for testing, best to update image and add "white-space"/padding via CSS {% endcomment %}
-        .product-info__title.product-info__title--withLogo .product-info__title--logo {
-          margin-left: -12px;
-          margin-top: -10px;
-          width: 150px;
-        }
-
-        .product-info__title.product-info__title--withLogo {
-          flex-direction: column;
-        }
-
-        .product-info__title.product-info__title--withLogo .product-info__title--logo img {
-          margin-top: 0;
-        }
-
-      }
-
-      .product-info__title.product-info__title--withLogo .product-info__title--logo .info {
-        padding-top: 2rem;
-      }
-      {% else %}
-        .product-vendor-sku--withLogo {
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .product-vendor-sku__logo {
-          {% comment %}Again.. image has whitepsace, the margin-top: -20px is for testing, best to update image and add "white-space"/padding via CSS {% endcomment %}
-          margin-top: -20px;
-          width: {{ metaobject_block.settings.logo_width }}px;
-        }
-
-        .product-vendor-sku__logo img {
-          max-width: 34%;
-          height: auto;
-        }
-      {% endif %}
-    {% endif %}
-
-    {%- if section.settings.media_layout == 'stacked' -%}
-      @media (max-width:  {{ breakpoint_md | minus: 0.02 }}px) {
-        .media-gallery__main .media-xr-button { display: none; }
-        .active .media-xr-button:not([data-shopify-xr-hidden]) { display: block; }
-      }
-    {%- else -%}
+  {%- if section.settings.media_layout == 'stacked' -%}
+    @media (max-width:  {{ breakpoint_md | minus: 0.02 }}px) {
       .media-gallery__main .media-xr-button { display: none; }
       .active .media-xr-button:not([data-shopify-xr-hidden]) { display: block; }
-    {%- endif -%}
+    }
+  {%- else -%}
+    .media-gallery__main .media-xr-button { display: none; }
+    .active .media-xr-button:not([data-shopify-xr-hidden]) { display: block; }
+  {%- endif -%}
 
-    {%- if section.settings.media_size == 'large' -%}
-      @media (min-width: {{ breakpoint_lg }}px) {
-        :root { --product-info-width: 400px !important; }
-      }
-    {%- endif -%}
+  {%- if section.settings.media_size == 'large' -%}
+    @media (min-width: {{ breakpoint_lg }}px) {
+      :root { --product-info-width: 400px !important; }
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 {%- if first_3d_model -%}
@@ -259,56 +151,52 @@
           {%- when 'vendor-sku' -%}
             {%- if block.settings.show_vendor or block.settings.show_sku or block.settings.show_barcode -%}
               <div
-                class="product-info__block product-info__block--sm product-vendor-sku text-sm {%- if metaobject_block.settings.display_location == 'vendor-sku' and metaobject_logo_display %} product-vendor-sku--withLogo{% endif %}"
+                class="product-info__block product-info__block--sm product-vendor-sku text-sm"
                 {{ block.shopify_attributes }}
               >
-                <div>
-                  {%- if block.settings.show_vendor and product.vendor != blank -%}
-                    {%- liquid
-                      assign vendor_handle = product.vendor | handle
+                {%- if block.settings.show_vendor and product.vendor != blank -%}
+                  {%- liquid
+                    assign vendor_handle = product.vendor | handle
+                    assign vendor_url = block.settings.custom_vendor_url
+
+                    if vendor_url == blank
                       if collections[vendor_handle].handle == vendor_handle
                         assign vendor_url = collections[vendor_handle].url
                       else
                         assign vendor_url = product.vendor | url_for_vendor
                       endif
-                    -%}
-                    <span class="product-vendor">{{ product.vendor | link_to: vendor_url }}</span>
-                  {%- endif -%}
+                    endif
+                  -%}
+                  <span class="product-vendor">{{ product.vendor | link_to: vendor_url }}</span>
+                {%- endif -%}
 
-                  {%- if block.settings.show_sku -%}
-                    <span
-                      class="product-sku"
-                      {% if current_variant.sku == blank %}
-                        hidden
-                      {% endif %}
-                    >
-                      {%- if block.settings.show_vendor and product.vendor != blank %} &nbsp;|&nbsp; {% endif -%}
-                      <span>{{ 'products.product.sku' | t }}</span>
-                      <span class="product-sku__value">{{ current_variant.sku }}</span>
+                {%- if block.settings.show_sku -%}
+                  <span
+                    class="product-sku"
+                    {% if current_variant.sku == blank %}
+                      hidden
+                    {% endif %}
+                  >
+                    {%- if block.settings.show_vendor and product.vendor != blank %} &nbsp;|&nbsp; {% endif -%}
+                    <span>{{ 'products.product.sku' | t }}</span>
+                    <span class="product-sku__value">{{ current_variant.sku }}</span>
+                  </span>
+                {%- endif -%}
+
+                {%- if block.settings.show_barcode -%}
+                  <span
+                    class="product-info__barcode"
+                    {% if current_variant.barcode == blank %}
+                      hidden
+                    {% endif %}
+                  >
+                    {%- if block.settings.show_vendor or block.settings.show_sku %} &nbsp;|&nbsp; {% endif -%}
+                    <span>{{ 'products.product.barcode' | t }}</span>
+                    <span class="product-info__barcode-value">
+                      {%- if current_variant.barcode %}{{ current_variant.barcode }}{% endif -%}
                     </span>
-                  {%- endif -%}
-
-                  {%- if block.settings.show_barcode -%}
-                    <span
-                      class="product-info__barcode"
-                      {% if current_variant.barcode == blank %}
-                        hidden
-                      {% endif %}
-                    >
-                      {%- if block.settings.show_vendor or block.settings.show_sku %} &nbsp;|&nbsp; {% endif -%}
-                      <span>{{ 'products.product.barcode' | t }}</span>
-                      <span class="product-info__barcode-value">
-                        {%- if current_variant.barcode %}{{ current_variant.barcode }}{% endif -%}
-                      </span>
-                    </span>
-                  {%- endif -%}
-                </div>
-
-                {%- if metaobject_block.settings.display_location == 'vendor-sku' and metaobject_logo_display %}
-                  <div class="product-vendor-sku__logo">
-                    <img src="{{ metaobject_logo_display | image_url: width: 200 }}">
-                  </div>
-                {% endif %}
+                  </span>
+                {%- endif -%}
               </div>
             {%- endif -%}
 
@@ -328,32 +216,8 @@
             {%- endif -%}
 
           {%- when 'title' -%}
-            {%- if product.handle == 'bombtrack-beyond-matt-blue' -%}
-              <ol class="niccos_breadcrumbs-list slashes" style="color: #9E9B9B;">
-                <li>
-                  <a href="/en">Bombtrack</a>
-                </li>
-                <li>
-                  <a href="/en/products/bombtrack-beyond-matt-blue" aria-current="page">Bikes</a>
-                </li>
-                <li>
-                  <a href="/en/products/bombtrack-beyond-matt-blue" aria-current="page">Mountainbikes</a>
-                </li>
-                <li>
-                  <a href="/en/products/bombtrack-beyond-matt-blue" aria-current="page">MTB Hardtrails</a>
-                </li>
-                <li>
-                  <a href="/en/products/bombtrack-beyond-matt-blue" aria-current="page">Beyond+</a>
-                </li>
-              </ol>
-            {%- endif -%}
-
-            <div
-              class="product-info__block product-info__block--sm product-info__title {%- if metaobject_block.settings.display_location == 'title' and metaobject_logo_display %} product-info__title--withLogo{% endif %}"
-              {{ block.shopify_attributes }}
-            >
+            <div class="product-info__block product-info__block--sm product-info__title" {{ block.shopify_attributes }}>
               <h1 class="product-title h5">
-                {{ product.vendor | escape }}
                 {{ product.title | escape }}
 
                 {% if block.settings.show_weight %}
@@ -369,27 +233,6 @@
                   </span>
                 {% endif %}
               </h1>
-
-              {%- if metaobject_block.settings.display_location == 'title' and metaobject_logo_display %}
-                <div>
-                  <div class="product-info__title--logo">
-                    <img src="{{ metaobject_logo_display | image_url: width: 200 }}">
-                  </div>
-
-                  {%- if block.settings.show_sku -%}
-                    <span
-                      class="product-sku"
-                      {% if current_variant.sku == blank %}
-                        hidden
-                      {% endif %}
-                    >
-                      {%- if block.settings.show_vendor and product.vendor != blank %} &nbsp;|&nbsp; {% endif -%}
-                      <span>{{ 'products.product.sku' | t }}</span>
-                      <span class="product-sku__value">{{ current_variant.sku }}</span>
-                    </span>
-                  {%- endif -%}
-                </div>
-              {% endif %}
             </div>
 
           {%- when 'weight' -%}
@@ -420,47 +263,29 @@
             </div>
 
           {%- when 'price' -%}
-            <div
-              class="with-sku product-info__block product-info__block--sm product-price"
-              {{ block.shopify_attributes }}
-            >
-              <div>
-                <div class="product-info__price">
-                  {% render 'price', product: product, use_variant: true %}
-                </div>
+            <div class="product-info__block product-info__block--sm product-price" {{ block.shopify_attributes }}>
+              <div class="product-info__price">
+                {% render 'price', product: product, use_variant: true %}
+              </div>
 
-                {%- if block.settings.show_tax_and_shipping -%}
-                  {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-                    <div class="product-policies text-sm rte">
-                      {%- if cart.taxes_included -%}
-                        {{ 'products.product.include_taxes' | t }}
-                      {%- endif -%}
-                      {%- if shop.shipping_policy.body != blank -%}
-                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                      {%- endif -%}
-                    </div>
-                  {%- endif -%}
+              {%- if block.settings.show_tax_and_shipping -%}
+                {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+                  <div class="product-policies text-sm rte">
+                    {%- if cart.taxes_included -%}
+                      {{ 'products.product.include_taxes' | t }}
+                    {%- endif -%}
+                    {%- if shop.shipping_policy.body != blank -%}
+                      {{ 'products.product.shipping_policy_html' | t: link: pages.versandkosten.url }}
+                    {%- endif -%}
+                  </div>
                 {%- endif -%}
+              {%- endif -%}
 
-                {%- assign instalments_form_id = 'instalments-form-' | append: section.id -%}
-                {%- form 'product', product, class: 'js-instalments-form  text-sm mt-2', id: instalments_form_id -%}
-                  <input type="hidden" name="id" value="{{ current_variant.id }}">
-                  {{ form | payment_terms }}
-                {%- endform -%}
-              </div>
-
-              <div class="vendor-sku-by-price">
-                <span
-                  class="product-sku"
-                  {% if current_variant.sku == blank %}
-                    hidden
-                  {% endif %}
-                >
-                  {%- if block.settings.show_vendor and product.vendor != blank %} &nbsp;|&nbsp; {% endif -%}
-                  <span>{{ 'products.product.sku' | t }}</span>
-                  <span class="product-sku__value">{{ current_variant.sku }}</span>
-                </span>
-              </div>
+              {%- assign instalments_form_id = 'instalments-form-' | append: section.id -%}
+              {%- form 'product', product, class: 'js-instalments-form  text-sm mt-2', id: instalments_form_id -%}
+                <input type="hidden" name="id" value="{{ current_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
             </div>
 
           {%- when 'rating' -%}
@@ -504,9 +329,6 @@
             {%- if current_variant.inventory_management != blank or section.settings.select_first_variant == false -%}
               {% render 'product-inventory', product: product, current_variant: current_variant, block: block %}
             {%- endif -%}
-
-            {% render 'smartfit-onlinesizing' %}
-            {% render 'smartfit-geometry' %}
 
           {%- when 'buy-buttons' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
@@ -798,6 +620,17 @@
                 <button type="button" class="{{ block.settings.link_style }}" aria-haspopup="dialog">
                   {{- block.settings.link_text -}}
                 </button>
+                {% if block.settings.popup_image %}
+                  <div class="popup-image" aria-haspopup="dialog">
+                    <img
+                      src="{{ block.settings.popup_image | image_url }}"
+                      alt="{{ block.settings.image_alt_text }}"
+                      height="100%"
+                      width="100%"
+                      loading="lazy"
+                    >
+                  </div>
+                {% endif %}
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="link js-hidden">{{ block.settings.link_text }}</a>
             </div>
@@ -807,97 +640,11 @@
               {{ block.settings.custom_liquid }}
             </div>
 
-          {%- when 'payment_icons' -%}
-            <div class="product-info__block" style="margin: calc(4 * 0.4rem) 0;">
-              <div class="footer__payment{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} lg:col-start-2 lg:row-start-1 footer__payment--right{% endif %}">
-                <span class="visually-hidden">{{ 'sections.footer.payment_methods' | t }}</span>
-                <ul class="payment-icons flex flex-wrap justify-center" role="list">
-                  {%- for type in shop.enabled_payment_types -%}
-                    <li>{{ type | payment_type_svg_tag: class: 'payment-icon' }}</li>
-                  {%- endfor -%}
-                </ul>
-              </div>
-            </div>
-
           {%- when 'divider' -%}
             <hr
               class="{{ block.settings.spacing }}{% unless block.settings.show_line %} invisible{% endunless %}"
               {{ block.shopify_attributes }}
             >
-
-          {%- when 'delivery_timer' -%}
-            <product-message
-              class="product-message product-message--info product-message--out has-motion relative"
-              style="text-align: center; border-radius: {{ block.settings.corner_radius }}px; --bg-color: {{ block.settings.bg_color }};--text-color: {{ block.settings.text_color }};"
-              {{ block.shopify_attributes }}
-              {% if block.settings.close == 'persistent' %}
-                data-persistent-close="true"
-              {% endif %}
-              data-block-id="{{ block.id }}"
-            >
-              <div class="product-message__inner">
-                {%- capture icon -%}{%- if block.settings.icon != 'none' -%}{% render 'icon', icon: block.settings.icon, width: 5, height: 5 %}{%- endif -%}{%- endcapture -%}
-
-                <div class="rte rte--inherit-heading-color delivery-timer-content">
-                  <p>
-                    {{ icon }}
-                    Lieferzeit zwischen<strong>12. Feb. - 13. Feb.</strong>
-                    <br>
-                    bei Bestellung innerhalb<strong>22hrs 32 mins</strong>
-                  </p>
-                </div>
-
-                {%- if block.settings.close != 'none' -%}
-                  <button type="button" class="product-message__close tap-target text-current js-close-message">
-                    <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
-                    {% render 'icon-close' %}
-                  </button>
-                {%- endif -%}
-              </div>
-            </product-message>
-
-          {%- when 'product_perks' -%}
-            {%- if block.settings.perk_1.size < 1
-              and block.settings.perk_2.size < 1
-              and block.settings.perk_3.size < 1
-            -%}
-            {%- else -%}
-              <product-message
-                class="product-message product-message--info product-message--out has-motion relative"
-                style="width: fit-content; border-radius: {{ block.settings.corner_radius }}px; --bg-color: {{ block.settings.bg_color }};--text-color: {{ block.settings.text_color }};"
-                {{ block.shopify_attributes }}
-                {% if block.settings.close == 'persistent' %}
-                  data-persistent-close="true"
-                {% endif %}
-                data-block-id="{{ block.id }}"
-              >
-                <div class="product-message__inner">
-                  {%- capture icon -%}{%- if block.settings.icon != 'none' -%}{% render 'icon', icon: block.settings.icon, width: 5, height: 5 %}{%- endif -%}{%- endcapture -%}
-
-                  <div class="rte rte--inherit-heading-color perks-container">
-                    <p>
-                      {{ icon }}
-                      {{ block.settings.perk_1 }}
-                    </p>
-                    <p>
-                      {{ icon }}
-                      {{ block.settings.perk_2 }}
-                    </p>
-                    <p>
-                      {{ icon }}
-                      {{ block.settings.perk_3 }}
-                    </p>
-                  </div>
-
-                  {%- if block.settings.close != 'none' -%}
-                    <button type="button" class="product-message__close tap-target text-current js-close-message">
-                      <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
-                      {% render 'icon-close' %}
-                    </button>
-                  {%- endif -%}
-                </div>
-              </product-message>
-            {%- endif -%}
 
           {%- when 'message' -%}
             {%- if block.settings.title != blank and block.settings.show_over_media == false -%}
@@ -995,33 +742,6 @@
               </variant-label>
               <script src="{{ 'variant-label.js' | asset_url }}" defer="defer"></script>
             {%- endif -%}
-
-          {% when 'social-proof' %}
-            <div class="wrapper">
-              <h3 class="social-headline">{{ block.settings['social-headline'] }}</h3>
-              <p class="social-subheadline">{{ block.settings['social-subheadline'] }}</p>
-
-              <div class="image-with-link-container">
-                <div class="image-container">
-                  {% if block.settings['social-image_1'] %}
-                    <img class="image" src="{{ block.settings.social-image_1 | img_url: '40x40' }}" alt="Image 1">
-                  {% endif %}
-                  {% if block.settings['social-image_2'] %}
-                    <img class="image" src="{{ block.settings.social-image_2 | img_url: '40x40' }}" alt="Image 2">
-                  {% endif %}
-                  {% if block.settings['social-image_3'] %}
-                    <img class="image" src="{{ block.settings.social-image_3 | img_url: '40x40' }}" alt="Image 3">
-                  {% endif %}
-                </div>
-
-                <a href="{{ block.settings.social-button_link }}" class="chat-button">
-                  <span>{{ block.settings['social-button_text'] }}</span>
-                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.1313 10.25H3V8.75H12.1313L7.93125 4.55L9 3.5L15 9.5L9 15.5L7.93125 14.45L12.1313 10.25Z" fill="white"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
 
           {% when 'custom-option' %}
             {%- if block.settings.label != blank -%}
@@ -1807,44 +1527,6 @@
       ]
     },
     {
-      "type": "metaobject-logo-output",
-      "name": "Metaobject Logo oputput",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "Metaobject Logo ouptput",
-          "info": "The metaobject logo is selected based on vendor"
-        },
-        {
-          "type": "range",
-          "id": "logo_width",
-          "min": 40,
-          "max": 240,
-          "step": 2,
-          "unit": "px",
-          "label": "Logo Width",
-          "default": 200
-        },
-        {
-          "type": "select",
-          "id": "display_location",
-          "label": "Display location",
-          "options": [
-            {
-              "value": "title",
-              "label": "Title"
-            },
-            {
-              "value": "vendor-sku",
-              "label": "SKU"
-            }
-          ],
-          "default": "vendor-sku"
-        }
-      ]
-    },
-    {
       "type": "custom-liquid",
       "name": "Custom Liquid",
       "settings": [
@@ -2101,6 +1783,11 @@
           "default": "Pop-up link"
         },
         {
+          "type": "image_picker",
+          "id": "popup_image",
+           "label": "Pop-Up Image"
+        },
+        {
           "type": "select",
           "id": "link_style",
           "label": "Link style",
@@ -2299,7 +1986,7 @@
           "default": "Size"
         },
         {
-          "type": "page",
+          "type": "image_picker",
           "id": "size_chart_page",
           "label": "Page containing the size chart."
         }
@@ -2315,6 +2002,12 @@
           "id": "show_vendor",
           "label": "Show vendor",
           "default": true
+        },
+        {
+           "type": "url",
+           "id": "custom_vendor_url",
+          "label": "Custom Vendor URL",
+           "info": "Add a custom URL for the vendor link"
         },
         {
           "type": "checkbox",
@@ -2335,449 +2028,6 @@
       "type": "type",
       "name": "Product type",
       "limit": 1
-    },
-    {
-      "type": "payment_icons",
-      "name": "Payment Icons",
-      "limit": 1
-    },
-    {
-      "type": "delivery_timer",
-      "name": "Delivery Timer",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "award",
-              "label": "Award"
-            },
-            {
-              "value": "box",
-              "label": "Box"
-            },
-            {
-              "value": "briefcase",
-              "label": "Briefcase"
-            },
-            {
-              "value": "calendar",
-              "label": "Calendar"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "Chat bubble"
-            },
-            {
-              "value": "check_mark",
-              "label": "Check mark"
-            },
-            {
-              "value": "check_mark_in_circle",
-              "label": "Check mark in circle"
-            },
-            {
-              "value": "clock",
-              "label": "Clock"
-            },
-            {
-              "value": "credit_card",
-              "label": "Credit card"
-            },
-            {
-              "value": "dollar_sign",
-              "label": "Dollar sign"
-            },
-            {
-              "value": "dryer",
-              "label": "Dryer"
-            },
-            {
-              "value": "email",
-              "label": "Email"
-            },
-            {
-              "value": "eye",
-              "label": "Eye"
-            },
-            {
-              "value": "feather",
-              "label": "Feather"
-            },
-            {
-              "value": "gift",
-              "label": "Gift"
-            },
-            {
-              "value": "heart",
-              "label": "Heart"
-            },
-            {
-              "value": "iron",
-              "label": "Iron"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            },
-            {
-              "value": "leather",
-              "label": "Leather"
-            },
-            {
-              "value": "lock",
-              "label": "Lock"
-            },
-            {
-              "value": "map_pin",
-              "label": "Map pin"
-            },
-            {
-              "value": "pants",
-              "label": "Pants"
-            },
-            {
-              "value": "percent",
-              "label": "Percent"
-            },
-            {
-              "value": "phone",
-              "label": "Phone"
-            },
-            {
-              "value": "plane",
-              "label": "Plane"
-            },
-            {
-              "value": "price_tag",
-              "label": "Price tag"
-            },
-            {
-              "value": "question_mark",
-              "label": "Question mark"
-            },
-            {
-              "value": "return",
-              "label": "Return"
-            },
-            {
-              "value": "ruler",
-              "label": "Ruler"
-            },
-            {
-              "value": "scissors",
-              "label": "Scissors"
-            },
-            {
-              "value": "shirt",
-              "label": "Shirt"
-            },
-            {
-              "value": "shoe",
-              "label": "Shoe"
-            },
-            {
-              "value": "silhouette",
-              "label": "Silhouette"
-            },
-            {
-              "value": "star",
-              "label": "Star"
-            },
-            {
-              "value": "truck",
-              "label": "Truck"
-            },
-            {
-              "value": "washing",
-              "label": "Washing"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "select",
-          "id": "close",
-          "label": "Close button",
-          "options": [
-            {
-              "value": "none",
-              "label": "Not visible"
-            },
-            {
-              "value": "once",
-              "label": "Close this message"
-            },
-            {
-              "value": "persistent",
-              "label": "Close this message forever"
-            }
-          ],
-          "default": "once"
-        },
-        {
-          "type": "header",
-          "content": "Style"
-        },
-        {
-          "type": "color",
-          "id": "bg_color",
-          "label": "Background",
-          "default": "#e4edfa"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text",
-          "default": "#1a66d2"
-        },
-        {
-          "type": "range",
-          "id": "corner_radius",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "label": "Corner Radius",
-          "default": 0
-        }
-      ]
-    },
-    {
-      "type": "product_perks",
-      "name": "Product Perks",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "award",
-              "label": "Award"
-            },
-            {
-              "value": "box",
-              "label": "Box"
-            },
-            {
-              "value": "briefcase",
-              "label": "Briefcase"
-            },
-            {
-              "value": "calendar",
-              "label": "Calendar"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "Chat bubble"
-            },
-            {
-              "value": "check_mark",
-              "label": "Check mark"
-            },
-            {
-              "value": "check_mark_in_circle",
-              "label": "Check mark in circle"
-            },
-            {
-              "value": "clock",
-              "label": "Clock"
-            },
-            {
-              "value": "credit_card",
-              "label": "Credit card"
-            },
-            {
-              "value": "dollar_sign",
-              "label": "Dollar sign"
-            },
-            {
-              "value": "dryer",
-              "label": "Dryer"
-            },
-            {
-              "value": "email",
-              "label": "Email"
-            },
-            {
-              "value": "eye",
-              "label": "Eye"
-            },
-            {
-              "value": "feather",
-              "label": "Feather"
-            },
-            {
-              "value": "gift",
-              "label": "Gift"
-            },
-            {
-              "value": "heart",
-              "label": "Heart"
-            },
-            {
-              "value": "iron",
-              "label": "Iron"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            },
-            {
-              "value": "leather",
-              "label": "Leather"
-            },
-            {
-              "value": "lock",
-              "label": "Lock"
-            },
-            {
-              "value": "map_pin",
-              "label": "Map pin"
-            },
-            {
-              "value": "pants",
-              "label": "Pants"
-            },
-            {
-              "value": "percent",
-              "label": "Percent"
-            },
-            {
-              "value": "phone",
-              "label": "Phone"
-            },
-            {
-              "value": "plane",
-              "label": "Plane"
-            },
-            {
-              "value": "price_tag",
-              "label": "Price tag"
-            },
-            {
-              "value": "question_mark",
-              "label": "Question mark"
-            },
-            {
-              "value": "return",
-              "label": "Return"
-            },
-            {
-              "value": "ruler",
-              "label": "Ruler"
-            },
-            {
-              "value": "scissors",
-              "label": "Scissors"
-            },
-            {
-              "value": "shirt",
-              "label": "Shirt"
-            },
-            {
-              "value": "shoe",
-              "label": "Shoe"
-            },
-            {
-              "value": "silhouette",
-              "label": "Silhouette"
-            },
-            {
-              "value": "star",
-              "label": "Star"
-            },
-            {
-              "value": "truck",
-              "label": "Truck"
-            },
-            {
-              "value": "washing",
-              "label": "Washing"
-            }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "text",
-          "id": "perk_1",
-          "label": "Perk 1"
-        },
-        {
-          "type": "text",
-          "id": "perk_2",
-          "label": "Perk 2"
-        },
-        {
-          "type": "text",
-          "id": "perk_3",
-          "label": "Perk 3"
-        },
-        {
-          "type": "richtext",
-          "id": "title",
-          "label": "Message",
-          "default": "<p>Product message</p>",
-          "info": "Use metafields to have different messages per product. [Read more](https://cleancanvas.co.uk/support/enterprise/settings/custom-product-message)"
-        },
-        {
-          "type": "select",
-          "id": "close",
-          "label": "Close button",
-          "options": [
-            {
-              "value": "none",
-              "label": "Not visible"
-            },
-            {
-              "value": "once",
-              "label": "Close this message"
-            },
-            {
-              "value": "persistent",
-              "label": "Close this message forever"
-            }
-          ],
-          "default": "once"
-        },
-        {
-          "type": "header",
-          "content": "Style"
-        },
-        {
-          "type": "color",
-          "id": "bg_color",
-          "label": "Background",
-          "default": "#e4edfa"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text",
-          "default": "#1a66d2"
-        },
-        {
-          "type": "range",
-          "id": "corner_radius",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "px",
-          "label": "Corner Radius",
-          "default": 0
-        }
-      ]
     },
     {
       "type": "message",
@@ -3206,51 +2456,6 @@
         }
       ]
     },
-    {
-  "type": "social-proof",
-  "name": "Social Proof",
-  "limit": 1,
-  "settings": [
-    {
-      "type": "text",
-      "id": "social-headline",
-      "label": "Headline",
-      "default": "Our Happy Customers"
-    },
-    {
-      "type": "text",
-      "id": "social-subheadline",
-      "label": "Subheadline",
-      "default": "See what our customers are saying about us!"
-    },
-    {
-      "type": "image_picker",
-      "id": "social-image_1",
-      "label": "Social Proof Image 1"
-    },
-    {
-      "type": "image_picker",
-      "id": "social-image_2",
-      "label": "Social Proof Image 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "social-image_3",
-      "label": "Social Proof Image 3"
-    },
-    {
-      "type": "url",
-      "id": "social-button_link",
-      "label": "Button Link"
-    },
-    {
-      "type": "text",
-      "id": "social-button_text",
-      "label": "Button Text",
-      "default": "Join the Conversation"
-    }
-  ]
-},
     {
       "type": "custom-option",
       "name": "Custom option",
