@@ -33,51 +33,9 @@
         "color_scheme": "1",
         "featured_button_style": "btn btn--secondary"
       }
-    },
-    "featured_blog_tfMwRN": {
-      "type": "featured-blog",
-      "settings": {
-        "title": "Werkstatt",
-        "heading_align": "text-start",
-        "show_view_all": true,
-        "blog": "",
-        "layout": "carousel",
-        "posts_to_show": 8,
-        "show_featured_image": true,
-        "show_tags": false,
-        "show_excerpt": true,
-        "show_author": true,
-        "show_date": true,
-        "show_button": false,
-        "color_scheme": "none",
-        "image_ratio": "1.77",
-        "button_style": "btn btn--primary"
-      }
-    },
-    "featured_blog_A8hfBL": {
-      "type": "featured-blog",
-      "settings": {
-        "title": "Beliebte Blog Posts",
-        "heading_align": "text-start",
-        "show_view_all": true,
-        "blog": "",
-        "layout": "carousel",
-        "posts_to_show": 8,
-        "show_featured_image": true,
-        "show_tags": false,
-        "show_excerpt": true,
-        "show_author": true,
-        "show_date": true,
-        "show_button": false,
-        "color_scheme": "none",
-        "image_ratio": "1.77",
-        "button_style": "btn btn--primary"
-      }
     }
   },
   "order": [
-    "main",
-    "featured_blog_tfMwRN",
-    "featured_blog_A8hfBL"
+    "main"
   ]
 }
