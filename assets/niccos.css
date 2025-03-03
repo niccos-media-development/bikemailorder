@@ -53,6 +53,11 @@
 
 .chat-button span {
   color: #fff;
+  color: #FFF;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .image-with-link-container {
