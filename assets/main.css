@@ -5286,10 +5286,10 @@ body > .os-scrollbar {
   .cc-header--sticky .header.is-out {
     margin-bottom: var(--menu-height);
   }
-  .cc-header--sticky .header.is-out .main-menu__disclosure {
+  /* .cc-header--sticky .header.is-out .main-menu__disclosure {
     max-height: 0;
     margin-top: 0;
-  }
+  } */
   .cc-header--sticky .header__cart-count-number {
     position: relative;
     top: 0.05em;
