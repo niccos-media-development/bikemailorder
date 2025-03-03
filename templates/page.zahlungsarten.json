@@ -79,6 +79,9 @@
         "heading_XBTGPQ",
         "text_jtmNaF"
       ],
+      "custom_css": [
+        ".media-with-text {height: 200px; /* Beispielhöhe */}"
+      ],
       "settings": {
         "video_external": "",
         "video_description": "",
