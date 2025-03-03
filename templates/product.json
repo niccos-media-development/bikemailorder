@@ -246,7 +246,7 @@
             "show_description": true,
             "show_reviews": false,
             "custom_reviews": "",
-            "show_specification": true,
+            "show_specification": false,
             "spec_metafields": "Rahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen\nRahmen:custom.rahmen",
             "spec_right_align": true,
             "spec_show_empty_metafields": true,
