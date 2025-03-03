@@ -942,11 +942,7 @@ body[data-loading="true"] .panel-buttons-container[data-active-tab="3"] .panel-b
 {%- endif -%}
 
 <script>
-  // Wait until DOM is ready
   document.addEventListener('DOMContentLoaded', () => {
-    /* -----------------------------------------------------------
-       1) Restore the saved index from localStorage, if any
-    ----------------------------------------------------------- */
     const savedIndex = localStorage.getItem('activeMenuIndex');
     if (savedIndex) {
       document.body.setAttribute('data-show', savedIndex);
@@ -954,14 +950,7 @@ body[data-loading="true"] .panel-buttons-container[data-active-tab="3"] .panel-b
         .setAttribute('data-active-tab', savedIndex);
     }
 
-    /* -----------------------------------------------------------
-       2) Remove data-loading so CSS transitions can show content
-    ----------------------------------------------------------- */
     document.body.removeAttribute('data-loading');
-
-    /* -----------------------------------------------------------
-       3) Set up the panel-button tab click logic (your existing)
-    ----------------------------------------------------------- */
     document.querySelectorAll('.panel-button[tabindex]').forEach(btn => {
       btn.addEventListener('click', e => {
         const newIndex = e.target.getAttribute('tabindex');
@@ -971,9 +960,6 @@ body[data-loading="true"] .panel-buttons-container[data-active-tab="3"] .panel-b
       });
     });
 
-    /* -----------------------------------------------------------
-       4) Keep your setCurrentMenuHeight logic
-    ----------------------------------------------------------- */
     function setCurrentMenuHeight() {
       const mainNavHeight = document.querySelector('.main-nav').clientHeight;
       document.querySelector('store-header')
@@ -982,10 +968,6 @@ body[data-loading="true"] .panel-buttons-container[data-active-tab="3"] .panel-b
 
     setCurrentMenuHeight();
     window.addEventListener('resize', setCurrentMenuHeight);
-
-    /* -----------------------------------------------------------
-       5) (Optional) Define your custom element logic
-    ----------------------------------------------------------- */
     customElements.whenDefined('details-disclosure').then(() => {
       class NavMenu extends DetailsDisclosure {
         constructor() {
