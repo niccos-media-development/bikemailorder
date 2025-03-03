@@ -87,7 +87,7 @@
       "custom_css": [
         ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
         ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
-        ".card__media.relative {height: 160px;}"
+        ".card__media.relative {width: 63%; margin: 0 auto; /*macht das Bild kleiner un zentriert ohne es zu bescheinden*/}"
       ],
       "settings": {
         "title": "",
