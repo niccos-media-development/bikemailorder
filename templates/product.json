@@ -215,6 +215,7 @@
         "item_cCEJgF",
         "item_mAWw7x"
       ],
+      "disabled": true,
       "custom_css": [
         ".icons-with-text__text {line-height: 2;}",
         ".icons-with-text__text > p {margin-top: 2rem; margin-bottom: 1rem;}"
@@ -242,7 +243,7 @@
           "settings": {
             "style": "collapsible",
             "open_first": true,
-            "show_description": false,
+            "show_description": true,
             "show_reviews": false,
             "custom_reviews": "",
             "show_specification": true,
