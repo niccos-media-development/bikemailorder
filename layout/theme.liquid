@@ -26,6 +26,7 @@
   {%- render 'niccos-chat-widget' -%}
 
   <link rel="preload" href="{{ 'main.css' | asset_url }}" as="style">
+  <link rel="preload" href="{{ 'niccos.css' | asset_url }}" as="style">
 
   {%- style %}
     {{- settings.body_font | font_face: font_display: 'swap' -}}
@@ -259,6 +260,7 @@
   {% endstyle -%}
 
   <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
+  <link rel="stylesheet" href="{{ 'niccos.css' | asset_url }}">
   <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
   {%- unless settings.body_font.system? -%}
