@@ -135,12 +135,52 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "media_with_text_GhzB3W": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_fH9h43": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sicher und Bequem Bezahlen mit Apple Pay bei Bike-Mailorder",
+            "heading_size": "h6",
+            "heading_h1": false
+          }
+        },
+        "text_49UXqe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Auf der Website von Bike-Mailorder können Sie Ihre Einkäufe bequem und sicher mit Apple Pay bezahlen. Diese Zahlungsmethode ermöglicht es Ihnen, Transaktionen direkt über Ihr iPhone, iPad oder Ihre Apple Watch durchzuführen. Die Authentifizierung erfolgt schnell und einfach per Face ID, Touch ID oder Passcode, wodurch Ihre Bankdaten stets geschützt bleiben. So können Sie ganz einfach und sicher online bezahlen.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fH9h43",
+        "text_49UXqe"
+      ],
+      "custom_css": [
+        ".media-with-text {height: 200px; /* Beispielhöhe */}"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 40,
+        "media_scale": 40,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
     "main",
     "rich_text_qTwcVG",
     "media_with_text_bEia6D",
-    "media_with_text_ipbL9R"
+    "media_with_text_ipbL9R",
+    "media_with_text_GhzB3W"
   ]
 }
