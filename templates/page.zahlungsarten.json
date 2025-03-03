@@ -83,7 +83,7 @@
         ".media-with-text {height: 200px; /* Beispielhöhe */}"
       ],
       "settings": {
-        "image": "shopify://shop_images/medium_paypal_logo_white_background.jpg",
+        "image": "shopify://shop_images/de-pp-logo-200px.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
