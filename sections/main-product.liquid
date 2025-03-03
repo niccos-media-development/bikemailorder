@@ -1001,6 +1001,7 @@
               <h3 class="social-headline">{{ block.settings['social-headline'] }}</h3>
               <p class="social-subheadline">{{ block.settings['social-subheadline'] }}</p>
 
+              <div class="image-with-link-container">
               <div class="image-container">
                 {% if block.settings['social-image_1'] %}
                   <img class="image" src="{{ block.settings.social-image_1 | img_url: '40x40' }}" alt="Image 1">
@@ -1016,6 +1017,7 @@
               <a href="{{ block.settings.social-button_link }}" class="chat-button">
                 <span>{{ block.settings['social-button_text'] }}</span>
               </a>
+              </div>
             </div>
 
           {% when 'custom-option' %}
