@@ -97,15 +97,15 @@
         "faq-category-1": {
           "type": "category",
           "settings": {
-            "text": "Ordering"
+            "text": "Beratung"
           }
         },
         "faq-question-1": {
           "type": "question",
           "settings": {
             "icon": "question_mark",
-            "heading": "Can I cancel my order?",
-            "text": "<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.</p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.</p>"
+            "heading": "Wie kann ich euch wann erreichen?",
+            "text": "<p>Du kannst uns jederzeit über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> eine Nachricht senden. Unserer Kundenservice antwortet dir so schnell wie möglich innerhalb unserer Arbeitszeiten von Mo-Fr von 10-18 Uhr. </p>"
           }
         },
         "faq-question-2": {
@@ -119,7 +119,7 @@
         "faq-category-2": {
           "type": "category",
           "settings": {
-            "text": "Shipping"
+            "text": "Bestellung & Bezahlung"
           }
         },
         "faq-question-3": {
@@ -141,7 +141,7 @@
         "faq-category-3": {
           "type": "category",
           "settings": {
-            "text": "Returns and Refunds"
+            "text": "Lieferung"
           }
         },
         "faq-question-5": {
@@ -159,6 +159,28 @@
             "heading": "How long will it take to receive my refund?",
             "text": "<p>Refunds are processed within 7 days from when we receive the item(s).</p>"
           }
+        },
+        "category_9iJMyD": {
+          "type": "category",
+          "settings": {
+            "text": "Retoure & Erstattung"
+          }
+        },
+        "question_mQfHUM": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_GgjmUM": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
         }
       },
       "block_order": [
@@ -170,7 +192,10 @@
         "faq-question-4",
         "faq-category-3",
         "faq-question-5",
-        "faq-question-6"
+        "faq-question-6",
+        "category_9iJMyD",
+        "question_mQfHUM",
+        "question_GgjmUM"
       ],
       "settings": {
         "heading": "",
