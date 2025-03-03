@@ -49,6 +49,7 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
+  border-radius:15px;
 }
 
 .chat-button span {
