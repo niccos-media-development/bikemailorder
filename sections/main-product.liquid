@@ -1002,21 +1002,24 @@
               <p class="social-subheadline">{{ block.settings['social-subheadline'] }}</p>
 
               <div class="image-with-link-container">
-              <div class="image-container">
-                {% if block.settings['social-image_1'] %}
-                  <img class="image" src="{{ block.settings.social-image_1 | img_url: '40x40' }}" alt="Image 1">
-                {% endif %}
-                {% if block.settings['social-image_2'] %}
-                  <img class="image" src="{{ block.settings.social-image_2 | img_url: '40x40' }}" alt="Image 2">
-                {% endif %}
-                {% if block.settings['social-image_3'] %}
-                  <img class="image" src="{{ block.settings.social-image_3 | img_url: '40x40' }}" alt="Image 3">
-                {% endif %}
-              </div>
+                <div class="image-container">
+                  {% if block.settings['social-image_1'] %}
+                    <img class="image" src="{{ block.settings.social-image_1 | img_url: '40x40' }}" alt="Image 1">
+                  {% endif %}
+                  {% if block.settings['social-image_2'] %}
+                    <img class="image" src="{{ block.settings.social-image_2 | img_url: '40x40' }}" alt="Image 2">
+                  {% endif %}
+                  {% if block.settings['social-image_3'] %}
+                    <img class="image" src="{{ block.settings.social-image_3 | img_url: '40x40' }}" alt="Image 3">
+                  {% endif %}
+                </div>
 
-              <a href="{{ block.settings.social-button_link }}" class="chat-button">
-                <span>{{ block.settings['social-button_text'] }}</span>
-              </a>
+                <a href="{{ block.settings.social-button_link }}" class="chat-button">
+                  <span>{{ block.settings['social-button_text'] }}</span>
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.1313 10.25H3V8.75H12.1313L7.93125 4.55L9 3.5L15 9.5L9 15.5L7.93125 14.45L12.1313 10.25Z" fill="white"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
