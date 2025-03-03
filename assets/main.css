@@ -5633,3 +5633,15 @@ body > .os-scrollbar {
   width: 2rem !important;
 }
 /* END NICCOS CUSTOM */
+ul.child-nav.lg\:grid-cols-4 {
+    grid-template-columns: repeat(6,minmax(0,1fr));
+}
+
+.panel-buttons-container {
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.panel-buttons-container.tab-transition {
+    opacity: 0.5;
+    transform: translateY(5px);
+}
