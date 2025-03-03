@@ -259,31 +259,22 @@
         "heading_GyQqRi": {
           "type": "heading",
           "settings": {
-            "heading": "Media with text",
-            "heading_size": "h3",
+            "heading": "Kreditkartenzahlung",
+            "heading_size": "h6",
             "heading_h1": false
           }
         },
         "text_hE4NF7": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Wir akzeptieren Maestro, MasterCard, VISA und American Express. Einfach Kartennummer, Gültigkeitsdatum und Prüfnummer eingeben – sicher und bequem über eine SSL-verschlüsselte Verbindung. Der Betrag wird mit Abschluss der Bestellung belastet, sodass wir deine Bestellung sofort bearbeiten können.</p><p>Bei Rücksendungen erstatten wir den Kaufbetrag direkt auf dein Kreditkartenkonto. <strong>Schnell, sicher und unkompliziert.</strong></p>",
             "enlarge_text": false
-          }
-        },
-        "button_VrRK7x": {
-          "type": "button",
-          "settings": {
-            "button_label": "Optional button",
-            "button_link": "",
-            "button_style": "btn btn--primary"
           }
         }
       },
       "block_order": [
         "heading_GyQqRi",
-        "text_hE4NF7",
-        "button_VrRK7x"
+        "text_hE4NF7"
       ],
       "settings": {
         "video_external": "",
@@ -292,7 +283,7 @@
         "layout": "left",
         "image_fit": "contain",
         "media_width": 40,
-        "media_scale": 100,
+        "media_scale": 40,
         "text_align": "text-start",
         "color_scheme": "none",
         "only_content_color_scheme": false
