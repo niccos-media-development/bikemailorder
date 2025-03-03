@@ -279,16 +279,6 @@
         "card_size": "small",
         "products_to_show": 8
       }
-    },
-    "custom_liquid_Pytdn7": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<h2>Metaobjekte Debugging</h2>\n<p>Anzahl der Metaobjekte: {{ shop.metaobjects.marken.size }}</p>\n<ul>\n  {% for brand in shop.metaobjects.marken %}\n    <li>\n      Name: {{ brand.fields.marken.name }}<br>\n      Logo: {{ brand.fields.marken.logo | image_url }}\n    </li>\n  {% endfor %}\n</ul>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "prevent_animation": false
-      }
     }
   },
   "order": [
@@ -296,7 +286,6 @@
     "main",
     "icons_with_text_D49W43",
     "details",
-    "recommendations",
-    "custom_liquid_Pytdn7"
+    "recommendations"
   ]
 }
