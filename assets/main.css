@@ -3101,8 +3101,8 @@ details-disclosure + details-disclosure .disclosure--row {
     padding-bottom: 60px;
     padding-left: var(--gutter);
     overflow-y: scroll;
-    background-color: rgb(var(--nav-child-bg-color));
-    color: rgb(var(--nav-child-text-color));
+    background-color: white;
+    color:black;
   }
   .main-menu__disclosure.is-closing > .main-menu__content,
 .main-menu__disclosure > .main-menu__content {
@@ -5637,11 +5637,11 @@ ul.child-nav.lg\:grid-cols-4 {
     grid-template-columns: repeat(6,minmax(0,1fr));
 }
 
-.panel-buttons-container {
+/* .panel-buttons-container {
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .panel-buttons-container.tab-transition {
     opacity: 0.5;
     transform: translateY(5px);
-}
+} */
