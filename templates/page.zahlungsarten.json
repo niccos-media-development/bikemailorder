@@ -95,11 +95,57 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "media_with_text_ipbL9R": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_HVz9nr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Klarna Kauf auf Rechnung",
+            "heading_size": "h5",
+            "heading_h1": false
+          }
+        },
+        "text_w6D6d9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_DwpGpJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HVz9nr",
+        "text_w6D6d9",
+        "button_DwpGpJ"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 40,
+        "media_scale": 60,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
     "main",
     "rich_text_qTwcVG",
-    "media_with_text_bEia6D"
+    "media_with_text_bEia6D",
+    "media_with_text_ipbL9R"
   ]
 }
