@@ -33,22 +33,6 @@
             "display_location": "title"
           }
         },
-        "vendor-sku": {
-          "type": "vendor-sku",
-          "disabled": true,
-          "settings": {
-            "show_vendor": true,
-            "show_sku": true,
-            "show_barcode": false
-          }
-        },
-        "product-labels": {
-          "type": "product-labels",
-          "disabled": true,
-          "settings": {
-            "show_variant_icon": true
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -122,32 +106,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "message-1": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "icon": "clock",
-            "title": "<p><strong>Popular right now<br/></strong>Lots of people have looked at this recently</p>",
-            "close": "once",
-            "show_over_media": true,
-            "visibility_duration": 4,
-            "bg_color": "#e4edfa",
-            "text_color": "#1a66d2"
-          }
-        },
-        "message-2": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "icon": "price_tag",
-            "title": "<p><strong>Selling fast!<br/></strong>Grab yours while you can</p>",
-            "close": "once",
-            "show_over_media": true,
-            "visibility_duration": 5,
-            "bg_color": "#e4edfa",
-            "text_color": "#1a66d2"
-          }
-        },
         "delivery_timer_D9VPkt": {
           "type": "delivery_timer",
           "settings": {
@@ -162,35 +120,21 @@
           "type": "payment_icons",
           "settings": {}
         },
-        "collapsible-content-2": {
-          "type": "collapsible-content",
-          "disabled": true,
+        "social_proof_WDNz7r": {
+          "type": "social-proof",
           "settings": {
-            "heading": "Delivery and Shipping",
-            "icon": "truck",
-            "text": "<p>Add some general information about your delivery and shipping policies.</p>",
-            "page": "",
-            "open": false
-          }
-        },
-        "message-3": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "title": "<p>Add a stand out message for your customers</p>",
-            "close": "once",
-            "show_over_media": false,
-            "visibility_duration": 7,
-            "bg_color": "#e4edfa",
-            "text_color": "#1a66d2"
+            "social-headline": "Hast du Fragen zum Produkt?",
+            "social-subheadline": "Unser Kundenservice ist für dich da!",
+            "social-image_1": "shopify://shop_images/home_cat_helme.jpg",
+            "social-image_2": "shopify://shop_images/home_cat_helme.jpg",
+            "social-image_3": "shopify://shop_images/home_cat_helme.jpg",
+            "social-button_link": "",
+            "social-button_text": "Chat mit uns!"
           }
         }
       },
       "block_order": [
         "metaobject_logo_output_agcKQT",
-        "vendor-sku",
-        "product-labels",
         "title",
         "price",
         "product_perks_qf7Lhf",
@@ -199,12 +143,9 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
-        "message-1",
-        "message-2",
         "delivery_timer_D9VPkt",
         "payment_icons_7LjxwJ",
-        "collapsible-content-2",
-        "message-3"
+        "social_proof_WDNz7r"
       ],
       "settings": {
         "stick_on_scroll": true,
