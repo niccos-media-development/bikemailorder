@@ -260,26 +260,15 @@
         "button_style": "btn btn--primary"
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
+    "recently_viewed_xGz9eq": {
+      "type": "recently-viewed",
       "settings": {
-        "title": "Trending",
+        "heading": "Recently viewed",
         "heading_align": "text-start",
-        "show_view_all": true,
-        "collection": "",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
-        "products_to_show": 24,
-        "show_highlight_products": true,
-        "show_promo_info": false,
-        "image_ratio": "1",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
-        "color_scheme": "none",
-        "button_style": "btn btn--secondary"
+        "limit": 8
       }
     },
     "newsletter": {
@@ -318,17 +307,6 @@
         "tint_color": "#000000",
         "tint_opacity": 20
       }
-    },
-    "recently_viewed_xGz9eq": {
-      "type": "recently-viewed",
-      "settings": {
-        "heading": "Recently viewed",
-        "heading_align": "text-start",
-        "layout": "carousel",
-        "card_size_mobile": "small",
-        "card_size": "small",
-        "limit": 8
-      }
     }
   },
   "order": [
@@ -337,7 +315,6 @@
     "rich_text_MRYLPX",
     "faqs",
     "contact-form",
-    "featured-collection",
     "recently_viewed_xGz9eq",
     "newsletter"
   ]
