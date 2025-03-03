@@ -55,10 +55,47 @@
         "full_width": true,
         "prevent_animation": false
       }
+    },
+    "media_with_text_bEia6D": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_XBTGPQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zahlung mit PayPal – Schnell und Sicher",
+            "heading_size": "h6",
+            "heading_h1": false
+          }
+        },
+        "text_jtmNaF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mit PayPal bezahlst du bei Bike-Mailorder schnell, sicher und unkompliziert. Sobald du PayPal als Zahlungsart wählst, wirst du direkt zu deinem PayPal-Konto weitergeleitet. Hier kannst du deine Bestellung mit nur wenigen Klicks abschließen – ganz ohne Eingabe von Bank- oder Kreditkartendaten.</p><p>Ein weiterer Vorteil: Deine Zahlung wird sofort verbucht, sodass wir deine Bestellung schnellstmöglich bearbeiten können. Zusätzlich profitierst du vom PayPal-Käuferschutz, der dir zusätzliche Sicherheit bietet.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XBTGPQ",
+        "text_jtmNaF"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 40,
+        "media_scale": 60,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_qTwcVG"
+    "rich_text_qTwcVG",
+    "media_with_text_bEia6D"
   ]
 }
