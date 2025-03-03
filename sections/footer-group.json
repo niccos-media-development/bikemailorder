@@ -27,7 +27,7 @@
           "type": "item",
           "settings": {
             "icon": "box",
-            "heading": "Check your order status",
+            "heading": "Bestellstatus",
             "text": "<p>Updates & tracking</p>",
             "link": ""
           }
@@ -36,8 +36,8 @@
           "type": "item",
           "settings": {
             "icon": "return",
-            "heading": "Returns & exchanges",
-            "text": "<p>All you need to know</p>",
+            "heading": "Retouren & Umtausch",
+            "text": "<p>Alles Wichtige</p>",
             "link": ""
           }
         },
