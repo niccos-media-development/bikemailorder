@@ -122,7 +122,8 @@
       ],
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
-        ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}"
+        ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
+        "img.img-fit {object-fit: contain; width: 60%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Marketing_Badge_With_Clear_Space_1.png",
