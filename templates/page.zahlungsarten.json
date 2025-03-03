@@ -82,7 +82,7 @@
       "custom_css": [
         "@media (min-width: 769px) {.media-with-text {height: 200px; /* Beispielhöhe */ }}",
         ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}",
-        "img.img-fit {object-fit: contain; width: 50%;}"
+        "@media (max-width: 769px) {img.img-fit {object-fit: contain; width: 50%; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/paypal_logo_5e71fdd3-ee4c-49d2-93fb-78579dfa74cf.png",
