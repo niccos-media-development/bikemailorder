@@ -5637,21 +5637,4 @@ ul.child-nav.lg\:grid-cols-4 {
     grid-template-columns: repeat(6,minmax(0,1fr));
 }
 
-body.nav-hidden .the-main-nav > li {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-}
 
-body.nav-hidden[data-show="1"] li[data-show="1"], 
-body.nav-hidden[data-show="2"] li[data-show="2"], 
-body.nav-hidden[data-show="3"] li[data-show="3"] {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-    height: auto;
-    overflow: visible;
-}
