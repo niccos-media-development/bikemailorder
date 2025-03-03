@@ -280,7 +280,8 @@
         "text_hE4NF7"
       ],
       "custom_css": [
-        ".media-with-text {height: 280px; /* Beispielhöhe */}"
+        ".media-with-text {height: 200px; /* Beispielhöhe */}",
+        ".media-with-text.cc-animate-init.cc-animate-in {align-items: center;}"
       ],
       "settings": {
         "image": "shopify://shop_images/creditcards.png",
