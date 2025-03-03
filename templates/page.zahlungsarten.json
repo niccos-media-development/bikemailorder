@@ -213,6 +213,45 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "media_with_text_Uxb983": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_Q9AWjj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Schnell und Sicher Bezahlen mit Shopify Payments",
+            "heading_size": "h6",
+            "heading_h1": false
+          }
+        },
+        "text_VgcYtR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mit Shopify Payments können Sie auf der Website von Bike-Mailorder sicher und schnell einkaufen. Diese Zahlungsmethode ermöglicht es Ihnen, direkt mit Ihrer Kredit- oder Debitkarte zu bezahlen, ohne ein externes Zahlungsportal zu verwenden. Die Transaktionen werden verschlüsselt und bieten Ihnen eine schnelle, unkomplizierte und sichere Bezahlmöglichkeit. Vertrauen Sie auf Shopify Payments, um Ihre Einkäufe bequem und sicher abzuschließen.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q9AWjj",
+        "text_VgcYtR"
+      ],
+      "custom_css": [
+        ".media-with-text {height: 200px; /* Beispielhöhe */}"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 40,
+        "media_scale": 50,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
     }
   },
   "order": [
@@ -221,6 +260,7 @@
     "media_with_text_bEia6D",
     "media_with_text_ipbL9R",
     "media_with_text_GhzB3W",
-    "media_with_text_jWCMRY"
+    "media_with_text_jWCMRY",
+    "media_with_text_Uxb983"
   ]
 }
