@@ -113,25 +113,17 @@
             "text": "<p>Mit Klarna kannst du jetzt entspannt einkaufen und erst später zahlen. Du hast 30 Tage Zeit, deine Rechnung zu begleichen – ganz ohne Stress. Die Rechnung erhältst du per E-Mail und kannst sie bequem in der Klarna App verwalten. Rücksendungen? Kein Problem – offene Rechnungen werden automatisch storniert.</p><p><strong>Einfach. Sicher. Flexibel.</strong></p>",
             "enlarge_text": false
           }
-        },
-        "button_DwpGpJ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Optional button",
-            "button_link": "",
-            "button_style": "btn btn--primary"
-          }
         }
       },
       "block_order": [
         "heading_HVz9nr",
-        "text_w6D6d9",
-        "button_DwpGpJ"
+        "text_w6D6d9"
       ],
       "custom_css": [
         ".media-with-text {height: 200px; /* Beispielhöhe */}"
       ],
       "settings": {
+        "image": "shopify://shop_images/klarna.webp",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
