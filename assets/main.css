@@ -5651,7 +5651,7 @@ h2.text-overlay__heading.h0 {
   margin-bottom: 0.5rem;
   text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34);
 }
-.slideshow-ctrl.container.absolute.flex.justify-center.w-full.pointer-events-none.no-js-hidden {
+.slideshow-ctrl {
   justify-content: flex-end;
 }
 @media (min-width: 769px) {
