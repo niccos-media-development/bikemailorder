@@ -381,6 +381,7 @@
     "pagination_infinite": true,
     "coll_card_image_ratio": "1",
     "coll_card_image_fit": "contain",
+    "coll_text_align": "text-center",
     "coll_show_link": false,
     "coll_bg_color": "#ffffff",
     "coll_border_color": "#ffffff",
