@@ -83,6 +83,12 @@
         "slide-1",
         "slide-2"
       ],
+      "custom_css": [
+        ".slideshow__slide--ignore-pagination .text-overlay {margin-bottom: 20px;}",
+        "@media (min-width: 769px) {.slideshow__slide--ignore-pagination .text-overlay {margin-bottom: 50px; }}",
+        "p.text-overlay__block.subheading {margin-bottom: 0;}",
+        "h2.text-overlay__heading.h0 {margin-bottom: 1rem; text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34);}"
+      ],
       "settings": {
         "height_mode": "fixed",
         "fixed_height_desktop": 840,
