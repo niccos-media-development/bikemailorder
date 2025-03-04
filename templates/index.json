@@ -480,6 +480,13 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "youtube_channel_preview_3tfraA": {
+      "type": "youtube-channel-preview",
+      "settings": {
+        "headline": "",
+        "text": ""
+      }
     }
   },
   "order": [
@@ -492,6 +499,7 @@
     "featured_blog_UibKyf",
     "niccos_multicolumn_XRGiNj",
     "navigation_slideshow_Hzwq6X",
-    "custom_liquid_64K6zM"
+    "custom_liquid_64K6zM",
+    "youtube_channel_preview_3tfraA"
   ]
 }
