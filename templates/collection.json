@@ -27,7 +27,7 @@
       "type": "hoco-collection-description",
       "settings": {
         "headline": "{{ collection.title }}",
-        "description": "{{ collection.metafields.custom.introtext | metafield_tag }}"
+        "description": "{{ collection.metafields.custom.introtext | metafield_tag }}{{ collection.description }}"
       }
     },
     "collection-banner": {
