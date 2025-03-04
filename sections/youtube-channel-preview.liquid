@@ -4,8 +4,9 @@
       <li>
         <h1>{{ section.settings.headline }}</h1>
         <p>{{ section.settings.text }}</p>
-        <div>
+        <div class="yt-subscribe">
           <div>
+            {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
           </div>
           <div>
             <p><strong>BMO Bike Mailorder</strong></p>
@@ -51,6 +52,10 @@
 }
 .youtube-preview.section ul li h1, .youtube-preview.section ul li p {
   color: #fff;
+}
+
+.yt-subscribe {
+  padding-top: 10px;
 }
 
 .youtube-preview.section ul li a {
@@ -110,7 +115,12 @@
         "type": "text",
         "id": "youtube2",
         "label": "Youtube ID 2",
-      }
+      },
+      {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Foto"    
+    }
     ],
     "presets": [{"name": "Youtube Preview"}]  
   }
