@@ -247,7 +247,7 @@
             "show_reviews": false,
             "custom_reviews": "",
             "show_specification": true,
-            "spec_metafields": "Anzahl Gänge: next_cart.anzahl-gange\nAbstuffung: next_cart.abstufung\nRitzelaufnahme: next_cart.ritzelaufnahme\nMaterial: next_cart.material\nKettenbreite: next_cart.kettenbreite\nKompatibilität: next_cart.kompatibilitat",
+            "spec_metafields": "Anzahl Gänge: next_cart.anzahl-gange\nAbstuffung: next_cart.abstufung\nRitzelaufnahme: next_cart.ritzelaufnahme\nMaterial: next_cart.material\nKettenbreite: next_cart.kettenbreite\nKompatibilität: next_cart.kompatibilitat\nSchaltungstyp: next_cart.schaltungstyp",
             "spec_right_align": false,
             "spec_show_empty_metafields": true,
             "spec_empty_field_text": "-",
