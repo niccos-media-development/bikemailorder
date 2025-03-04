@@ -3060,5 +3060,220 @@
         "content": "For a full list of JavaScript events included with Enterprise, please refer to the /assets/custom.js file within the theme code, or read our [JavaScript Technical Guide](https://cleancanvas.co.uk/support/enterprise/technical-guides/js)."
       }
     ]
+  },
+    {
+    "name": "Help Chat",
+    "settings": [
+      {
+        "type" : "header",
+        "content" : "Chat Header"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_heading",
+        "default" : "Hast du Fragen?",
+        "label" : "Chat Heading"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_sub_heading",
+        "default" : "Wir helfen Dir gerne weiter!",
+        "label" : "Chat Sub Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_main_image",
+        "label": "Chat Image"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item1"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title1",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title1"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link1",
+        "label" : "Chat Accordion Link1"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image1",
+        "label": "Chat Accordion Image1"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code1",
+        "label" : "Chat Accordion Image Embed1"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content1",
+        "label" : "Chat Accordion Content1"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item2"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title2",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title2"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link2",
+        "label" : "Chat Accordion Link2"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image2",
+        "label": "Chat Accordion Image2"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code2",
+        "label" : "Chat Accordion Image Embed2"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content2",
+        "label" : "Chat Accordion Content2"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item3"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title3",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title3"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link3",
+        "label" : "Chat Accordion Link3"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image3",
+        "label": "Chat Accordion Image3"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code3",
+        "label" : "Chat Accordion Image Embed3"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content3",
+        "label" : "Chat Accordion Content3"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item4"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title4",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title4"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link4",
+        "label" : "Chat Accordion Link4"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image4",
+        "label": "Chat Accordion Image4"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code4",
+        "label" : "Chat Accordion Image Embed4"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content4",
+        "label" : "Chat Accordion Content4"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item5"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title5",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title5"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link5",
+        "label" : "Chat Accordion Link5"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image5",
+        "label": "Chat Accordion Image5"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code5",
+        "label" : "Chat Accordion Image Embed5"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content5",
+        "label" : "Chat Accordion Content5"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Accordion Item6"
+      },
+      {
+        "type" : "text",
+        "id" : "chat_acco_title6",
+        "default" : "WhatsApp",
+        "label" : "Chat Accordion Title6"
+      },
+      {
+        "type" : "url",
+        "id" : "chat_acco_link6",
+        "label" : "Chat Accordion Link6"
+      },
+      {
+        "type": "image_picker",
+        "id": "chat_acco_image6",
+        "label": "Chat Accordion Image6"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_image_embed_code6",
+        "label" : "Chat Accordion Image Embed6"
+      },
+      {
+        "type" : "liquid",
+        "id" : "chat_acco_content6",
+        "label" : "Chat Accordion Content6"
+      },
+      {
+        "type" : "header",
+        "content" : "Chat Footer"
+      },
+      {
+        "type": "liquid",
+        "id" :"chat_footer_text",
+        "label" : "Chat Footer Content"
+      }
+    ]
   }
 ]
