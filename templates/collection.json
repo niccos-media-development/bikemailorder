@@ -23,6 +23,13 @@
         "home_text": "Home"
       }
     },
+    "hoco_collection_description_hXaGDT": {
+      "type": "hoco-collection-description",
+      "settings": {
+        "headline": "{{ collection.title }}",
+        "description": "asfasdfsdfasdgadgadgasdgsadgasdgfsadf"
+      }
+    },
     "collection-banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -185,6 +192,7 @@
   },
   "order": [
     "niccos_breadcrumbs_LNPFaj",
+    "hoco_collection_description_hXaGDT",
     "collection-banner",
     "collection_list_GjXfbJ",
     "collection-products"

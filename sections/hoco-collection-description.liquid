@@ -1,6 +1,7 @@
 <div class="section" >
   <div class="container">
     <h1>{{ section.settings.headline }}</h1>
+    <span>({{ 'sections.collection.product_count.other' | t: count: collection.all_products_count }})</span>
     <p>{{ section.settings.description }}</p>
   </div>
 </div>
