@@ -247,7 +247,7 @@
             "show_reviews": false,
             "custom_reviews": "",
             "show_specification": true,
-            "spec_metafields": "Anzahl Gänge: : next_cart.anzahl-gange",
+            "spec_metafields": "Anzahl Gänge: next_cart.anzahl-gange\nAbstuffung: next_cart.abstufung",
             "spec_right_align": false,
             "spec_show_empty_metafields": true,
             "spec_empty_field_text": "-",
