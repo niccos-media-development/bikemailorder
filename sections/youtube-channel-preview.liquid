@@ -27,9 +27,17 @@ $("#youtube_video1").attr("src","https://youtube.com/embed/"+id + "?controls=0&s
 {% stylesheet %}
   
 .section {
-  background: #fff;
+  background: #000;
 }
- 
+.section ul {
+  display: flex;
+  flex-direction: column;
+}
+.section ul li h1, .section ul li p {
+  color: #fff;
+}
+
+  
 {% endstylesheet %}
 
 
