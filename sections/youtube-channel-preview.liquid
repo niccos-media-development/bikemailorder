@@ -9,13 +9,17 @@ $("#youtube_video1").attr("src","https://youtube.com/embed/"+id + "?controls=0&s
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<div>
-  <div>
-    <h1>{{ section.settings.headline }}</h1>
-    <p>{{ section.settings.text }}</p>
-  </div>
-  <div>
-    <iframe id="youtube_video1" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+ <div class="section" >
+  <div class="container">
+    <ul class=" flex flex-wrap gap-x-theme gap-y-12 md:gap-y-6">
+      <li class="multi-column grow w-full max-w-none cc-animate-init cc-animate-in">
+        <h1>{{ section.settings.headline }}</h1>
+        <p>{{ section.settings.text }}</p>
+      </li>
+      <li class="multi-column grow w-full max-w-none cc-animate-init cc-animate-in">
+        <iframe id="youtube_video1" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+      </li>
+    </ul>
   </div>
 </div>
 
