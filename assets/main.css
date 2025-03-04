@@ -5665,9 +5665,7 @@ h2.text-overlay__heading.h0 {
     font-size: 6rem;
   }
 }
-.image-banner__image {
-  position: relative;
-}
+
 .image-banner__image:after {
   content:'';
   position: absolute;
