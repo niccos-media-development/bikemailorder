@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/header_orbea.jpg",
+            "image_desktop": "shopify://shop_images/header_orbea_700.jpg",
             "image_mobile": "shopify://shop_images/header-orbea-mobile.jpg",
             "url": "",
             "overlay_position": "justify-start items-end",
