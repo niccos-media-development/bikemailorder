@@ -1,4 +1,4 @@
-<div class="section youtube-preview" style="padding:{{ section.settings.padding }} 0" >
+<div class="section youtube-preview" >
   <div class="container">
     <ul>
       <li>
@@ -36,6 +36,10 @@
   
 .youtube-preview.section {
   background: #000;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  padding: 100px;
 }
 .youtube-preview.section ul {
   display: grid;
@@ -104,12 +108,7 @@
         "type": "text",
         "id": "youtube2",
         "label": "Youtube ID 2",
-      },
-      {
-        "type": "text",
-        "id": "padding",
-        "label": "Abstand Oben/Unten",
-      } 
+      }
     ],
     "presets": [{"name": "Youtube Preview"}]  
   }
