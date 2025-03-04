@@ -86,7 +86,7 @@
       "custom_css": [],
       "settings": {
         "height_mode": "fixed",
-        "fixed_height_desktop": 670,
+        "fixed_height_desktop": 700,
         "fixed_height_mobile": 350,
         "mobile_stacked": false,
         "nav_style": "slideshow_nav_dots",
