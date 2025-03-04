@@ -1,6 +1,41 @@
+
+
+<script>
+
+</script>
+    
+<div class="page-width" style="margin-bottom: {{ section.settings.margin-bottom }}px;margin-top: {{ section.settings.margin-top }}px;">
+  
+  <div>
+    <div>
+      <h1>{{ section.settings.headline }}</h1>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div>
+    </div>
+  </div>
+</div>
+
+
+{% stylesheet %}
+
+ 
+{% endstylesheet %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Youtube Channel Preview",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+      }      
+    ]
   }
 {% endschema %}
