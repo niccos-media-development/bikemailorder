@@ -86,9 +86,9 @@
       "custom_css": [
         ".slideshow__slide--ignore-pagination .text-overlay {margin-bottom: 20px;}",
         "@media (min-width: 769px) {.slideshow__slide--ignore-pagination .text-overlay {margin-bottom: 50px; }}",
-        "p.text-overlay__block.subheading {margin-bottom: 0; text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34);}",
-        "h2.text-overlay__heading.h0 {margin-bottom: 0.5rem; text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34); /*headlin*/}",
-        ".slideshow-ctrl.container.absolute.flex.justify-center.w-full.pointer-events-none.no-js-hidden {justify-content: flex-end; /*Scroll navi nach rechts*/}"
+        "p.text-overlay__block.subheading {margin-bottom: 0; text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34); font-size: 2.3rem;}",
+        "h2.text-overlay__heading.h0 {margin-bottom: 0.5rem; text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.34); }",
+        ".slideshow-ctrl.container.absolute.flex.justify-center.w-full.pointer-events-none.no-js-hidden {justify-content: flex-end; }"
       ],
       "settings": {
         "height_mode": "fixed",
