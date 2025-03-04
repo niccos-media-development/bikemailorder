@@ -85,7 +85,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "height_mode": "fixed",
+        "height_mode": "auto",
         "fixed_height_desktop": 700,
         "fixed_height_mobile": 350,
         "mobile_stacked": false,
