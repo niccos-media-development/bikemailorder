@@ -324,6 +324,16 @@
         "full_width": true
       }
     },
+    "youtube_channel_preview_3tfraA": {
+      "type": "youtube-channel-preview",
+      "settings": {
+        "headline": "Get the Kowledge",
+        "text": "Tubeless oder Schlauch? Warum Bremsen einbremsen? Die Antworten auf diese und weitere technische Fragen findest du in unserem YouTube-Kanal!",
+        "youtube1": "aeuer-szQ6M",
+        "youtube2": "IOzt9-pA3PI",
+        "padding": "100px"
+      }
+    },
     "featured_blog_UibKyf": {
       "type": "featured-blog",
       "settings": {
@@ -470,16 +480,6 @@
         "accessibility_info": "Featured collections and new arrivals",
         "prevent_animation": false
       }
-    },
-    "youtube_channel_preview_3tfraA": {
-      "type": "youtube-channel-preview",
-      "settings": {
-        "headline": "Get the Kowledge",
-        "text": "Tubeless oder Schlauch? Warum Bremsen einbremsen? Die Antworten auf diese und weitere technische Fragen findest du in unserem YouTube-Kanal!",
-        "youtube1": "aeuer-szQ6M",
-        "youtube2": "IOzt9-pA3PI",
-        "padding": "100px"
-      }
     }
   },
   "order": [
@@ -489,9 +489,9 @@
     "featured_collection_q6EQfd",
     "media-grid",
     "collection_list_PN8XCm",
+    "youtube_channel_preview_3tfraA",
     "featured_blog_UibKyf",
     "niccos_multicolumn_XRGiNj",
-    "navigation_slideshow_Hzwq6X",
-    "youtube_channel_preview_3tfraA"
+    "navigation_slideshow_Hzwq6X"
   ]
 }
