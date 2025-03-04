@@ -1,6 +1,34 @@
+<div class="section" >
+  <div class="container">
+    <h1>{{ section.settings.headline }}</h1>
+    <p>{{ section.settings.description }}</p>
+  </div>
+</div>
+
+
+{% stylesheet %}
+
+  
+  
+{% endstylesheet %}
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Hoco Collection Intro",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Beschreibung"
+      },
+    ],
+    "presets": [{"name": "Hoco Collection Intro"}]  
   }
 {% endschema %}
