@@ -1,15 +1,4 @@
-<script>
-var channelID = "UC4FkW6lvJEP0fUe8WGmGxJg";
-var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-$.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-   var link = data.items[0].link;
-   var id = link.substr(link.indexOf("=")+1);
-$("#youtube_video1").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
-});
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
- <div class="section youtube-preview" >
+<div class="section youtube-preview" >
   <div class="container">
     <ul class=" flex flex-wrap gap-x-theme gap-y-12 md:gap-y-6">
       <li class="multi-column grow w-full max-w-none cc-animate-init cc-animate-in">
@@ -17,7 +6,10 @@ $("#youtube_video1").attr("src","https://youtube.com/embed/"+id + "?controls=0&s
         <p>{{ section.settings.text }}</p>
       </li>
       <li class="multi-column grow w-full max-w-none cc-animate-init cc-animate-in">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aeuer-szQ6M?si=aL-j0quat-p9bbCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ section.settings.youtube1 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </li>
+      <li class="multi-column grow w-full max-w-none cc-animate-init cc-animate-in">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ section.settings.youtube2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </li>
     </ul>
   </div>
@@ -49,13 +41,21 @@ $("#youtube_video1").attr("src","https://youtube.com/embed/"+id + "?controls=0&s
       {
         "type": "text",
         "id": "headline",
-        "label": "Headline"
+        "label": "Überschrift"
       },
       {
         "type": "text",
         "id": "text",
         "label": "Text",
-      }      
+      },{
+        "type": "text",
+        "id": "youtube1",
+        "label": "Youtube ID 1",
+      },{
+        "type": "text",
+        "id": "youtube2",
+        "label": "Youtube ID 2",
+      } 
     ],
     "presets": [{"name": "Youtube Preview"}]  
   }
