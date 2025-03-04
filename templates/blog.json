@@ -9,12 +9,37 @@
  */
 {
   "sections": {
+    "rich_text_wiwU8h": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bQRNDj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Blog",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bQRNDj"
+      ],
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": false,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
-        "show_blog_title": true,
+        "show_blog_title": false,
         "description": "<p>Hier kommt der Introtext</p>",
-        "show_share_links": true,
+        "show_share_links": false,
         "text_align": "text-start",
         "posts_per_page": 13,
         "three_columns": true,
@@ -36,6 +61,7 @@
     }
   },
   "order": [
+    "rich_text_wiwU8h",
     "main"
   ]
 }
