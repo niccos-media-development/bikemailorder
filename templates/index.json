@@ -49,6 +49,7 @@
         "slide-2": {
           "type": "slide",
           "settings": {
+            "image_desktop": "shopify://shop_images/header_platzangst_womens.jpg",
             "image_mobile": "shopify://shop_images/womens_collection_header_mobile_notext.jpg",
             "url": "",
             "overlay_position": "justify-start items-end",
