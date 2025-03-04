@@ -1,4 +1,4 @@
-<div class="section youtube-preview" >
+<div class="section youtube-preview" style="{{ section.settings.padding }}" >
   <div class="container">
     <ul>
       <li>
@@ -47,14 +47,21 @@
         "type": "text",
         "id": "text",
         "label": "Text",
-      },{
+      },
+      {
         "type": "text",
         "id": "youtube1",
         "label": "Youtube ID 1",
-      },{
+      },
+      {
         "type": "text",
         "id": "youtube2",
         "label": "Youtube ID 2",
+      },
+      {
+        "type": "text",
+        "id": "padding",
+        "label": "Abstand Oben/Unten",
       } 
     ],
     "presets": [{"name": "Youtube Preview"}]  
