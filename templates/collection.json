@@ -27,11 +27,12 @@
       "type": "hoco-collection-description",
       "settings": {
         "headline": "{{ collection.title }}",
-        "description": "asfasdfsdfasdgadgadgasdgsadgasdgfsadf"
+        "description": "{{ collection.metafields.custom.introtext | metafield_tag }}"
       }
     },
     "collection-banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_title": true,
         "show_product_count": true,
