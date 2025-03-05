@@ -165,7 +165,7 @@
       "settings": {
         "image_desktop": "shopify://shop_images/home_feature_desktop_platzangst_womens.jpg",
         "url": "",
-        "height_mode": "fixed",
+        "height_mode": "auto",
         "fixed_height_desktop": 450,
         "fixed_height_mobile": 350,
         "overlay_position": "justify-start items-end",
