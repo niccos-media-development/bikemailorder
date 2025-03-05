@@ -130,14 +130,6 @@
             "text": "<p>In der Regel verschicken wir innerhalb Deutschlands Teile, Zubehör, Bekleidung und Werkzeug innerhalb von 2-4 Werktagen. Fahrräder benötigen innerhalb Deutschlands aktuell 8-12 Werktage. </p><p>Auf der Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> kannst du einsehen, in welchem Status sich deine Bestellung befindet.</p>"
           }
         },
-        "faq-question-4": {
-          "type": "question",
-          "settings": {
-            "icon": "silhouette",
-            "heading": "Kann ich als Gast bestellen, ohne ein Kundenkonto zu eröffnen? ",
-            "text": "<p>Ja, es ist möglich auch ohne ein Kundenkonto zu bestellen. Klicke im Warenkorb auf “Zur Kasse” und registriere dich als Neukunde. Im Formular findest du eine Checkbox, mit der du dich lediglich als Gast registrieren kannst.</p>"
-          }
-        },
         "question_m6Jt6W": {
           "type": "question",
           "settings": {
@@ -152,14 +144,6 @@
             "icon": "lock",
             "heading": "Kann ich ein Produkt vorbestellen oder reservieren?",
             "text": "<p>Nein, aber du kannst dich per E-Mail benachrichtigen lassen, wenn dein gewünschtes Produkt lieferbar ist. Trifft der Artikel in unserem Lager ein, wirst du umgehend per E-Mail darüber informiert und kannst wie gewohnt deine Bestellung abschließen.</p><p><strong>So funktioniert's:</strong></p><ol><li>Wähle auf der Produktseite rechts die gewünschte Größe aus.</li><li>Ist deine gewünschte Größe nicht auf Lager, ist diese grau hinterlegt. Klicke auf den Briefumschlag rechts neben deiner Größe und trage deine E-Mail-Adresse in das Textfeld ein und klicke “bestätigen”. Findest du kein Briefsymbol neben deiner gewünschten Größe, ist diese nicht mehr nachbestellbar. </li></ol>"
-          }
-        },
-        "question_D3TMFk": {
-          "type": "question",
-          "settings": {
-            "icon": "chat_bubble",
-            "heading": "Warum finde ich meine Bestellung nicht im Kundenkonto?",
-            "text": "<p>Wahrscheinlich ist, dass du zur Zeit der Bestellung nicht eingeloggt warst und als Gast bestellt hast. Um zu klären, ob dies der Fall ist oder ob deine Bestellung nicht bei uns einging, kontaktiere uns einfach über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</p>"
           }
         },
         "question_UwXNKb": {
@@ -253,7 +237,7 @@
           "settings": {
             "icon": "dollar_sign",
             "heading": "Wie viel kostet die Lieferung? ",
-            "text": "<p><strong>Die Versandkosten in Deutschland betragen 4,90 Euro/Bestellung. Für Fahrräder 29,90 Euro/Fahrrad.</strong></p><p>Die Nachnahmegebühr beträgt in beiden Fällen 4,00 (zzgl. EUR 2,00 DHL-Entgelt).</p><p>Bitte beachte folgende Spezialfälle!</p><ol><li>Bei einem Mischkauf von Standardpaketware zusammen mit einem Fahrrad fallen nur die Versandkosten für das Fahrrad an.</li><li>Rücksendungen aus dem Ausland müssen immer auf eigene Kosten getragen werden.</li><li>Alle dargestellten Versandpreise verstehen sich inkl. der gesetzlichen Mehrwertsteuer.</li></ol><p>Eine vollständige Übersicht aller Versandkosten findest du unter <a href=\"https://www.bike-mailorder.de/versandkosten/\">Versandkosten</a>.</p>"
+            "text": "<p><strong>Die Versandkosten in Deutschland betragen 4,50 Euro/Bestellung. Für Fahrräder 29,90 Euro/Fahrrad.</strong></p><p>Die Nachnahmegebühr beträgt in beiden Fällen 4,00 (zzgl. EUR 2,00 DHL-Entgelt).</p><p>Bitte beachte folgende Spezialfälle!</p><ol><li>Bei einem Mischkauf von Standardpaketware zusammen mit einem Fahrrad fallen nur die Versandkosten für das Fahrrad an.</li><li>Rücksendungen aus dem Ausland müssen immer auf eigene Kosten getragen werden.</li><li>Alle dargestellten Versandpreise verstehen sich inkl. der gesetzlichen Mehrwertsteuer.</li></ol><p>Eine vollständige Übersicht aller Versandkosten findest du unter <a href=\"https://www.bike-mailorder.de/versandkosten/\">Versandkosten</a>.</p>"
           }
         },
         "question_KPY6VX": {
@@ -325,10 +309,8 @@
         "faq-question-2",
         "faq-category-2",
         "faq-question-3",
-        "faq-question-4",
         "question_m6Jt6W",
         "question_qKcxW4",
-        "question_D3TMFk",
         "question_UwXNKb",
         "question_a38WxL",
         "question_V9F6cB",
