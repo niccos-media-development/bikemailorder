@@ -138,6 +138,54 @@
             "text": "<p>Ja, es ist möglich auch ohne ein Kundenkonto zu bestellen. Klicke im Warenkorb auf “Zur Kasse” und registriere dich als Neukunde. Im Formular findest du eine Checkbox, mit der du dich lediglich als Gast registrieren kannst.</p>"
           }
         },
+        "question_m6Jt6W": {
+          "type": "question",
+          "settings": {
+            "icon": "clock",
+            "heading": "Woher weiß ich, dass meine Bestellung in Bearbeitung ist?",
+            "text": "<p>Du erhältst eine Bestellbestätigung per E-Mail, sobald deine Bestellung bei uns eingegangen ist. Diese Nachricht bestätigt, dass deine Bestellung erfolgreich in unserem Onlineshop aufgegeben wurde. </p><p>Du kannst den Status deiner Bestellung über die Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> in deinem Kundenkonto prüfen und bearbeiten. Hier findest du eine Liste aller Status und deren Bedeutung, die wir auf der Seite übermitteln:</p><ol><li><strong>Deine Bestellung ist eingegangen und wird bearbeitet<br/></strong>Deine Bestellung ist bei uns im System eingegangen und sie wird schnellstmöglich bearbeitet.<br/></li><li><strong>Deine Bestellung wurde bezahlt & ist bereit für Kommissionierung <br/></strong>Es ist ein Zahlungsbeleg für deine Bestellung eingegangen und sie ist nun bereit für die Kommissionierung im Lager. <br/></li><li><strong>Deine Bestellung ist in Kommissionierung<br/></strong>Deine Bestellung wird aktuell von einem Kollegen gepickt und verpackt.<br/></li><li><strong>Deine Bestellung wurde teilweise verschickt<br/></strong>Deine Bestellung wurde, wie von dir gewünscht, teilweise verschickt. <br/></li><li><strong>Deine Bestellung wurde verschickt <br/></strong>Deine Bestellung wurde an den Versanddienstleister übergeben. <br/></li><li><strong>Deine Bestellung wurde storniert<br/></strong>Deine Bestellung kann aus verschiedenen Gründen storniert worden sein. Du erhältst eine E-Mail, die erklärt, wieso deine Bestellung storniert wurde.<br/></li><li><strong>Bitte kontaktiere uns über</strong><a href=\"https://www.bike-mailorder.de/kontaktformular/\"><strong>unser Kontaktformular</strong></a><strong>.<br/></strong>Es scheint etwas schief gelaufen zu sein. Bitte kontaktiere uns über<a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.<strong><br/></strong>. <br/><br/></li></ol><p></p>"
+          }
+        },
+        "question_qKcxW4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_D3TMFk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_UwXNKb": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_a38WxL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_V9F6cB": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
         "faq-category-3": {
           "type": "category",
           "settings": {
@@ -190,6 +238,12 @@
         "faq-category-2",
         "faq-question-3",
         "faq-question-4",
+        "question_m6Jt6W",
+        "question_qKcxW4",
+        "question_D3TMFk",
+        "question_UwXNKb",
+        "question_a38WxL",
+        "question_V9F6cB",
         "faq-category-3",
         "faq-question-5",
         "faq-question-6",
