@@ -41,8 +41,9 @@
         "text"
       ],
       "settings": {
+        "image_desktop": "shopify://shop_images/contact_header.jpg",
         "url": "",
-        "height_mode": "fixed",
+        "height_mode": "auto",
         "fixed_height_desktop": 560,
         "fixed_height_mobile": 440,
         "overlay_position": "justify-start items-center",
@@ -53,7 +54,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 40,
+        "tint_opacity": 55,
         "prevent_animation": false
       }
     },
