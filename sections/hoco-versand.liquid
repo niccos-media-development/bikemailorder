@@ -7,145 +7,8 @@
     
     <table id="food-list">
       <caption>Food List</caption>
-      <table>
-          <thead>
-            <tr>
-              <th>Land</th>
-              <th>Teile / Zubehör / Kleidung (EUR / Bestellung)</th>
-              <th>Fahrräder (EUR / Bestellung)</th>
-            </tr>
-            <tr>
-              <td>Belgien</td>
-              <td>4,90</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Dänemark</td>
-              <td>10,00</td>
-              <td>39,00</td>
-            </tr>
-            <tr>
-              <td>Finnland</td>
-              <td>10,00</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Frankreich</td>
-              <td>4,90</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Italien</td>
-              <td>4,90</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Niederlande</td>
-              <td>4,90</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)</td>
-              <td>15,00</td>
-              <td>39,00</td>
-            </tr>
-            <tr>
-              <td>Spanien</td>
-              <td>10,00</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Österreich</td>
-              <td>6,90</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Luxemburg</td>
-              <td>10,00</td>
-              <td>39,00</td>
-            </tr>
-            <tr>
-              <td>Irland</td>
-              <td>65,00</td>
-              <td>140,00</td>
-            </tr>
-            <tr>
-              <td>Griechenland</td>
-              <td>10,00</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Portugal</td>
-              <td>10,00</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Schweden</td>
-              <td>10,00</td>
-              <td>39,90</td>
-            </tr>
-            <tr>
-              <td>Polen</td>
-              <td>12,50</td>
-              <td>39,00</td>
-            </tr>
-            <tr>
-              <td>Lettland</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Litauen</td>
-              <td>12,50</td>
-              <td>Versand leider aktuell nicht möglich</td>
-            </tr>
-            <tr>
-              <td>Malta</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Slowakei</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Slowenien</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Tschechien</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Estland</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Bulgarien</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Ungarn</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Rumänien</td>
-              <td>12,50</td>
-              <td>35,00</td>
-            </tr>
-            <tr>
-              <td>Kroatien</td>
-              <td>22,50</td>
-              <td>49,00</td>
-            </tr>
-          </thead>
-        </table>
+      <thead> <tr> <td> Land </td> <td> Versand1 </td> <td> Versand2 </td> </tr> </thead>
+      <tbody></tbody>
     </table>
   </div>
 </div>
@@ -180,7 +43,7 @@ const
   { Land: 'Bulgarien', Versand1: '12,50', Versand2: '35,00' },
   { Land: 'Ungarn', Versand1: '12,50', Versand2: '35,00' },
   { Land: 'Rumänien', Versand1: '12,50', Versand2: '35,00' },
-  { Land: 'Kroatien', Versand1: '22,50', Versand2: '49,00' } 
+  { Land: 'Kroatien', Versand1: '22,50', Versand2: '49,00' }
     ] 
 , selectCountry = document.getElementById('country-select')
 , listFood_t = document.querySelector('table#country-list tbody') 
