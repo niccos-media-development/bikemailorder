@@ -186,6 +186,30 @@
             "text": "<p>Im Onlineshop siehtst du, welche Artikel direkt bei <a href=\"https://www.neworder.berlin/de\" target=\"_blank\">New Order Store in Berlin </a>erhältlich sind. Wenn du ein Fahrrad bei uns bestellt, kannst du die gesamte Bestellung per Click & Collect direkt in den New Order Store liefern lassen.</p>"
           }
         },
+        "question_ghFHnm": {
+          "type": "question",
+          "settings": {
+            "icon": "question_mark",
+            "heading": "Kann ich meine Bestellung im Nachhinein noch ändern?",
+            "text": "<p>Hast du per AmazonPayment oder PayPal Ratenzahlung bezahlt, können wir deiner Bestellung keinen Artikel händisch hinzufügen. Für alle anderen Zahlungsarten können wir Artikel hinzufügen. </p><p>Solange der Status deiner Bestellung auf der Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> noch auf einen der folgenden drei Status steht, können wir diese jederzeit ändern oder ergänzen: “Deine Bestellung ist eingegangen”, “Deine Bestellung wird bearbeitet” oder “Deine Bestellung wurde bezahlt & ist bereit für Kommissionierung”.</p><p>Um Artikel deiner Bestellung hinzuzufügen, schicke uns bitte eine Nachricht über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> mit den gewünschten Artikeln, die wir deiner Bestellung ergänzen sollen, deren Artikelnummer sowie Anzahl. </p><p>Willst du Artikel aus deiner Bestellung streichen, schreibe uns ebenfalls eine Nachricht über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</p>"
+          }
+        },
+        "question_P3VLVE": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_Cr9rLk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
         "faq-category-3": {
           "type": "category",
           "settings": {
@@ -244,6 +268,9 @@
         "question_UwXNKb",
         "question_a38WxL",
         "question_V9F6cB",
+        "question_ghFHnm",
+        "question_P3VLVE",
+        "question_Cr9rLk",
         "faq-category-3",
         "faq-question-5",
         "faq-question-6",
