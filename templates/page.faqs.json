@@ -363,7 +363,7 @@
         "contact-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>If the answers you're looking for aren't in our FAQ, please send us an email by completing the form below.</p>",
+            "text": "<p>Wenn deine Frage nicht in unserem FAQ enthalten ist, schreibe uns diese bitte in das Kontaktformular.</p>",
             "half_width": false
           }
         },
@@ -405,7 +405,7 @@
         "contact-body-5"
       ],
       "settings": {
-        "heading": "Still looking for answers?",
+        "heading": "Hast du noch weitere Fragen?",
         "heading_align": "text-center",
         "image_position": "top",
         "color_scheme": "1",
