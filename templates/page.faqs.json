@@ -313,9 +313,9 @@
         "question_an4bJc": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "credit_card",
+            "heading": "Wie erhalte ich mein Geld zurück, wenn ich per Kreditkarte gezahlt habe und ich meine Bestellung nachträglich bearbeite?",
+            "text": "<p>Deine VISA-/Master-Card wurde mit dem Rechnungsbetrag belastet. Sollte durch Anpassungen deiner Bestellung ein zu erstattendes Guthaben entstehen, werden wir dieses nach Abschluss der Bestellung zurück auf dein VISA-/Master-Card-Konto erstatten.</p>"
           }
         }
       },
