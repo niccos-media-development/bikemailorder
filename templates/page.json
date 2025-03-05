@@ -25,10 +25,15 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "hoco_versand_3XkjLw": {
+      "type": "hoco-versand",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "custom_liquid_RQhTpP"
+    "custom_liquid_RQhTpP",
+    "hoco_versand_3XkjLw"
   ]
 }

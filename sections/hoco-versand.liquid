@@ -7,8 +7,146 @@
     
     <table id="food-list">
       <caption>Food List</caption>
-      <thead> <tr> <td> Name </td> <td> Colour </td> </tr> </thead>
-      <tbody></tbody>
+      <table>
+          <thead>
+            <tr>
+              <th>Land</th>
+              <th>Teile / Zubehör / Kleidung (EUR / Bestellung)</th>
+              <th>Fahrräder (EUR / Bestellung)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Belgien</td>
+              <td>4,90</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Dänemark</td>
+              <td>10,00</td>
+              <td>39,00</td>
+            </tr>
+            <tr>
+              <td>Finnland</td>
+              <td>10,00</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Frankreich</td>
+              <td>4,90</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Italien</td>
+              <td>4,90</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Niederlande</td>
+              <td>4,90</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)</td>
+              <td>15,00</td>
+              <td>39,00</td>
+            </tr>
+            <tr>
+              <td>Spanien</td>
+              <td>10,00</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Österreich</td>
+              <td>6,90</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Luxemburg</td>
+              <td>10,00</td>
+              <td>39,00</td>
+            </tr>
+            <tr>
+              <td>Irland</td>
+              <td>65,00</td>
+              <td>140,00</td>
+            </tr>
+            <tr>
+              <td>Griechenland</td>
+              <td>10,00</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Portugal</td>
+              <td>10,00</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Schweden</td>
+              <td>10,00</td>
+              <td>39,90</td>
+            </tr>
+            <tr>
+              <td>Polen</td>
+              <td>12,50</td>
+              <td>39,00</td>
+            </tr>
+            <tr>
+              <td>Lettland</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Litauen</td>
+              <td>12,50</td>
+              <td>Versand leider aktuell nicht möglich</td>
+            </tr>
+            <tr>
+              <td>Malta</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Slowakei</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Slowenien</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Tschechien</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Estland</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Bulgarien</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Ungarn</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Rumänien</td>
+              <td>12,50</td>
+              <td>35,00</td>
+            </tr>
+            <tr>
+              <td>Kroatien</td>
+              <td>22,50</td>
+              <td>49,00</td>
+            </tr>
+          </tbody>
     </table>
   </div>
 </div>
@@ -17,9 +155,33 @@
 <script>
 const
   foodInfo = 
-    [ { Name: 'Apple',     Colour: 'Green'  } 
-    , { Name: 'Chocolate', Colour: 'Brown'  } 
-    , { Name: 'Banana',    Colour: 'Yellow' } 
+    [ { Land: 'Land', Versand1: 'Teile / Zubehör / Kleidung (EUR / Bestellung)', Versand2: 'Fahrräder (EUR / Bestellung)' },
+      { Land: 'Belgien', Versand1: '4,90', Versand2: '39,90' },
+      { Land: 'Dänemark', Versand1: '10,00', Versand2: '39,00' },
+      { Land: 'Finnland', Versand1: '10,00', Versand2: '39,90' },
+      { Land: 'Frankreich', Versand1: '4,90', Versand2: '39,90' },
+      { Land: 'Italien', Versand1: '4,90', Versand2: '39,90' },
+      { Land: 'Niederlande', Versand1: '4,90', Versand2: '39,90' },
+      { Land: 'Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)', Versand1: '15,00', Versand2: '39,00' },
+      { Land: 'Spanien', Versand1: '10,00', Versand2: '39,90' },
+      { Land: 'Österreich', Versand1: '6,90', Versand2: '39,90' },
+      { Land: 'Luxemburg', Versand1: '10,00', Versand2: '39,00' },
+      { Land: 'Irland', Versand1: '65,00', Versand2: '140,00' },
+      { Land: 'Griechenland', Versand1: '10,00', Versand2: '39,90' },
+      { Land: 'Portugal', Versand1: '10,00', Versand2: '39,90' },
+      { Land: 'Schweden', Versand1: '10,00', Versand2: '39,90' },
+      { Land: 'Polen', Versand1: '12,50', Versand2: '39,00' },
+      { Land: 'Lettland', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Litauen', Versand1: '12,50', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Land: 'Malta', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Slowakei', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Slowenien', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Tschechien', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Estland', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Bulgarien', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Ungarn', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Rumänien', Versand1: '12,50', Versand2: '35,00' },
+      { Land: 'Kroatien', Versand1: '22,50', Versand2: '49,00' }
     ] 
 , selectCountry = document.getElementById('country-select')
 , listFood_t = document.querySelector('table#country-list tbody') 
@@ -28,13 +190,14 @@ foodInfo.forEach(item=>
   {
   // table listFood elements
   let row           = listFood_t.insertRow()
-  row.dataset.ref   = item.Name
+  row.dataset.ref   = item.Land
 
-  row.insertCell().textContent = item.Name
-  row.insertCell().textContent = item.Colour
+  row.insertCell().textContent = item.Land
+  row.insertCell().textContent = item.Versand1
+  row.insertCell().textContent = item.Versand2
 
   // food-select
-  selectCountry.add( new Option(item.Name, item.Name))
+  selectCountry.add( new Option(item.Land, item.Land))
   })
 selectCountry.add( new Option('All Countries', 'All'))  // last one...
 selectCountry.querySelector('option').disabled = true
