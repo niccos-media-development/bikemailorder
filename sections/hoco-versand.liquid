@@ -7,7 +7,7 @@
     
     <table id="food-list">
       <caption>Food List</caption>
-      <thead> <tr> <td> Name </td> <td> Versand </td> <td> Versand2 </td> </tr> </thead>
+      <thead> <tr> <td> Land </td> <td> Teile / Zubehör / Kleidung (EUR / Bestellung) </td> <td> Fahrräder (EUR / Bestellung) </td> </tr> </thead>
       <tbody></tbody>
     </table>
   </div>
@@ -17,8 +17,7 @@
 <script>
 const
   foodInfo = 
-    [ { Name: 'Name', Versand1: 'Teile / Zubehör / Kleidung (EUR / Bestellung)', Versand2: 'Fahrräder (EUR / Bestellung)' },
-      { Name: 'Belgien', Versand1: '4,90', Versand2: '39,90' },
+    [ { Name: 'Belgien', Versand1: '4,90', Versand2: '39,90' },
       { Name: 'Dänemark', Versand1: '10,00', Versand2: '39,00' },
       { Name: 'Finnland', Versand1: '10,00', Versand2: '39,90' },
       { Name: 'Frankreich', Versand1: '4,90', Versand2: '39,90' },
@@ -61,7 +60,7 @@ foodInfo.forEach(item=>
   // food-select
   selectFood.add( new Option(item.Name, item.Name))
   })
-selectFood.add( new Option('All Food', 'All'))  // last one...
+selectFood.add( new Option('Alle Länder', 'All'))  // last one...
 selectFood.querySelector('option').disabled = true
 
 const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
