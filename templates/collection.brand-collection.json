@@ -121,8 +121,8 @@
         "card_size": "medium",
         "use_product_image": false,
         "circle_image": false,
-        "show_border": true,
-        "color_scheme": "1",
+        "show_border": false,
+        "color_scheme": "none",
         "full_width": true
       }
     },
