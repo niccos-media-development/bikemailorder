@@ -298,8 +298,8 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "heading": "Wie viel kostet es, Artikel zurückzuschicken?",
+            "text": "<p>Rücksendungen innerhalb Deutschlands sind kostenfrei. </p><p>Wenn du mit deiner Bestellung nicht zufrieden bist, kannst du sie innerhalb Deutschlands kostenlos mit unserem bereitgestellten <a href=\"https://www.dhl.de/retoure/gw/rpcustomerweb/OrderEntry.action?hash=de08ddbd539e4d8d917102b680eabc82166a6d44a05cbeecf424564058f4ed1c\" target=\"_blank\">Versandetikett</a> innerhalb der Rückgaberichtlinien zurücksenden.</p><p>Rücksendungen außerhalb Deutschlands sind kostenpflichtig. </p><p>Wir erstatten die Versandkosten zurück, sofern die entsprechenden Bedingungen dafür erfüllt sind. Die gesamten Versandkosten werden rückerstattet, wenn du die gesamte Bestellung zurücksendest. Wir können die Versandkosten jedoch nicht erstatten, wenn du nur einen Teil deiner Bestellung zurücksendest.</p>"
           }
         },
         "question_QcVBRL": {
