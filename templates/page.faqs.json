@@ -273,12 +273,44 @@
         "question_mQfHUM": {
           "type": "question",
           "settings": {
+            "icon": "return",
+            "heading": "Kann ich einen Artikel umtauschen?",
+            "text": "<p>Ja, du kannst einen Artikel mit dem entsprechenden Rücksendeformular an uns zurückschicken. Wir veranlassen dann die Rückerstattung des Kaufbetrages und der Versandkosten. Wähle dann deinen neuen Artikel im Onlineshop aus und löse eine neue Bestellung aus. Vom Umtausch ausgeschlossen sind Artikel ohne Originalverpackung sowie getragene Ware (Etiketten fehlen, Gebrauchsspuren). </p>"
+          }
+        },
+        "question_GgjmUM": {
+          "type": "question",
+          "settings": {
             "icon": "none",
             "heading": "Frequently asked question",
             "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
           }
         },
-        "question_GgjmUM": {
+        "question_CVBbq3": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_pPWx9H": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_QcVBRL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_an4bJc": {
           "type": "question",
           "settings": {
             "icon": "none",
@@ -312,7 +344,11 @@
         "question_KPY6VX",
         "category_9iJMyD",
         "question_mQfHUM",
-        "question_GgjmUM"
+        "question_GgjmUM",
+        "question_CVBbq3",
+        "question_pPWx9H",
+        "question_QcVBRL",
+        "question_an4bJc"
       ],
       "settings": {
         "heading": "",
