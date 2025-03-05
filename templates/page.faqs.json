@@ -181,9 +181,9 @@
         "question_V9F6cB": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "map_pin",
+            "heading": "Kann ich Artikel aus dem Onlineshop auch im New Order Store in Berlin abholen? ",
+            "text": "<p>Im Onlineshop siehtst du, welche Artikel direkt bei <a href=\"https://www.neworder.berlin/de\" target=\"_blank\">New Order Store in Berlin </a>erhältlich sind. Wenn du ein Fahrrad bei uns bestellt, kannst du die gesamte Bestellung per Click & Collect direkt in den New Order Store liefern lassen.</p>"
           }
         },
         "faq-category-3": {
