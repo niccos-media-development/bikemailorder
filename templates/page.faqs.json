@@ -416,7 +416,7 @@
     "recently_viewed_xGz9eq": {
       "type": "recently-viewed",
       "settings": {
-        "heading": "Deine Lieblingsprodukte",
+        "heading": "Kürzlich angesehene Produkte",
         "heading_align": "text-start",
         "layout": "carousel",
         "card_size_mobile": "small",
@@ -430,14 +430,14 @@
         "newsletter-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up to our Newsletter",
+            "heading": "Melde dich für unseren Newsletter an",
             "heading_size": "h5"
           }
         },
         "newsletter-text-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "text": "<p>Erfahre immer zuerst über neue Produkte und Angebote!</p>",
             "enlarge_text": false
           }
         },
