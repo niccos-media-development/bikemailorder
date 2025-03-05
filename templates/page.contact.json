@@ -118,7 +118,7 @@
         "newsletter-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "text": "<p>Erhalte immer zuerst Infos über neue Produkte und Angebote!</p>",
             "enlarge_text": false
           }
         },
