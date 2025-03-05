@@ -227,9 +227,9 @@
         "faq-question-6": {
           "type": "question",
           "settings": {
-            "icon": "clock",
-            "heading": "How long will it take to receive my refund?",
-            "text": "<p>Refunds are processed within 7 days from when we receive the item(s).</p>"
+            "icon": "map_pin",
+            "heading": "Wann erhalte ich den Track & Trace Code für meine Bestellung?",
+            "text": "<p>Du erhältst den Track & Trace Code für deine Bestellung mit dem Erhalt deiner Versandbestätigungsmail. Darin findest du den Code sowie einen Link, um deine Bestellung beim Versanddienstleister zu tracken. Abhängig von den Produkten, die du bestellt hast, variiert der Versand der Versandbestätigung.</p><p>Wenn du die E-Mail mit der Versandbestätigung nicht erhalten hast, siehe bitte in deinem Spam-Ordner nach. Wenn du die E-Mail trotzdem nicht finden kannst, schaue bitte unter '<strong>Wieso hat meine Bestellung Verspätung?</strong>' oder <a href=\"https://www.bike-mailorder.de/kontaktformular/\">kontaktiere uns</a>!</p>"
           }
         },
         "question_PB7prJ": {
