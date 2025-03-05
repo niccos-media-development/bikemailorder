@@ -1,7 +1,7 @@
 <div class="section versand" >
   <div class="container">
     <h3>List</h3>
-    <select id="food-select" >
+    <select id="country-select" >
       <option value="" selected >Select One</option>
     </select> 
     
@@ -21,8 +21,8 @@ const
     , { Name: 'Chocolate', Colour: 'Brown'  } 
     , { Name: 'Banana',    Colour: 'Yellow' } 
     ] 
-, selectFood = document.getElementById('food-select')
-, listFood_t = document.querySelector('table#food-list tbody') 
+, selectCountry = document.getElementById('country-select')
+, listFood_t = document.querySelector('table#country-list tbody') 
   ;
 foodInfo.forEach(item=>
   {
@@ -34,18 +34,18 @@ foodInfo.forEach(item=>
   row.insertCell().textContent = item.Colour
 
   // food-select
-  selectFood.add( new Option(item.Name, item.Name))
+  selectCountry.add( new Option(item.Name, item.Name))
   })
-selectFood.add( new Option('All Food', 'All'))  // last one...
-selectFood.querySelector('option').disabled = true
+selectCountry.add( new Option('All Countries', 'All'))  // last one...
+selectCountry.querySelector('option').disabled = true
 
 const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
 
 tableArticles.forEach(el=>el.className='noDisplay') // none on start...
 
-selectFood.onchange=()=>
+selectCountry.onchange=()=>
   {
-  let choose = selectFood.value 
+  let choose = selectCountry.value 
   tableArticles.forEach(art=>
     {
     if (choose==='All' || choose===art.dataset.ref)
