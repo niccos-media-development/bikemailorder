@@ -259,7 +259,7 @@
         "question_KPY6VX": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "clock",
             "heading": "Wieso hat meine Bestellung Verspätung?",
             "text": "<p>Wir streben stets danach, deine Bestellung innerhalb unserer standardmäßigen Lieferfristen zuzustellen, aber manchmal können unvorhersehbare Faktoren die Zustellung verzögern.</p><p>Hier sind einige Gründe, wieso deine Lieferung Verspätung haben kann:</p><ul><li>Deine Bestellung wurde während unserer Sonderverkäufe/-aktionen versandt.</li><li>Du hast mehr als ein Produkt bestellt. In Ausnahmefällen kann deine Bestellung in separaten Paketen und zu unterschiedlichen Zeitpunkten eintreffen.</li><li>Deine Bestellung beinhaltet Produkte, die beim Lieferanten bestellt werden müssen. Die Lieferzeit verlängert sich dadurch.</li><li>Deine Bestellung beinhaltet Sperrgut. Dadurch kann die Zustellung 2-3 Werktage länger dauern.</li></ul><p>Möchtest du den aktuellen Versandstatus deiner Bestellung erfahren? Dann prüfe diesen unter <a href=\"https://www.bike-mailorder.de/account/orders\">Bestellungen in deinem Kundenkonto</a>.</p>"
           }
