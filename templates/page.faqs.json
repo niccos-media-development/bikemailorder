@@ -157,9 +157,9 @@
         "question_D3TMFk": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "chat_bubble",
+            "heading": "Warum finde ich meine Bestellung nicht im Kundenkonto?",
+            "text": "<p>Wahrscheinlich ist, dass du zur Zeit der Bestellung nicht eingeloggt warst und als Gast bestellt hast. Um zu klären, ob dies der Fall ist oder ob deine Bestellung nicht bei uns einging, kontaktiere uns einfach über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</p>"
           }
         },
         "question_UwXNKb": {
