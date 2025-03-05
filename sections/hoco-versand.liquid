@@ -7,7 +7,7 @@
     
     <table id="food-list">
       <caption>Food List</caption>
-      <thead> <tr> <td> Name </td> <td> Colour </td> <td> Colour2 </td> </tr> </thead>
+      <thead> <tr> <td> Name </td> <td> Versand </td> <td> Colour2 </td> </tr> </thead>
       <tbody></tbody>
     </table>
   </div>
@@ -17,9 +17,9 @@
 <script>
 const
   foodInfo = 
-    [ { Name: 'Apple',     Colour: 'Green',     Colour2: 'Green'  } 
-    , { Name: 'Chocolate', Colour: 'Brown',     Colour2: 'Green'  } 
-    , { Name: 'Banana',    Colour: 'Yellow',     Colour2: 'Green' } 
+    [ { Name: 'Apple',     Versand: 'Green',     Colour2: 'Green'  } 
+    , { Name: 'Chocolate', Versand: 'Brown',     Colour2: 'Green'  } 
+    , { Name: 'Banana',    Versand: 'Yellow',     Colour2: 'Green' } 
     ] 
 , selectFood = document.getElementById('food-select')
 , listFood_t = document.querySelector('table#food-list tbody') 
@@ -31,7 +31,7 @@ foodInfo.forEach(item=>
   row.dataset.ref   = item.Name
 
   row.insertCell().textContent = item.Name
-  row.insertCell().textContent = item.Colour
+  row.insertCell().textContent = item.Versand
     row.insertCell().textContent = item.Colour2
 
   // food-select
