@@ -189,13 +189,13 @@ foodInfo.forEach(item=>
   {
   // table listFood elements
   let row           = listFood_t.insertRow()
-  row.dataset.ref   = item.Name
+  row.dataset.ref   = item.Land
 
-  row.insertCell().textContent = item.Name
-  row.insertCell().textContent = item.Colour
+  row.insertCell().textContent = item.Land
+  row.insertCell().textContent = item.Versand1
 
   // food-select
-  selectCountry.add( new Option(item.Name, item.Name))
+  selectCountry.add( new Option(item.Land, item.Land))
   })
 selectCountry.add( new Option('All Countries', 'All'))  // last one...
 selectCountry.querySelector('option').disabled = true
