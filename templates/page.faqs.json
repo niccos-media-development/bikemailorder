@@ -219,9 +219,9 @@
         "faq-question-5": {
           "type": "question",
           "settings": {
-            "icon": "return",
-            "heading": "How do I return a product?",
-            "text": "<p>Items must be returned within 30 days after receiving your order. Items must be returned in the same condition in which they were received, be unworn/unused, have any tags still attached, and include all the original packaging.</p>"
+            "icon": "truck",
+            "heading": "Kann ich eine erneute Zustellung meines Paketes beantragen, wenn ich einen Zustellversuch verpasst habe?",
+            "text": "<p>Prinzipiell ja. War deine Anschrift fehlerhaft, geht das Paket zurück zu uns zurück ins Lager. Dir wird dann automatisch der Kaufbetrag erstattet und deine Bestellung storniert. </p><p>Warst du nicht zu Hause und deine Bestellung liegt in einer DHL-Filiale, bei einem Nachbarn oder einer Packstation, nutze die Benachrichtigungskarte, die in deinem Briefkasten hinterlassen wurde, um dein Paket abzuholen. Vergiss bitte nicht zusätzlich zu der Benachrichtigungskarte deinen Personalausweis mitzunehmen.</p><p>Du konntest keine Benachrichtigungskarte finden? In diesem Fall wende dich bitte direkt an die <a href=\"https://www.dhl.de/de/privatkunden.html\">DHL</a>! </p>"
           }
         },
         "faq-question-6": {
@@ -230,6 +230,38 @@
             "icon": "clock",
             "heading": "How long will it take to receive my refund?",
             "text": "<p>Refunds are processed within 7 days from when we receive the item(s).</p>"
+          }
+        },
+        "question_PB7prJ": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_rpVfV6": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_qEJh6g": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+          }
+        },
+        "question_KPY6VX": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Frequently asked question",
+            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
           }
         },
         "category_9iJMyD": {
@@ -274,6 +306,10 @@
         "faq-category-3",
         "faq-question-5",
         "faq-question-6",
+        "question_PB7prJ",
+        "question_rpVfV6",
+        "question_qEJh6g",
+        "question_KPY6VX",
         "category_9iJMyD",
         "question_mQfHUM",
         "question_GgjmUM"
