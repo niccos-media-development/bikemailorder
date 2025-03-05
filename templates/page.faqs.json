@@ -289,9 +289,9 @@
         "question_CVBbq3": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "return",
+            "heading": "Wie sende ich meine(n) Artikel zurück? ",
+            "text": "<p>Hast du deine Bestellung an eine Adresse außerhalb Deutschlands erhalten, musst du die Versandkosten für die Retoure selbst tragen. Wurde deine Bestellung innerhalb Deutschlands verschickt, sind die folgenden Informationen für dich relevant. </p><p>So retournierst du Artikel:</p><ol><li>Drucke dir den Lieferschein aus deiner Versandbestätigungsmail aus.</li><li>Vermerke auf dem Lieferschein, welchen Artikel du zurückschicken möchtest, nenne den Grund für die Retoure und lege den/die Artikel samt ausgefüllten Lieferschein deinem Paket bei. Bitte vermerke bei Defekten, was defekt ist bzw. wo der Defekt ist. Bitte achte darauf, dass alle Gegenstände gut und sicher verpackt sind! </li><li>Ein Retouren-Label hast du bereits mit deiner Versandbestätigungsmail erhalten. Falls du das Rücksendeetikett nicht mehr finden solltest, kannst du es über <a href=\"https://www.dhl.de/retoure/gw/rpcustomerweb/OrderEntry.action?hash=de08ddbd539e4d8d917102b680eabc82166a6d44a05cbeecf424564058f4ed1c\" target=\"_blank\">das Formular der DHL</a> erneut erstellen. Drucke das Retouren-Label aus und klebe es auf das Paket oder nimm den QR-Code mit zur DHL-Stelle und lass das Label dort drucken. Das Retourenlabel ist nur innerhalb Deutschlands verfügbar.</li><li>Bitte notiere dir die Tracking-Nummer deiner Rücksendung.</li><li>Gib dein Paket bei einer entsprechenden DHL-Filiale ab.</li></ol><p>Wenn die Retoure bei uns bearbeitet wurde, wird dir der offene Betrag wieder zurückerstattet. </p><p>Prinzipiell kannst du deine Bestellung kostenlos mit der DHL oder kostenpflichtig mit einem von dir ausgewählten Versandunternehmen an uns zurückschicken.  Leider ist die Retoure von Fahrrädern nicht mit der DHL möglich, sondern muss über die Spedition beauftragt werden. Bitte kontaktiere dafür unseren Kundenservice unter: <a href=\"mailto:feedback@hoco-online.com\" target=\"_blank\">feedback@hoco-online.com</a>.</p><p>Rückgabebedingungen: Alles zum Thema Retouren findest du in unseren <a href=\"https://www.bike-mailorder.de/agb/\">AGBs</a>.</p>"
           }
         },
         "question_pPWx9H": {
