@@ -251,9 +251,9 @@
         "question_qEJh6g": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "dollar_sign",
+            "heading": "Wie viel kostet die Lieferung? ",
+            "text": "<p><strong>Die Versandkosten in Deutschland betragen 4,90 Euro/Bestellung. Für Fahrräder 29,90 Euro/Fahrrad.</strong></p><p>Die Nachnahmegebühr beträgt in beiden Fällen 4,00 (zzgl. EUR 2,00 DHL-Entgelt).</p><p>Bitte beachte folgende Spezialfälle!</p><ol><li>Bei einem Mischkauf von Standardpaketware zusammen mit einem Fahrrad fallen nur die Versandkosten für das Fahrrad an.</li><li>Rücksendungen aus dem Ausland müssen immer auf eigene Kosten getragen werden.</li><li>Alle dargestellten Versandpreise verstehen sich inkl. der gesetzlichen Mehrwertsteuer.</li></ol><p>Eine vollständige Übersicht aller Versandkosten findest du unter <a href=\"https://www.bike-mailorder.de/versandkosten/\">Versandkosten</a>.</p>"
           }
         },
         "question_KPY6VX": {
