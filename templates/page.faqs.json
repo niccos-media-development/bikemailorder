@@ -197,9 +197,9 @@
         "question_P3VLVE": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "percent",
+            "heading": "Wie kann ich einen BMO-Gutschein / Gutschein-Code einlösen?",
+            "text": "<p>Gutscheincodes können direkt im Warenkorb eingegeben werden. Das entsprechende Feld findest du rechts: “Gutscheincode eingeben”. Sobald du auf den Pfeil klickst, wird der Gutscheinwert direkt mit deiner Bestellung verrechnet. Es lässt sich nur ein Gutscheincode pro Bestellung verrechnen. Es gelten <a href=\"https://www.bike-mailorder.de/agb/\">unsere AGBs</a>. </p><p><strong>Hinweis: Es können nicht mehrere Gutscheincodes auf eine Bestellung angewandt werden.</strong></p>"
           }
         },
         "question_Cr9rLk": {
