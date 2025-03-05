@@ -166,8 +166,8 @@
           "type": "question",
           "settings": {
             "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "heading": "Kann ich eine Teillieferung meiner Bestellung auslösen? ",
+            "text": "<p>Ja, ist ein Teil deiner Bestellung aufgrund eines technischen Problems oder aufgrund hoher Nachfrage auf einmal doch nicht lieferbar, kannst du uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular </a>schreiben und wir schicken dir den lieferbaren Teil deiner Bestellung vorab zu. Du zahlst nur einmal die Versandkosten.</p>"
           }
         },
         "question_a38WxL": {
