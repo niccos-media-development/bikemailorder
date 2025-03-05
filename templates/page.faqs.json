@@ -235,7 +235,7 @@
         "question_PB7prJ": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "question_mark",
             "heading": "Warum kann meine Bestellung nicht verschickt werden?",
             "text": "<p>Es gibt verschiedene Gründe, weshalb es uns nicht möglich sein kann, deine Bestellung zu verschicken. Hier die gängigsten Gründe:</p><ul><li>Ein Artikel, den du bestellt hast, ist nicht mehr vorrätig. Leider kann dies bei Produkten mit einer sehr hohen Nachfrage passieren. </li><li>Deine Lieferadresse war unvollständig.</li><li>Du hast als Lieferadresse eine Packstation angegeben und deine Postnummer nicht angegeben.</li><li>Während du deine Bestellung aufgegeben hast, ist ein Problem mit der Zahlung aufgetreten.</li></ul><p>Kontaktiere uns auf jeden Fall über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>. Wir setzen uns dann schnellstmöglich mit dir in Verbindung. </p>"
           }
