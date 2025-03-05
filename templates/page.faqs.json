@@ -173,9 +173,9 @@
         "question_a38WxL": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "return",
+            "heading": "Wie kann ich einzelne Artikel oder meine gesamte Bestellung stornieren?",
+            "text": "<p>Schreibe uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> eine Nachricht und wähle als Anliegen im Formular “Stornierung” aus. Unsere Kollegen und Kolleginnen im Kundenservice stornieren dann schnellstmöglich deine Bestellung.</p>"
           }
         },
         "question_V9F6cB": {
