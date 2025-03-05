@@ -384,8 +384,8 @@
         "contact-dropdown-4": {
           "type": "dropdown",
           "settings": {
-            "title": "How can we help?",
-            "options": "Option 1\nOption 2\nOption 3",
+            "title": "Wie können wir dir helfen?",
+            "options": "Beratung\nBestellung & Bezahlung\nLieferung\nRetoure & Erstattung\nAndere",
             "half_width": false
           }
         },
