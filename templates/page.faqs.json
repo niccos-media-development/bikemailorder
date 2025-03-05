@@ -305,9 +305,9 @@
         "question_QcVBRL": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "calendar",
+            "heading": "Wie viele Tage habe ich Zeit, um meine Bestellung zurückzusenden?",
+            "text": "<p>Du kannst Artikel innerhalb von 100 Tagen nach Erhalt der Ware kostenlos und unter Berücksichtigung der <a href=\"https://www.bike-mailorder.de/agb/\">Rückgabebedingungen</a> in unseren AGBs zurücksenden. Falls deine Bestellung in mehreren Paketen geliefert wurde, gilt die 100-Tage-Rückgabefrist ab dem Erhalt des letzten Pakets.</p><p>Beim Eingang deiner Retoure wird die Ware auf Beschaffenheit, Eigenschaften und Funktionsweise geprüft. Stellen wir einen etwaigen Wertverlust fest, der auf deinen Umgang zurückzuführen ist, trägst du die Kosten für den Wertverlust. </p>"
           }
         },
         "question_an4bJc": {
