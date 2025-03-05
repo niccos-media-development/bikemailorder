@@ -455,59 +455,6 @@
         "accessibility_info": "Featured collections and new arrivals",
         "prevent_animation": false
       }
-    },
-    "rich_text_bJUDhr": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_RYfEM6": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_U49GjC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Rich text headline",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        },
-        "text_NpL8wb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your store with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_c8NWKH": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "shopify://pages/faq",
-            "button_1_style": "btn--secondary",
-            "button_2_label": "Optional button",
-            "button_2_link": "shopify://blogs/news/test-f100-bio-fahrradreiniger-kettenoel",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_RYfEM6",
-        "heading_U49GjC",
-        "text_NpL8wb",
-        "button_c8NWKH"
-      ],
-      "custom_css": [],
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "wide": false,
-        "color_scheme": "3",
-        "full_width": true,
-        "prevent_animation": false
-      }
     }
   },
   "order": [
@@ -520,7 +467,6 @@
     "hoco_youtube_channel_preview_tbrkV4",
     "featured_blog_UibKyf",
     "niccos_multicolumn_XRGiNj",
-    "navigation_slideshow_Hzwq6X",
-    "rich_text_bJUDhr"
+    "navigation_slideshow_Hzwq6X"
   ]
 }
