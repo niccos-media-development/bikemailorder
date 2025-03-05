@@ -165,7 +165,7 @@
         "question_UwXNKb": {
           "type": "question",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark_in_circle",
             "heading": "Kann ich eine Teillieferung meiner Bestellung auslösen? ",
             "text": "<p>Ja, ist ein Teil deiner Bestellung aufgrund eines technischen Problems oder aufgrund hoher Nachfrage auf einmal doch nicht lieferbar, kannst du uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular </a>schreiben und wir schicken dir den lieferbaren Teil deiner Bestellung vorab zu. Du zahlst nur einmal die Versandkosten.</p>"
           }
