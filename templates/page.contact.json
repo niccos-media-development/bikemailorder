@@ -31,7 +31,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Bitte besuche unsere FAQ-Seite für die am häufigsten gestellten Fragen.</p>",
+            "text": "<p>Bitte besuche unsere <a href=\"/pages/faq\" title=\"FAQ\">FAQ-Seite</a> für die am häufigsten gestellten Fragen.</p>",
             "enlarge_text": true
           }
         }
