@@ -13,7 +13,8 @@
       "type": "main-contact",
       "disabled": true,
       "settings": {
-        "show_contact_title": false
+        "show_contact_title": false,
+        "heading_align": "text-center"
       }
     },
     "image-banner": {
@@ -22,7 +23,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Contact Us",
+            "heading": "Kontaktiere uns",
             "heading_size": "h1",
             "heading_h1": true
           }
@@ -30,7 +31,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Please visit our help pages for answers to some of the most commonly asked questions.</p>",
+            "text": "<p>Bitte besuche unsere FAQ-Seite für die am häufigsten gestellten Fragen.</p>",
             "enlarge_text": true
           }
         }
@@ -40,6 +41,7 @@
         "text"
       ],
       "settings": {
+        "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 560,
         "fixed_height_mobile": 440,
@@ -48,7 +50,11 @@
         "mob_center_text": true,
         "mobile_stacked": false,
         "color_scheme": "white",
-        "full_width": true
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
       }
     },
     "form": {
@@ -72,6 +78,7 @@
           "type": "dropdown",
           "settings": {
             "title": "How can we help?",
+            "options": "Option 1\nOption 2\nOption 3",
             "half_width": false
           }
         },
@@ -111,6 +118,7 @@
         "newsletter-text-1": {
           "type": "text",
           "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
             "enlarge_text": false
           }
         },
@@ -128,7 +136,10 @@
         "overlay_position": "justify-center",
         "text_align": "text-center",
         "color_scheme": "default",
-        "full_width": true
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
       }
     }
   },
