@@ -149,9 +149,9 @@
         "question_qKcxW4": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "lock",
+            "heading": "Kann ich ein Produkt vorbestellen oder reservieren?",
+            "text": "<p>Nein, aber du kannst dich per E-Mail benachrichtigen lassen, wenn dein gewünschtes Produkt lieferbar ist. Trifft der Artikel in unserem Lager ein, wirst du umgehend per E-Mail darüber informiert und kannst wie gewohnt deine Bestellung abschließen.</p><p><strong>So funktioniert's:</strong></p><ol><li>Wähle auf der Produktseite rechts die gewünschte Größe aus.</li><li>Ist deine gewünschte Größe nicht auf Lager, ist diese grau hinterlegt. Klicke auf den Briefumschlag rechts neben deiner Größe und trage deine E-Mail-Adresse in das Textfeld ein und klicke “bestätigen”. Findest du kein Briefsymbol neben deiner gewünschten Größe, ist diese nicht mehr nachbestellbar. </li></ol>"
           }
         },
         "question_D3TMFk": {
