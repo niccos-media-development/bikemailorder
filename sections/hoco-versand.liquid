@@ -1,6 +1,89 @@
+
+<h3>List</h3>
+<select id="food-select" >
+  <option value="" selected >Select One</option>
+</select> 
+
+<table id="food-list">
+  <caption>Food List</caption>
+  <thead> <tr> <td> Name </td> <td> Colour </td> </tr> </thead>
+  <tbody></tbody>
+</table>
+
+
+<script>
+const
+  foodInfo = 
+    [ { Name: 'Apple',     Colour: 'Green'  } 
+    , { Name: 'Chocolate', Colour: 'Brown'  } 
+    , { Name: 'Banana',    Colour: 'Yellow' } 
+    ] 
+, selectFood = document.getElementById('food-select')
+, listFood_t = document.querySelector('table#food-list tbody') 
+  ;
+foodInfo.forEach(item=>
+  {
+  // table listFood elements
+  let row           = listFood_t.insertRow()
+  row.dataset.ref   = item.Name
+
+  row.insertCell().textContent = item.Name
+  row.insertCell().textContent = item.Colour
+
+  // food-select
+  selectFood.add( new Option(item.Name, item.Name))
+  })
+selectFood.add( new Option('All Food', 'All'))  // last one...
+selectFood.querySelector('option').disabled = true
+
+const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
+
+tableArticles.forEach(el=>el.className='noDisplay') // none on start...
+
+selectFood.onchange=()=>
+  {
+  let choose = selectFood.value 
+  tableArticles.forEach(art=>
+    {
+    if (choose==='All' || choose===art.dataset.ref)
+      art.classList.remove('noDisplay')
+    else
+      art.classList.add('noDisplay')
+    })
+  }
+
+</script>
+
+{% stylesheet %}
+
+table {
+  border-collapse: collapse;
+  margin-top: .7em;
+  } 
+caption {
+  font-size: 1.4em;
+  font-weight:bold;
+  }
+thead {
+  background-color: #add8e6;
+  font-weight:bold;
+  }
+td {
+  padding: .2em .7em;
+  width: 8em;
+  border: 1px solid grey;
+  }
+tbody {
+  text-align: right;
+  }
+.noDisplay {
+  display: none;
+  }
+{% endstylesheet %}
+
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Hoco Versand",
     "settings": []
   }
 {% endschema %}
