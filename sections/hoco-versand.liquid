@@ -1,13 +1,13 @@
-<div class="section versand" >
+<div class="section" >
   <div class="container">
     <h3>List</h3>
-    <select id="country-select" >
+    <select id="food-select" >
       <option value="" selected >Select One</option>
     </select> 
     
     <table id="food-list">
       <caption>Food List</caption>
-      <thead> <tr> <td> Land </td> <td> Versand1 </td> <td> Versand2 </td> </tr> </thead>
+      <thead> <tr> <td> Name </td> <td> Colour </td> </tr> </thead>
       <tbody></tbody>
     </table>
   </div>
@@ -17,37 +17,12 @@
 <script>
 const
   foodInfo = 
-    [ [
-  { Name: 'Name', Versand1: 'Teile / Zubehör / Kleidung (EUR / Bestellung)', Versand2: 'Fahrräder (EUR / Bestellung)' },
-  { Name: 'Belgien', Versand1: '4,90', Versand2: '39,90' },
-  { Name: 'Dänemark', Versand1: '10,00', Versand2: '39,00' },
-  { Name: 'Finnland', Versand1: '10,00', Versand2: '39,90' },
-  { Name: 'Frankreich', Versand1: '4,90', Versand2: '39,90' },
-  { Name: 'Italien', Versand1: '4,90', Versand2: '39,90' },
-  { Name: 'Niederlande', Versand1: '4,90', Versand2: '39,90' },
-  { Name: 'Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)', Versand1: '15,00', Versand2: '39,00' },
-  { Name: 'Spanien', Versand1: '10,00', Versand2: '39,90' },
-  { Name: 'Österreich', Versand1: '6,90', Versand2: '39,90' },
-  { Name: 'Luxemburg', Versand1: '10,00', Versand2: '39,00' },
-  { Name: 'Irland', Versand1: '65,00', Versand2: '140,00' },
-  { Name: 'Griechenland', Versand1: '10,00', Versand2: '39,90' },
-  { Name: 'Portugal', Versand1: '10,00', Versand2: '39,90' },
-  { Name: 'Schweden', Versand1: '10,00', Versand2: '39,90' },
-  { Name: 'Polen', Versand1: '12,50', Versand2: '39,00' },
-  { Name: 'Lettland', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Litauen', Versand1: '12,50', Versand2: 'Versand leider aktuell nicht möglich' },
-  { Name: 'Malta', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Slowakei', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Slowenien', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Tschechien', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Estland', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Bulgarien', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Ungarn', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Rumänien', Versand1: '12,50', Versand2: '35,00' },
-  { Name: 'Kroatien', Versand1: '22,50', Versand2: '49,00' }
+    [ { Name: 'Apple',     Colour: 'Green'  } 
+    , { Name: 'Chocolate', Colour: 'Brown'  } 
+    , { Name: 'Banana',    Colour: 'Yellow' } 
     ] 
-, selectCountry = document.getElementById('country-select')
-, listFood_t = document.querySelector('table#country-list tbody') 
+, selectFood = document.getElementById('food-select')
+, listFood_t = document.querySelector('table#food-list tbody') 
   ;
 foodInfo.forEach(item=>
   {
@@ -56,22 +31,21 @@ foodInfo.forEach(item=>
   row.dataset.ref   = item.Name
 
   row.insertCell().textContent = item.Name
-  row.insertCell().textContent = item.Versand1
-    row.insertCell().textContent = item.Versand2
+  row.insertCell().textContent = item.Colour
 
   // food-select
-  selectCountry.add( new Option(item.Name, item.Name))
+  selectFood.add( new Option(item.Name, item.Name))
   })
-selectCountry.add( new Option('All Countries', 'All'))  // last one...
-selectCountry.querySelector('option').disabled = true
+selectFood.add( new Option('All Food', 'All'))  // last one...
+selectFood.querySelector('option').disabled = true
 
 const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
 
 tableArticles.forEach(el=>el.className='noDisplay') // none on start...
 
-selectCountry.onchange=()=>
+selectFood.onchange=()=>
   {
-  let choose = selectCountry.value 
+  let choose = selectFood.value 
   tableArticles.forEach(art=>
     {
     if (choose==='All' || choose===art.dataset.ref)
