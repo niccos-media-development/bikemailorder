@@ -243,9 +243,9 @@
         "question_rpVfV6": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "box",
+            "heading": "Was kann ich tun, wenn ich mein Paket nicht erhalten habe? ",
+            "text": "<p>Wenn du dein Paket nicht innerhalb der standardmäßigen Lieferfrist erhalten hast, befolge bitte die nachstehenden Schritte!</p><ol><li>Überprüfe die Lieferfrist für den Produkttyp deiner Bestellung. Wenn deine Bestellung Sperrgut (bspw. eine Komplettrad) enthält, dauert die Lieferung in der Regel 5-6 Werktage. Normale Pakete benötigen in der Regel 2-3 Werktage.</li><li>Überprüfe den Lieferstatus deiner Bestellung über die Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a>. </li><li>Überprüfe den Versandstatus deiner Bestellung in der nachstehenden Tabelle. Sie erläutert jede Phase, in der sich deine Lieferung befinden kann, und was du in der jeweiligen Phase tun kannst.</li></ol>"
           }
         },
         "question_qEJh6g": {
