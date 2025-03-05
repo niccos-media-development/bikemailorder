@@ -205,9 +205,9 @@
         "question_Cr9rLk": {
           "type": "question",
           "settings": {
-            "icon": "none",
-            "heading": "Frequently asked question",
-            "text": "<p>Provide an answer to the question here, with as much detail as possible to help your customers.</p>"
+            "icon": "credit_card",
+            "heading": "Wie kann ich bei Bike Mailorder bezahlen?",
+            "text": "<p>Eine Liste all unserer Zahlungsarten findest du unter <a href=\"https://www.bike-mailorder.de/zahlungsarten/\">Zahlungsmodalitäten</a>.</p>"
           }
         },
         "faq-category-3": {
