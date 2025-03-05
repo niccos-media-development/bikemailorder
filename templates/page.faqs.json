@@ -103,7 +103,7 @@
         "faq-question-1": {
           "type": "question",
           "settings": {
-            "icon": "question_mark",
+            "icon": "email",
             "heading": "Wie kann ich euch wann erreichen?",
             "text": "<p>Du kannst uns jederzeit über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> eine Nachricht senden. Unserer Kundenservice antwortet dir so schnell wie möglich innerhalb unserer Arbeitszeiten von Mo-Fr von 10-18 Uhr. </p>"
           }
