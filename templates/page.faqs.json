@@ -126,8 +126,8 @@
           "type": "question",
           "settings": {
             "icon": "map_pin",
-            "heading": "What countries do you ship to?",
-            "text": "<p>We currently ship to the United States, Canada, Australia and the UK. To enquire about shipping to a different destination, please contact us.</p>"
+            "heading": "Wo bleibt meine Bestellung? Und wann wird geliefert?",
+            "text": "<p>In der Regel verschicken wir innerhalb Deutschlands Teile, Zubehör, Bekleidung und Werkzeug innerhalb von 2-4 Werktagen. Fahrräder benötigen innerhalb Deutschlands aktuell 8-12 Werktage. </p><p>Auf der Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> kannst du einsehen, in welchem Status sich deine Bestellung befindet.</p>"
           }
         },
         "faq-question-4": {
