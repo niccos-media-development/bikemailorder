@@ -147,6 +147,7 @@
               <td>49,00</td>
             </tr>
           </tbody>
+        </table>
     </table>
   </div>
 </div>
@@ -155,33 +156,9 @@
 <script>
 const
   foodInfo = 
-    [ { Land: 'Land', Versand1: 'Teile / Zubehör / Kleidung (EUR / Bestellung)', Versand2: 'Fahrräder (EUR / Bestellung)' },
-      { Land: 'Belgien', Versand1: '4,90', Versand2: '39,90' },
-      { Land: 'Dänemark', Versand1: '10,00', Versand2: '39,00' },
-      { Land: 'Finnland', Versand1: '10,00', Versand2: '39,90' },
-      { Land: 'Frankreich', Versand1: '4,90', Versand2: '39,90' },
-      { Land: 'Italien', Versand1: '4,90', Versand2: '39,90' },
-      { Land: 'Niederlande', Versand1: '4,90', Versand2: '39,90' },
-      { Land: 'Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)', Versand1: '15,00', Versand2: '39,00' },
-      { Land: 'Spanien', Versand1: '10,00', Versand2: '39,90' },
-      { Land: 'Österreich', Versand1: '6,90', Versand2: '39,90' },
-      { Land: 'Luxemburg', Versand1: '10,00', Versand2: '39,00' },
-      { Land: 'Irland', Versand1: '65,00', Versand2: '140,00' },
-      { Land: 'Griechenland', Versand1: '10,00', Versand2: '39,90' },
-      { Land: 'Portugal', Versand1: '10,00', Versand2: '39,90' },
-      { Land: 'Schweden', Versand1: '10,00', Versand2: '39,90' },
-      { Land: 'Polen', Versand1: '12,50', Versand2: '39,00' },
-      { Land: 'Lettland', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Litauen', Versand1: '12,50', Versand2: 'Versand leider aktuell nicht möglich' },
-      { Land: 'Malta', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Slowakei', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Slowenien', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Tschechien', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Estland', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Bulgarien', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Ungarn', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Rumänien', Versand1: '12,50', Versand2: '35,00' },
-      { Land: 'Kroatien', Versand1: '22,50', Versand2: '49,00' }
+    [ { Name: 'Apple',     Colour: 'Green'  } 
+    , { Name: 'Chocolate', Colour: 'Brown'  } 
+    , { Name: 'Banana',    Colour: 'Yellow' } 
     ] 
 , selectCountry = document.getElementById('country-select')
 , listFood_t = document.querySelector('table#country-list tbody') 
@@ -190,13 +167,13 @@ foodInfo.forEach(item=>
   {
   // table listFood elements
   let row           = listFood_t.insertRow()
-  row.dataset.ref   = item.Land
+  row.dataset.ref   = item.Name
 
-  row.insertCell().textContent = item.Land
-  row.insertCell().textContent = item.Versand1
+  row.insertCell().textContent = item.Name
+  row.insertCell().textContent = item.Colour
 
   // food-select
-  selectCountry.add( new Option(item.Land, item.Land))
+  selectCountry.add( new Option(item.Name, item.Name))
   })
 selectCountry.add( new Option('All Countries', 'All'))  // last one...
 selectCountry.querySelector('option').disabled = true
