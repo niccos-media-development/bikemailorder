@@ -16,35 +16,20 @@
         "heading_align": "text-center"
       }
     },
-    "rich_text_Vr7BVd": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LkWm9t": {
-          "type": "heading",
-          "settings": {
-            "heading": "Versandkosten in Deutschland",
-            "heading_size": "h2",
-            "heading_h1": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LkWm9t"
-      ],
-      "settings": {
-        "text_position": "justify-center",
-        "text_align": "text-center",
-        "mob_center_text": true,
-        "wide": false,
-        "color_scheme": "none",
-        "full_width": true,
-        "prevent_animation": false
-      }
-    },
     "custom_liquid_UU8eLQ": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<h2 style=\"text-align: center;\">Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedtition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "custom_liquid_g6YR3M": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2>Europäische Länder</h2>\n<table>\n  <thead>\n    <tr>\n      <td>Land</td>\n      <td>Standard</td>\n      <td>Spedition</td>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Belgien</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Dänemark</td>\n      <td>10,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Finnland</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Frankreich</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Italien</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Niederlande</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)</td>\n      <td>15,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Spanien</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Österreich</td>\n      <td>6,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Luxemburg</td>\n      <td>10,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Irland</td>\n      <td>65,00</td>\n      <td>140,00</td>\n    </tr>\n    <tr>\n      <td>Griechenland</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Portugal</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Schweden</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Polen</td>\n      <td>12,50</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Lettland</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Litauen</td>\n      <td>12,50</td>\n      <td>Versand leider aktuell nicht möglich</td>\n    </tr>\n    <tr>\n      <td>Malta</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Slowakei</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Slowenien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Tschechien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Estland</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Bulgarien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Ungarn</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Rumänien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Kroatien</td>\n      <td>22,50</td>\n      <td>49,00</td>\n    </tr>\n  </tbody>\n</table>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -61,8 +46,8 @@
   },
   "order": [
     "main",
-    "rich_text_Vr7BVd",
     "custom_liquid_UU8eLQ",
+    "custom_liquid_g6YR3M",
     "hoco_versand_3XkjLw"
   ]
 }
