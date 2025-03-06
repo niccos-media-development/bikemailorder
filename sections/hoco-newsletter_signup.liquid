@@ -1,6 +1,28 @@
+<div class="section" >
+  <div class="container">
+    <h2>{{ section.settings.headline }}</h2>
+    <div>
+      {{ section.settings.form }}
+    </div>
+  </div>
+</div>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Hoco Newsletter Sign Up",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },{
+        "type": "html",
+        "id": "form",
+        "label": "Klayvio Forumlar"
+      },
+    ],
+    "presets": [{"name": " Hoco Newsletter Sign Up"}]  
   }
 {% endschema %}
