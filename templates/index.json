@@ -520,8 +520,7 @@
         "headline": "Auf den Laufenden bleiben",
         "background-color": "#2e2e2e",
         "text-color": "#ffffff",
-        "padding": 100,
-        "form": ""
+        "form": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aeuer-szQ6M?si=zHz_rBbXZ_bHUNur&amp;controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
       }
     }
   },
