@@ -520,7 +520,8 @@
         "headline": "Auf den Laufenden bleiben?",
         "background-color": "#2e2e2e",
         "text-color": "#ffffff",
-        "form": ""
+        "padding": 100,
+        "form": "<div class=\"klaviyo-form-RMYq5s\"></div>"
       }
     }
   },
