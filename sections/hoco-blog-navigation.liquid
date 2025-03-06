@@ -19,9 +19,6 @@
   width: 100%;
 }
 
-.rte .auto-nav ul li:not(:last-child) {
-  border-bottom: 1px solid grey;
-}
 
 .rte .auto-nav ul li a {
   text-decoration:none;
@@ -102,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.appendChild(navList);
     
     // Find the div with the class "article__content"
-    const naviDiv = document.querySelector('.article');
+    const naviDiv = document.querySelector('.article__content');
     
     // Insert the navigation as the first child of the div
     if (naviDiv) {
