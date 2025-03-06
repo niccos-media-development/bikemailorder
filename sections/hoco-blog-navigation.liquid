@@ -1,4 +1,5 @@
-
+<div class="hoco-blog-navi">
+</div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Get all h2 elements
@@ -40,8 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.classList.add('auto-nav');
     nav.appendChild(navList);
     
-    // Insert navigation at the beginning of the body
-    document.body.insertBefore(nav, document.body.firstChild);
+      // Find the div with the class "hoco-blog-navi"
+    const naviDiv = document.querySelector('.hoco-blog-navi');
+    
+    // Insert the navigation as the first child of the div
+    if (naviDiv) {
+        naviDiv.insertBefore(nav, naviDiv.firstChild);
+    }
 });
 </script>
 
