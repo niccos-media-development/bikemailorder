@@ -40,6 +40,7 @@
       "type": "hoco-versand",
       "settings": {
         "headline": "Versandkosten ins außereuropäische Ausland",
+        "description": "Wenn das passende Land nicht oben in der Tabelle ist, findest Du es hier:",
         "selector": "Land Auswählen"
       }
     }
