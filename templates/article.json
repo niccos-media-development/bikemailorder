@@ -26,9 +26,14 @@
       "settings": {
         "comments_per_page": 16
       }
+    },
+    "hoco_blog_navigation_Fa4mi9": {
+      "type": "hoco-blog-navigation",
+      "settings": {}
     }
   },
   "order": [
+    "hoco_blog_navigation_Fa4mi9",
     "main",
     "article-comments"
   ]
