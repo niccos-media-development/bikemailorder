@@ -518,7 +518,8 @@
       "type": "hoco-newsletter_signup",
       "settings": {
         "headline": "Auf den Laufenden bleiben?",
-        "background-color": "#9b9b9b",
+        "background-color": "#2e2e2e",
+        "text-color": "#ffffff",
         "form": ""
       }
     }
