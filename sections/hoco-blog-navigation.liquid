@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.appendChild(navList);
     
     // Find the div with the class "hoco-blog-navi"
-    const naviDiv = document.querySelector('h1');
+    const naviDiv = document.querySelector('.article__content');
     
     // Insert the navigation as the first child of the div
     if (naviDiv) {
-        naviDiv.insertAfter(nav, naviDiv.firstChild);
+        naviDiv.insertBefore(nav, naviDiv.firstChild);
     }
 });
 </script>
