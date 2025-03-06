@@ -354,6 +354,94 @@
         "button_style": "btn btn--primary"
       }
     },
+    "logo_list_apLBmG": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_aDKJAt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_IXS.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_EFJeXN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_platzangst.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_fHEMde": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_leatt.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_zLNr9Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_giant.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_3YtfKy": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_bixs.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_RMifXR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_rondo.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_WYPqpj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_schwalbe.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_aDKJAt",
+        "logo_EFJeXN",
+        "logo_fHEMde",
+        "logo_zLNr9Y",
+        "logo_3YtfKy",
+        "logo_RMifXR",
+        "logo_WYPqpj"
+      ],
+      "settings": {
+        "title": "Premium Marken",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 40,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "2",
+        "full_width": true
+      }
+    },
     "niccos_multicolumn_XRGiNj": {
       "type": "niccos-multicolumn",
       "blocks": {
@@ -421,89 +509,6 @@
         "image_ratio": "1",
         "color_scheme": "none",
         "button_style": "btn btn--secondary"
-      }
-    },
-    "logo_list_apLBmG": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_aDKJAt": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/premium_logo_IXS.png",
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_EFJeXN": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/premium_logo_platzangst.png",
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_fHEMde": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_zLNr9Y": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_3YtfKy": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_RMifXR": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_WYPqpj": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_aDKJAt",
-        "logo_EFJeXN",
-        "logo_fHEMde",
-        "logo_zLNr9Y",
-        "logo_3YtfKy",
-        "logo_RMifXR",
-        "logo_WYPqpj"
-      ],
-      "settings": {
-        "title": "Premium Marken",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "spacing": 40,
-        "logo_grid_align": "justify-center",
-        "color_scheme": "2",
-        "full_width": true
       }
     }
   },
