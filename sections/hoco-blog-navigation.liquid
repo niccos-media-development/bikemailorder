@@ -3,6 +3,17 @@
 .auto-nav a {
   text-decoration:none;
 }
+
+.auto-nav ul {
+  position: relative;
+  list-style: none;
+}
+
+.auto-nav li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+}
   
 {% endstylesheet %}
 
