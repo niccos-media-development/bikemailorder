@@ -26,14 +26,9 @@
       "settings": {
         "comments_per_page": 16
       }
-    },
-    "hoco_blog_navigation_8Tizaf": {
-      "type": "hoco-blog-navigation",
-      "settings": {}
     }
   },
   "order": [
-    "hoco_blog_navigation_8Tizaf",
     "main",
     "article-comments"
   ]
