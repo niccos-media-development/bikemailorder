@@ -431,7 +431,7 @@
         "logo_WYPqpj"
       ],
       "custom_css": [
-        "@media (min-width: 1280px) {ul.logo-list {}}"
+        "@media (min-width: 1280px) {ul.logo-list {justify-content:center; }}"
       ],
       "settings": {
         "title": "Premium Marken",
