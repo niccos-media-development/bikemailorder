@@ -19,7 +19,7 @@
     "custom_liquid_UU8eLQ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2 style=\"text-align: center;\">Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedtition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>",
+        "custom_liquid": "<h2>Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedtition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
@@ -39,7 +39,7 @@
     "hoco_versand_3XkjLw": {
       "type": "hoco-versand",
       "settings": {
-        "headline": "Länderauswahl",
+        "headline": "Versandkosten ins außereuropäische Ausland",
         "selector": "Land Auswählen"
       }
     }
