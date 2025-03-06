@@ -2,8 +2,8 @@
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all h2 elements
-    const headers = document.querySelectorAll('h2');
+    // Get all h2 elements inside the .article div
+    const headers = document.querySelectorAll('.article h2');
     const existingIds = {};
     const navList = document.createElement('ul');
     
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.classList.add('auto-nav');
     nav.appendChild(navList);
     
-      // Find the div with the class "hoco-blog-navi"
+    // Find the div with the class "hoco-blog-navi"
     const naviDiv = document.querySelector('.hoco-blog-navi');
     
     // Insert the navigation as the first child of the div
