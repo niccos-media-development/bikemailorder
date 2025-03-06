@@ -430,6 +430,9 @@
         "logo_RMifXR",
         "logo_WYPqpj"
       ],
+      "custom_css": [
+        "@media (min-width:1280px) {ul.logo-list {}}"
+      ],
       "settings": {
         "title": "Premium Marken",
         "heading_align": "text-center",
