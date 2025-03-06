@@ -1,6 +1,6 @@
 <div class="section" >
   <div class="container">
-    <h2>List</h2>
+    <h2>{{ section.settings.headline }}</h2>
     <select id="food-select" >
       <option value="" selected >Land auswählen</option>
     </select> 
@@ -110,7 +110,13 @@ tbody {
 {% schema %}
   {
     "name": "Hoco Versand",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+    ],
     "presets": [{"name": " Hoco Versand"}]  
   }
 {% endschema %}
