@@ -12,15 +12,28 @@
     "main": {
       "type": "main-article",
       "settings": {
+        "show_tags": true,
+        "show_author": true,
+        "show_date": true,
+        "featured_image_width": "page",
+        "heading_align": "text-center",
+        "show_share_buttons": true,
         "pagination": "bar-reading"
       }
     },
     "article-comments": {
       "type": "article-comments",
+      "settings": {
+        "comments_per_page": 16
+      }
+    },
+    "hoco_blog_navigation_8Tizaf": {
+      "type": "hoco-blog-navigation",
       "settings": {}
     }
   },
   "order": [
+    "hoco_blog_navigation_8Tizaf",
     "main",
     "article-comments"
   ]
