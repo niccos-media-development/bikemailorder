@@ -18,7 +18,10 @@
     },
     "hoco_versand_3XkjLw": {
       "type": "hoco-versand",
-      "settings": {}
+      "settings": {
+        "headline": "Länderauswahl",
+        "selector": "Land Auswählen"
+      }
     }
   },
   "order": [
