@@ -15,14 +15,9 @@
         "show_page_title": true,
         "heading_align": "text-center"
       }
-    },
-    "hoco_versand_3XkjLw": {
-      "type": "hoco-versand",
-      "settings": {}
     }
   },
   "order": [
-    "main",
-    "hoco_versand_3XkjLw"
+    "main"
   ]
 }
