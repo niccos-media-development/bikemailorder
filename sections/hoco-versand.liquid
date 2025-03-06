@@ -1,6 +1,7 @@
 <div class="section" >
   <div class="container">
     <h2>{{ section.settings.headline }}</h2>
+    <p>{{ section.settings.description }}</p>
     <select id="food-select" >
       <option value="" selected >{{ section.settings.selector }}</option>
     </select> 
@@ -128,6 +129,11 @@ select {
         "type": "text",
         "id": "headline",
         "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Beschreibung"
       },
       {
         "type": "text",
