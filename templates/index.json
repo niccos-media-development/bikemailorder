@@ -438,6 +438,7 @@
         "logo_EFJeXN": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/premium_logo_platzangst.png",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -515,7 +516,7 @@
     "collection_list_PN8XCm",
     "hoco_youtube_channel_preview_tbrkV4",
     "featured_blog_UibKyf",
-    "niccos_multicolumn_XRGiNj",
-    "logo_list_apLBmG"
+    "logo_list_apLBmG",
+    "niccos_multicolumn_XRGiNj"
   ]
 }
