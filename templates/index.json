@@ -517,11 +517,11 @@
     "hoco_newsletter_signup_QKrWp9": {
       "type": "hoco-newsletter_signup",
       "settings": {
-        "headline": "Auf den Laufenden bleiben?",
+        "headline": "Auf den Laufenden bleiben",
         "background-color": "#2e2e2e",
         "text-color": "#ffffff",
         "padding": 100,
-        "form": "<div class=\"klaviyo-form-RMYq5s\"></div>"
+        "form": ""
       }
     }
   },
