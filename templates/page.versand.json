@@ -19,7 +19,7 @@
     "custom_liquid_UU8eLQ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2>Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedtition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>\n<p><strong>Bitte beachte:</strong> Bei einem Mischkauf von Standardpaket-Ware zusammen mit einem Fahrrad, fallen nur die Versandkosten für das Fahrrad an.\n\nAlle dargestellten Versandpreise verstehen sich in EUR inkl. der gesetzlichen Mehrwertsteuer.\n</p>",
+        "custom_liquid": "<h2>Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>\n<p><strong>Bitte beachte:</strong> Bei einem Mischkauf von Standardpaket-Ware zusammen mit einem Fahrrad, fallen nur die Versandkosten für das Fahrrad an.\n\nAlle dargestellten Versandpreise verstehen sich in EUR inkl. der gesetzlichen Mehrwertsteuer.\n</p>",
         "section_height": "default",
         "full_width": false,
         "dividers": "none",
