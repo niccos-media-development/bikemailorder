@@ -1,6 +1,55 @@
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all h2 elements
+    const headers = document.querySelectorAll('h2');
+    const existingIds = {};
+    const navList = document.createElement('ul');
+    
+    // Process each h2 element
+    headers.forEach(header => {
+        // Generate ID from text content
+        let id = header.textContent
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w-]/g, '');
+        
+        // Handle empty or duplicate IDs
+        if (!id) id = 'section';
+        if (existingIds[id]) {
+            let count = 2;
+            while (existingIds[`${id}-${count}`]) count++;
+            id = `${id}-${count}`;
+        }
+        existingIds[id] = true;
+        
+        // Set ID attribute
+        header.id = id;
+        
+        // Create navigation item
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `#${id}`;
+        link.textContent = header.textContent;
+        listItem.appendChild(link);
+        navList.appendChild(listItem);
+    });
+    
+    // Create navigation container
+    const nav = document.createElement('nav');
+    nav.classList.add('auto-nav');
+    nav.appendChild(navList);
+    
+    // Insert navigation at the beginning of the body
+    document.body.insertBefore(nav, document.body.firstChild);
+});
+</script>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Hoco Blog Navigation",
+    "settings": [],
+    "presets": [{"name": "Hoco Blog Navigation"}]  
   }
 {% endschema %}
