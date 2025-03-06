@@ -13,11 +13,15 @@
   display:none;
 }
 
-  .auto-nav li a:before {
+.auto-nav li a:before {
   content: '▶';
   position: absolute;
   left: 0;
-    transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.auto-nav li a:hover {
+  pointer: cursor;
 }
  
 {% endstylesheet %}
