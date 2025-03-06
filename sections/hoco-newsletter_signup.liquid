@@ -1,4 +1,4 @@
-<div class="section" >
+<div class="section" styles="background-color:{{ section.settings.background-color }}">
   <div class="container">
     <h2>{{ section.settings.headline }}</h2>
     <div>
@@ -17,7 +17,14 @@
         "type": "text",
         "id": "headline",
         "label": "Überschrift"
-      },{
+      },
+      {
+        "type": "color",
+        "id": "background-color",
+        "label": "Hintergrunfarbe",
+        "default": "#000000"
+      },
+      {
         "type": "html",
         "id": "form",
         "label": "Klayvio Forumlar"
