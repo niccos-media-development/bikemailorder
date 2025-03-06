@@ -362,7 +362,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_IXS.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -371,7 +371,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_platzangst.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -380,7 +380,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_leatt.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -389,7 +389,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_giant.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -398,7 +398,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_bixs.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -407,7 +407,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_rondo.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         },
@@ -416,7 +416,7 @@
           "settings": {
             "image": "shopify://shop_images/premium_logo_schwalbe.png",
             "url": "",
-            "logo_width": 120,
+            "logo_width": 150,
             "text": ""
           }
         }
