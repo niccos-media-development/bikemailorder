@@ -431,7 +431,7 @@
         "logo_WYPqpj"
       ],
       "custom_css": [
-        "@media (min-width:1280px) {ul.logo-list {}}"
+        "@media (min-width: 1280px) {ul.logo-list {}}"
       ],
       "settings": {
         "title": "Premium Marken",
@@ -513,6 +513,14 @@
         "color_scheme": "none",
         "button_style": "btn btn--secondary"
       }
+    },
+    "hoco_newsletter_signup_QKrWp9": {
+      "type": "hoco-newsletter_signup",
+      "settings": {
+        "headline": "Auf den Laufenden bleiben?",
+        "background-color": "#9b9b9b",
+        "form": ""
+      }
     }
   },
   "order": [
@@ -525,6 +533,7 @@
     "hoco_youtube_channel_preview_tbrkV4",
     "featured_blog_UibKyf",
     "logo_list_apLBmG",
-    "niccos_multicolumn_XRGiNj"
+    "niccos_multicolumn_XRGiNj",
+    "hoco_newsletter_signup_QKrWp9"
   ]
 }
