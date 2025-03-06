@@ -2,7 +2,7 @@
   <div class="container">
     <h2>{{ section.settings.headline }}</h2>
     <select id="food-select" >
-      <option value="" selected >Land auswählen</option>
+      <option value="" selected >{{ section.settings.selector }}</option>
     </select> 
     
     <table id="food-list">
@@ -115,6 +115,11 @@ tbody {
         "type": "text",
         "id": "headline",
         "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "selector",
+        "label": "Dropdown Platzhalter"
       },
     ],
     "presets": [{"name": " Hoco Versand"}]  
