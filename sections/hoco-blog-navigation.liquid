@@ -7,12 +7,17 @@
 .auto-nav ul {
   position: relative;
   list-style: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .rte .auto-nav ul li:before {
   display:none;
+}
+
+.auto-nav li a:before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  transform: rotate(90deg);
 }
 
 .auto-nav li a:hover {
