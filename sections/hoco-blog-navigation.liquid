@@ -1,3 +1,5 @@
+<span class="blog-navi-header-source">Inhalt</span>
+
 {% stylesheet %}
 .auto-nav {
   background: #f6f6f6;
@@ -38,6 +40,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const headers = document.querySelectorAll('.article h2');
     const existingIds = {};
     const navList = document.createElement('ul');
+    
+    // Find the source span for the navigation header
+    const navHeaderSource = document.querySelector('.blog-nav-header-source');
+    let navHeaderText = '';
+    
+    // If the source span exists, get its text content
+    if (navHeaderSource) {
+        navHeaderText = navHeaderSource.textContent;
+    }
+    
+    // Create the navigation header span
+    const navHeader = document.createElement('span');
+    navHeader.classList.add('blog-navi-header');
+    navHeader.textContent = navHeaderText;
     
     // Process each h2 element
     headers.forEach(header => {
@@ -88,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create navigation container
     const nav = document.createElement('nav');
     nav.classList.add('auto-nav');
+    
+    // Append the navigation header and the list
+    nav.appendChild(navHeader);
     nav.appendChild(navList);
     
     // Find the div with the class "article__content"
