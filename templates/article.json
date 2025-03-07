@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "hoco_blog_navigation_Fa4mi9": {
+      "type": "hoco-blog-navigation",
+      "settings": {
+        "headline": "Inhalt"
+      }
+    },
     "main": {
       "type": "main-article",
       "settings": {
@@ -26,10 +32,6 @@
       "settings": {
         "comments_per_page": 16
       }
-    },
-    "hoco_blog_navigation_Fa4mi9": {
-      "type": "hoco-blog-navigation",
-      "settings": {}
     }
   },
   "order": [
