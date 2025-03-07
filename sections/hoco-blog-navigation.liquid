@@ -1,4 +1,4 @@
-<span class="blog-nav-header-source">Inhalt</span>
+<span class="blog-nav-header-source">{{ section.settings.headline }}</span>
 
 {% stylesheet %}
 .auto-nav {
@@ -124,7 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
 {% schema %}
   {
     "name": "Hoco Blog Navigation",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      }
+    ],
     "presets": [{"name": "Hoco Blog Navigation"}]  
   }
 {% endschema %}
