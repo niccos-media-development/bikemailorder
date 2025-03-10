@@ -209,6 +209,10 @@
         "media_fp7kEw",
         "media_w6ErQR"
       ],
+      "custom_css": [
+        ".gallery-block__image {display: flex; flex-direction: column; align-items: center;}",
+        "h3 {color: #000;}"
+      ],
       "settings": {
         "title": "",
         "heading_align": "text-start",
