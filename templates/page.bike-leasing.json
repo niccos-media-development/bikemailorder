@@ -241,6 +241,9 @@
         "question_NyNiCR",
         "question_WDJ4mw"
       ],
+      "custom_css": [
+        "@media (min-width: 768px) {.section--padded {display: none; }}"
+      ],
       "settings": {
         "heading": "",
         "heading_align": "text-center",
