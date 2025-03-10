@@ -289,6 +289,98 @@
         "only_content_color_scheme": false
       }
     },
+    "multi_column_JB6Uwq": {
+      "type": "multi-column",
+      "blocks": {
+        "column_r7ERJC": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Screen_Shot_2025-03-10_at_15.53.02_PM.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_r7ERJC"
+      ],
+      "custom_css": [
+        ".container {max-width: 150px; height: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "multi_column_JkQFk8": {
+      "type": "multi-column",
+      "blocks": {
+        "column_bDTYDa": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_P4b7Lx": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Steuervorteile",
+            "text": "<p>Dein Arbeitgeber least das Fahrrad und die monatliche Leasingrate wird von deinem Bruttolohn einbehalten. Durch die Gehaltsumwandlung sparst du Geld – meist sind dies 20 -40% im Vergleich zum Direktkauf.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_JezqbU": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bDTYDa",
+        "column_P4b7Lx",
+        "column_JezqbU"
+      ],
+      "settings": {
+        "title": "Welche Vorteile bietet dir Bike-Leasing?",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "large",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
     "niccos_multicolumn_dPcTqf": {
       "type": "niccos-multicolumn",
       "blocks": {
@@ -366,6 +458,8 @@
     "media_grid_GY6HzL",
     "media_with_text_YJKdEH",
     "media_with_text_YPTMa7",
+    "multi_column_JB6Uwq",
+    "multi_column_JkQFk8",
     "niccos_multicolumn_dPcTqf"
   ]
 }
