@@ -474,6 +474,31 @@
         "only_content_color_scheme": false
       }
     },
+    "faq_Mtakm9": {
+      "type": "faq",
+      "blocks": {
+        "question_Y36bm4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Welche Voraussetzungen musst du erfüllen?",
+            "text": "<p>Damit du dein Traumfahrrad über deinen Arbeitgeber leasen kannst, muss dieser einen Leasingrahmenvertrag mit einem unserer Leasing-Partner haben. Sollte dein Arbeitgeber kein Bike-Leasing anbieten, ist das nicht schlimm. Eine Anmeldung bei einem unserer Leasingpartner ist jederzeit möglich. Nähere Informationen dazu findest du auf den Websites unserer Partner.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_Y36bm4"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {#template--24575058575624__faq_Mtakm9 {display: none; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "media_with_text_xAMJdi": {
       "type": "media-with-text",
       "blocks": {
@@ -649,6 +674,7 @@
     "multi_column_TXn7Ek",
     "multi_column_JkQFk8",
     "media_with_text_xQqp39",
+    "faq_Mtakm9",
     "media_with_text_xAMJdi",
     "logo_list_RbWW9c"
   ]
