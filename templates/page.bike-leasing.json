@@ -421,6 +421,42 @@
         "button_style": "btn btn--secondary"
       }
     },
+    "media_with_text_xQqp39": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_dLiBmJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welche Voraussetzungen musst du erfüllen?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_zDhpaF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Damit du dein Traumfahrrad über deinen Arbeitgeber leasen kannst, muss dieser einen Leasingrahmenvertrag mit einem unserer Leasing-Partner haben. Sollte dein Arbeitgeber kein Bike-Leasing anbieten, ist das nicht schlimm. Eine Anmeldung bei einem unserer Leasingpartner ist jederzeit möglich. Nähere Informationen dazu findest du auf den Websites unserer Partner.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dLiBmJ",
+        "text_zDhpaF"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
     "niccos_multicolumn_dPcTqf": {
       "type": "niccos-multicolumn",
       "blocks": {
@@ -489,6 +525,188 @@
         "color_scheme": "none",
         "button_style": "btn btn--secondary"
       }
+    },
+    "multi_column_YhbFC4": {
+      "type": "multi-column",
+      "blocks": {
+        "column_8DYNba": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_hbWHcX": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_B8GKUA": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8DYNba",
+        "column_hbWHcX",
+        "column_B8GKUA"
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "logo_list_RbWW9c": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_BYeU7G": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_ejVKfj": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_RpdwrA": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_MMXTCH": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_wRkxtE": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_rqadeA": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_ftfDyU": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_UChwEW": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_cEanpB": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_4z8LjM": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_QEMFnC": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_N7YtHc": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_BYeU7G",
+        "logo_ejVKfj",
+        "logo_RpdwrA",
+        "logo_MMXTCH",
+        "logo_wRkxtE",
+        "logo_rqadeA",
+        "logo_ftfDyU",
+        "logo_UChwEW",
+        "logo_cEanpB",
+        "logo_4z8LjM",
+        "logo_QEMFnC",
+        "logo_N7YtHc"
+      ],
+      "settings": {
+        "title": "Über welche Anbieter kannst du bei uns leasen?",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "spacing": 88,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -501,6 +719,9 @@
     "media_with_text_YPTMa7",
     "multi_column_TXn7Ek",
     "multi_column_JkQFk8",
-    "niccos_multicolumn_dPcTqf"
+    "media_with_text_xQqp39",
+    "niccos_multicolumn_dPcTqf",
+    "multi_column_YhbFC4",
+    "logo_list_RbWW9c"
   ]
 }
