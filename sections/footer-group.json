@@ -103,12 +103,11 @@
             "menu": "footer-rechtliches"
           }
         },
-        "newsletter": {
-          "type": "newsletter",
+        "link_list_M94bjR": {
+          "type": "link_list",
           "settings": {
-            "heading": "Newsletter",
-            "text": "<p>Sign up for exclusive offers, original stories, events and more.</p>",
-            "collapse_mobile": true
+            "heading": "Footer links",
+            "menu": "footer"
           }
         }
       },
@@ -116,7 +115,7 @@
         "text",
         "link-list-1",
         "link-list-2",
-        "newsletter"
+        "link_list_M94bjR"
       ],
       "settings": {
         "show_back_to_top": true,
