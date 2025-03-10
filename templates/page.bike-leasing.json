@@ -1,0 +1,371 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "image_banner_RVq7rC": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3zztGw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bike Leasing",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zztGw"
+      ],
+      "settings": {
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "rich_text_HnVzEd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3QPRNX": {
+          "type": "heading",
+          "settings": {
+            "heading": "So einfach ist Fahrrad und E-Bike Leasing bei BMO",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_D4Mz78": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du hast dein Traumbike in unserem Sortiment gefunden und willst es lieber über deinen Arbeitgeber leasen, als es direkt zu kaufen? Dann bist du hier genau richtig. Hier zeigen wir dir, wie Bike-Leasing funktioniert, welche Vorteile du hast und mit welchen Partnern du dein Bike bei uns leasen kannst.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_3QPRNX",
+        "text_D4Mz78"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "media_grid_GY6HzL": {
+      "type": "media-grid",
+      "blocks": {
+        "media_wnjJXJ": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_zbea3f": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_CNhV8a": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_73VApM": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_fp7kEw": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 40
+          }
+        },
+        "media_w6ErQR": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "media_wnjJXJ",
+        "media_zbea3f",
+        "media_CNhV8a",
+        "media_73VApM",
+        "media_fp7kEw",
+        "media_w6ErQR"
+      ],
+      "settings": {
+        "title": "Media grid",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 3,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 300,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
+      }
+    },
+    "media_with_text_YJKdEH": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_NwqLrb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was ist Bike-Leasing?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_Dqbfta": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Beim Bike-Leasing wählst du dein Wunschbike aus und zahlst es als monatliche Leasingrate bei deinem Arbeitgeber als Firmenfahrzeug ab. Du kannst dein Bike natürlich auch in der Freizeit nutzen. Es ist nicht nur für den Weg zur Arbeit gedacht. Je nach Laufzeit des Leasing-Vertrages zahlst du 36 bis 48 Leasingraten. Ist dein geleastes Bike dann immer noch dein Traumbike, kannst du es deinem Arbeitgeber für einen Restwert komplett abkaufen und es geht in dein Eigentum über. Willst du nach Ablauf deines Leasingvertrages ein anderes Bike leasen, beginnt der Prozess von vorne.<br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NwqLrb",
+        "text_Dqbfta"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "2",
+        "only_content_color_scheme": false
+      }
+    },
+    "media_with_text_YPTMa7": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_gf7M3e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie funktioniert Bike Leasing?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_6KdYYb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nach Vertragsabschluss mit dem Leasingpartner und deinem Arbeitgeber, wird deine monatliche Leasingrate direkt von deinem Bruttogehalt abgezogen. Dabei gelten für Fahrräder und E-Bikes die gleichen steuerlichen Vorteile, wie bei Dienstfahrzeugen. Das Dienstrad wird von deinem Arbeitgeber per Gehaltsumwandlung mit 0,25% des Bruttopreises versteuert. So kannst du bis zu 40% der Anschaffungskosten einsparen.<br/>Neben dem Bike Leasing per Gehaltsumwandlung können Arbeitgeber das Dienstrad auch als Gehaltsextra komplett übernehmen. Die Anrechnung auf den Bruttolohn entfällt dabei. In diesem Fall fahren Angestellte das Firmenrad komplett kostenfrei.  <br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gf7M3e",
+        "text_6KdYYb"
+      ],
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "niccos_multicolumn_dPcTqf": {
+      "type": "niccos-multicolumn",
+      "blocks": {
+        "column_8tmCXp": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Why do we use it?",
+            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_k7Xbbz": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Why do we use it?",
+            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_cEBr3A": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Why do we use it?",
+            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_mV4f8J": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Why do we use it?",
+            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8tmCXp",
+        "column_k7Xbbz",
+        "column_cEBr3A",
+        "column_mV4f8J"
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "desktop_columns": 2,
+        "column_alignment": "left",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_RVq7rC",
+    "rich_text_HnVzEd",
+    "media_grid_GY6HzL",
+    "media_with_text_YJKdEH",
+    "media_with_text_YPTMa7",
+    "niccos_multicolumn_dPcTqf"
+  ]
+}
