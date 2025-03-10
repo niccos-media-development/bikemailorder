@@ -313,7 +313,7 @@
         "column_njxidP"
       ],
       "custom_css": [
-        ".container {max-width: 150px;}"
+        ".container {max-width: 150px; height:100px;}"
       ],
       "settings": {
         "title": "",
