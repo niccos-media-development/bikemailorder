@@ -520,7 +520,8 @@
         "headline": "Bleib auf dem Laufenden",
         "description": "Melde dich bei unserem Newsletter an und erhalte immer Informationen zu den neusten Produkten und Angeboten.",
         "background-color": "#f1f1f1",
-        "text-color": "#000000",
+        "text-color": "#0889ac",
+        "text-color-des": "#000000",
         "form": ""
       }
     }
