@@ -68,34 +68,10 @@
             "badge3_link": "",
             "badge3_text": ""
           }
-        },
-        "sidebar_kWwLGK": {
-          "type": "sidebar",
-          "settings": {
-            "title": "Motorradbekleidung,Motorradhelme,Motorad Protektoren",
-            "collection_images": "none",
-            "collection_use_product_image": false,
-            "collection_circle_image": false,
-            "show_underline": true,
-            "show_collection_images": true,
-            "sidebar_link_use_product_image": false,
-            "show_product_images": true,
-            "aspect_ratio": "1",
-            "badge1_color": "#000000",
-            "badge1_link": "",
-            "badge1_text": "",
-            "badge2_color": "#000000",
-            "badge2_link": "",
-            "badge2_text": "",
-            "badge3_color": "#000000",
-            "badge3_link": "",
-            "badge3_text": ""
-          }
         }
       },
       "block_order": [
-        "columns_YVPx4U",
-        "sidebar_kWwLGK"
+        "columns_YVPx4U"
       ],
       "settings": {
         "enable_sticky": true,
