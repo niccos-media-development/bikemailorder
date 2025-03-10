@@ -1,6 +1,7 @@
 <div class="section newsletter-sign-up" style="background-color:{{ section.settings.background-color }};">
   <div class="container">
     <h2 style="color:{{ section.settings.text-color }}!important">{{ section.settings.headline }}</h2>
+    <p>{{ section.settings.description }}</p>
     <div class="klayvio-form">
       {{ section.settings.form }}
       <form><input></form><button></button>
@@ -37,6 +38,11 @@
         "type": "text",
         "id": "headline",
         "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Beschreibung"
       },
       {
         "type": "color",
