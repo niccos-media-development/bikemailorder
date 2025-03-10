@@ -217,6 +217,37 @@
         "transparent_content_color": "#ffffff"
       }
     },
+    "faq_eGrALj": {
+      "type": "faq",
+      "blocks": {
+        "question_NyNiCR": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Was ist Bike-Leasing?",
+            "text": "<p>Beim Bike-Leasing wählst du dein Wunschbike aus und zahlst es als monatliche Leasingrate bei deinem Arbeitgeber als Firmenfahrzeug ab. Du kannst dein Bike natürlich auch in der Freizeit nutzen. Es ist nicht nur für den Weg zur Arbeit gedacht. Je nach Laufzeit des Leasing-Vertrages zahlst du 36 bis 48 Leasingraten. Ist dein geleastes Bike dann immer noch dein Traumbike, kannst du es deinem Arbeitgeber für einen Restwert komplett abkaufen und es geht in dein Eigentum über. Willst du nach Ablauf deines Leasingvertrages ein anderes Bike leasen, beginnt der Prozess von vorne.<br/></p>"
+          }
+        },
+        "question_WDJ4mw": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Wie funktioniert Bike Leasing?",
+            "text": "<p>Nach Vertragsabschluss mit dem Leasingpartner und deinem Arbeitgeber, wird deine monatliche Leasingrate direkt von deinem Bruttogehalt abgezogen. Dabei gelten für Fahrräder und E-Bikes die gleichen steuerlichen Vorteile, wie bei Dienstfahrzeugen. Das Dienstrad wird von deinem Arbeitgeber per Gehaltsumwandlung mit 0,25% des Bruttopreises versteuert. So kannst du bis zu 40% der Anschaffungskosten einsparen.<br/>Neben dem Bike Leasing per Gehaltsumwandlung können Arbeitgeber das Dienstrad auch als Gehaltsextra komplett übernehmen. Die Anrechnung auf den Bruttolohn entfällt dabei. In diesem Fall fahren Angestellte das Firmenrad komplett kostenfrei.  <br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_NyNiCR",
+        "question_WDJ4mw"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "media_with_text_YJKdEH": {
       "type": "media-with-text",
       "blocks": {
@@ -239,6 +270,9 @@
       "block_order": [
         "heading_NwqLrb",
         "text_Dqbfta"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.section--padded {display: none; }}"
       ],
       "settings": {
         "video_external": "",
@@ -277,7 +311,7 @@
         "text_6KdYYb"
       ],
       "custom_css": [
-        ".container {}"
+        "@media (max-width: 768px) {.section--padded {display: none; }}"
       ],
       "settings": {
         "video_external": "",
@@ -459,6 +493,7 @@
     "image_banner_RVq7rC",
     "rich_text_HnVzEd",
     "media_grid_GY6HzL",
+    "faq_eGrALj",
     "media_with_text_YJKdEH",
     "media_with_text_YPTMa7",
     "multi_column_TXn7Ek",
