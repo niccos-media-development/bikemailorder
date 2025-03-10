@@ -208,7 +208,7 @@
         "button_label": "",
         "button_link": "",
         "gallery_cols_max": 3,
-        "mobile_carousel": false,
+        "mobile_carousel": true,
         "gallery_cols_min": "1",
         "fixed_height_desktop": 180,
         "fixed_height_mobile": 300,
