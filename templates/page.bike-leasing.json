@@ -420,6 +420,9 @@
         "column_P4b7Lx",
         "column_JezqbU"
       ],
+      "custom_css": [
+        ".card {border-radius: 25px;}"
+      ],
       "settings": {
         "title": "Welche Vorteile bietet dir Bike-Leasing?",
         "heading_align": "text-center",
