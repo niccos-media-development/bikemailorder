@@ -68,10 +68,39 @@
             "badge3_link": "",
             "badge3_text": ""
           }
+        },
+        "pills_tb3Y8N": {
+          "type": "pills",
+          "settings": {
+            "title": "Motorradbekleidung,Motorradhelme,Motorad Protektoren",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "promo_position": "bottom",
+            "promo_min_height": 200,
+            "promo_text_color": "#ffffff",
+            "promo_tint_color": "#000000",
+            "promo_tint_opacity": 20,
+            "promo1_content": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "promo3_content": "",
+            "promo3_link_url": "",
+            "promo3_text_size": 16,
+            "promo3_text_width": 100,
+            "promo3_text_alignment": "justify-center items-center text-center"
+          }
         }
       },
       "block_order": [
-        "columns_YVPx4U"
+        "columns_YVPx4U",
+        "pills_tb3Y8N"
       ],
       "settings": {
         "enable_sticky": true,
