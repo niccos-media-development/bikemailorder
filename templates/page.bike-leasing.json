@@ -33,6 +33,7 @@
         "heading_3zztGw"
       ],
       "settings": {
+        "image_desktop": "shopify://shop_images/leasing_page_header.jpg",
         "url": "",
         "height_mode": "fixed",
         "fixed_height_desktop": 400,
@@ -45,7 +46,7 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 40,
+        "tint_opacity": 20,
         "prevent_animation": false
       }
     },
@@ -278,6 +279,7 @@
         "@media (max-width: 768px) {.section--padded {display: none; }}"
       ],
       "settings": {
+        "image": "shopify://shop_images/leasing_page_image_02.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -317,6 +319,7 @@
         "@media (max-width: 768px) {.section--padded {display: none; }}"
       ],
       "settings": {
+        "image": "shopify://shop_images/leasing_page_image_03.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -445,6 +448,7 @@
         "text_zDhpaF"
       ],
       "settings": {
+        "image": "shopify://shop_images/leasing_page_image_01.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -474,22 +478,14 @@
             "text": "<p>Damit du dein Traumfahrrad über deinen Arbeitgeber leasen kannst, muss dieser einen Leasingrahmenvertrag mit einem unserer Leasing-Partner haben. Sollte dein Arbeitgeber kein Bike-Leasing anbieten, ist das nicht schlimm. Eine Anmeldung bei einem unserer Leasingpartner ist jederzeit möglich. Nähere Informationen dazu findest du auf den Websites unserer Partner.</p>",
             "enlarge_text": false
           }
-        },
-        "button_nUHyNy": {
-          "type": "button",
-          "settings": {
-            "button_label": "Optional button",
-            "button_link": "",
-            "button_style": "btn btn--primary"
-          }
         }
       },
       "block_order": [
         "heading_4jey9j",
-        "text_AdaRE6",
-        "button_nUHyNy"
+        "text_AdaRE6"
       ],
       "settings": {
+        "image": "shopify://shop_images/leasing_page_image_04.jpg",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
