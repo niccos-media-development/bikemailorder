@@ -5685,3 +5685,7 @@ h2.text-overlay__heading.h0 {
   background: #F2F2F2;
   padding: 1.5rem;
 }
+
+.no-gap {
+  gap:0!important;
+}
