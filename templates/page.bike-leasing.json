@@ -222,7 +222,7 @@
         "gallery_cols_max": 3,
         "mobile_carousel": true,
         "gallery_cols_min": "1",
-        "fixed_height_desktop": 300,
+        "fixed_height_desktop": 320,
         "fixed_height_mobile": 350,
         "section_color_scheme": "none",
         "color_scheme": "white",
