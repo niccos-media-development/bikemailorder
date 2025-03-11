@@ -121,7 +121,7 @@
   {% if section.settings.mobile_carousel %}<div class="gallery-mobile-carousel">{% endif %}
 
   <div class="container" id="{{ section.id }}">
-    <div class="gallery grid {{ grid_classes }}{% if section.settings.mobile_carousel %} slider--mobile{% endif %}">
+    <div class="gallery grid no-gap {{ grid_classes }}{% if section.settings.mobile_carousel %} slider--mobile{% endif %}">
       {%- for block in section.blocks -%}
         {%- liquid
           assign img = block.settings.image
