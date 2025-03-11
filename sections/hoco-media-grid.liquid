@@ -101,7 +101,7 @@
   }
 {%- endstyle -%}
 
-<div class="section{% unless section_color_scheme == 'none' %} color-scheme color-scheme--{{ section_color_scheme }} section--padded section--full-width{% endunless %}" style="margin-bottom;{{ section.settings.margin-bottom }};margin-top;{{ section.settings.margin-top }};">
+<div class="section{% unless section_color_scheme == 'none' %} color-scheme color-scheme--{{ section_color_scheme }} section--padded section--full-width{% endunless %} section-no-margin" style="margin-bottom;{{ section.settings.margin-bottom }};margin-top;{{ section.settings.margin-top }};">
   {%- if section.settings.title != blank or section.settings.button_label != blank -%}
     <div class="container">
       <div class="section__header items-center flex{% if section.settings.heading_align == 'text-center' %} flex-col text-center{% elsif section.settings.heading_align == 'text-end' %} flex-row-reverse flex-wrap{% else %} flex-row flex-wrap{% endif %} gap-x-theme"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
