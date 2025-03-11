@@ -89,7 +89,7 @@
         "media_wnjJXJ": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_1.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -108,7 +108,7 @@
         "media_zbea3f": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_2.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -127,7 +127,7 @@
         "media_CNhV8a": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_3.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -146,7 +146,7 @@
         "media_73VApM": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_4.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -165,7 +165,7 @@
         "media_fp7kEw": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_5.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -184,7 +184,7 @@
         "media_w6ErQR": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_heart_test.jpg",
+            "image": "shopify://shop_images/bike_leasing_steps_6.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -221,8 +221,8 @@
         "gallery_cols_max": 3,
         "mobile_carousel": true,
         "gallery_cols_min": "1",
-        "fixed_height_desktop": 200,
-        "fixed_height_mobile": 300,
+        "fixed_height_desktop": 300,
+        "fixed_height_mobile": 350,
         "section_color_scheme": "none",
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
