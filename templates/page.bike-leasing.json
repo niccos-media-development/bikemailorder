@@ -73,6 +73,10 @@
         "heading_3QPRNX",
         "text_D4Mz78"
       ],
+      "custom_css": [
+        "h2 {padding: 0;}",
+        ".section__block {padding:0;}"
+      ],
       "settings": {
         "text_position": "justify-center",
         "text_align": "text-center",
