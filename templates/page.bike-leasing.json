@@ -621,7 +621,7 @@
         "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
-        "layout": "grid",
+        "layout": "carousel",
         "spacing": 88,
         "logo_grid_align": "justify-center",
         "color_scheme": "1",
