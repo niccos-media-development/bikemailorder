@@ -531,11 +531,12 @@
         "media_hjDb7r": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/leasing_page_image_01.jpg",
             "link_url": "",
             "columns": 2,
             "rows": 2,
             "subheading": "",
-            "title": "<p>Media heading</p>",
+            "title": "<p>Leasing</p>",
             "heading_size": "h4",
             "button_label": "",
             "button_link": "",
@@ -549,29 +550,12 @@
         "media_7mB9Gk": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/header_platzangst_womens.jpg",
             "link_url": "",
-            "columns": 1,
+            "columns": 2,
             "rows": 1,
             "subheading": "",
-            "title": "<p>Media heading</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 25
-          }
-        },
-        "media_eWatkX": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 1,
-            "rows": 1,
-            "subheading": "",
-            "title": "<p>Media heading</p>",
+            "title": "<p>Platzangst</p>",
             "heading_size": "h4",
             "button_label": "",
             "button_link": "",
@@ -585,11 +569,12 @@
         "media_UzK7Wn": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
             "link_url": "",
             "columns": 2,
             "rows": 1,
             "subheading": "",
-            "title": "<p>Media heading</p>",
+            "title": "",
             "heading_size": "h4",
             "button_label": "",
             "button_link": "",
@@ -597,18 +582,17 @@
             "text_alignment": "text-start",
             "button_style": "btn btn--primary",
             "tint_color": "#000000",
-            "tint_opacity": 25
+            "tint_opacity": 0
           }
         }
       },
       "block_order": [
         "media_hjDb7r",
         "media_7mB9Gk",
-        "media_eWatkX",
         "media_UzK7Wn"
       ],
       "settings": {
-        "title": "Media grid",
+        "title": "",
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
