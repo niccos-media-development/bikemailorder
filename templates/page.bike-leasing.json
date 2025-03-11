@@ -223,7 +223,7 @@
         "mobile_carousel": true,
         "gallery_cols_min": "1",
         "fixed_height_desktop": 340,
-        "fixed_height_mobile": 350,
+        "fixed_height_mobile": 400,
         "section_color_scheme": "none",
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
