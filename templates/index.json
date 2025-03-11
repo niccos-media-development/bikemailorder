@@ -605,12 +605,74 @@
         "text-color-des": "#000000",
         "form": ""
       }
+    },
+    "icons_with_text_GqGMRb": {
+      "type": "icons-with-text",
+      "blocks": {
+        "item_HDXcfe": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "heading": "Free shipping",
+            "text": "<p>On all orders over $100</p>",
+            "link": ""
+          }
+        },
+        "item_p7NX6q": {
+          "type": "item",
+          "settings": {
+            "icon": "price_tag",
+            "heading": "Special offers",
+            "text": "<p>Regular sales and discounts</p>",
+            "link": ""
+          }
+        },
+        "item_RCpPxY": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "heading": "Easy returns",
+            "text": "<p>Hassle free returns policy</p>",
+            "link": ""
+          }
+        },
+        "item_rUi4Yc": {
+          "type": "item",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "Chat facility",
+            "text": "<p>Talk to a real person</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_HDXcfe",
+        "item_p7NX6q",
+        "item_RCpPxY",
+        "item_rUi4Yc"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 48,
+        "title_type_scale": "medium",
+        "text_type_scale": "medium",
+        "icon_position": "beside",
+        "mobile_stack": false,
+        "section_height": "medium",
+        "color_scheme": "1",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
     "hoco_media_grid_WdMCHj",
+    "icons_with_text_GqGMRb",
     "image-banner",
     "featured_collection_q6EQfd",
     "hoco_media_grid_gHd4zE",
