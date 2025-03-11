@@ -128,6 +128,87 @@
         "button_style": "btn btn--primary"
       }
     },
+    "hoco_media_grid_WdMCHj": {
+      "type": "hoco-media-grid",
+      "blocks": {
+        "media_hjDb7r": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/leasing_page_image_01.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 2,
+            "subheading": "",
+            "title": "<p>Leasing</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_7mB9Gk": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/header_platzangst_womens.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Platzangst</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_UzK7Wn": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_hjDb7r",
+        "media_7mB9Gk",
+        "media_UzK7Wn"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 300,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
+      }
+    },
     "image-banner": {
       "type": "image-banner",
       "blocks": {
@@ -202,21 +283,21 @@
         "button_style": "btn btn--primary"
       }
     },
-    "media-grid": {
-      "type": "media-grid",
+    "hoco_media_grid_gHd4zE": {
+      "type": "hoco-media-grid",
       "blocks": {
-        "media-0": {
+        "media_pCXxNe": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/home_women_fw24.jpg",
-            "link_url": "shopify://pages/impressum",
+            "image": "shopify://shop_images/home_men_fw24_new.jpg",
+            "link_url": "",
             "columns": 2,
-            "rows": 2,
+            "rows": 1,
             "subheading": "",
-            "title": "<p>Damen</p>",
+            "title": "<p>Herren</p>",
             "heading_size": "h4",
             "button_label": "",
-            "button_link": "/",
+            "button_link": "",
             "overlay_position": "justify-start items-end",
             "text_alignment": "text-start",
             "button_style": "btn btn--primary",
@@ -224,18 +305,18 @@
             "tint_opacity": 0
           }
         },
-        "media-1": {
+        "media_MikWcN": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/home_men_fw24_new.jpg",
-            "link_url": "shopify://pages/blog",
+            "image": "shopify://shop_images/home_women_fw24.jpg",
+            "link_url": "",
             "columns": 2,
-            "rows": 2,
+            "rows": 1,
             "subheading": "",
-            "title": "<p>Herren</p>",
-            "heading_size": "h5",
+            "title": "<p>Damen</p>",
+            "heading_size": "h4",
             "button_label": "",
-            "button_link": "/",
+            "button_link": "",
             "overlay_position": "justify-start items-end",
             "text_alignment": "text-start",
             "button_style": "btn btn--primary",
@@ -245,19 +326,19 @@
         }
       },
       "block_order": [
-        "media-0",
-        "media-1"
+        "media_pCXxNe",
+        "media_MikWcN"
       ],
       "settings": {
         "title": "",
         "heading_align": "text-start",
         "button_label": "",
-        "button_link": "/",
+        "button_link": "",
         "gallery_cols_max": 4,
         "mobile_carousel": false,
         "gallery_cols_min": "1",
-        "fixed_height_desktop": 50,
-        "fixed_height_mobile": 130,
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 300,
         "section_color_scheme": "none",
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
@@ -524,101 +605,20 @@
         "text-color-des": "#000000",
         "form": ""
       }
-    },
-    "hoco_media_grid_WdMCHj": {
-      "type": "hoco-media-grid",
-      "blocks": {
-        "media_hjDb7r": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/leasing_page_image_01.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 2,
-            "subheading": "",
-            "title": "<p>Leasing</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 25
-          }
-        },
-        "media_7mB9Gk": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/header_platzangst_womens.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "subheading": "",
-            "title": "<p>Platzangst</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 25
-          }
-        },
-        "media_UzK7Wn": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "subheading": "",
-            "title": "",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "media_hjDb7r",
-        "media_7mB9Gk",
-        "media_UzK7Wn"
-      ],
-      "settings": {
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "gallery_cols_max": 4,
-        "mobile_carousel": false,
-        "gallery_cols_min": "1",
-        "fixed_height_desktop": 180,
-        "fixed_height_mobile": 300,
-        "section_color_scheme": "none",
-        "color_scheme": "white",
-        "transparent_content_color": "#ffffff"
-      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
+    "hoco_media_grid_WdMCHj",
     "image-banner",
     "featured_collection_q6EQfd",
-    "media-grid",
+    "hoco_media_grid_gHd4zE",
     "collection_list_PN8XCm",
     "hoco_youtube_channel_preview_tbrkV4",
     "featured_blog_UibKyf",
     "logo_list_apLBmG",
     "niccos_multicolumn_XRGiNj",
-    "hoco_newsletter_signup_QKrWp9",
-    "hoco_media_grid_WdMCHj"
+    "hoco_newsletter_signup_QKrWp9"
   ]
 }
