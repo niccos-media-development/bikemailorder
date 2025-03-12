@@ -75,7 +75,7 @@
       ],
       "custom_css": [
         "h2 {padding: 0;}",
-        ".section__block {padding:0;}"
+        ".section__block {padding: 0;}"
       ],
       "settings": {
         "text_position": "justify-center",
@@ -291,7 +291,8 @@
         "text_Dqbfta"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.section--padded {display: none; }}"
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius: 25px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/leasing_page_image_02.jpg",
@@ -331,7 +332,8 @@
         "text_6KdYYb"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.section--padded {display: none; }}"
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius: 25px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/leasing_page_image_03.jpg",
@@ -491,7 +493,8 @@
         "text_AdaRE6"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.section--padded {display: none; }}"
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius:25px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/leasing_page_image_04.jpg",
