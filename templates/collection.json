@@ -161,6 +161,7 @@
         "collection_agwVdF",
         "collection_tr74gX"
       ],
+      "disabled": true,
       "custom_css": [
         ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
         ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
