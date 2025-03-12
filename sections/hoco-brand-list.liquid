@@ -9,7 +9,7 @@
   Sammle alle Marken aus den Produkten
 {%- endcomment -%}
 {%- for product in collections.all.products -%}
-  {%- assign brand = product.metafields.custom.brand.value | default: product.vendor -%}
+  {%- assign brand = product.vendor -%}
   {%- unless brands contains brand -%}
     {%- assign brands = brands | push: brand -%}
   {%- endunless -%}
