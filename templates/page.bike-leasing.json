@@ -494,7 +494,7 @@
       ],
       "custom_css": [
         "@media (max-width: 768px) {.section--padded {display: none; }}",
-        "img {border-radius:25px;}"
+        "img {border-radius: 25px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/leasing_page_image_04.jpg",
@@ -516,6 +516,7 @@
         "logo_BYeU7G": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_jobrad.png",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -524,6 +525,7 @@
         "logo_ejVKfj": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo-bikeleasing.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -532,6 +534,7 @@
         "logo_RpdwrA": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_business_bike.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
