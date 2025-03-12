@@ -50,7 +50,8 @@
         "collection_EDQU7M": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_01.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_01.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.categorie_image_01.value }}"
           }
         },
         "collection_mBCMQn": {
