@@ -203,25 +203,6 @@
             "tint_opacity": 20
           }
         },
-        "wide_promotion_Bd7Egy": {
-          "type": "wide-promotion",
-          "settings": {
-            "position": "top",
-            "view": "grid_list",
-            "hide_on_filter": true,
-            "min_height": 150,
-            "link_url": "",
-            "content": "<p>Promotion text</p>",
-            "text_type_scale": "--h4-font-size",
-            "text_width": 400,
-            "text_alignment": "justify-center items-center text-center",
-            "button_label": "",
-            "button_style": "btn btn--primary",
-            "text_color": "#ffffff",
-            "tint_color": "#000000",
-            "tint_opacity": 20
-          }
-        },
         "card_promotion_GhJwXV": {
           "type": "card-promotion",
           "settings": {
@@ -229,9 +210,10 @@
             "view": "grid_list",
             "hide_on_filter": true,
             "color_scheme": "1",
+            "image": "{{ collection.metafields.custom.collection_promo_01.value }}",
             "image_ratio": "1",
-            "link_url": "",
-            "title": "Promotion title",
+            "link_url": "{{ collection.url }}",
+            "title": "{{ collection.metafields.custom.promo_title_01_listing_.value }}",
             "content": "<p>Promotion text</p>",
             "button_label": "Button",
             "button_style": "btn btn--secondary",
@@ -241,7 +223,6 @@
       },
       "block_order": [
         "image_promotion_xqCn7i",
-        "wide_promotion_Bd7Egy",
         "card_promotion_GhJwXV"
       ],
       "settings": {
