@@ -326,16 +326,6 @@
         "full_width": true
       }
     },
-    "hoco_youtube_channel_preview_tbrkV4": {
-      "type": "hoco-youtube-channel-preview",
-      "settings": {
-        "headline": "Get the Knowledge",
-        "text": "Tubeless oder Schlauch? Warum Bremsen einbremsen? Die Antworten auf diese und weitere technische Fragen findest du in unserem YouTube-Kanal!",
-        "youtube1": "aeuer-szQ6M",
-        "youtube2": "IOzt9-pA3PI",
-        "image_1": "shopify://shop_images/youtube_profile.png"
-      }
-    },
     "hoco_media_grid_WdMCHj": {
       "type": "hoco-media-grid",
       "blocks": {
@@ -417,6 +407,16 @@
         "section_color_scheme": "none",
         "color_scheme": "white",
         "transparent_content_color": "#ffffff"
+      }
+    },
+    "hoco_youtube_channel_preview_tbrkV4": {
+      "type": "hoco-youtube-channel-preview",
+      "settings": {
+        "headline": "Get the Knowledge",
+        "text": "Tubeless oder Schlauch? Warum Bremsen einbremsen? Die Antworten auf diese und weitere technische Fragen findest du in unserem YouTube-Kanal!",
+        "youtube1": "aeuer-szQ6M",
+        "youtube2": "IOzt9-pA3PI",
+        "image_1": "shopify://shop_images/youtube_profile.png"
       }
     },
     "featured_blog_UibKyf": {
@@ -601,6 +601,7 @@
     },
     "hoco_newsletter_signup_QKrWp9": {
       "type": "hoco-newsletter_signup",
+      "disabled": true,
       "settings": {
         "headline": "Bleib auf dem Laufenden",
         "description": "Melde dich bei unserem Newsletter an und erhalte immer Informationen zu den neusten Produkten und Angeboten.",
