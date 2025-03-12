@@ -203,28 +203,10 @@
             "tint_color": "#000000",
             "tint_opacity": 20
           }
-        },
-        "card_promotion_GhJwXV": {
-          "type": "card-promotion",
-          "settings": {
-            "position": 1,
-            "view": "grid_list",
-            "hide_on_filter": true,
-            "color_scheme": "1",
-            "image": "{{ collection.metafields.custom.collection_promo_01.value }}",
-            "image_ratio": "1",
-            "link_url": "{{ collection.url }}",
-            "title": "{{ collection.metafields.custom.promo_title_01_listing_.value }}",
-            "content": "<p>Promotion text</p>",
-            "button_label": "Button",
-            "button_style": "btn btn--secondary",
-            "button_bottom_align": true
-          }
         }
       },
       "block_order": [
-        "image_promotion_xqCn7i",
-        "card_promotion_GhJwXV"
+        "image_promotion_xqCn7i"
       ],
       "settings": {
         "products_per_page": 16,
