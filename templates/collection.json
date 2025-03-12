@@ -193,7 +193,7 @@
             "min_height": 150,
             "image": "{{ collection.metafields.custom.collection_promo_01.value }}",
             "link_url": "{{ collection.metafields.custom.promo_url_01_listing.value }}",
-            "content": "<p>{{ collection.metafields.custom.promo_title_01_listing_.value }}</p>",
+            "content": "<h2>{{ collection.metafields.custom.promo_title_01_listing_.value }}</h2>",
             "text_type_scale": "--h4-font-size",
             "text_width": 400,
             "text_alignment": "justify-start items-start",
