@@ -128,87 +128,6 @@
         "button_style": "btn btn--primary"
       }
     },
-    "hoco_media_grid_WdMCHj": {
-      "type": "hoco-media-grid",
-      "blocks": {
-        "media_hjDb7r": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/leasing_page_image_01.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 2,
-            "subheading": "",
-            "title": "<p>Leasing</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 0
-          }
-        },
-        "media_7mB9Gk": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/header_platzangst_womens.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "subheading": "",
-            "title": "<p>Platzangst</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 0
-          }
-        },
-        "media_UzK7Wn": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "subheading": "",
-            "title": "",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "media_hjDb7r",
-        "media_7mB9Gk",
-        "media_UzK7Wn"
-      ],
-      "settings": {
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "gallery_cols_max": 4,
-        "mobile_carousel": false,
-        "gallery_cols_min": "1",
-        "fixed_height_desktop": 180,
-        "fixed_height_mobile": 300,
-        "section_color_scheme": "none",
-        "color_scheme": "white",
-        "transparent_content_color": "#ffffff"
-      }
-    },
     "image-banner": {
       "type": "image-banner",
       "blocks": {
@@ -331,6 +250,8 @@
       ],
       "settings": {
         "title": "",
+        "margin-top": "0px",
+        "margin-bottom": "0px",
         "heading_align": "text-start",
         "button_label": "",
         "button_link": "",
@@ -413,6 +334,89 @@
         "youtube1": "aeuer-szQ6M",
         "youtube2": "IOzt9-pA3PI",
         "image_1": "shopify://shop_images/youtube_profile.png"
+      }
+    },
+    "hoco_media_grid_WdMCHj": {
+      "type": "hoco-media-grid",
+      "blocks": {
+        "media_hjDb7r": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/leasing_page_image_01.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 2,
+            "subheading": "",
+            "title": "<p>Leasing</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_7mB9Gk": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/header_platzangst_womens.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Platzangst</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_UzK7Wn": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_hjDb7r",
+        "media_7mB9Gk",
+        "media_UzK7Wn"
+      ],
+      "settings": {
+        "title": "",
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 300,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
       }
     },
     "featured_blog_UibKyf": {
@@ -605,78 +609,16 @@
         "text-color-des": "#000000",
         "form": ""
       }
-    },
-    "icons_with_text_GqGMRb": {
-      "type": "icons-with-text",
-      "blocks": {
-        "item_HDXcfe": {
-          "type": "item",
-          "settings": {
-            "icon": "truck",
-            "heading": "Free shipping",
-            "text": "<p>On all orders over $100</p>",
-            "link": ""
-          }
-        },
-        "item_p7NX6q": {
-          "type": "item",
-          "settings": {
-            "icon": "price_tag",
-            "heading": "Special offers",
-            "text": "<p>Regular sales and discounts</p>",
-            "link": ""
-          }
-        },
-        "item_RCpPxY": {
-          "type": "item",
-          "settings": {
-            "icon": "return",
-            "heading": "Easy returns",
-            "text": "<p>Hassle free returns policy</p>",
-            "link": ""
-          }
-        },
-        "item_rUi4Yc": {
-          "type": "item",
-          "settings": {
-            "icon": "chat_bubble",
-            "heading": "Chat facility",
-            "text": "<p>Talk to a real person</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_HDXcfe",
-        "item_p7NX6q",
-        "item_RCpPxY",
-        "item_rUi4Yc"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_align": "text-start",
-        "icon_size": 48,
-        "title_type_scale": "medium",
-        "text_type_scale": "medium",
-        "icon_position": "beside",
-        "mobile_stack": false,
-        "section_height": "medium",
-        "color_scheme": "1",
-        "full_width": true,
-        "dividers": "none",
-        "prevent_animation": false
-      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
-    "hoco_media_grid_WdMCHj",
-    "icons_with_text_GqGMRb",
     "image-banner",
     "featured_collection_q6EQfd",
     "hoco_media_grid_gHd4zE",
     "collection_list_PN8XCm",
+    "hoco_media_grid_WdMCHj",
     "hoco_youtube_channel_preview_tbrkV4",
     "featured_blog_UibKyf",
     "logo_list_apLBmG",
