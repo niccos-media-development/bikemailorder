@@ -22,15 +22,7 @@
   {%- endif -%}
 
 
-<script 
-            type="text/javascript" 
-            src="https://cdn.grw.reputon.com/assets/widget.js?shop=zruax6-00.myshopify.com"  defer></script>
-<div class="reputon-google-reviews-widget"
-                 data-content-index="1"
-                 data-theme="light"
-                 data-type="basic"
-                 data-minimize="false"
-                 style="display: flex; justify-content: center;"></div>
+
 
 
   <announcement-bar class="announcement block text-body-{{ section.settings.text_type_scale }}" data-slide-delay="{{- section.settings.read_time | times: 1000 -}}">
@@ -42,6 +34,15 @@
               <div class="rte">{{- block.settings.text -}}</div>
             </div>
           {%- endfor -%}
+<script 
+            type="text/javascript" 
+            src="https://cdn.grw.reputon.com/assets/widget.js?shop=zruax6-00.myshopify.com"  defer></script>
+<div class="reputon-google-reviews-widget"
+                 data-content-index="1"
+                 data-theme="light"
+                 data-type="basic"
+                 data-minimize="false"
+                 style="display: flex; justify-content: center;"></div>
         </div>
 
         {% if section.settings.link1 or section.settings.link2 or show_localization %}
