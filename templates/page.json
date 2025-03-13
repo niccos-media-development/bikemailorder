@@ -16,73 +16,62 @@
         "heading_align": "text-center"
       }
     },
-    "niccos_multicolumn_dPcTqf": {
-      "type": "niccos-multicolumn",
+    "logo_list_mMDrtX": {
+      "type": "logo-list",
       "blocks": {
-        "column_8tmCXp": {
-          "type": "column",
+        "logo_Y3Dgjr": {
+          "type": "logo",
           "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Why do we use it?",
-            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
-            "button_label": "",
-            "button_link": ""
+            "image": "shopify://shop_images/logo_shimano.png",
+            "url": "",
+            "logo_width": 260,
+            "text": ""
           }
         },
-        "column_k7Xbbz": {
-          "type": "column",
+        "logo_VcPeL8": {
+          "type": "logo",
           "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Why do we use it?",
-            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
-            "button_label": "",
-            "button_link": ""
+            "image": "shopify://shop_images/logo_bixs.png",
+            "url": "",
+            "logo_width": 260,
+            "text": ""
           }
         },
-        "column_cEBr3A": {
-          "type": "column",
+        "logo_eaqqxU": {
+          "type": "logo",
           "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Why do we use it?",
-            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
-            "button_label": "",
-            "button_link": ""
+            "image": "shopify://shop_images/logo_rondo.png",
+            "url": "",
+            "logo_width": 260,
+            "text": ""
           }
         },
-        "column_mV4f8J": {
-          "type": "column",
+        "logo_Uic7F8": {
+          "type": "logo",
           "settings": {
-            "enable_media": false,
-            "media_scale": 100,
-            "heading": "Why do we use it?",
-            "text": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>",
-            "button_label": "",
-            "button_link": ""
+            "image": "shopify://shop_images/logo_orbea.png",
+            "url": "",
+            "logo_width": 260,
+            "text": ""
           }
         }
       },
       "block_order": [
-        "column_8tmCXp",
-        "column_k7Xbbz",
-        "column_cEBr3A",
-        "column_mV4f8J"
+        "logo_Y3Dgjr",
+        "logo_VcPeL8",
+        "logo_eaqqxU",
+        "logo_Uic7F8"
       ],
       "settings": {
-        "title": "Multi-column",
-        "heading_align": "text-start",
+        "title": "UNSERE Premium Marken",
+        "heading_align": "text-center",
         "button_label": "",
         "button_link": "",
-        "desktop_columns": 2,
-        "column_alignment": "left",
-        "column_size": "medium",
-        "column_align": "left",
-        "media_align": "text-center",
-        "image_ratio": "1",
-        "color_scheme": "none",
-        "button_style": "btn btn--secondary"
+        "layout": "grid",
+        "spacing": 80,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "1",
+        "full_width": true
       }
     },
     "custom_liquid_EmaqmA": {
@@ -98,7 +87,7 @@
   },
   "order": [
     "main",
-    "niccos_multicolumn_dPcTqf",
+    "logo_list_mMDrtX",
     "custom_liquid_EmaqmA"
   ]
 }
