@@ -16,78 +16,33 @@
         "heading_align": "text-center"
       }
     },
-    "logo_list_mMDrtX": {
-      "type": "logo-list",
+    "rich_text_jqKdHr": {
+      "type": "rich-text",
       "blocks": {
-        "logo_Y3Dgjr": {
-          "type": "logo",
+        "text_eggkrj": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/logo_shimano.png",
-            "url": "",
-            "logo_width": 260,
-            "text": ""
-          }
-        },
-        "logo_VcPeL8": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/logo_bixs.png",
-            "url": "",
-            "logo_width": 260,
-            "text": ""
-          }
-        },
-        "logo_eaqqxU": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/logo_rondo.png",
-            "url": "",
-            "logo_width": 260,
-            "text": ""
-          }
-        },
-        "logo_Uic7F8": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/logo_orbea.png",
-            "url": "",
-            "logo_width": 260,
-            "text": ""
+            "text": "<p>Der nachfolgende Hinweis richtet sich an diejenigen, die Batterien oder Produkte mit eingebauten Batterien nutzen und in der an sie gelieferten Form nicht mehr weiterveräußern (Endnutzer):</p><h3>Unentgeldliche Rücknahmen von Altbatterien</h3><p>Batterien dürfen nicht über den Hausmüll entsorgt werden. Sie sind zur Rückgabe von Altbatterien gesetzlich verpflichtet, damit eine fachgerechte Entsorgung gewährleistet werden kann. Sie können Altbatterien an einer kommunalen Sammelstelle oder im Handel vor Ort abgeben. Auch wir sind als Vertreiber von Batterien zur Rücknahme von Altbatterien verpflichtet, wobei sich unsere Rücknahmeverpflichtung auf Altbatterien der Art beschränkt, die wir als Neubatterien in unserem Sortiment führen oder geführt haben. Altbatterien vorgenannter Art können Sie daher entweder ausreichend frankiert an uns zurücksenden oder sie direkt an unserem Versandlager unter der im Impressum genannten Adresse unentgeltlich abgeben.</p><h3>Bedeutung der Batteriesymbole</h3><p>Batterien sind mit dem Symbol einer durchgekreuzten Mülltonne (s. u.) gekennzeichnet. Dieses Symbol weist darauf hin, dass Batterien nicht in den Hausmüll gegeben werden dürfen. Bei Batterien, die mehr als 0,0005 Masseprozent Quecksilber, mehr als 0,002 Masseprozent Cadmium oder mehr als 0,004 Masseprozent Blei enthalten, befindet sich unter dem Mülltonnen-Symbol die chemische Bezeichnung des jeweils eingesetzten Schadstoffes – dabei steht \"Cd\" für Cadmium, \"Pb\" steht für Blei, und \"Hg\" für Quecksilber.</p>",
+            "enlarge_text": false
           }
         }
       },
       "block_order": [
-        "logo_Y3Dgjr",
-        "logo_VcPeL8",
-        "logo_eaqqxU",
-        "logo_Uic7F8"
+        "text_eggkrj"
       ],
       "settings": {
-        "title": "UNSERE Premium Marken",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "grid",
-        "spacing": 80,
-        "logo_grid_align": "justify-center",
-        "color_scheme": "1",
-        "full_width": true
-      }
-    },
-    "custom_liquid_EmaqmA": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% assign alphabet = \"#\" | append: \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" | split: \"\" %}\n\n<h2>Markenverzeichnis</h2>\n\n<!-- Alphabet-Index -->\n<div>\n  <p>\n    {% for letter in alphabet %}\n      <a href=\"#{{ letter }}\">{{ letter }}</a> |\n    {% endfor %}\n  </p>\n</div>\n\n<!-- Markenliste -->\n<div>\n  {% for letter in alphabet %}\n    {% assign has_brands = false %}\n    \n    <!-- Prüfen, ob mindestens eine Collection mit \"Brandpage\" existiert -->\n    {% for collection in collections %}\n      {% assign collection_typ = collection.metafields.custom.collection_typ %}\n      \n      {% if collection_typ == \"Brandpage\" %}\n        {% assign first_letter = collection.title | slice: 0 | upcase %}\n\n        <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->\n        {% assign first_char = first_letter | slice: 0, 1 %}\n        {% if first_char == \"0\" or first_char == \"1\" or first_char == \"2\" or first_char == \"3\" or first_char == \"4\" or first_char == \"5\" or first_char == \"6\" or first_char == \"7\" or first_char == \"8\" or first_char == \"9\" %}\n          {% assign first_letter = \"#\" %}\n        {% endif %}\n\n        {% if first_letter == letter %}\n          {% assign has_brands = true %}\n        {% endif %}\n      {% endif %}\n    {% endfor %}\n\n    <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->\n    {% if has_brands %}\n      <h3 id=\"{{ letter }}\">{{ letter }}</h3>\n      <ul>\n        {% for collection in collections %}\n          {% assign collection_typ = collection.metafields.custom.collection_typ %}\n\n          {% if collection_typ == \"Brandpage\" %}\n            {% assign first_letter = collection.title | slice: 0 | upcase %}\n            \n            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->\n            {% assign first_char = first_letter | slice: 0, 1 %}\n            {% if first_char == \"0\" or first_char == \"1\" or first_char == \"2\" or first_char == \"3\" or first_char == \"4\" or first_char == \"5\" or first_char == \"6\" or first_char == \"7\" or first_char == \"8\" or first_char == \"9\" %}\n              {% assign first_letter = \"#\" %}\n            {% endif %}\n\n            {% if first_letter == letter %}\n              <li><a href=\"{{ collection.url }}\">{{ collection.title }}</a></li>\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      </ul>\n    {% endif %}\n  {% endfor %}\n</div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": false,
+        "color_scheme": "none",
+        "full_width": true,
         "prevent_animation": false
       }
     }
   },
   "order": [
     "main",
-    "logo_list_mMDrtX",
-    "custom_liquid_EmaqmA"
+    "rich_text_jqKdHr"
   ]
 }
