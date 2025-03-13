@@ -544,7 +544,6 @@
                       <input type="hidden" name="quantity" value="1">
                     {%- endif -%}
 
-                    <div id="swym-wishlist-pdp-div" style="width:100%; display:flex;">
                     <div class="product-info__add-button">
                       {%- capture add_to_cart_text -%}
                         {%- if product.template_suffix contains 'preorder' -%}
@@ -574,10 +573,6 @@
                           {{- 'products.product.sold_out' | t -}}
                         {%- endif -%}
                       </button>
-                    </div>
-                      <!-- Swym button on product pages -->
-        <div class="swym-wishlist-button-bar"></div>
-<!-- Swym button on product pages -->
                     </div>
                   </div>
 
