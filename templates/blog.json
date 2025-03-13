@@ -38,7 +38,7 @@
       "type": "main-blog",
       "settings": {
         "show_blog_title": false,
-        "description": "<p>Hier kommt der Introtext</p>",
+        "description": "<p>Willkommen im Bike Blog! Hier informieren wir dich regelmäßig über die Neuheiten rund um E-Bikes, Gravel Bikes, Bikepacking oder MTB. Wir testen außerdem die neuesten Produkte und helfen dir mit Anleitungen dabei, das Beste aus deinem Bike herauszuholen. Viel Spaß beim Stöbern!</p>",
         "show_share_links": false,
         "text_align": "text-start",
         "posts_per_page": 13,
