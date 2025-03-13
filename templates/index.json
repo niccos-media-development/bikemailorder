@@ -772,7 +772,7 @@
             "contentIndex": "1",
             "themeId": "light",
             "autoscroll": true,
-            "showRating": true,
+            "showRating": false,
             "showReviewPhotos": false,
             "writeReview": true,
             "fixedReviewsHeight": false
