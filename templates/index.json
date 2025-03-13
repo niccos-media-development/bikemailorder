@@ -351,7 +351,7 @@
         "zoom_mode": "hover",
         "hover_zoom": "large",
         "color_scheme": "1",
-        "border_color": "transparent",
+        "border_color": "rgba(0,0,0,0)",
         "bg_color": "#f4f4f4"
       }
     },
@@ -762,6 +762,29 @@
         "accessibility_info": "Featured collections and new arrivals",
         "prevent_animation": false
       }
+    },
+    "17418678918086c625": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_carousel_widget_block_X8F4ab": {
+          "type": "shopify://apps/google-reviews/blocks/carousel-widget-block/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "contentIndex": "1",
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": true,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_carousel_widget_block_X8F4ab"
+      ],
+      "settings": {
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -778,6 +801,7 @@
     "logo_list_apLBmG",
     "niccos_multicolumn_XRGiNj",
     "hoco_newsletter_signup_QKrWp9",
-    "navigation_slideshow_VacBz7"
+    "navigation_slideshow_VacBz7",
+    "17418678918086c625"
   ]
 }
