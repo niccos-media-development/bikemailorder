@@ -103,7 +103,7 @@
             "show_qty_selector": true,
             "enable_dynamic_checkout": false,
             "show_pickup_availability": true,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": true
           }
         },
         "wishlist_plus_wishlist_pdp_button_MDQYb3": {
