@@ -453,7 +453,7 @@
     "cart_shaking_frequency": 4,
     "show_free_shipping_notice": true,
     "free_shipping_color_scheme": "none",
-    "animations_enabled": "mobile_desktop",
+    "animations_enabled": "desktop",
     "animation_speed": "medium",
     "image_quality": "0.75",
     "blur_message_delay": 4,
