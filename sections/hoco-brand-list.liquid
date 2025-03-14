@@ -1,84 +1,68 @@
-{%- comment -%}
-  Section: Brand List
-  Diese Section zeigt Marken aus Metafields an, sortiert nach Alphabet.
-{%- endcomment -%}
-
-{%- assign brands = "" | split: "" -%}
-
-{%- comment -%}
-  Sammle alle Marken aus den Produkten
-{%- endcomment -%}
-{%- for product in collections.all.products -%}
-  {%- assign brand = product.vendor -%}
-  {%- unless brands contains brand -%}
-    {%- assign brands = brands | push: brand -%}
-  {%- endunless -%}
-{%- endfor -%}
-
-{%- comment -%}
-  Sortiere die Marken alphabetisch
-{%- endcomment -%}
-{%- assign brands = brands | sort_natural -%}
-
-{%- comment -%}
-  Gruppiere die Marken nach Anfangsbuchstaben
-{%- endcomment -%}
-{%- assign grouped_brands = brands | group_by: "first_letter" -%}
-
-{%- comment -%}
-  Erstelle die Navigation
-{%- endcomment -%}
-<div class="brand-navigation">
-  <ul>
-    {%- for group in grouped_brands -%}
-      <li><a href="#{{ group.name }}">{{ group.name }}</a></li>
-    {%- endfor -%}
-  </ul>
+{% assign alphabet = "#" | append: "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+<div class="section">
+  <div class="container">
+    <h2>Markenverzeichnis</h2>
+    
+    <!-- Alphabet-Index -->
+    <div>
+      <p>
+        {% for letter in alphabet %}
+          <a href="#{{ letter }}">{{ letter }}</a> |
+        {% endfor %}
+      </p>
+    </div>
+    
+    <!-- Markenliste -->
+    <div>
+      {% for letter in alphabet %}
+        {% assign has_brands = false %}
+        
+        <!-- Prüfen, ob mindestens eine Collection mit "Brandpage" existiert -->
+        {% for collection in collections %}
+          {% assign collection_typ = collection.metafields.custom.collection_typ %}
+          
+          {% if collection_typ == "Brandpage" %}
+            {% assign first_letter = collection.title | slice: 0 | upcase %}
+    
+            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+            {% assign first_char = first_letter | slice: 0, 1 %}
+            {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
+              {% assign first_letter = "#" %}
+            {% endif %}
+    
+            {% if first_letter == letter %}
+              {% assign has_brands = true %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    
+        <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->
+        {% if has_brands %}
+          <h3 id="{{ letter }}">{{ letter }}</h3>
+          <ul>
+            {% for collection in collections %}
+              {% assign collection_typ = collection.metafields.custom.collection_typ %}
+    
+              {% if collection_typ == "Brandpage" %}
+                {% assign first_letter = collection.title | slice: 0 | upcase %}
+                
+                <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+                {% assign first_char = first_letter | slice: 0, 1 %}
+                {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
+                  {% assign first_letter = "#" %}
+                {% endif %}
+    
+                {% if first_letter == letter %}
+                  <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
-
-{%- comment -%}
-  Zeige die Markenliste an
-{%- endcomment -%}
-<div class="brand-list">
-  {%- for group in grouped_brands -%}
-    <h2 id="{{ group.name }}">{{ group.name }}</h2>
-    <ul>
-      {%- for brand in group.items -%}
-        <li>{{ brand }}</li>
-      {%- endfor -%}
-    </ul>
-  {%- endfor -%}
-</div>
-
-<style>
-  .brand-navigation {
-    margin-bottom: 20px;
-  }
-  .brand-navigation ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .brand-navigation ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-  }
-  .brand-list h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-  .brand-list ul {
-    list-style: none;
-    padding: 0;
-  }
-  .brand-list ul li {
-    margin-bottom: 5px;
-  }
-</style>
 
 {% schema %}
   {
