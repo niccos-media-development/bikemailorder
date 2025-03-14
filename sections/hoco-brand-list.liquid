@@ -5,7 +5,7 @@
     
     <!-- Alphabet-Index -->
     <div>
-      <ul>
+      <ul class="alphabet-nav">
         {% for letter in alphabet %}
           <li>
             <a href="#{{ letter }}">{{ letter }}</a>
@@ -65,6 +65,15 @@
     </div>
   </div>
 </div>
+
+{% stylesheet %}
+
+.alphabet-nav {
+  display: flex;
+  flex-direction: row;
+}
+  
+{% endstylesheet %}
 
 {% schema %}
   {
