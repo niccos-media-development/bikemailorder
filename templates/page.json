@@ -76,6 +76,7 @@
     },
     "custom_liquid_EmaqmA": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% assign alphabet = \"#\" | append: \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" | split: \"\" %}\n\n<h2>Markenverzeichnis</h2>\n\n<!-- Alphabet-Index -->\n<div>\n  <p>\n    {% for letter in alphabet %}\n      <a href=\"#{{ letter }}\">{{ letter }}</a> |\n    {% endfor %}\n  </p>\n</div>\n\n<!-- Markenliste -->\n<div>\n  {% for letter in alphabet %}\n    {% assign has_brands = false %}\n    \n    <!-- Prüfen, ob mindestens eine Collection mit \"Brandpage\" existiert -->\n    {% for collection in collections %}\n      {% assign collection_typ = collection.metafields.custom.collection_typ %}\n      \n      {% if collection_typ == \"Brandpage\" %}\n        {% assign first_letter = collection.title | slice: 0 | upcase %}\n\n        <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->\n        {% assign first_char = first_letter | slice: 0, 1 %}\n        {% if first_char == \"0\" or first_char == \"1\" or first_char == \"2\" or first_char == \"3\" or first_char == \"4\" or first_char == \"5\" or first_char == \"6\" or first_char == \"7\" or first_char == \"8\" or first_char == \"9\" %}\n          {% assign first_letter = \"#\" %}\n        {% endif %}\n\n        {% if first_letter == letter %}\n          {% assign has_brands = true %}\n        {% endif %}\n      {% endif %}\n    {% endfor %}\n\n    <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->\n    {% if has_brands %}\n      <h3 id=\"{{ letter }}\">{{ letter }}</h3>\n      <ul>\n        {% for collection in collections %}\n          {% assign collection_typ = collection.metafields.custom.collection_typ %}\n\n          {% if collection_typ == \"Brandpage\" %}\n            {% assign first_letter = collection.title | slice: 0 | upcase %}\n            \n            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->\n            {% assign first_char = first_letter | slice: 0, 1 %}\n            {% if first_char == \"0\" or first_char == \"1\" or first_char == \"2\" or first_char == \"3\" or first_char == \"4\" or first_char == \"5\" or first_char == \"6\" or first_char == \"7\" or first_char == \"8\" or first_char == \"9\" %}\n              {% assign first_letter = \"#\" %}\n            {% endif %}\n\n            {% if first_letter == letter %}\n              <li><a href=\"{{ collection.url }}\">{{ collection.title }}</a></li>\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      </ul>\n    {% endif %}\n  {% endfor %}\n</div>",
         "section_height": "default",
@@ -83,11 +84,16 @@
         "dividers": "none",
         "prevent_animation": false
       }
+    },
+    "hoco_brand_list_TgE3dG": {
+      "type": "hoco-brand-list",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "logo_list_mMDrtX",
-    "custom_liquid_EmaqmA"
+    "custom_liquid_EmaqmA",
+    "hoco_brand_list_TgE3dG"
   ]
 }
