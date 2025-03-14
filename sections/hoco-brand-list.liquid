@@ -5,11 +5,13 @@
     
     <!-- Alphabet-Index -->
     <div>
-      <p>
+      <ul>
         {% for letter in alphabet %}
-          <a href="#{{ letter }}">{{ letter }}</a> |
+          <li>
+            <a href="#{{ letter }}">{{ letter }}</a>
+          </li>
         {% endfor %}
-      </p>
+      </ul>
     </div>
     
     <!-- Markenliste -->
