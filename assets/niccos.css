@@ -80,18 +80,11 @@
 .leasing-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.btn.leasing.btn--primary,
-.btn.btn--primary {
-  flex: 1;
-  width: 100%;
-  max-width: 400px;
 }
 
 .btn.leasing.btn--primary {
+  flex: 1 1 65%;
+  margin-inline-start: calc(2 * var(--space-unit));
   background: #12ad62;
   border: var(--btn-border-width) solid #12ad62;
   outline-color: rgb(var(--btn-bg-color));
@@ -102,4 +95,3 @@
   flex: 0 1 35%;
   margin-inline-end: calc(2 * var(--space-unit));
 }
-
