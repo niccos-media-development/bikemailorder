@@ -109,7 +109,7 @@
         "custom_liquid_j74tTM": {
           "type": "custom-liquid",
           "settings": {
-            "custom_liquid": "<div class=\"leasing-wrapper\">\n  <div class=\"leasing-text\">auch möglich</div>\n  <button class=\"btn leasing btn--primary w-full\" name=\"add\">In den Warenkorb</button>\n</div>\n\n<style>\n.leasing-wrapper {\n    display: flex;\n}\n\n.btn.leasing.btn--primary {\n    flex: 1 1 65%;\n    margin-inline-start: calc(2 * var(--space-unit));\n}\n\n.leasing-text {\n    flex: 0 1 35%;\n    margin-inline-end: calc(2 * var(--space-unit));\n}\n</style>"
+            "custom_liquid": "<div class=\"leasing-wrapper\">\n  <div class=\"leasing-text\">auch möglich</div>\n  <button class=\"btn leasing btn--primary w-full\" name=\"add\">In den Warenkorb</button>\n</div>\n\n<style>\n.leasing-wrapper {\n    display: flex;\n}\n\n.btn.leasing.btn--primary {\n    flex: 1 1 65%;\n    margin-inline-start: calc(2 * var(--space-unit));\nbackground: #12AD62;\n}\n\n.leasing-text {\n    flex: 0 1 35%;\n    margin-inline-end: calc(2 * var(--space-unit));\n}\n</style>"
           }
         },
         "delivery_timer_D9VPkt": {
