@@ -109,7 +109,7 @@
         "custom_liquid_j74tTM": {
           "type": "custom-liquid",
           "settings": {
-            "custom_liquid": "<div class=\"product-info__add-to-cart flex\">\n\n<p class=\"leasing-text\">Auch möglich</p>\n\n<div class=\"product-info__add-button\"><button type=\"submit\" data-add-to-cart-text=\"In den Warenkorb\" class=\"btn btn--primary w-full\" name=\"add\">In den Warenkorb</button>\n                    </div>\n                  </div>\n\n<style>\n.leasing-text {\n    flex: 0 1 35%;\n    flex-basis:auto;\n}\n</style>"
+            "custom_liquid": "<div class=\"product-info__add-to-cart flex\">\n\n<p class=\"leasing-text\">Auch möglich</p>\n\n<div class=\"product-info__add-button\"><button type=\"submit\" data-add-to-cart-text=\"In den Warenkorb\" class=\"btn btn--primary w-full\" name=\"add\">In den Warenkorb</button>\n                    </div>\n                  </div>\n\n<style>\n.leasing-text+.product-info__add-button {\nflex: 0 1 65%;\n    flex-basis:auto;\n}\n</style>"
           }
         },
         "delivery_timer_D9VPkt": {
