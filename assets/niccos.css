@@ -67,3 +67,7 @@ line-height: normal;
   justify-content: center;
   gap:20px;
 }
+
+.panel-button .font-bold {
+  color: rgb(var(--nav-text-color));
+}
