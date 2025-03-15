@@ -106,6 +106,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "custom_liquid_j74tTM": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-info__add-to-cart flex\">\n\n<p class=\"leasing-text\">Auch möglich</p>\n\n<div class=\"product-info__add-button\"><button type=\"submit\" data-add-to-cart-text=\"In den Warenkorb\" class=\"btn btn--primary w-full\" name=\"add\">In den Warenkorb</button>\n                    </div>\n                  </div>\n\n<style>\n.leasing-text {\n    flex: 0 1 35%;\n    flex-basis:auto;\n}\n</style>"
+          }
+        },
         "delivery_timer_D9VPkt": {
           "type": "delivery_timer",
           "settings": {
@@ -143,6 +149,7 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
+        "custom_liquid_j74tTM",
         "delivery_timer_D9VPkt",
         "payment_icons_7LjxwJ",
         "social_proof_WDNz7r"
