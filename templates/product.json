@@ -106,31 +106,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "wishlist_plus_wishlist_pdp_button_DghkBM": {
-          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-          "settings": {
-            "swym_atw_button_icon": "heart",
-            "swym_atw_display_btn_text": true,
-            "swym_button_position": "default",
-            "swym_atw_button_vertical_offset": -16,
-            "swym_atw_full_width": false,
-            "swym_atw_button_alignment": "right",
-            "swym_add_to_wishlist_color": "#ffffff",
-            "swym_added_to_wishlist_color": "#fefefe",
-            "swym_button_text_color": "#2e2e2e",
-            "swym_atw_border_color": "#000000",
-            "swym_atw_border_thickness": 0,
-            "swym_atw_button_border_radius": 15,
-            "swym_enable_hover_customization": false,
-            "swym_hover_add_to_wishlist_color": "#000000",
-            "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#ffffff",
-            "swym_hover_atw_border_color": "#000000",
-            "swym_hover_atw_border_thickness": 0,
-            "swym_hover_atw_button_border_radius": 0,
-            "swym_custom_css": ""
-          }
-        },
         "delivery_timer_D9VPkt": {
           "type": "delivery_timer",
           "settings": {
@@ -168,7 +143,6 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
-        "wishlist_plus_wishlist_pdp_button_DghkBM",
         "delivery_timer_D9VPkt",
         "payment_icons_7LjxwJ",
         "social_proof_WDNz7r"
