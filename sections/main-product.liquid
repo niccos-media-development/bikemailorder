@@ -509,12 +509,14 @@
             {% render 'smartfit-geometry' %}
 
           {%- when 'leasing-button' -%}
-            <div class="leasing-wrapper">
+<div class="leasing-wrapper">
   <div class="leasing-text">{{ block.settings.leasing-text }}</div>
-  <a href="leasing-button" {{ block.settings.leasing-link }}
-  <button class="btn leasing btn--primary w-full">{{ block.settings.leasing-text-button }}</button>
+  <a href="{{ block.settings.leasing-link }}" class="leasing-button">
+    <button class="btn leasing btn--primary w-full">
+      {{ block.settings.leasing-text-button }}
+    </button>
+  </a>
 </div>
-
 
           {%- when 'buy-buttons' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
