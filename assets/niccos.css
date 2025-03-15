@@ -94,6 +94,7 @@
 .leasing-text {
   flex: 0 1 35%;
   margin-inline-end: calc(2 * var(--space-unit));
+  width: 115.39px;
 }
 .leasing-button {
   display: flex;
