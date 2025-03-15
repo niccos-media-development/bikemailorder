@@ -72,6 +72,8 @@ line-height: normal;
   color: rgb(var(--nav-text-color));
 }
 
+.niccos_breadcrumbs-list.arrows li:not(:last-child):after,
 .niccos_breadcrumbs-list li a {
  color: #9E9B9B;
 }
+
