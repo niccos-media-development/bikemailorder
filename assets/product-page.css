@@ -128,4 +128,7 @@
   .product-main .product-info {
     padding-top: 0px;
   }
+  .product-info__block.product-info__block--sm.product-info__title {
+    margin-top: 0px;
+  }
 }
