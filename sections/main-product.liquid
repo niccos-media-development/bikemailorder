@@ -508,6 +508,13 @@
             {% render 'smartfit-onlinesizing' %}
             {% render 'smartfit-geometry' %}
 
+          {%- when 'leasing-button' -%}
+            <div class="leasing-wrapper">
+  <div class="leasing-text">auch möglich</div>
+  <button class="btn leasing btn--primary w-full">Über Arbeitgeber leasen</button>
+</div>
+
+
           {%- when 'buy-buttons' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
               <product-form>
@@ -2064,6 +2071,23 @@
           "id": "divider",
           "label": "Show dividing line below",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "leasing-button",
+      "name": "Leasing Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "leasing-text",
+          "label": "Leasing Text"
+        },
+        {
+          "type": "url",
+          "id": "leasing-link",
+          "label": "Leasing Button"
         }
       ]
     },
