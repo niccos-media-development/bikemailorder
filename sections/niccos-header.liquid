@@ -465,8 +465,8 @@
             </div>
           </div>
 
-          {% if section.settings.second_tab_link != blank %}
-            <a href="{{ section.settings.second_tab_link }}" class="panel-button" tabindex="2">
+          {% if section.settings.second_tab_text_link!= blank %}
+            <a href="{{ section.settings.second_tab_text_link }}" class="panel-button" tabindex="2">
           {% else %}
             <div class="panel-button" tabindex="2">
           {% endif %}
@@ -474,7 +474,7 @@
           <div>
             <span class="font-bold">{{ section.settings.second_tab_text }}</span>
           </div>
-          {% if section.settings.second_tab_link != blank %}
+          {% if section.settings.second_tab_text_link != blank %}
             </a>
           {% else %}
             </div>
