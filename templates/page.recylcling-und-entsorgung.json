@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "rich_text_jqKdHr": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eggkrj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Der nachfolgende Hinweis richtet sich an diejenigen, die Batterien oder Produkte mit eingebauten Batterien nutzen und in der an sie gelieferten Form nicht mehr weiterveräußern (Endnutzer):</p><h3>Unentgeldliche Rücknahmen von Altbatterien</h3><p>Batterien dürfen nicht über den Hausmüll entsorgt werden. Sie sind zur Rückgabe von Altbatterien gesetzlich verpflichtet, damit eine fachgerechte Entsorgung gewährleistet werden kann. Sie können Altbatterien an einer kommunalen Sammelstelle oder im Handel vor Ort abgeben. Auch wir sind als Vertreiber von Batterien zur Rücknahme von Altbatterien verpflichtet, wobei sich unsere Rücknahmeverpflichtung auf Altbatterien der Art beschränkt, die wir als Neubatterien in unserem Sortiment führen oder geführt haben. Altbatterien vorgenannter Art können Sie daher entweder ausreichend frankiert an uns zurücksenden oder sie direkt an unserem Versandlager unter der im Impressum genannten Adresse unentgeltlich abgeben.</p><h3>Bedeutung der Batteriesymbole</h3><p>Batterien sind mit dem Symbol einer durchgekreuzten Mülltonne (s. u.) gekennzeichnet. Dieses Symbol weist darauf hin, dass Batterien nicht in den Hausmüll gegeben werden dürfen. Bei Batterien, die mehr als 0,0005 Masseprozent Quecksilber, mehr als 0,002 Masseprozent Cadmium oder mehr als 0,004 Masseprozent Blei enthalten, befindet sich unter dem Mülltonnen-Symbol die chemische Bezeichnung des jeweils eingesetzten Schadstoffes – dabei steht \"Cd\" für Cadmium, \"Pb\" steht für Blei, und \"Hg\" für Quecksilber.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_eggkrj"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": false,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_jqKdHr"
+  ]
+}

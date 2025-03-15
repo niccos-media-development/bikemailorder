@@ -1,0 +1,103 @@
+{% assign alphabet = "#" | append: "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+<div class="section">
+  <div class="container">
+    <h2>Markenverzeichnis</h2>
+    
+    <!-- Alphabet-Index -->
+    <div>
+      <ul class="alphabet-nav">
+        {% for letter in alphabet %}
+          <li>
+            <a href="#{{ letter }}">{{ letter }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <!-- Markenliste -->
+    <div>
+      {% for letter in alphabet %}
+        {% assign has_brands = false %}
+        
+        <!-- Prüfen, ob mindestens eine Collection mit "Brandpage" existiert -->
+        {% for collection in collections %}
+          {% assign collection_typ = collection.metafields.custom.collection_typ %}
+          
+          {% if collection_typ == "Brandpage" %}
+            {% assign first_letter = collection.title | slice: 0 | upcase %}
+    
+            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+            {% assign first_char = first_letter | slice: 0, 1 %}
+            {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
+              {% assign first_letter = "#" %}
+            {% endif %}
+    
+            {% if first_letter == letter %}
+              {% assign has_brands = true %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    
+        <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->
+        {% if has_brands %}
+          <h3 id="{{ letter }}">{{ letter }}</h3>
+          <ul>
+            {% for collection in collections %}
+              {% assign collection_typ = collection.metafields.custom.collection_typ %}
+    
+              {% if collection_typ == "Brandpage" %}
+                {% assign first_letter = collection.title | slice: 0 | upcase %}
+                
+                <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+                {% assign first_char = first_letter | slice: 0, 1 %}
+                {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
+                  {% assign first_letter = "#" %}
+                {% endif %}
+    
+                {% if first_letter == letter %}
+                  <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+
+.alphabet-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.alphabet-nav li {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+}
+.alphabet-nav li:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+.alphabet-nav a {
+  font-size: 2rem;
+  width:100%;
+  text-align: center;
+}
+.alphabet-nav a:hover {
+  cursor: pointer;
+}
+  
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Hoco Brand List",
+    "settings": [],
+    "presets": [{"name": " Hoco Brand List"}] 
+  }
+{% endschema %}

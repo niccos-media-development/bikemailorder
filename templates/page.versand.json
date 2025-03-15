@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "custom_liquid_UU8eLQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2>Versandkosten in Deutschland</h2>\n<table>\n<thead>\n<td>Standard</td>\n<td>Spedition</td>\n</thead>\n<tbody>\n<td>4,50</td>\n<td>29,90</td>\n</tbody>\n</table>\n<p><strong>Bitte beachte:</strong> Bei einem Mischkauf von Standardpaket-Ware zusammen mit einem Fahrrad, fallen nur die Versandkosten für das Fahrrad an.\n\nAlle dargestellten Versandpreise verstehen sich in EUR inkl. der gesetzlichen Mehrwertsteuer.\n</p>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "custom_liquid_g6YR3M": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2>Europäische Länder</h2>\n<table>\n  <thead>\n    <tr>\n      <td>Land</td>\n      <td>Standard</td>\n      <td>Spedition</td>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Belgien</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Dänemark</td>\n      <td>10,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Finnland</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Frankreich</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Italien</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Niederlande</td>\n      <td>4,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Schweiz (Achtung: Es fallen zusätzlich Einfuhrsteuer und Zollkosten an)</td>\n      <td>15,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Spanien</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Österreich</td>\n      <td>6,90</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Luxemburg</td>\n      <td>10,00</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Irland</td>\n      <td>65,00</td>\n      <td>140,00</td>\n    </tr>\n    <tr>\n      <td>Griechenland</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Portugal</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Schweden</td>\n      <td>10,00</td>\n      <td>39,90</td>\n    </tr>\n    <tr>\n      <td>Polen</td>\n      <td>12,50</td>\n      <td>39,00</td>\n    </tr>\n    <tr>\n      <td>Lettland</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Litauen</td>\n      <td>12,50</td>\n      <td>Versand leider aktuell nicht möglich</td>\n    </tr>\n    <tr>\n      <td>Malta</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Slowakei</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Slowenien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Tschechien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Estland</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Bulgarien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Ungarn</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Rumänien</td>\n      <td>12,50</td>\n      <td>35,00</td>\n    </tr>\n    <tr>\n      <td>Kroatien</td>\n      <td>22,50</td>\n      <td>49,00</td>\n    </tr>\n  </tbody>\n</table>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "hoco_versand_3XkjLw": {
+      "type": "hoco-versand",
+      "settings": {
+        "headline": "Versandkosten ins außereuropäische Ausland",
+        "description": "Wenn das passende Land nicht oben in der Tabelle ist, findest Du es hier:",
+        "selector": "Land Auswählen"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_UU8eLQ",
+    "custom_liquid_g6YR3M",
+    "hoco_versand_3XkjLw"
+  ]
+}

@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "niccos_breadcrumbs_LNPFaj": {
+      "type": "niccos-breadcrumbs",
+      "settings": {
+        "custom_class": "container",
+        "separator_class": "arrows",
+        "breadcrumbs_alignment": "start",
+        "text_color": "#8d9596",
+        "font_weight": "normal",
+        "font_case": "default",
+        "font_size": 16,
+        "hide_title": false,
+        "home_text": "Home"
+      }
+    },
+    "hoco_collection_description_hXaGDT": {
+      "type": "hoco-collection-description",
+      "settings": {
+        "headline": "{{ collection.title }}",
+        "description": "{{ collection.metafields.custom.introtext | metafield_tag }}"
+      }
+    },
+    "collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_title": true,
+        "show_product_count": true,
+        "show_collection_description": true,
+        "text_align": "text-start",
+        "collection_image": "natural",
+        "use_product_image": false,
+        "text_width": "standard",
+        "color_scheme": "default"
+      }
+    },
+    "collection_list_3WJNAL": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_rizAGN": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_01.value }}",
+            "image": "{{ collection.metafields.custom.categorie_image_01.value }}"
+          }
+        },
+        "collection_pyKTki": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
+          }
+        },
+        "collection_aUg3xV": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
+          }
+        },
+        "collection_UNkeW6": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
+          }
+        },
+        "collection_ztzgU4": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
+          }
+        },
+        "collection_kFKxLY": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rizAGN",
+        "collection_pyKTki",
+        "collection_aUg3xV",
+        "collection_UNkeW6",
+        "collection_ztzgU4",
+        "collection_kFKxLY"
+      ],
+      "custom_css": [
+        ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
+        ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
+        ".card__media.relative {width: 63%; margin: 0 auto; /*macht das Bild kleiner un zentriert ohne es zu bescheinden*/}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": true,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "collection_list_GjXfbJ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EDQU7M": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_01.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.categorie_image_01.value }}"
+          }
+        },
+        "collection_mBCMQn": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
+          }
+        },
+        "collection_DAU7CB": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
+          }
+        },
+        "collection_VrYUwU": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
+          }
+        },
+        "collection_agwVdF": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
+          }
+        },
+        "collection_tr74gX": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "collection_EDQU7M",
+        "collection_mBCMQn",
+        "collection_DAU7CB",
+        "collection_VrYUwU",
+        "collection_agwVdF",
+        "collection_tr74gX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
+        ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
+        ".card__media.relative {width: 63%; margin: 0 auto; /*macht das Bild kleiner un zentriert ohne es zu bescheinden*/}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": true,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "collection-products": {
+      "type": "main-collection-products",
+      "blocks": {
+        "image_promotion_xqCn7i": {
+          "type": "image-promotion",
+          "settings": {
+            "position": 7,
+            "view": "grid_list",
+            "hide_on_filter": true,
+            "min_height": 150,
+            "image": "{{ collection.metafields.custom.collection_promo_01.value }}",
+            "link_url": "{{ collection.metafields.custom.promo_url_01_listing.value }}",
+            "content": "<h2>{{ collection.metafields.custom.promo_title_01_listing_.value }}</h2>",
+            "text_type_scale": "--h4-font-size",
+            "text_width": 400,
+            "text_alignment": "justify-start items-start",
+            "button_label": "",
+            "button_style": "btn btn--secondary",
+            "text_color": "#ffffff",
+            "tint_color": "#000000",
+            "tint_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_promotion_xqCn7i"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "card_size_mobile": "small",
+        "card_size": "medium",
+        "show_layout_toggle": false,
+        "enable_filtering": true,
+        "filters_open_lg": true,
+        "stick_on_scroll": true,
+        "show_filter_counts": true,
+        "expand_filters": false,
+        "max_filter_options": 7,
+        "enable_sorting": false,
+        "show_feat_sort_opt": true,
+        "sort_first": true
+      }
+    }
+  },
+  "order": [
+    "niccos_breadcrumbs_LNPFaj",
+    "hoco_collection_description_hXaGDT",
+    "collection-banner",
+    "collection_list_3WJNAL",
+    "collection_list_GjXfbJ",
+    "collection-products"
+  ]
+}

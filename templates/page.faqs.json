@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": false,
+        "heading_align": "text-center"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "banner-heading-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Help & FAQs",
+            "heading_size": "h0",
+            "heading_h1": true
+          }
+        },
+        "banner-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add some general information for your shoppers.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "banner-heading-0",
+        "banner-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 400,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
+      }
+    },
+    "rich_text_MRYLPX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rz3xe7": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_AQrGj8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wenn du eine Frage zu einem Produkt, zu unserem Bestellprozess, der Lieferung, unserem Retourenmanagement oder unseren Zahlungsmodalitäten hast, bist du hier genau richtig. Auf dieser Seite findest du Antworten zu den häufigsten Fragen in unserem Onlineshop. Mit der Suchfunktion kannst du schnell und einfach nach Schlagworten suchen. Findest du hier keine Antwort auf deine individuelle Frage, dann kontaktiere uns doch bitte über <a href=\"https://www.bike-mailorder.de/kontaktformular\" target=\"_blank\"><span style=\"text-decoration:underline\">unser Kontaktformular</span></a>!</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rz3xe7",
+        "text_AQrGj8"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "faqs": {
+      "type": "faq",
+      "blocks": {
+        "faq-category-1": {
+          "type": "category",
+          "settings": {
+            "text": "Beratung"
+          }
+        },
+        "faq-question-1": {
+          "type": "question",
+          "settings": {
+            "icon": "email",
+            "heading": "Wie kann ich euch wann erreichen?",
+            "text": "<p>Du kannst uns jederzeit über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> eine Nachricht senden. Unserer Kundenservice antwortet dir so schnell wie möglich innerhalb unserer Arbeitszeiten von Mo-Fr von 10-18 Uhr. </p>"
+          }
+        },
+        "faq-question-2": {
+          "type": "question",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "Ich interessiere mich für ein Bike oder E-Bike und hätte gerne eine individuelle Beratung. ",
+            "text": "<p>Du wünscht eine persönliche Beratung zu deinem Komplettrad? Schreibe uns eine Nachricht über unser <a href=\"https://www.bike-mailorder.de/kontaktformular/\" target=\"_blank\">Kontaktformular </a>und unsere Service-Mitarbeiter setzen sich mit dir in Verbindung und beraten dich.</p>"
+          }
+        },
+        "faq-category-2": {
+          "type": "category",
+          "settings": {
+            "text": "Bestellung & Bezahlung"
+          }
+        },
+        "faq-question-3": {
+          "type": "question",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "Wo bleibt meine Bestellung? Und wann wird geliefert?",
+            "text": "<p>In der Regel verschicken wir innerhalb Deutschlands Teile, Zubehör, Bekleidung und Werkzeug innerhalb von 2-4 Werktagen. Fahrräder benötigen innerhalb Deutschlands aktuell 8-12 Werktage. </p><p>Auf der Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> kannst du einsehen, in welchem Status sich deine Bestellung befindet.</p>"
+          }
+        },
+        "question_m6Jt6W": {
+          "type": "question",
+          "settings": {
+            "icon": "question_mark",
+            "heading": "Woher weiß ich, dass meine Bestellung in Bearbeitung ist?",
+            "text": "<p>Du erhältst eine Bestellbestätigung per E-Mail, sobald deine Bestellung bei uns eingegangen ist. Diese Nachricht bestätigt, dass deine Bestellung erfolgreich in unserem Onlineshop aufgegeben wurde. </p><p>Du kannst den Status deiner Bestellung über die Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> in deinem Kundenkonto prüfen und bearbeiten. Hier findest du eine Liste aller Status und deren Bedeutung, die wir auf der Seite übermitteln:</p><ol><li><strong>Deine Bestellung ist eingegangen und wird bearbeitet<br/></strong>Deine Bestellung ist bei uns im System eingegangen und sie wird schnellstmöglich bearbeitet.<br/></li><li><strong>Deine Bestellung wurde bezahlt & ist bereit für Kommissionierung <br/></strong>Es ist ein Zahlungsbeleg für deine Bestellung eingegangen und sie ist nun bereit für die Kommissionierung im Lager. <br/></li><li><strong>Deine Bestellung ist in Kommissionierung<br/></strong>Deine Bestellung wird aktuell von einem Kollegen gepickt und verpackt.<br/></li><li><strong>Deine Bestellung wurde teilweise verschickt<br/></strong>Deine Bestellung wurde, wie von dir gewünscht, teilweise verschickt. <br/></li><li><strong>Deine Bestellung wurde verschickt <br/></strong>Deine Bestellung wurde an den Versanddienstleister übergeben. <br/></li><li><strong>Deine Bestellung wurde storniert<br/></strong>Deine Bestellung kann aus verschiedenen Gründen storniert worden sein. Du erhältst eine E-Mail, die erklärt, wieso deine Bestellung storniert wurde.<br/></li><li><strong>Bitte kontaktiere uns über </strong><a href=\"https://www.bike-mailorder.de/kontaktformular/\"><strong>unser Kontaktformular</strong></a><strong>.<br/></strong>Es scheint etwas schief gelaufen zu sein. Bitte kontaktiere uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</li></ol>"
+          }
+        },
+        "question_qKcxW4": {
+          "type": "question",
+          "settings": {
+            "icon": "lock",
+            "heading": "Kann ich ein Produkt vorbestellen oder reservieren?",
+            "text": "<p>Nein, aber du kannst dich per E-Mail benachrichtigen lassen, wenn dein gewünschtes Produkt lieferbar ist. Trifft der Artikel in unserem Lager ein, wirst du umgehend per E-Mail darüber informiert und kannst wie gewohnt deine Bestellung abschließen.</p><p><strong>So funktioniert's:</strong></p><ol><li>Wähle auf der Produktseite rechts die gewünschte Größe aus.</li><li>Ist deine gewünschte Größe nicht auf Lager, ist diese grau hinterlegt. Klicke auf den Briefumschlag rechts neben deiner Größe und trage deine E-Mail-Adresse in das Textfeld ein und klicke “bestätigen”. Findest du kein Briefsymbol neben deiner gewünschten Größe, ist diese nicht mehr nachbestellbar. </li></ol>"
+          }
+        },
+        "question_UwXNKb": {
+          "type": "question",
+          "settings": {
+            "icon": "check_mark_in_circle",
+            "heading": "Kann ich eine Teillieferung meiner Bestellung auslösen? ",
+            "text": "<p>Ja, ist ein Teil deiner Bestellung aufgrund eines technischen Problems oder aufgrund hoher Nachfrage auf einmal doch nicht lieferbar, kannst du uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular </a>schreiben und wir schicken dir den lieferbaren Teil deiner Bestellung vorab zu. Du zahlst nur einmal die Versandkosten.</p>"
+          }
+        },
+        "question_a38WxL": {
+          "type": "question",
+          "settings": {
+            "icon": "return",
+            "heading": "Wie kann ich einzelne Artikel oder meine gesamte Bestellung stornieren?",
+            "text": "<p>Schreibe uns über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> eine Nachricht und wähle als Anliegen im Formular “Stornierung” aus. Unsere Kollegen und Kolleginnen im Kundenservice stornieren dann schnellstmöglich deine Bestellung.</p>"
+          }
+        },
+        "question_V9F6cB": {
+          "type": "question",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "Kann ich Artikel aus dem Onlineshop auch im New Order Store in Berlin abholen? ",
+            "text": "<p>Im Onlineshop siehtst du, welche Artikel direkt bei <a href=\"https://www.neworder.berlin/de\" target=\"_blank\">New Order Store in Berlin </a>erhältlich sind. Wenn du ein Fahrrad bei uns bestellt, kannst du die gesamte Bestellung per Click & Collect direkt in den New Order Store liefern lassen.</p>"
+          }
+        },
+        "question_ghFHnm": {
+          "type": "question",
+          "settings": {
+            "icon": "question_mark",
+            "heading": "Kann ich meine Bestellung im Nachhinein noch ändern?",
+            "text": "<p>Hast du per AmazonPayment oder PayPal Ratenzahlung bezahlt, können wir deiner Bestellung keinen Artikel händisch hinzufügen. Für alle anderen Zahlungsarten können wir Artikel hinzufügen. </p><p>Solange der Status deiner Bestellung auf der Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a> noch auf einen der folgenden drei Status steht, können wir diese jederzeit ändern oder ergänzen: “Deine Bestellung ist eingegangen”, “Deine Bestellung wird bearbeitet” oder “Deine Bestellung wurde bezahlt & ist bereit für Kommissionierung”.</p><p>Um Artikel deiner Bestellung hinzuzufügen, schicke uns bitte eine Nachricht über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a> mit den gewünschten Artikeln, die wir deiner Bestellung ergänzen sollen, deren Artikelnummer sowie Anzahl. </p><p>Willst du Artikel aus deiner Bestellung streichen, schreibe uns ebenfalls eine Nachricht über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</p>"
+          }
+        },
+        "question_P3VLVE": {
+          "type": "question",
+          "settings": {
+            "icon": "percent",
+            "heading": "Wie kann ich einen BMO-Gutschein / Gutschein-Code einlösen?",
+            "text": "<p>Gutscheincodes können direkt im Warenkorb eingegeben werden. Das entsprechende Feld findest du rechts: “Gutscheincode eingeben”. Sobald du auf den Pfeil klickst, wird der Gutscheinwert direkt mit deiner Bestellung verrechnet. Es lässt sich nur ein Gutscheincode pro Bestellung verrechnen. Es gelten <a href=\"https://www.bike-mailorder.de/agb/\">unsere AGBs</a>. </p><p><strong>Hinweis: Es können nicht mehrere Gutscheincodes auf eine Bestellung angewandt werden.</strong></p>"
+          }
+        },
+        "question_Cr9rLk": {
+          "type": "question",
+          "settings": {
+            "icon": "credit_card",
+            "heading": "Wie kann ich bei Bike Mailorder bezahlen?",
+            "text": "<p>Eine Liste all unserer Zahlungsarten findest du unter <a href=\"https://www.bike-mailorder.de/zahlungsarten/\">Zahlungsmodalitäten</a>.</p>"
+          }
+        },
+        "faq-category-3": {
+          "type": "category",
+          "settings": {
+            "text": "Lieferung"
+          }
+        },
+        "faq-question-5": {
+          "type": "question",
+          "settings": {
+            "icon": "truck",
+            "heading": "Kann ich eine erneute Zustellung meines Paketes beantragen, wenn ich einen Zustellversuch verpasst habe?",
+            "text": "<p>Prinzipiell ja. War deine Anschrift fehlerhaft, geht das Paket zurück zu uns zurück ins Lager. Dir wird dann automatisch der Kaufbetrag erstattet und deine Bestellung storniert. </p><p>Warst du nicht zu Hause und deine Bestellung liegt in einer DHL-Filiale, bei einem Nachbarn oder einer Packstation, nutze die Benachrichtigungskarte, die in deinem Briefkasten hinterlassen wurde, um dein Paket abzuholen. Vergiss bitte nicht zusätzlich zu der Benachrichtigungskarte deinen Personalausweis mitzunehmen.</p><p>Du konntest keine Benachrichtigungskarte finden? In diesem Fall wende dich bitte direkt an die <a href=\"https://www.dhl.de/de/privatkunden.html\">DHL</a>! </p>"
+          }
+        },
+        "faq-question-6": {
+          "type": "question",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "Wann erhalte ich den Track & Trace Code für meine Bestellung?",
+            "text": "<p>Du erhältst den Track & Trace Code für deine Bestellung mit dem Erhalt deiner Versandbestätigungsmail. Darin findest du den Code sowie einen Link, um deine Bestellung beim Versanddienstleister zu tracken. Abhängig von den Produkten, die du bestellt hast, variiert der Versand der Versandbestätigung.</p><p>Wenn du die E-Mail mit der Versandbestätigung nicht erhalten hast, siehe bitte in deinem Spam-Ordner nach. Wenn du die E-Mail trotzdem nicht finden kannst, schaue bitte unter '<strong>Wieso hat meine Bestellung Verspätung?</strong>' oder <a href=\"https://www.bike-mailorder.de/kontaktformular/\">kontaktiere uns</a>!</p>"
+          }
+        },
+        "question_PB7prJ": {
+          "type": "question",
+          "settings": {
+            "icon": "question_mark",
+            "heading": "Warum kann meine Bestellung nicht verschickt werden?",
+            "text": "<p>Es gibt verschiedene Gründe, weshalb es uns nicht möglich sein kann, deine Bestellung zu verschicken. Hier die gängigsten Gründe:</p><ul><li>Ein Artikel, den du bestellt hast, ist nicht mehr vorrätig. Leider kann dies bei Produkten mit einer sehr hohen Nachfrage passieren. </li><li>Deine Lieferadresse war unvollständig.</li><li>Du hast als Lieferadresse eine Packstation angegeben und deine Postnummer nicht angegeben.</li><li>Während du deine Bestellung aufgegeben hast, ist ein Problem mit der Zahlung aufgetreten.</li></ul><p>Kontaktiere uns auf jeden Fall über <a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>. Wir setzen uns dann schnellstmöglich mit dir in Verbindung. </p>"
+          }
+        },
+        "question_rpVfV6": {
+          "type": "question",
+          "settings": {
+            "icon": "box",
+            "heading": "Was kann ich tun, wenn ich mein Paket nicht erhalten habe? ",
+            "text": "<p>Wenn du dein Paket nicht innerhalb der standardmäßigen Lieferfrist erhalten hast, befolge bitte die nachstehenden Schritte!</p><ol><li>Überprüfe die Lieferfrist für den Produkttyp deiner Bestellung. Wenn deine Bestellung Sperrgut (bspw. eine Komplettrad) enthält, dauert die Lieferung in der Regel 5-6 Werktage. Normale Pakete benötigen in der Regel 2-3 Werktage.</li><li>Überprüfe den Lieferstatus deiner Bestellung über die Seite <a href=\"https://www.bike-mailorder.de/account/orders\">Meine Bestellungen</a>. </li><li>Überprüfe den Versandstatus deiner Bestellung. Der fett markierte Text entspricht dem Versandstatus, in der sich deine Lieferung befinden kann, darunter steht die jeweilige Bedeutung:</li></ol><p></p><ol><li><strong>Deine Bestellung ist eingegangen und wird bearbeitet<br/></strong>Deine Bestellung ist bei uns im System eingegangen und sie wird schnellstmöglich bearbeitet.<br/></li><li><strong>Deine Bestellung wurde bezahlt & ist bereit für Kommissionierung <br/></strong>Es ist ein Zahlungsbeleg für deine Bestellung eingegangen und sie ist nun bereit für die Kommissionierung im Lager. <br/></li><li><strong>Deine Bestellung ist in Kommissionierung<br/></strong>Deine Bestellung wird aktuell von einem Kollegen gepickt und verpackt.<br/></li><li><strong>Deine Bestellung wurde teilweise verschickt<br/></strong>Deine Bestellung wurde, wie von dir gewünscht, teilweise verschickt. <br/></li><li><strong>Deine Bestellung wurde verschickt <br/></strong>Deine Bestellung wurde an den Versanddienstleister übergeben. <br/></li><li><strong>Deine Bestellung wurde storniert<br/></strong>Deine Bestellung kann aus verschiedenen Gründen storniert worden sein. Du erhältst eine E-Mail, die erklärt, wieso deine Bestellung storniert wurde.<br/></li><li><strong>Bitte kontaktiere uns über</strong><a href=\"https://www.bike-mailorder.de/kontaktformular/\"><strong>unser Kontaktformular</strong></a><strong>.<br/></strong>Es scheint etwas schief gelaufen zu sein. Bitte kontaktiere uns über<a href=\"https://www.bike-mailorder.de/kontaktformular/\">unser Kontaktformular</a>.</li></ol>"
+          }
+        },
+        "question_qEJh6g": {
+          "type": "question",
+          "settings": {
+            "icon": "dollar_sign",
+            "heading": "Wie viel kostet die Lieferung? ",
+            "text": "<p><strong>Die Versandkosten in Deutschland betragen 4,50 Euro/Bestellung. Für Fahrräder 29,90 Euro/Fahrrad.</strong></p><p>Die Nachnahmegebühr beträgt in beiden Fällen 4,00 (zzgl. EUR 2,00 DHL-Entgelt).</p><p>Bitte beachte folgende Spezialfälle!</p><ol><li>Bei einem Mischkauf von Standardpaketware zusammen mit einem Fahrrad fallen nur die Versandkosten für das Fahrrad an.</li><li>Rücksendungen aus dem Ausland müssen immer auf eigene Kosten getragen werden.</li><li>Alle dargestellten Versandpreise verstehen sich inkl. der gesetzlichen Mehrwertsteuer.</li></ol><p>Eine vollständige Übersicht aller Versandkosten findest du unter <a href=\"https://www.bike-mailorder.de/versandkosten/\">Versandkosten</a>.</p>"
+          }
+        },
+        "question_KPY6VX": {
+          "type": "question",
+          "settings": {
+            "icon": "clock",
+            "heading": "Wieso hat meine Bestellung Verspätung?",
+            "text": "<p>Wir streben stets danach, deine Bestellung innerhalb unserer standardmäßigen Lieferfristen zuzustellen, aber manchmal können unvorhersehbare Faktoren die Zustellung verzögern.</p><p>Hier sind einige Gründe, wieso deine Lieferung Verspätung haben kann:</p><ul><li>Deine Bestellung wurde während unserer Sonderverkäufe/-aktionen versandt.</li><li>Du hast mehr als ein Produkt bestellt. In Ausnahmefällen kann deine Bestellung in separaten Paketen und zu unterschiedlichen Zeitpunkten eintreffen.</li><li>Deine Bestellung beinhaltet Produkte, die beim Lieferanten bestellt werden müssen. Die Lieferzeit verlängert sich dadurch.</li><li>Deine Bestellung beinhaltet Sperrgut. Dadurch kann die Zustellung 2-3 Werktage länger dauern.</li></ul><p>Möchtest du den aktuellen Versandstatus deiner Bestellung erfahren? Dann prüfe diesen unter <a href=\"https://www.bike-mailorder.de/account/orders\">Bestellungen in deinem Kundenkonto</a>.</p>"
+          }
+        },
+        "category_9iJMyD": {
+          "type": "category",
+          "settings": {
+            "text": "Retoure & Erstattung"
+          }
+        },
+        "question_mQfHUM": {
+          "type": "question",
+          "settings": {
+            "icon": "return",
+            "heading": "Kann ich einen Artikel umtauschen?",
+            "text": "<p>Ja, du kannst einen Artikel mit dem entsprechenden Rücksendeformular an uns zurückschicken. Wir veranlassen dann die Rückerstattung des Kaufbetrages und der Versandkosten. Wähle dann deinen neuen Artikel im Onlineshop aus und löse eine neue Bestellung aus. Vom Umtausch ausgeschlossen sind Artikel ohne Originalverpackung sowie getragene Ware (Etiketten fehlen, Gebrauchsspuren). </p>"
+          }
+        },
+        "question_GgjmUM": {
+          "type": "question",
+          "settings": {
+            "icon": "dollar_sign",
+            "heading": "Wie erhalte ich meine Rückerstattung?",
+            "text": "<p><strong>Du erhältst deine Rückerstattung innerhalb von 14 Tagen ...</strong></p><ol><li>nach Eingang deiner Rücksendung in unserem Lager, oder</li><li>nach Erhalt deiner Widerrufserklärung. Bitte beachte, dass innerhalb dieser 14 Tage entweder der Beweis dafür erbracht werden sein muss, dass du deine Bestellung zurückgeschickt hast, oder die zurückgesendete Ware bereits bei uns im Lager eingegangen sein muss.</li></ol><p>Es dauert ungefähr 3-5 Werktage, bis die von dir aufgegebene Rücksendung vom Versandunternehmen an unser Lager geliefert wird. Sobald die Rücksendung bei uns im Lager eingegangen ist, informieren wir dich per E-Mail mit dem Status deiner Rücksendung.</p><p>Sobald die Rückerstattung von uns autorisiert und freigegeben wurde, muss sie von der Bank bearbeitet werden. Wie lange das dauert, hängt sowohl von der Bank als auch von der Zahlungsart ab. Die Rückerstattung wird über die gleiche Zahlungsart abgewickelt, die du ursprünglich verwendet hast. Hier eine Übersicht über die Regeldauer bei den unterschiedlichen Zahlungsarten:</p><ol><li><strong>Kreditkarte/Debitkarte</strong>: max. 3 Werktage</li><li><strong>PayPal:</strong> max. 3 Werktage</li><li><strong>Vorkasse</strong>: max: 14 Werktage</li><li><strong>Kauf auf Rechnung</strong>: max. 14 Werktage</li></ol>"
+          }
+        },
+        "question_CVBbq3": {
+          "type": "question",
+          "settings": {
+            "icon": "return",
+            "heading": "Wie sende ich meine(n) Artikel zurück? ",
+            "text": "<p>Hast du deine Bestellung an eine Adresse außerhalb Deutschlands erhalten, musst du die Versandkosten für die Retoure selbst tragen. Wurde deine Bestellung innerhalb Deutschlands verschickt, sind die folgenden Informationen für dich relevant. </p><p>So retournierst du Artikel:</p><ol><li>Drucke dir den Lieferschein aus deiner Versandbestätigungsmail aus.</li><li>Vermerke auf dem Lieferschein, welchen Artikel du zurückschicken möchtest, nenne den Grund für die Retoure und lege den/die Artikel samt ausgefüllten Lieferschein deinem Paket bei. Bitte vermerke bei Defekten, was defekt ist bzw. wo der Defekt ist. Bitte achte darauf, dass alle Gegenstände gut und sicher verpackt sind! </li><li>Ein Retouren-Label hast du bereits mit deiner Versandbestätigungsmail erhalten. Falls du das Rücksendeetikett nicht mehr finden solltest, kannst du es über <a href=\"https://www.dhl.de/retoure/gw/rpcustomerweb/OrderEntry.action?hash=de08ddbd539e4d8d917102b680eabc82166a6d44a05cbeecf424564058f4ed1c\" target=\"_blank\">das Formular der DHL</a> erneut erstellen. Drucke das Retouren-Label aus und klebe es auf das Paket oder nimm den QR-Code mit zur DHL-Stelle und lass das Label dort drucken. Das Retourenlabel ist nur innerhalb Deutschlands verfügbar.</li><li>Bitte notiere dir die Tracking-Nummer deiner Rücksendung.</li><li>Gib dein Paket bei einer entsprechenden DHL-Filiale ab.</li></ol><p>Wenn die Retoure bei uns bearbeitet wurde, wird dir der offene Betrag wieder zurückerstattet. </p><p>Prinzipiell kannst du deine Bestellung kostenlos mit der DHL oder kostenpflichtig mit einem von dir ausgewählten Versandunternehmen an uns zurückschicken.  Leider ist die Retoure von Fahrrädern nicht mit der DHL möglich, sondern muss über die Spedition beauftragt werden. Bitte kontaktiere dafür unseren Kundenservice unter: <a href=\"mailto:feedback@hoco-online.com\" target=\"_blank\">feedback@hoco-online.com</a>.</p><p>Rückgabebedingungen: Alles zum Thema Retouren findest du in unseren <a href=\"https://www.bike-mailorder.de/agb/\">AGBs</a>.</p>"
+          }
+        },
+        "question_pPWx9H": {
+          "type": "question",
+          "settings": {
+            "icon": "truck",
+            "heading": "Wie viel kostet es, Artikel zurückzuschicken?",
+            "text": "<p>Rücksendungen innerhalb Deutschlands sind kostenfrei. </p><p>Wenn du mit deiner Bestellung nicht zufrieden bist, kannst du sie innerhalb Deutschlands kostenlos mit unserem bereitgestellten <a href=\"https://www.dhl.de/retoure/gw/rpcustomerweb/OrderEntry.action?hash=de08ddbd539e4d8d917102b680eabc82166a6d44a05cbeecf424564058f4ed1c\" target=\"_blank\">Versandetikett</a> innerhalb der Rückgaberichtlinien zurücksenden.</p><p>Rücksendungen außerhalb Deutschlands sind kostenpflichtig. </p><p>Wir erstatten die Versandkosten zurück, sofern die entsprechenden Bedingungen dafür erfüllt sind. Die gesamten Versandkosten werden rückerstattet, wenn du die gesamte Bestellung zurücksendest. Wir können die Versandkosten jedoch nicht erstatten, wenn du nur einen Teil deiner Bestellung zurücksendest.</p>"
+          }
+        },
+        "question_QcVBRL": {
+          "type": "question",
+          "settings": {
+            "icon": "calendar",
+            "heading": "Wie viele Tage habe ich Zeit, um meine Bestellung zurückzusenden?",
+            "text": "<p>Du kannst Artikel innerhalb von 100 Tagen nach Erhalt der Ware kostenlos und unter Berücksichtigung der <a href=\"https://www.bike-mailorder.de/agb/\">Rückgabebedingungen</a> in unseren AGBs zurücksenden. Falls deine Bestellung in mehreren Paketen geliefert wurde, gilt die 100-Tage-Rückgabefrist ab dem Erhalt des letzten Pakets.</p><p>Beim Eingang deiner Retoure wird die Ware auf Beschaffenheit, Eigenschaften und Funktionsweise geprüft. Stellen wir einen etwaigen Wertverlust fest, der auf deinen Umgang zurückzuführen ist, trägst du die Kosten für den Wertverlust. </p>"
+          }
+        },
+        "question_an4bJc": {
+          "type": "question",
+          "settings": {
+            "icon": "credit_card",
+            "heading": "Wie erhalte ich mein Geld zurück, wenn ich per Kreditkarte gezahlt habe und ich meine Bestellung nachträglich bearbeite?",
+            "text": "<p>Deine VISA-/Master-Card wurde mit dem Rechnungsbetrag belastet. Sollte durch Anpassungen deiner Bestellung ein zu erstattendes Guthaben entstehen, werden wir dieses nach Abschluss der Bestellung zurück auf dein VISA-/Master-Card-Konto erstatten.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-category-1",
+        "faq-question-1",
+        "faq-question-2",
+        "faq-category-2",
+        "faq-question-3",
+        "question_m6Jt6W",
+        "question_qKcxW4",
+        "question_UwXNKb",
+        "question_a38WxL",
+        "question_V9F6cB",
+        "question_ghFHnm",
+        "question_P3VLVE",
+        "question_Cr9rLk",
+        "faq-category-3",
+        "faq-question-5",
+        "faq-question-6",
+        "question_PB7prJ",
+        "question_rpVfV6",
+        "question_qEJh6g",
+        "question_KPY6VX",
+        "category_9iJMyD",
+        "question_mQfHUM",
+        "question_GgjmUM",
+        "question_CVBbq3",
+        "question_pPWx9H",
+        "question_QcVBRL",
+        "question_an4bJc"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wenn deine Frage nicht in unserem FAQ enthalten ist, schreibe uns diese bitte in das Kontaktformular.</p>",
+            "half_width": false
+          }
+        },
+        "contact-name-2": {
+          "type": "name",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-email-3": {
+          "type": "email",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-dropdown-4": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Wie können wir dir helfen?",
+            "options": "Beratung\nBestellung & Bezahlung\nLieferung\nRetoure & Erstattung\nAndere",
+            "half_width": false
+          }
+        },
+        "contact-body-5": {
+          "type": "body",
+          "settings": {
+            "required": true,
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "contact-text-1",
+        "contact-name-2",
+        "contact-email-3",
+        "contact-dropdown-4",
+        "contact-body-5"
+      ],
+      "settings": {
+        "heading": "Hast du noch weitere Fragen?",
+        "heading_align": "text-center",
+        "image_position": "top",
+        "color_scheme": "1",
+        "full_width": false,
+        "button_style": "btn btn--primary"
+      }
+    },
+    "recently_viewed_xGz9eq": {
+      "type": "recently-viewed",
+      "settings": {
+        "heading": "Kürzlich angesehene Produkte",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "limit": 8
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "newsletter-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Melde dich für unseren Newsletter an",
+            "heading_size": "h5"
+          }
+        },
+        "newsletter-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erfahre immer zuerst über neue Produkte und Angebote!</p>",
+            "enlarge_text": false
+          }
+        },
+        "newsletter-form-3": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "newsletter-heading-1",
+        "newsletter-text-2",
+        "newsletter-form-3"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "color_scheme": "default",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-banner",
+    "rich_text_MRYLPX",
+    "faqs",
+    "contact-form",
+    "recently_viewed_xGz9eq",
+    "newsletter"
+  ]
+}

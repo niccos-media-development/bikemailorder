@@ -1,0 +1,87 @@
+<div class="section newsletter-sign-up" style="background-color:{{ section.settings.background-color }};">
+  <div class="container">
+    <h2 style="color:{{ section.settings.text-color }}!important">{{ section.settings.headline }}</h2>
+    <p style="color:{{ section.settings.text-color-des }}!important">{{ section.settings.description }}</p>
+    <div class="klayvio-form">
+      {{ section.settings.form }}
+      <form><input></form><button class="btn btn-primary">Jetzt anmelden</button>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+
+.klayvio-form {
+  display: flex;
+  justify-content: center;
+}
+.section.newsletter-sign-up {
+  padding: 40px 0;
+}
+ @media(min-width: 768px) {
+  .section.newsletter-sign-up {
+    padding: 100px 0;
+  }
+}
+
+.section.newsletter-sign-up h2 {
+  text-align: center;
+}
+.section.newsletter-sign-up p {
+  text-align: center;
+}
+@media(min-width: 768px) {
+  .section.newsletter-sign-up p {
+    max-width: 1000px;
+    margin: 1rem auto 2rem;
+  }
+}
+
+.section.newsletter-sign-up form input {
+  border: none;
+  borad-radius: 25px;
+}
+  
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Hoco Newsletter Sign Up",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Beschreibung"
+      },
+      {
+        "type": "color",
+        "id": "background-color",
+        "label": "Hintergrundfarbe",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Textfarbe",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text-color-des",
+        "label": "Textfarbe Beschreibung",
+        "default": "#000000"
+      },
+      {
+        "type": "html",
+        "id": "form",
+        "label": "Klayvio Forumlar"
+      },
+    ],
+    "presets": [{"name": " Hoco Newsletter Sign Up"}]  
+  }
+{% endschema %}

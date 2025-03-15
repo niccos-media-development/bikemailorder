@@ -1,0 +1,160 @@
+<div class="section youtube-preview section-no-margin" style="margin-bottom;{{ section.settings.margin-bottom }};margin-top;{{ section.settings.margin-top }};" >
+  <div class="container">
+    <ul>
+      <li>
+        <h1>{{ section.settings.headline }}</h1>
+        <p>{{ section.settings.text }}</p>
+        <div class="yt-subscribe">
+          <div>
+            {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+          </div>
+          <div>
+            <p><strong>BMO Bike Mailorder</strong></p>
+          </div>
+          <div>
+            <a class="btn btn--secondary" href="https://www.youtube.com/@bmobikemailorder5907?sub_confirmation=1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+              Jetzt Abonieren
+            </a>
+          </div>
+        </div>
+        
+      </li>
+      <li class="yt-wrapper" >
+        <iframe src="https://www.youtube.com/embed/{{ section.settings.youtube1 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </li>
+      <li class="yt-wrapper">
+        <iframe src="https://www.youtube.com/embed/{{ section.settings.youtube2 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+{% stylesheet %}
+  
+.youtube-preview.section {
+  background: #13171a;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .youtube-preview.section {
+    padding: 100px 0;
+  }
+}
+.youtube-preview.section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  align-items:center;
+}
+.youtube-preview.section ul li h1, .youtube-preview.section ul li p {
+  color: #fff;
+}
+
+.yt-subscribe {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  align-items:center;
+  width: fit-content;
+}
+.yt-subscribe div:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.yt-subscribe div:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.yt-subscribe div:nth-child(2) p {
+  margin-bottom: 0;
+}
+  .yt-subscribe div:nth-child(3) {
+  grid-area: 2 / 2 / 3 / 3; 
+}
+.yt-subscribe img {
+  width: 80px;
+}
+.youtube-preview.section ul li a {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+.youtube-preview.section ul li a svg {
+    width: 24px;
+    margin-right: 11px;
+}
+@media (max-width: 1402px) {
+  .youtube-preview.section ul li.yt-wrapper:last-child {
+    display: none;
+  }
+}
+.youtube-preview.section ul li.yt-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.youtube-preview.section ul li iframe {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+{% endstylesheet %}
+
+
+
+{% schema %}
+  {
+    "name": "Hoco Youtube Preview",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+      },
+      {
+      "type": "text",
+      "id": "margin-top",
+      "label": "Margin Top",
+      "default": "0px"
+    },
+    {
+      "type": "text",
+      "id": "margin-bottom",
+      "label": "Margin Bottom",
+      "default": "0px"
+    },
+      {
+        "type": "text",
+        "id": "youtube1",
+        "label": "Youtube ID 1",
+      },
+      {
+        "type": "text",
+        "id": "youtube2",
+        "label": "Youtube ID 2",
+      },
+      {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Foto"    
+    }
+    ],
+    "presets": [{"name": " Hoco Youtube Preview"}]  
+  }
+{% endschema %}

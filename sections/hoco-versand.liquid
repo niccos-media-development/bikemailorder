@@ -1,0 +1,154 @@
+<div class="section" >
+  <div class="container">
+    <h2>{{ section.settings.headline }}</h2>
+    <p>{{ section.settings.description }}</p>
+    <select id="food-select" >
+      <option value="" selected >{{ section.settings.selector }}</option>
+    </select> 
+    
+    <table id="food-list">
+      <thead> <tr> <td> Land </td> <td> Standard</td> <td> Spedition </td> </tr> </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+
+<script>
+const
+  foodInfo = 
+    [ { Name: 'Australien', Versand1: '65,00', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Brasilien', Versand1: '65,00', Versand2: '185,00' },
+      { Name: 'China', Versand1: '65,00', Versand2: '185,00' },
+      { Name: 'Färöer', Versand1: '10,00', Versand2: '29,90' },
+      { Name: 'Großbritannien', Versand1: '10,00', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Hongkong', Versand1: '65,00', Versand2: '185,00' },
+      { Name: 'Israel', Versand1: 'Versand leider aktuell nicht möglich', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Japan', Versand1: '65,00', Versand2: '185,00' },
+      { Name: 'Kanada', Versand1: '65,00', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Kasachstan', Versand1: '22,50', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Katar', Versand1: '65,00', Versand2: '140,00' },
+      { Name: 'Liechtenstein', Versand1: '15,00', Versand2: '39,00' },
+      { Name: 'Monaco', Versand1: '10,00', Versand2: '29,00' },
+      { Name: 'Norwegen', Versand1: '15,00', Versand2: '39,00' },
+      { Name: 'Reunion', Versand1: '85,00', Versand2: '275,00' },
+      { Name: 'Russland', Versand1: '22,50', Versand2: 'Versand leider nicht möglich' },
+      { Name: 'Südkorea', Versand1: '65,00', Versand2: '185,00' },
+      { Name: 'Serbien', Versand1: '22,50', Versand2: '49,00' },
+      { Name: 'Ukraine', Versand1: '22,50', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Taiwan', Versand1: '65,00', Versand2: 'Versand leider aktuell nicht möglich' },
+      { Name: 'Türkei', Versand1: '15,00', Versand2: '39,00' },
+      { Name: 'Vereinigte Staaten von Amerika', Versand1: '65,00', Versand2: 'Versand leider aktuell nicht möglich' }
+    ] 
+, selectFood = document.getElementById('food-select')
+, listFood_t = document.querySelector('table#food-list tbody') 
+  ;
+foodInfo.forEach(item=>
+  {
+  // table listFood elements
+  let row           = listFood_t.insertRow()
+  row.dataset.ref   = item.Name
+
+  row.insertCell().textContent = item.Name
+  row.insertCell().textContent = item.Versand1
+    row.insertCell().textContent = item.Versand2
+
+  // food-select
+  selectFood.add( new Option(item.Name, item.Name))
+  })
+selectFood.add( new Option('Alle Länder', 'All'))  // last one...
+selectFood.querySelector('option').disabled = true
+
+const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
+
+tableArticles.forEach(el=>el.className='noDisplay') // none on start...
+
+selectFood.onchange=()=>
+  {
+  let choose = selectFood.value 
+  tableArticles.forEach(art=>
+    {
+    if (choose==='All' || choose===art.dataset.ref)
+      art.classList.remove('noDisplay')
+    else
+      art.classList.add('noDisplay')
+    })
+  }
+
+</script>
+
+{% stylesheet %}
+
+table {
+  border-collapse: collapse;
+  margin-top: .7em;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+} 
+caption {
+  font-size: 1.4em;
+  font-weight:bold;
+}
+thead {
+  background-color: #F3F5F5;
+  font-weight:bold;
+}
+td {
+  padding: 1em 1.8em;
+  border:0;
+  min-width: 120px; 
+}
+
+thead td {
+  white-space: preserve nowrap;
+}
+
+td:nth-child(2), td:last-child {
+  text-align: center;
+}
+  tbody {
+  text-align: right;
+}
+
+tbody td {
+  border-top: 1px solid darkgrey;
+}
+
+tbody tr:hover, tbody td:focus {
+  background: #F0F0F0;
+}
+.noDisplay {
+  display: none;
+}
+
+  
+select {
+  background: #efefef;
+  border:0;
+}
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Hoco Versand",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Beschreibung"
+      },
+      {
+        "type": "text",
+        "id": "selector",
+        "label": "Dropdown Platzhalter"
+      },
+    ],
+    "presets": [{"name": " Hoco Versand"}]  
+  }
+{% endschema %}

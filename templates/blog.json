@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_wiwU8h": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bQRNDj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Blog",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bQRNDj"
+      ],
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": false,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_blog_title": false,
+        "description": "<p>Willkommen im Bike Blog! Hier informieren wir dich regelmäßig über die Neuheiten rund um E-Bikes, Gravel Bikes, Bikepacking oder MTB. Wir testen außerdem die neuesten Produkte und helfen dir mit Anleitungen dabei, das Beste aus deinem Bike herauszuholen. Viel Spaß beim Stöbern!</p>",
+        "show_share_links": false,
+        "text_align": "text-start",
+        "posts_per_page": 13,
+        "three_columns": true,
+        "show_tag_filter": true,
+        "show_featured_image": true,
+        "image_ratio": "1.77",
+        "show_tags": true,
+        "show_excerpt": true,
+        "show_author": true,
+        "show_date": true,
+        "show_button": false,
+        "button_style": "btn btn--secondary",
+        "show_featured_post": true,
+        "show_featured_excerpt": true,
+        "show_featured_button": true,
+        "color_scheme": "1",
+        "featured_button_style": "btn btn--secondary"
+      }
+    }
+  },
+  "order": [
+    "rich_text_wiwU8h",
+    "main"
+  ]
+}

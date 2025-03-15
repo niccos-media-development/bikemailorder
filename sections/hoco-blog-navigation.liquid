@@ -1,0 +1,146 @@
+<span class="blog-nav-header-source">{{ section.settings.headline }}</span>
+
+{% stylesheet %}
+.blog-nav-header-source {
+  display: none;
+}
+  .blog-navi-header {
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+  }
+
+.auto-nav {
+ display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.auto-nav ul {
+  position: relative;
+  list-style: none;
+  background: #f6f6f6;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+.rte .auto-nav ul li:before {
+  display:none;
+}
+.rte .auto-nav ul li {
+  width: 100%;
+}
+.rte .auto-nav ul li a {
+  text-decoration:none;
+  position: relative;
+}
+.rte .auto-nav ul li a:before {
+  content: '▶';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transform: rotate(90deg) translateY(100%);
+  font-size: 1rem;
+}
+.auto-nav li a:hover {
+  pointer: cursor;
+}
+{% endstylesheet %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all h2 elements inside the .article div
+    const headers = document.querySelectorAll('.article h2');
+    const existingIds = {};
+    const navList = document.createElement('ul');
+    
+    // Find the source span for the navigation header
+    const navHeaderSource = document.querySelector('.blog-nav-header-source');
+    let navHeaderText = '';
+    
+    // If the source span exists, get its text content
+    if (navHeaderSource) {
+        navHeaderText = navHeaderSource.textContent;
+    }
+    
+    // Create the navigation header span
+    const navHeader = document.createElement('span');
+    navHeader.classList.add('blog-navi-header');
+    navHeader.textContent = navHeaderText;
+    
+    // Process each h2 element
+    headers.forEach(header => {
+        // Generate ID from text content
+        let id = header.textContent
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w-]/g, '');
+        
+        // Handle empty or duplicate IDs
+        if (!id) id = 'section';
+        if (existingIds[id]) {
+            let count = 2;
+            while (existingIds[`${id}-${count}`]) count++;
+            id = `${id}-${count}`;
+        }
+        existingIds[id] = true;
+        
+        // Set ID attribute
+        header.id = id;
+        
+        // Create navigation item
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `#${id}`;
+        link.textContent = header.textContent;
+        
+        // Add click event listener to adjust scroll position
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId); // Find the target element
+            if (targetElement) {
+                // Calculate the position 100px above the target element
+                const offset = targetElement.offsetTop - 230;
+                // Scroll to the adjusted position
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth' // Optional: Add smooth scrolling
+                });
+            }
+        });
+        
+        listItem.appendChild(link);
+        navList.appendChild(listItem);
+    });
+    
+    // Create navigation container
+    const nav = document.createElement('nav');
+    nav.classList.add('auto-nav');
+    
+    // Append the navigation header and the list
+    nav.appendChild(navHeader);
+    nav.appendChild(navList);
+    
+    // Find the div with the class "article__content"
+    const naviDiv = document.querySelector('.article__content');
+    
+    // Insert the navigation as the first child of the div
+    if (naviDiv) {
+        naviDiv.insertBefore(nav, naviDiv.firstChild);
+    }
+});
+</script>
+
+
+{% schema %}
+  {
+    "name": "Hoco Blog Navigation",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      }
+    ],
+    "presets": [{"name": "Hoco Blog Navigation"}]  
+  }
+{% endschema %}

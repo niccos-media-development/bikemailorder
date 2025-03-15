@@ -1,0 +1,795 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/header_orbea_700.jpg",
+            "image_mobile": "shopify://shop_images/header-orbea-mobile.jpg",
+            "url": "",
+            "overlay_position": "justify-start items-end",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "Ready to Shred",
+            "heading": "Orbea Sale",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "Fahrräder ansehen",
+            "button_1_link": "/",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "/",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/header_platzangst_womens.jpg",
+            "image_mobile": "shopify://shop_images/womens_collection_header_mobile_notext.jpg",
+            "url": "",
+            "overlay_position": "justify-start items-end",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "Platzangst",
+            "heading": "Damenkollektion",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "Kollektion entdecken",
+            "button_1_link": "shopify://collections/platzangst",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "custom_css": [],
+      "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 700,
+        "fixed_height_mobile": 350,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": false,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Highlights",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "gravel-bikes",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "/",
+        "button_label": "Optional Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "subheading_x9MdUH": {
+          "type": "subheading",
+          "settings": {
+            "text": "Platzangst"
+          }
+        },
+        "banner-heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Womens Collection",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "banner-button": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Mehr entdecken",
+            "button_1_link": "/",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "/",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_x9MdUH",
+        "banner-heading",
+        "banner-button"
+      ],
+      "settings": {
+        "image_desktop": "shopify://shop_images/home_feature_desktop_platzangst_womens.jpg",
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 450,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-start items-end",
+        "overlay_text_align": "text-start",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
+    "featured_collection_q6EQfd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "show_view_all": false,
+        "collection": "fahrradbekleidung",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "hoco_media_grid_gHd4zE": {
+      "type": "hoco-media-grid",
+      "blocks": {
+        "media_pCXxNe": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/home_men_fw24_new.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Herren</p>",
+            "heading_size": "h4",
+            "button_label": "Mehr Herrenbekleidung",
+            "button_link": "shopify://collections/e-bikes-herren",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_MikWcN": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/home_women_fw24.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Damen</p>",
+            "heading_size": "h4",
+            "button_label": "Mehr Damenbekleidung",
+            "button_link": "shopify://collections/damen-rennraeder",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_pCXxNe",
+        "media_MikWcN"
+      ],
+      "settings": {
+        "title": "",
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 260,
+        "fixed_height_mobile": 300,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
+      }
+    },
+    "featured_product_ARh3xP": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_sku_CKKzUD": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true,
+            "show_barcode": false
+          }
+        },
+        "title_T89wGB": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "price_Ebqt6g": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "divider_rJDVwC": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "variant_picker_mCFCgi": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": false,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_RJqjk3": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "divider_cj3cp3": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "view_more_button_rUqkMG": {
+          "type": "view-more-button",
+          "settings": {
+            "button_label": "Full details",
+            "text_align": "text-start"
+          }
+        }
+      },
+      "block_order": [
+        "vendor_sku_CKKzUD",
+        "title_T89wGB",
+        "price_Ebqt6g",
+        "divider_rJDVwC",
+        "variant_picker_mCFCgi",
+        "buy_buttons_RJqjk3",
+        "divider_cj3cp3",
+        "view_more_button_rUqkMG"
+      ],
+      "settings": {
+        "product": "voya-e-2-single-speed-bumblebee",
+        "select_first_variant": true,
+        "media_ratio": "natural",
+        "media_crop": "none",
+        "media_width": 50,
+        "enable_video_looping": false,
+        "enable_zoom": true,
+        "zoom_mode": "hover",
+        "hover_zoom": "large",
+        "color_scheme": "1",
+        "border_color": "rgba(0,0,0,0)",
+        "bg_color": "#f4f4f4"
+      }
+    },
+    "collection_list_PN8XCm": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_n7JtKf": {
+          "type": "collection",
+          "settings": {
+            "collection": "mtb-helme",
+            "image": "shopify://shop_images/home_cat_helme.jpg"
+          }
+        },
+        "collection_xGrWix": {
+          "type": "collection",
+          "settings": {
+            "collection": "protektoren",
+            "image": "shopify://shop_images/home_cat_protektoren.jpg"
+          }
+        },
+        "collection_VDDzDM": {
+          "type": "collection",
+          "settings": {
+            "collection": "mtb-schuhe",
+            "image": "shopify://shop_images/home_cat_schuhe.jpg"
+          }
+        },
+        "collection_kUkQcg": {
+          "type": "collection",
+          "settings": {
+            "collection": "regenbekleidung",
+            "image": "shopify://shop_images/home_cat_regen.jpg"
+          }
+        },
+        "collection_wUb3bp": {
+          "type": "collection",
+          "settings": {
+            "collection": "motocross-jerseys",
+            "image": "shopify://shop_images/home_cat_jerseys.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_n7JtKf",
+        "collection_xGrWix",
+        "collection_VDDzDM",
+        "collection_kUkQcg",
+        "collection_wUb3bp"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "medium",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": false,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "hoco_media_grid_WdMCHj": {
+      "type": "hoco-media-grid",
+      "blocks": {
+        "media_hjDb7r": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/leasing_page_image_01.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 2,
+            "subheading": "",
+            "title": "<p>Leasing</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_7mB9Gk": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/header_platzangst_womens.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Platzangst</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_UzK7Wn": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "subheading": "",
+            "title": "",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_hjDb7r",
+        "media_7mB9Gk",
+        "media_UzK7Wn"
+      ],
+      "settings": {
+        "title": "",
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 300,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
+      }
+    },
+    "hoco_youtube_channel_preview_tbrkV4": {
+      "type": "hoco-youtube-channel-preview",
+      "settings": {
+        "headline": "Get the Knowledge",
+        "text": "Tubeless oder Schlauch? Warum Bremsen einbremsen? Die Antworten auf diese und weitere technische Fragen findest du in unserem YouTube-Kanal!",
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "youtube1": "aeuer-szQ6M",
+        "youtube2": "IOzt9-pA3PI",
+        "image_1": "shopify://shop_images/youtube_profile.png"
+      }
+    },
+    "featured_blog_UibKyf": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Blog",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "blog": "beitrag",
+        "layout": "carousel",
+        "posts_to_show": 8,
+        "show_featured_image": true,
+        "show_tags": false,
+        "show_excerpt": true,
+        "show_author": true,
+        "show_date": true,
+        "show_button": false,
+        "color_scheme": "none",
+        "image_ratio": "1.77",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "logo_list_apLBmG": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_aDKJAt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_IXS.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_EFJeXN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_platzangst.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_fHEMde": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_leatt.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_zLNr9Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_giant.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_3YtfKy": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_bixs.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_RMifXR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_rondo.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        },
+        "logo_WYPqpj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/premium_logo_schwalbe.png",
+            "url": "",
+            "logo_width": 150,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_aDKJAt",
+        "logo_EFJeXN",
+        "logo_fHEMde",
+        "logo_zLNr9Y",
+        "logo_3YtfKy",
+        "logo_RMifXR",
+        "logo_WYPqpj"
+      ],
+      "custom_css": [
+        "@media (min-width: 1350px) {ul.logo-list {justify-content: center; }}"
+      ],
+      "settings": {
+        "title": "Premium Marken",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 40,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "2",
+        "full_width": true
+      }
+    },
+    "niccos_multicolumn_XRGiNj": {
+      "type": "niccos-multicolumn",
+      "blocks": {
+        "column_bxHWea": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Der Onlineshop für Fahrradzubehör & Bekleidung",
+            "text": "<p>Mit dem Kauf eines Fahrrads ist es allerdings meist nicht getan. Etwas Zubehör und ein paar Accessoires versüßen dir dein Leben als Fahrradfahrer nicht nur, sie machen es vor allem sicherer. Zur Grundausrüstung gehören ein gutes Fahrradschloss und ein sicherer Fahrradhelm. Beides kannst du bei uns kaufen. In unserem Fahrrad-Onlineshop findest du darüber hinaus Fahrradzubehör und sämtliche Ausstattung, die du unterwegs brauchst. </p><p>Besonders komfortabel wird es, wenn du auf dem Fahrrad die passende Fahrradbekleidung trägst. Auf Bike Mailorder findest du Fahrradtrikots, Fahrradhosen, Regenbekleidung, Fahrradschuhe und vieles mehr in allen möglichen Größen und für Damen, Herren und Kinder. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_waRHbK": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Bike Mailorder liefert Fahrräder & E-Bikes",
+            "text": "<p>Bei uns findest du pfeilschnelle Rennräder, kilometerhungrige Gravel Bikes, simple Fixies und wendige MTBs, gemütliche Citybikes, komfortable Trekkingräder, Fahrräder für Damen, Herrenräder und natürlich viele Kinderfahrräder in allen Größen, Ausstattungen und Farben. Und eine täglich wachsende Auswahl an E-Bikes darf natürlich auch nicht fehlen!</p><p>Wir möchten, dass du das perfekte Fahrrad findest, daher erleichtern wir dir den Fahrradkauf mit ausführlichen Kaufberatungen und unser Service-Team berät dich gerne persönlich. </p><p>Falls ein Fahrrad von der Stange nicht dein Ding ist, findest du in unserem Bike-Shop alle Fahrradteile für dein individuelles Traumfahrrad, das passende Werkzeug gibt es in unserer Fahrradwerkzeug-Abteilung. Hier kannst du alles bestellen, um dir ein neues Fahrrad zusammenzubauen oder dein altes Bike mit Ersatzteilen wieder flott zu machen</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_MrgKKK": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Der Bike Mailorder Kundenservice lohnt sich!",
+            "text": "<p>Du hast deinen Wunschartikel gefunden? Dann lass’ dich von unserem Kundenservice überzeugen. Hier machen wir gerne unserem Namen “Bike Mailorder” alle Ehre und liefern alle Bestellungen immer schnellstmöglich per Spedition oder Versanddienstleister. Wenn du Hilfe beim Kauf eines Fahrrads oder bei der Auswahl der passenden Fahrradausstattung oder Bike-Bekleidung brauchst, kannst du dich jederzeit an unseren Kundenservice wenden. Wie bieten unterschiedliche sichere Zahlarten an, und damit sich jeder ein Traumfahrrad leisten kann, organisieren wir gerne eine Fahrrad-Finanzierung und kooperieren mit vielen Bike-Leasing-Anbietern. Unser Retouren-Service rundet deine Rundum-Sorglos-Bestellung ab. Es gibt eine Rückgabefrist von 100 Tagen und natürlich kostenlosen Rückversand innerhalb Deutschlands. Mehr dazu findest du in unseren FAQs.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bxHWea",
+        "column_waRHbK",
+        "column_MrgKKK"
+      ],
+      "settings": {
+        "title": "Unser Angebot & Service",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "desktop_columns": 3,
+        "column_alignment": "left",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "hoco_newsletter_signup_QKrWp9": {
+      "type": "hoco-newsletter_signup",
+      "disabled": true,
+      "settings": {
+        "headline": "Bleib auf dem Laufenden",
+        "description": "Melde dich bei unserem Newsletter an und erhalte immer Informationen zu den neusten Produkten und Angeboten.",
+        "background-color": "#f1f1f1",
+        "text-color": "#0889ac",
+        "text-color-des": "#000000",
+        "form": ""
+      }
+    },
+    "navigation_slideshow_VacBz7": {
+      "type": "navigation-slideshow",
+      "blocks": {
+        "slide_z9CtYK": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/header_orbea_700.jpg",
+            "overlay_text_align": "text-start",
+            "mob_center_text": true,
+            "subheading": "",
+            "heading": "Bike Finder",
+            "heading_size": "h1",
+            "heading_h1": false,
+            "text": "<p>Finde das richtige Fahrrad für dich</p>",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "slide_z9CtYK"
+      ],
+      "disabled": true,
+      "settings": {
+        "height_mode": "fixed",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "quick_nav_menu": "main-menu",
+        "quick_nav_title": "Was brauchst du",
+        "quick_nav_image_ratio": "1",
+        "quick_nav_image_fit": "contain",
+        "quick_nav_use_product_image": false,
+        "quick_nav_color_scheme": "none",
+        "quick_nav_show_price": false,
+        "menu_1_text": "Antrieb",
+        "menu_1_display": "large_text",
+        "menu_2_text": "Anwendung",
+        "menu_2_display": "large_text",
+        "menu_3_text": "Kategorie",
+        "menu_3_display": "large_text",
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "transition": "slide-fade",
+        "autoplay": false,
+        "slider_pause": false,
+        "autoplay_speed": 5,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "accessibility_info": "Featured collections and new arrivals",
+        "prevent_animation": false
+      }
+    },
+    "17418678918086c625": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_carousel_widget_block_X8F4ab": {
+          "type": "shopify://apps/google-reviews/blocks/carousel-widget-block/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "contentIndex": "1",
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": false,
+            "reviewPhotosType": "small",
+            "writeReview": true,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_carousel_widget_block_X8F4ab"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "image-banner",
+    "featured_collection_q6EQfd",
+    "hoco_media_grid_gHd4zE",
+    "featured_product_ARh3xP",
+    "collection_list_PN8XCm",
+    "hoco_media_grid_WdMCHj",
+    "hoco_youtube_channel_preview_tbrkV4",
+    "featured_blog_UibKyf",
+    "logo_list_apLBmG",
+    "niccos_multicolumn_XRGiNj",
+    "hoco_newsletter_signup_QKrWp9",
+    "navigation_slideshow_VacBz7",
+    "17418678918086c625"
+  ]
+}

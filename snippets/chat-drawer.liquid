@@ -1,0 +1,349 @@
+<style>
+
+  .drawer--chat {
+    font-size: 16px;
+  }
+
+  .chat--drawer-overlay {
+    display: none;
+  }
+
+  body:has(.drawer--chat[open]) .chat--drawer-overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .drawer--chat[open] {
+      z-index: 1000;
+  }
+
+  @media (max-width : 750px) {
+    .drawer--chat {
+      font-size: 14px;
+    }
+  }
+
+  .drawer--chat .drawer__header {
+    gap: 15px;
+  }
+
+  .drawer--chat .chat-drawer-header-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 16px 16px 16px 0px;
+  }
+
+  .drawer--chat .chat-drawer-header-main img {
+    width: 150px;
+    margin: auto;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item {
+    cursor: pointer;
+  }
+
+  .drawer--chat .chat-acco-item-title {
+    padding: 12px 12px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+  }
+
+  .drawer--chat .chat-acco-item-title span svg {
+    margin-top: 2px;
+    transition: all 0.3s;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item.active span svg {
+    transform: rotate(-180deg);
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content > p {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item.active .chat-acco-item-content {
+    max-height: 500px;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content a,
+    .drawer--chat .niccos-chat-footer a {
+    position: relative;
+  }
+
+  .drawer--chat .niccos-chat-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .drawer--chat .niccos-chat-footer a {
+    line-height: 1.1;
+    text-decoration: none!important;
+    width: fit-content;
+  }
+
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content a::before,
+  .drawer--chat .niccos-chat-footer a::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: black;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .drawer--chat .niccos-chat-footer a:hover,
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content a:hover {
+    color: #00d998;
+  }
+
+  .drawer--chat .niccos-chat-footer a:hover::before,
+  .drawer--chat .niccos-chat-accordion-list .chat-acco-item .chat-acco-item-content a:hover::before {
+    width: 0;
+  }
+
+  .drawer--chat .chat-acco-item-title span {
+    display: flex;
+    align-items:center ;
+    gap: 7px;
+  }
+
+  .drawer--chat .niccos-chat-footer {
+    margin-top: 30px;
+  }
+
+  .drawer--chat .niccos-chat-footer ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+</style>
+
+<div class="chat--drawer-overlay"></div>
+
+<chat-drawer class="drawer drawer--chat fixed top-0 right-0 flex flex-col w-full has-motion" data-name="cart-drawer" id="cart-drawer" role="dialog" aria-label="{{ 'cart.general.title' | t }}" aria-modal="true" aria-hidden="true" tabindex="-1" data-shipping-calculator="{{ section.settings.show_shipping_calculator }}"{% if section.settings.position_cart_summary == 'top' and section.settings.stick_footer %} data-css-var-height=".cart-drawer__checkout-buttons,.cart-drawer__summary"{% endif %}>
+  <header class="drawer__header flex justify-between items-center{% if section.settings.position_cart_summary == 'top' and section.settings.stick_footer == true %} drawer__header--no-border{% endif %}">
+    <div class="chat-drawer-header-main">
+      {%- if settings.chat_heading != blank -%}
+        <h2 class="h5 mb-0">{{ settings.chat_heading }}</h2>
+      {%- endif -%}
+      {%- if settings.chat_sub_heading != blank -%}
+        <p class="mb-0">{{ settings.chat_sub_heading }}</p>
+      {%- endif -%}
+      <img src="{{ settings.chat_main_image |  image_url: width: 2000 }}" alt="" width="" height="">
+    </div>
+    <div class="flex items-center gap-x-theme">
+      <button type="button" class="drawer__close-btn js-close-drawer">
+        <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
+        {% render 'icon-close' %}
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer__content items-center">
+      <div class="niccos-chat-body">
+        <div class="niccos-chat-accordion-list">
+          {%- if settings.chat_acco_title1 != blank -%}
+            <a href="{{ settings.chat_acco_link1 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code1 != blank -%}
+                  {{ settings.chat_acco_image_embed_code1 }}
+                {%- elsif settings.chat_acco_image1 != blank -%}
+                  <img src="{{ settings.chat_acco_image1 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "whats-app" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title1 }}
+                  {%- if settings.chat_acco_content1 != blank -%}
+                    {%- render 'icons' type : "down-arrow" -%}
+                  {%- endif -%}
+                </span>
+                {%- if settings.chat_acco_content1 != blank -%}
+                  <div class="chat-acco-item-content">
+                    {{ settings.chat_acco_content1 }}
+                  </div>
+                {%- endif -%}
+              </div>
+            </a>
+          {%- endif -%}
+          {%- if settings.chat_acco_title2 != blank -%}
+            <a href="{{ settings.chat_acco_link2 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code2 != blank -%}
+                  {{ settings.chat_acco_image_embed_code2 }}
+                {%- elsif settings.chat_acco_image2 != blank -%}
+                  <img src="{{ settings.chat_acco_image2 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "live-chat" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title2 }}
+                  {%- if settings.chat_acco_content2 != blank -%}
+                    {%- render 'icons' type : "down-arrow" -%}
+                  {%- endif -%}
+                </span>
+              </div>
+              {%- if settings.chat_acco_content2 != blank -%}
+                <div class="chat-acco-item-content">
+                  {{ settings.chat_acco_content2 }}
+                </div>
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+          {%- if settings.chat_acco_title3 != blank -%}
+            <div href="{{ settings.chat_acco_link3 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code3 != blank -%}
+                  {{ settings.chat_acco_image_embed_code3 }}
+                {%- elsif settings.chat_acco_image3 != blank -%}
+                  <img src="{{ settings.chat_acco_image3 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "tel-phone" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title3 }}
+                {%- if settings.chat_acco_content3 != blank -%}
+                  {%- render 'icons' type : "down-arrow" -%}
+                {%- endif -%}
+                </span>
+              </div>
+              {%- if settings.chat_acco_content3 != blank -%}
+              <div class="chat-acco-item-content">
+                {{ settings.chat_acco_content3 }}
+              </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if settings.chat_acco_title4 != blank -%}
+            <div href="{{ settings.chat_acco_link4 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code4 != blank -%}
+                  {{ settings.chat_acco_image_embed_code4 }}
+                {%- elsif settings.chat_acco_image4 != blank -%}
+                  <img src="{{ settings.chat_acco_image4 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "edit-notes" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title4 }}
+                {%- if settings.chat_acco_content4 != blank -%}
+                  {%- render 'icons' type : "down-arrow" -%}
+                {%- endif -%}
+                </span>
+              </div>
+              {%- if settings.chat_acco_content4 != blank -%}
+              <div class="chat-acco-item-content">
+                {{ settings.chat_acco_content4 }}
+              </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if settings.chat_acco_title5 != blank -%}
+            <div href="{{ settings.chat_acco_link5 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code5 != blank -%}
+                  {{ settings.chat_acco_image_embed_code5 }}
+                {%- elsif settings.chat_acco_image5 != blank -%}
+                  <img src="{{ settings.chat_acco_image5 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "mail-icon" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title5 }}
+                {%- if settings.chat_acco_content5 != blank -%}
+                  {%- render 'icons' type : "down-arrow" -%}
+                {%- endif -%}
+                </span>
+              </div>
+              {%- if settings.chat_acco_content5 != blank -%}
+              <div class="chat-acco-item-content">
+                {{ settings.chat_acco_content5 }}
+              </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if settings.chat_acco_title6 != blank -%}
+            <div href="{{ settings.chat_acco_link6 }}" class="chat-acco-item">
+              <div class="chat-acco-item-title">
+                {%- if settings.chat_acco_image_embed_code6 != blank -%}
+                  {{ settings.chat_acco_image_embed_code6 }}
+                {%- elsif settings.chat_acco_image6 != blank -%}
+                  <img src="{{ settings.chat_acco_image6 }}" alt="">
+                {%- else -%}
+                  {%- render 'icons' type : "gift-icon" -%}
+                {%- endif -%}
+                <span class="">{{ settings.chat_acco_title6 }}
+                {%- if settings.chat_acco_content6 != blank -%}
+                  {%- render 'icons' type : "down-arrow" -%}
+                {%- endif -%}
+                </span>
+              </div>
+              {%- if settings.chat_acco_content6 != blank -%}
+              <div class="chat-acco-item-content">
+                {{ settings.chat_acco_content6 }}
+              </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+         
+        </div>
+      </div>
+      {%- if settings.chat_footer_text != blank -%}
+        <div class="niccos-chat-footer"> 
+          {{ settings.chat_footer_text }}
+        </div>
+      {%- endif -%}
+  </div>
+</chat-drawer>
+
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var accoItems = document.querySelectorAll(".niccos-chat-body .chat-acco-item");
+
+    accoItems.forEach(accoItem => {
+      accoItem.addEventListener("click", function() {
+        if(this.classList.contains("active")) {
+          this.classList.remove("active");
+        } else {
+          this.classList.add("active");
+        }
+      });
+    });
+  });
+
+</script>

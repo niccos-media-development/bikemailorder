@@ -1,0 +1,657 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "image_banner_RVq7rC": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3zztGw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bike Leasing",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zztGw"
+      ],
+      "settings": {
+        "image_desktop": "shopify://shop_images/leasing_page_header.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 400,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20,
+        "prevent_animation": false
+      }
+    },
+    "rich_text_HnVzEd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3QPRNX": {
+          "type": "heading",
+          "settings": {
+            "heading": "So einfach ist Fahrrad und E-Bike Leasing bei BMO",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_D4Mz78": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du hast dein Traumbike in unserem Sortiment gefunden und willst es lieber über deinen Arbeitgeber leasen, als es direkt zu kaufen? Dann bist du hier genau richtig. Hier zeigen wir dir, wie Bike-Leasing funktioniert, welche Vorteile du hast und mit welchen Partnern du dein Bike bei uns leasen kannst.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3QPRNX",
+        "text_D4Mz78"
+      ],
+      "custom_css": [
+        "h2 {padding: 0;}",
+        ".section__block {padding: 0;}"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "media_grid_GY6HzL": {
+      "type": "media-grid",
+      "blocks": {
+        "media_wnjJXJ": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_1.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>1. Suche dir dein Traumbike aus</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_zbea3f": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_2.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>2. Starte die Leasinganfrage für dein Bike</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_CNhV8a": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_3.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>3. Wähle Bike Leasing <br/>als Zahlungsart</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_73VApM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_4.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>4. Du musst vorab nichts bezahlen! <br/>Wir schicken dir ein Angebot <br/></p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_fp7kEw": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_5.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>5. Wir setzen uns mit dem Leasingpartner in Verbindung und <br/>er kümmert sich um den Rest.</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_w6ErQR": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/bike_leasing_steps_6.jpg",
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>6. Du lässt dir dein Bike nach Hause liefern oder holst es in unserem <br/>NEW ØRD3R Store in Berlin ab.</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_wnjJXJ",
+        "media_zbea3f",
+        "media_CNhV8a",
+        "media_73VApM",
+        "media_fp7kEw",
+        "media_w6ErQR"
+      ],
+      "custom_css": [
+        ".gallery-block__image {display: flex; flex-direction: column; align-items: center;}",
+        "h3 {color: #000; font-size: 1.7rem; text-align: center;}",
+        "img {transform: scale(0.7);}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 3,
+        "mobile_carousel": true,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 340,
+        "fixed_height_mobile": 400,
+        "section_color_scheme": "none",
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff"
+      }
+    },
+    "faq_eGrALj": {
+      "type": "faq",
+      "blocks": {
+        "question_NyNiCR": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Was ist Bike-Leasing?",
+            "text": "<p>Beim Bike-Leasing wählst du dein Wunschbike aus und zahlst es als monatliche Leasingrate bei deinem Arbeitgeber als Firmenfahrzeug ab. Du kannst dein Bike natürlich auch in der Freizeit nutzen. Es ist nicht nur für den Weg zur Arbeit gedacht. Je nach Laufzeit des Leasing-Vertrages zahlst du 36 bis 48 Leasingraten. Ist dein geleastes Bike dann immer noch dein Traumbike, kannst du es deinem Arbeitgeber für einen Restwert komplett abkaufen und es geht in dein Eigentum über. Willst du nach Ablauf deines Leasingvertrages ein anderes Bike leasen, beginnt der Prozess von vorne.<br/></p>"
+          }
+        },
+        "question_WDJ4mw": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Wie funktioniert Bike Leasing?",
+            "text": "<p>Nach Vertragsabschluss mit dem Leasingpartner und deinem Arbeitgeber, wird deine monatliche Leasingrate direkt von deinem Bruttogehalt abgezogen. Dabei gelten für Fahrräder und E-Bikes die gleichen steuerlichen Vorteile, wie bei Dienstfahrzeugen. Das Dienstrad wird von deinem Arbeitgeber per Gehaltsumwandlung mit 0,25% des Bruttopreises versteuert. So kannst du bis zu 40% der Anschaffungskosten einsparen.<br/>Neben dem Bike Leasing per Gehaltsumwandlung können Arbeitgeber das Dienstrad auch als Gehaltsextra komplett übernehmen. Die Anrechnung auf den Bruttolohn entfällt dabei. In diesem Fall fahren Angestellte das Firmenrad komplett kostenfrei.  <br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_NyNiCR",
+        "question_WDJ4mw"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {#template--24575058575624__faq_eGrALj {display: none; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "media_with_text_YJKdEH": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_NwqLrb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was ist Bike-Leasing?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_Dqbfta": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Beim Bike-Leasing wählst du dein Wunschbike aus und zahlst es als monatliche Leasingrate bei deinem Arbeitgeber als Firmenfahrzeug ab. Du kannst dein Bike natürlich auch in der Freizeit nutzen. Es ist nicht nur für den Weg zur Arbeit gedacht. Je nach Laufzeit des Leasing-Vertrages zahlst du 36 bis 48 Leasingraten. Ist dein geleastes Bike dann immer noch dein Traumbike, kannst du es deinem Arbeitgeber für einen Restwert komplett abkaufen und es geht in dein Eigentum über. Willst du nach Ablauf deines Leasingvertrages ein anderes Bike leasen, beginnt der Prozess von vorne.<br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NwqLrb",
+        "text_Dqbfta"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/leasing_page_image_02.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "2",
+        "only_content_color_scheme": false
+      }
+    },
+    "media_with_text_YPTMa7": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_gf7M3e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie funktioniert Bike Leasing?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_6KdYYb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nach Vertragsabschluss mit dem Leasingpartner und deinem Arbeitgeber, wird deine monatliche Leasingrate direkt von deinem Bruttogehalt abgezogen. Dabei gelten für Fahrräder und E-Bikes die gleichen steuerlichen Vorteile, wie bei Dienstfahrzeugen. Das Dienstrad wird von deinem Arbeitgeber per Gehaltsumwandlung mit 0,25% des Bruttopreises versteuert. So kannst du bis zu 40% der Anschaffungskosten einsparen.<br/>Neben dem Bike Leasing per Gehaltsumwandlung können Arbeitgeber das Dienstrad auch als Gehaltsextra komplett übernehmen. Die Anrechnung auf den Bruttolohn entfällt dabei. In diesem Fall fahren Angestellte das Firmenrad komplett kostenfrei.  <br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gf7M3e",
+        "text_6KdYYb"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/leasing_page_image_03.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "multi_column_TXn7Ek": {
+      "type": "multi-column",
+      "blocks": {
+        "column_njxidP": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Screen_Shot_2025-03-10_at_15.53.02_PM.png",
+            "media_scale": 100,
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_njxidP"
+      ],
+      "custom_css": [
+        ".container {max-width: 200px; margin-bottom: -80px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "multi_column_JkQFk8": {
+      "type": "multi-column",
+      "blocks": {
+        "column_bDTYDa": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_P4b7Lx": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Steuervorteile",
+            "text": "<p>Dein Arbeitgeber least das Fahrrad und die monatliche Leasingrate wird von deinem Bruttolohn einbehalten. Durch die Gehaltsumwandlung sparst du Geld – meist sind dies 20 -40% im Vergleich zum Direktkauf.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_JezqbU": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bDTYDa",
+        "column_P4b7Lx",
+        "column_JezqbU"
+      ],
+      "custom_css": [
+        ".card {border-radius: 25px;}"
+      ],
+      "settings": {
+        "title": "Welche Vorteile bietet dir Bike-Leasing?",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "large",
+        "column_align": "center",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "faq_Mtakm9": {
+      "type": "faq",
+      "blocks": {
+        "question_Y36bm4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "heading": "Welche Voraussetzungen musst du erfüllen?",
+            "text": "<p>Damit du dein Traumfahrrad über deinen Arbeitgeber leasen kannst, muss dieser einen Leasingrahmenvertrag mit einem unserer Leasing-Partner haben. Sollte dein Arbeitgeber kein Bike-Leasing anbieten, ist das nicht schlimm. Eine Anmeldung bei einem unserer Leasingpartner ist jederzeit möglich. Nähere Informationen dazu findest du auf den Websites unserer Partner.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_Y36bm4"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {#template--24575058575624__faq_Mtakm9 {display: none; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "media_with_text_xAMJdi": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_4jey9j": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welche Voraussetzungen musst du erfüllen?",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_AdaRE6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Damit du dein Traumfahrrad über deinen Arbeitgeber leasen kannst, muss dieser einen Leasingrahmenvertrag mit einem unserer Leasing-Partner haben. Sollte dein Arbeitgeber kein Bike-Leasing anbieten, ist das nicht schlimm. Eine Anmeldung bei einem unserer Leasingpartner ist jederzeit möglich. Nähere Informationen dazu findest du auf den Websites unserer Partner.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4jey9j",
+        "text_AdaRE6"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.section--padded {display: none; }}",
+        "img {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/leasing_page_image_04.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "logo_list_RbWW9c": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_BYeU7G": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo_jobrad.png",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_ejVKfj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo-bikeleasing.svg",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_RpdwrA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo_business_bike.svg",
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_MMXTCH": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_wRkxtE": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_rqadeA": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_ftfDyU": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_UChwEW": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_cEanpB": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_4z8LjM": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_QEMFnC": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        },
+        "logo_N7YtHc": {
+          "type": "logo",
+          "settings": {
+            "url": "",
+            "logo_width": 120,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_BYeU7G",
+        "logo_ejVKfj",
+        "logo_RpdwrA",
+        "logo_MMXTCH",
+        "logo_wRkxtE",
+        "logo_rqadeA",
+        "logo_ftfDyU",
+        "logo_UChwEW",
+        "logo_cEanpB",
+        "logo_4z8LjM",
+        "logo_QEMFnC",
+        "logo_N7YtHc"
+      ],
+      "settings": {
+        "title": "Über welche Anbieter kannst du bei uns leasen?",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 88,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_RVq7rC",
+    "rich_text_HnVzEd",
+    "media_grid_GY6HzL",
+    "faq_eGrALj",
+    "media_with_text_YJKdEH",
+    "media_with_text_YPTMa7",
+    "multi_column_TXn7Ek",
+    "multi_column_JkQFk8",
+    "faq_Mtakm9",
+    "media_with_text_xAMJdi",
+    "logo_list_RbWW9c"
+  ]
+}

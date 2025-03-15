@@ -1,0 +1,45 @@
+<div class="section" >
+  <div class="container">
+    <div class="collection-banner flex flex-col md:flex-row text-start gap-y-6">
+      <div class="collection-banner__content flex flex-col w-full text-start collection-banner__content-wide">
+        <div class="block">
+          <h1 class="collection-banner__heading mb-0 inline">{{ section.settings.headline }}</h1>
+           <span class="font-heading collection-banner__count">
+             ({{ 'sections.collection.product_count.other' | t: count: collection.all_products_count }})
+           </span>
+        </div>
+        <div class="rte mt-4">
+          <p>{{ section.settings.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% stylesheet %}
+
+  
+  
+{% endstylesheet %}
+
+
+
+{% schema %}
+  {
+    "name": "Hoco Collection Intro",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Überschrift"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Beschreibung"
+      },
+    ],
+    "presets": [{"name": "Hoco Collection Intro"}]  
+  }
+{% endschema %}

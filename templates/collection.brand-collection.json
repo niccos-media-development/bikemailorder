@@ -1,0 +1,180 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_YeRETK": {
+      "type": "image-banner",
+      "settings": {
+        "image_desktop": "{{ collection.metafields.custom.collection_mainbanner.value }}",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 450,
+        "fixed_height_mobile": 300,
+        "overlay_position": "justify-center items-end",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "prevent_animation": false
+      }
+    },
+    "niccos_breadcrumbs_LNPFaj": {
+      "type": "niccos-breadcrumbs",
+      "settings": {
+        "custom_class": "container",
+        "separator_class": "arrows",
+        "breadcrumbs_alignment": "start",
+        "text_color": "#000000",
+        "font_weight": "normal",
+        "font_case": "default",
+        "font_size": 16,
+        "hide_title": false,
+        "home_text": "Home"
+      }
+    },
+    "collection-banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-banner__content.flex.flex-col.w-full.text-start.collection-banner__content-wide {width: 100%;}"
+      ],
+      "settings": {
+        "show_collection_title": true,
+        "show_product_count": true,
+        "show_collection_description": true,
+        "text_align": "text-start",
+        "collection_image": "natural",
+        "use_product_image": false,
+        "text_width": "standard",
+        "color_scheme": "default"
+      }
+    },
+    "collection_list_EQtE7X": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_eXt6hq": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_01.value }}"
+          }
+        },
+        "collection_ARBtqV": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
+          }
+        },
+        "collection_kxGnfm": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
+          }
+        },
+        "collection_eqWj4a": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
+          }
+        },
+        "collection_LPgy89": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
+          }
+        },
+        "collection_bGkg4F": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "collection_eXt6hq",
+        "collection_ARBtqV",
+        "collection_kxGnfm",
+        "collection_eqWj4a",
+        "collection_LPgy89",
+        "collection_bGkg4F"
+      ],
+      "custom_css": [
+        ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
+        ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
+        ".card__media.relative {width: 63%; margin: 0 auto; /*macht das Bild kleiner un zentriert ohne es zu bescheinden*/}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "medium",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": false,
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "collection-products": {
+      "type": "main-collection-products",
+      "blocks": {
+        "image_promotion_dttj6i": {
+          "type": "image-promotion",
+          "settings": {
+            "position": 1,
+            "view": "grid_list",
+            "hide_on_filter": true,
+            "min_height": 150,
+            "image": "shopify://shop_images/blog-fahrrad-bremsleitung-kuerzen.png",
+            "link_url": "",
+            "content": "<p>Promotion text</p>",
+            "text_type_scale": "1em",
+            "text_width": 400,
+            "text_alignment": "justify-center items-center text-center",
+            "button_label": "",
+            "button_style": "btn btn--secondary",
+            "text_color": "#ffffff",
+            "tint_color": "#000000",
+            "tint_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_promotion_dttj6i"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "card_size_mobile": "small",
+        "card_size": "medium",
+        "show_layout_toggle": false,
+        "enable_filtering": true,
+        "filters_open_lg": true,
+        "stick_on_scroll": true,
+        "show_filter_counts": true,
+        "expand_filters": false,
+        "max_filter_options": 7,
+        "enable_sorting": false,
+        "show_feat_sort_opt": true,
+        "sort_first": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_YeRETK",
+    "niccos_breadcrumbs_LNPFaj",
+    "collection-banner",
+    "collection_list_EQtE7X",
+    "collection-products"
+  ]
+}

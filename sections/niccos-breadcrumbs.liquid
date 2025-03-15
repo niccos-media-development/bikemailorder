@@ -1,0 +1,383 @@
+{%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+  {%- style -%}
+    .niccos_breadcrumbs-section#niccos_section-{{ section.id }} {
+      --breadcrumbs-alignment: {{ section.settings.breadcrumbs_alignment }};
+      --breadcrumbs-text-color: {{ section.settings.text_color }};
+      --breadcrumbs-font-size: {{ section.settings.font_size }}px;
+      --breadcrumbs-font-case: {{ section.settings.font_case }};
+      --breadcrumbs-font-weight: {{ section.settings.font_weight }};
+      --max-width: none;
+      {% if section.settings.max_width > 0 %}
+        --max-width: {{ section.settings.max_width }}px;
+      {% endif %}
+    }
+
+    .niccos_breadcrumbs-list.arrows {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .niccos_breadcrumbs-section {
+      color: var(--breadcrumbs-text-color);
+      margin-bottom: calc(5 * var(--space-unit)) 0;
+      margin-top: calc(5 * var(--space-unit)) 0;
+    }
+    .niccos_breadcrumbs-section * {
+      color: var(--breadcrumbs-text-color);
+    }
+
+    nav.niccos_breadcrumbs {
+      margin: 0 auto;
+      max-width: var(--max-width);
+    }
+
+    .niccos_breadcrumbs-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: var(--breadcrumbs-alignment);
+    }
+    .niccos_breadcrumbs-list li {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .niccos_breadcrumbs-list.arrows li:not(:last-child):after {
+      border-style: solid;
+      border-width: .10em .10em 0 0;
+      content: '';
+      display: inline-block;
+      height: .4em;
+      width: .4em;
+      margin: 0 .4em;
+      position: relative;
+      transform: rotate(45deg);
+      vertical-align: middle;
+      font-size: .75em;
+
+    }
+    [dir="rtl"] .niccos_breadcrumbs-list.arrows li:not(:last-child):after {
+      transform: rotate(220deg);
+    }
+
+    .niccos_breadcrumbs-list.slashes li:not(:last-child):after {
+      content: '/';
+      margin: 0 .4em;
+      font-size: .75em;
+    }
+
+    .niccos_breadcrumbs-list a {
+      color: inherit;
+      text-decoration: none;
+      font-size: .75em;
+      font-weight: var(--breadcrumbs-font-weight);
+      text-transform: var(--breadcrumbs-font-case);
+    }
+    .niccos_breadcrumbs-list a:hover,
+    .niccos_breadcrumbs-list a:focus {
+      text-decoration: underline;
+    }
+  {%- endstyle -%}
+
+  <div class="container product-breadcrumbs niccos_breadcrumbs-section {{ section.settings.custom_class }}" id="niccos_section-{{ section.id }}">
+    <nav class="niccos_breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <ol class="niccos_breadcrumbs-list {{ section.settings.separator_class }}">
+        <li>
+          <a href="{{ routes.root_url }}">{{ section.settings.home_text }}</a>
+        </li>
+
+        {%- assign t = template | split: '.' | first -%}
+        {%- case t -%}
+          {%- when 'page' -%}
+            <li>
+              <a href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+            </li>
+
+          {%- when 'product' and product.handle -%}
+            {% for parentCollection in product.metafields.custom.breadcrumbs.value %}
+              <li>
+                <a href="{{ parentCollection.url }}">{{ parentCollection.title }}</a>
+              </li>
+            {% endfor %}
+            {% unless section.settings.hide_title %}
+              <li>
+                <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+              </li>
+            {% endunless %}
+
+          {%- when 'collection' and collection.handle -%}
+            {% for parentCollection in collection.metafields.custom.breadcrumbs.value %}
+              <li>
+                <a href="{{ parentCollection.url }}">{{ parentCollection.title }}</a>
+              </li>
+            {% endfor %}
+            <li>
+              <a href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+            </li>
+
+          {%- when 'blog' -%}
+            <li>
+              <a href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+            </li>
+
+          {%- when 'article' -%}
+            <li>
+              {{ blog.title | link_to: blog.url }}
+            </li>
+            <li>
+              <a href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+            </li>
+
+          {%- else -%}
+            <li>
+              <a href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+            </li>
+        {%- endcase -%}
+      </ol>
+    </nav>
+  </div>
+
+  {% assign t = template | split: '.' | first %}
+  {% case t %}
+    {% when 'page' %}
+      {% capture schemaList %}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.title }}",
+          "item": "{{ shop.url }}{{ page.url }}"
+        }
+      {% endcapture %}
+    {% when 'product' and product.handle %}
+      {% capture schemaList %}
+        {% assign position = 0 %}
+        {% for parentCollection in product.metafields.custom.breadcrumbs.value %}
+          {% assign position = forloop.index %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index | plus: 1 }},
+            "name": "{{ parentCollection.title }}",
+            "item": "{{ shop.url }}{{ parentCollection.url }}"
+          },
+        {% endfor %}
+        {
+          "@type": "ListItem",
+          "position": {{ position | plus: 2 }},
+          "name": "{{ product.title }}",
+          "item": "{{ shop.url }}{{ product.url }}"
+        }
+      {% endcapture %}
+    {% when 'collection' and collection.handle %}
+      {% capture schemaList %}
+        {% assign position = 0 %}
+        {% for parentCollection in collection.metafields.custom.breadcrumbs.value %}
+          {% assign position = forloop.index %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index | plus: 1 }},
+            "name": "{{ parentCollection.title }}",
+            "item": "{{ shop.url }}{{ parentCollection.url }}"
+          },
+        {% endfor %}
+        {
+          "@type": "ListItem",
+          "position": {{ position | plus: 2 }},
+          "name": "{{ collection.title }}",
+          "item": "{{ shop.url }}{{ collection.url }}"
+        }
+      {% endcapture %}
+    {% when 'blog' %}
+      {% capture schemaList %}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ blog.title }}",
+          "item": "{{ shop.url }}{{ blog.url }}"
+        }
+      {% endcapture %}
+    {% when 'article' %}
+      {% capture schemaList %}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ blog.title }}",
+          "item": "{{ shop.url }}{{ blog.url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ article.title }}",
+          "item": "{{ shop.url }}{{ article.url }}"
+        }
+      {% endcapture %}
+    {% else %}
+      {% capture schemaList %}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page_title }}",
+          "item": "{{ shop.url }}{{ request.path }}"
+        }
+      {% endcapture %}
+  {% endcase %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ shop.url }}"
+      }
+      {%- if schemaList -%}
+        ,{{ schemaList }}
+      {%- endif -%}
+      ]
+    }
+  </script>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "Breadcrumbs",
+  "settings": [
+    {
+      "type": "html",
+      "id": "custom_class",
+      "label": "Custom Classes",
+      "default": "container"
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "select",
+      "id": "separator_class",
+      "label": "Breadcrumbs items separator",
+      "default": "arrows",
+      "options": [
+        {
+          "value": "arrows",
+          "label": "Arrows"
+        },
+        {
+          "value": "slashes",
+          "label": "Slashes"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Alignment"
+    },
+    {
+      "type": "select",
+      "id": "breadcrumbs_alignment",
+      "label": "Breadcrumbs Alignment",
+      "default": "start",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font Weight",
+      "default": "normal",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "bold",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "font_case",
+      "label": "Font Case",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font Size",
+      "default": 16,
+      "min": 12,
+      "max": 24
+    },
+    {
+      "type": "number",
+      "id": "max_width",
+      "label": "Max width",
+      "info": "To line up the section with the rest of your theme, it's best to use the custom class field above (if possible). But if not, you can set an exact pixel width here. Leave at 0 for full width."
+    },
+    {
+      "type": "header",
+      "content": "Other"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_title",
+      "label": "Hide Product Titles",
+      "info": "On product pages, only show the collection breadcrumbs. Useful for long product titles.",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "home_text",
+      "label": "Home Text",
+      "default": "Home",
+      "info": "Change the text for the Home link."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumbs"
+    }
+  ]
+}
+{% endschema %}

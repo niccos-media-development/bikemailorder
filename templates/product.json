@@ -1,0 +1,317 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "niccos_breadcrumbs_yLcECp": {
+      "type": "niccos-breadcrumbs",
+      "settings": {
+        "custom_class": "container",
+        "separator_class": "arrows",
+        "breadcrumbs_alignment": "start",
+        "text_color": "#000000",
+        "font_weight": "normal",
+        "font_case": "default",
+        "font_size": 16,
+        "hide_title": false,
+        "home_text": "Home"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "metaobject_logo_output_agcKQT": {
+          "type": "metaobject-logo-output",
+          "settings": {
+            "logo_width": 240,
+            "display_location": "title"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "product_perks_qf7Lhf": {
+          "type": "product_perks",
+          "settings": {
+            "icon": "check_mark",
+            "perk_1": "Gewicht: 14.4 kg",
+            "perk_2": "Gratis Aufbauservice",
+            "perk_3": "100 Tage Rückgaberecht",
+            "title": "<p>Product message</p>",
+            "close": "none",
+            "bg_color": "#f2f2f2",
+            "text_color": "#000000",
+            "corner_radius": 10
+          }
+        },
+        "divider-0": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "inventory_status_Rg6xzt": {
+          "type": "inventory-status",
+          "settings": {
+            "show_indicator_bar": true,
+            "show_urgency_message": true,
+            "text_very_low": "<p>- Almost gone!</p>",
+            "text_low": "<p>- Hurry while stocks last!</p>",
+            "text_normal": "",
+            "text_no_stock": "",
+            "text_no_stock_backordered": "<p>Backordered</p>"
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": true,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "divider-1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "wishlist_plus_wishlist_pdp_button_DghkBM": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_atw_button_icon": "heart",
+            "swym_atw_display_btn_text": true,
+            "swym_button_position": "default",
+            "swym_atw_button_vertical_offset": -16,
+            "swym_atw_full_width": false,
+            "swym_atw_button_alignment": "right",
+            "swym_add_to_wishlist_color": "#ffffff",
+            "swym_added_to_wishlist_color": "#fefefe",
+            "swym_button_text_color": "#2e2e2e",
+            "swym_atw_border_color": "#000000",
+            "swym_atw_border_thickness": 0,
+            "swym_atw_button_border_radius": 15,
+            "swym_enable_hover_customization": false,
+            "swym_hover_add_to_wishlist_color": "#000000",
+            "swym_hover_added_to_wishlist_color": "#222222",
+            "swym_hover_button_text_color": "#ffffff",
+            "swym_hover_atw_border_color": "#000000",
+            "swym_hover_atw_border_thickness": 0,
+            "swym_hover_atw_button_border_radius": 0,
+            "swym_custom_css": ""
+          }
+        },
+        "delivery_timer_D9VPkt": {
+          "type": "delivery_timer",
+          "settings": {
+            "icon": "clock",
+            "close": "none",
+            "bg_color": "#e8f7f0",
+            "text_color": "#000000",
+            "corner_radius": 10
+          }
+        },
+        "payment_icons_7LjxwJ": {
+          "type": "payment_icons",
+          "settings": {}
+        },
+        "social_proof_WDNz7r": {
+          "type": "social-proof",
+          "settings": {
+            "social-headline": "Hast du Fragen zum Produkt?",
+            "social-subheadline": "Unser Kundenservice ist für dich da!",
+            "social-image_1": "shopify://shop_images/home_cat_helme.jpg",
+            "social-image_2": "shopify://shop_images/home_cat_helme.jpg",
+            "social-image_3": "shopify://shop_images/home_cat_helme.jpg",
+            "social-button_link": "",
+            "social-button_text": "Chat mit uns!"
+          }
+        }
+      },
+      "block_order": [
+        "metaobject_logo_output_agcKQT",
+        "title",
+        "price",
+        "product_perks_qf7Lhf",
+        "divider-0",
+        "inventory_status_Rg6xzt",
+        "variant-picker",
+        "divider-1",
+        "buy-buttons",
+        "wishlist_plus_wishlist_pdp_button_DghkBM",
+        "delivery_timer_D9VPkt",
+        "payment_icons_7LjxwJ",
+        "social_proof_WDNz7r"
+      ],
+      "settings": {
+        "stick_on_scroll": true,
+        "select_first_variant": true,
+        "sticky_atc_panel": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "media_layout": "slider",
+        "media_size": "default",
+        "media_ratio": "1",
+        "media_crop": "none",
+        "enable_video_looping": false,
+        "enable_zoom": true,
+        "zoom_mode": "hover",
+        "enable_lightbox_mobile": false,
+        "hover_zoom": "large",
+        "stacked_scroll": "always",
+        "underline_active": true,
+        "media_arrows": "desktop",
+        "show_slide_count": true,
+        "media_thumbs": "desktop",
+        "lightbox_thumbnails": true,
+        "thumb_ratio": "1",
+        "thumb_crop": "none",
+        "border_color": "#eeeeee",
+        "bg_color": "#f4f4f4",
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "icons_with_text_D49W43": {
+      "type": "icons-with-text",
+      "blocks": {
+        "item_fRRd4j": {
+          "type": "item",
+          "settings": {
+            "icon": "price_tag",
+            "custom_icon": "shopify://shop_images/Layer_1.svg",
+            "heading": "Frame",
+            "text": "<p>Double butted suspension corrected crmo frame with rack mounts</p>",
+            "link": ""
+          }
+        },
+        "item_cCEJgF": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "custom_icon": "shopify://shop_images/Layer_2.svg",
+            "heading": "Fork",
+            "text": "<p>Suspension corrected Seido BPS crmo steel fork with triple cage mounts</p>",
+            "link": ""
+          }
+        },
+        "item_mAWw7x": {
+          "type": "item",
+          "settings": {
+            "icon": "chat_bubble",
+            "custom_icon": "shopify://shop_images/Layer_3.svg",
+            "heading": "Drivetrain",
+            "text": "<p>Sram SX Eagle 12-Speed drivetrain with 11-50 T cassette</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_fRRd4j",
+        "item_cCEJgF",
+        "item_mAWw7x"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".icons-with-text__text {line-height: 2;}",
+        ".icons-with-text__text > p {margin-top: 2rem; margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-center",
+        "icon_size": 80,
+        "title_type_scale": "medium",
+        "text_type_scale": "medium",
+        "icon_position": "above",
+        "mobile_stack": false,
+        "section_height": "medium",
+        "color_scheme": "none",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "tabs": {
+          "type": "tabs",
+          "settings": {
+            "style": "collapsible",
+            "open_first": true,
+            "show_description": true,
+            "show_reviews": false,
+            "custom_reviews": "",
+            "show_specification": true,
+            "spec_metafields": "Anzahl Gänge: next_cart.anzahl-gange\nAbstuffung: next_cart.abstufung\nRitzelaufnahme: next_cart.ritzelaufnahme\nMaterial: next_cart.material\nKettenbreite: next_cart.kettenbreite\nKompatibilität: next_cart.kompatibilitat\nSchaltungstyp: next_cart.schaltungstyp",
+            "spec_right_align": false,
+            "spec_show_empty_metafields": false,
+            "spec_empty_field_text": "-",
+            "tab_1_title": "",
+            "tab_1_text": "",
+            "tab_1_page": "",
+            "tab_2_title": "",
+            "tab_2_text": "",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_text": "",
+            "tab_3_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tabs"
+      ],
+      "custom_css": [],
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    }
+  },
+  "order": [
+    "niccos_breadcrumbs_yLcECp",
+    "main",
+    "icons_with_text_D49W43",
+    "details",
+    "recommendations"
+  ]
+}
