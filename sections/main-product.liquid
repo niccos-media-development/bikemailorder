@@ -510,8 +510,9 @@
 
           {%- when 'leasing-button' -%}
             <div class="leasing-wrapper">
-  <div class="leasing-text">auch möglich</div>
-  <button class="btn leasing btn--primary w-full">Über Arbeitgeber leasen</button>
+  <div class="leasing-text">{{ block.settings.leasing-text }}</div>
+  <a href="leasing-button" {{ block.settings.leasing-link }}
+  <button class="btn leasing btn--primary w-full">{{ block.settings.leasing-text-button }}</button>
 </div>
 
 
@@ -2082,6 +2083,11 @@
         {
           "type": "text",
           "id": "leasing-text",
+          "label": "Leasing Text"
+        },
+        {
+          "type": "text",
+          "id": "leasing-text-button",
           "label": "Leasing Text"
         },
         {
