@@ -95,3 +95,12 @@
   flex: 0 1 35%;
   margin-inline-end: calc(2 * var(--space-unit));
 }
+.leasing-button {
+  display: flex;
+  flex: 1 1 65%;
+}
+@media (min-width: 1024px) {
+  .leasing-text {
+    flex-basis: auto;
+  }
+}
