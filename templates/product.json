@@ -106,10 +106,12 @@
             "show_gift_card_recipient": true
           }
         },
-        "custom_liquid_j74tTM": {
-          "type": "custom-liquid",
+        "leasing_button_TfJqTN": {
+          "type": "leasing-button",
           "settings": {
-            "custom_liquid": "<div class=\"leasing-wrapper\">\n  <div class=\"leasing-text\">auch möglich</div>\n  <button class=\"btn leasing btn--primary w-full\">Über Arbeitgeber leasen</button>\n</div>\n\n<style>\n.leasing-wrapper {\n    display: flex;\n    align-items:center;\n}\n\n.btn.leasing.btn--primary {\n    flex: 1 1 65%;\n    margin-inline-start: calc(2 * var(--space-unit));\nbackground: #12AD62;\n    border: var(--btn-border-width) solid #12AD62;\n    outline-color: rgb(var(--btn-bg-color));\n    outline-offset: 3px;\n}\n\n.leasing-text {\n    flex: 0 1 35%;\n    margin-inline-end: calc(2 * var(--space-unit));\n}\n</style>"
+            "leasing-text": "auch möglich",
+            "leasing-text-button": "Über Arbeitgeber leasen",
+            "leasing-link": ""
           }
         },
         "delivery_timer_D9VPkt": {
@@ -149,7 +151,7 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
-        "custom_liquid_j74tTM",
+        "leasing_button_TfJqTN",
         "delivery_timer_D9VPkt",
         "payment_icons_7LjxwJ",
         "social_proof_WDNz7r"
