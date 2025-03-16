@@ -155,7 +155,7 @@
 
 <div class="chat--drawer-overlay"></div>
 
-<chat-drawer class="drawer drawer--chat fixed top-0 right-0 flex flex-col w-full has-motion" data-name="cart-drawer" id="cart-drawer" role="dialog" aria-label="{{ 'cart.general.title' | t }}" aria-modal="true" aria-hidden="true" tabindex="-1" data-shipping-calculator="{{ section.settings.show_shipping_calculator }}"{% if section.settings.position_cart_summary == 'top' and section.settings.stick_footer %} data-css-var-height=".cart-drawer__checkout-buttons,.cart-drawer__summary"{% endif %}>
+<chat-drawer class="drawer drawer--chat fixed top-0 right-0 flex flex-col w-full has-motion" data-name="chat-drawer" id="chat-drawer" role="dialog" aria-label="{{ 'cart.general.title' | t }}" aria-modal="true" aria-hidden="true" tabindex="-1" data-shipping-calculator="{{ section.settings.show_shipping_calculator }}"{% if section.settings.position_cart_summary == 'top' and section.settings.stick_footer %} data-css-var-height=".cart-drawer__checkout-buttons,.cart-drawer__summary"{% endif %}>
   <header class="drawer__header flex justify-between items-center{% if section.settings.position_cart_summary == 'top' and section.settings.stick_footer == true %} drawer__header--no-border{% endif %}">
     <div class="chat-drawer-header-main">
       {%- if settings.chat_heading != blank -%}
