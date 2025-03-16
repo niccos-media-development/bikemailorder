@@ -252,6 +252,7 @@ if (!customElements.get('cart-items')) {
       ];
 
       if (this.cartDrawer) {
+        debugger;
         const cartDrawerId = this.cartDrawer.closest('.shopify-section').id.replace('shopify-section-', '');
         sections = [
           ...sections,
