@@ -37,7 +37,7 @@
     </div>
     
     <!-- Markenliste -->
-    <div>
+    <div class="brand-list-alphabet">
       {% for letter in alphabet %}
         {% assign has_brands = false %}
         
@@ -147,6 +147,9 @@
 }
 .alphabet-nav a:hover {
   cursor: pointer;
+}
+.brand-list-alphabet h3 {
+  margin-bottom: 0;
 }
   
 {% endstylesheet %}
