@@ -3,7 +3,7 @@
   <div class="container">
     <h2>Markenverzeichnis</h2>
     
-    <!-- Alphabet-Index -->
+
     <div>
       <ul class="alphabet-nav">
         {% for letter in alphabet %}
@@ -34,19 +34,16 @@
       </ul>
     </div>
     
-    <!-- Markenliste -->
     <div class="brand-list-alphabet">
       {% for letter in alphabet %}
         {% assign has_brands = false %}
         
-        <!-- Check if there are any brands for this letter -->
         {% for collection in collections %}
           {% assign collection_typ = collection.metafields.custom.collection_typ %}
           
           {% if collection_typ == "Brandpage" %}
             {% assign first_letter = collection.title | slice: 0 | upcase %}
             
-            <!-- Handle numbers -->
             {% assign first_char = first_letter | slice: 0, 1 %}
             {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
               {% assign first_letter = "#" %}
@@ -58,7 +55,7 @@
           {% endif %}
         {% endfor %}
         
-        <!-- Display brands for this letter if they exist -->
+
         {% if has_brands %}
           <h3 id="{{ letter }}">{{ letter }}</h3>
           <ul>
@@ -68,7 +65,6 @@
               {% if collection_typ == "Brandpage" %}
                 {% assign first_letter = collection.title | slice: 0 | upcase %}
                 
-                <!-- Handle numbers -->
                 {% assign first_char = first_letter | slice: 0, 1 %}
                 {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
                   {% assign first_letter = "#" %}
