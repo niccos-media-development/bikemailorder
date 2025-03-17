@@ -139,7 +139,9 @@
   min-width: 35px;
 }
 .alphabet-nav li:not(:last-child) {
-  border-right: 1px solid grey;
+  @media (min-width:768px) {
+    border-right: 1px solid grey;
+  }
 }
 
 .alphabet-nav a {
