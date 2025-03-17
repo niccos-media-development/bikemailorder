@@ -9,7 +9,6 @@
         {% for letter in alphabet %}
           {% assign has_brands = false %}
           
-          <!-- Check if there are any brands for this letter -->
           {% for collection in collections %}
             {% assign collection_typ = collection.metafields.custom.collection_typ %}
             
@@ -28,7 +27,6 @@
             {% endif %}
           {% endfor %}
           
-          <!-- Add the "unused" class if there are no brands for this letter -->
           <li>
             <a href="#{{ letter }}" {% unless has_brands %}class="unused"{% endunless %}>{{ letter }}</a>
           </li>
