@@ -517,7 +517,7 @@
         "title": "Blog",
         "heading_align": "text-start",
         "show_view_all": true,
-        "blog": "beitrag",
+        "blog": "magazin",
         "layout": "carousel",
         "posts_to_show": 8,
         "show_featured_image": true,
