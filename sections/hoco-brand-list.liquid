@@ -7,8 +7,30 @@
     <div>
       <ul class="alphabet-nav">
         {% for letter in alphabet %}
+          {% assign has_brands = false %}
+          
+          <!-- Check if there are any brands for this letter -->
+          {% for collection in collections %}
+            {% assign collection_typ = collection.metafields.custom.collection_typ %}
+            
+            {% if collection_typ == "Brandpage" %}
+              {% assign first_letter = collection.title | slice: 0 | upcase %}
+              
+              <!-- Handle numbers -->
+              {% assign first_char = first_letter | slice: 0, 1 %}
+              {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
+                {% assign first_letter = "#" %}
+              {% endif %}
+              
+              {% if first_letter == letter %}
+                {% assign has_brands = true %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          
+          <!-- Add the "unused" class if there are no brands for this letter -->
           <li>
-            <a href="#{{ letter }}">{{ letter }}</a>
+            <a href="#{{ letter }}" {% unless has_brands %}class="unused"{% endunless %}>{{ letter }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -19,41 +41,41 @@
       {% for letter in alphabet %}
         {% assign has_brands = false %}
         
-        <!-- Prüfen, ob mindestens eine Collection mit "Brandpage" existiert -->
+        <!-- Check if there are any brands for this letter -->
         {% for collection in collections %}
           {% assign collection_typ = collection.metafields.custom.collection_typ %}
           
           {% if collection_typ == "Brandpage" %}
             {% assign first_letter = collection.title | slice: 0 | upcase %}
-    
-            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+            
+            <!-- Handle numbers -->
             {% assign first_char = first_letter | slice: 0, 1 %}
             {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
               {% assign first_letter = "#" %}
             {% endif %}
-    
+            
             {% if first_letter == letter %}
               {% assign has_brands = true %}
             {% endif %}
           {% endif %}
         {% endfor %}
-    
-        <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->
+        
+        <!-- Display brands for this letter if they exist -->
         {% if has_brands %}
           <h3 id="{{ letter }}">{{ letter }}</h3>
           <ul>
             {% for collection in collections %}
               {% assign collection_typ = collection.metafields.custom.collection_typ %}
-    
+              
               {% if collection_typ == "Brandpage" %}
                 {% assign first_letter = collection.title | slice: 0 | upcase %}
                 
-                <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
+                <!-- Handle numbers -->
                 {% assign first_char = first_letter | slice: 0, 1 %}
                 {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
                   {% assign first_letter = "#" %}
                 {% endif %}
-    
+                
                 {% if first_letter == letter %}
                   <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
                 {% endif %}
@@ -66,22 +88,6 @@
   </div>
 </div>
 
-<script>
-  
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('ul.alphabet-nav a[href^="#"]');
-
-    links.forEach(link => {
-        const anchorId = link.getAttribute('href');
-        const anchorTarget = document.querySelector(anchorId);
-
-        if (!anchorTarget) {
-            link.classList.add('unused');
-        }
-    });
-});
-
-</script>
 
 {% stylesheet %}
 
