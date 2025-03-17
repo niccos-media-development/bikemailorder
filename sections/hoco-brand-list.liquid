@@ -136,7 +136,12 @@
   flex: 1;
   justify-content: center;
   display: flex;
-  min-width: 35px;
+}
+
+@media (max-width:768px) {
+  .alphabet-nav li {
+    min-width: 60px;
+  }
 }
 .alphabet-nav li:not(:last-child) {
   @media (min-width:768px) {
