@@ -68,20 +68,17 @@
 
 <script>
   
-// Get all <a> tags inside <ul> with class "alphabet-nav"
-const links = document.querySelectorAll('ul.alphabet-nav a[href^="#"]');
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('ul.alphabet-nav a[href^="#"]');
 
-links.forEach(link => {
-    // Extract the anchor part of the href (e.g., "#section1")
-    const anchorId = link.getAttribute('href');
+    links.forEach(link => {
+        const anchorId = link.getAttribute('href');
+        const anchorTarget = document.querySelector(anchorId);
 
-    // Check if the anchor exists in the document
-    const anchorTarget = document.querySelector(anchorId);
-
-    if (!anchorTarget) {
-        // If the anchor does not exist, add the class "unused"
-        link.classList.add('unused');
-    }
+        if (!anchorTarget) {
+            link.classList.add('unused');
+        }
+    });
 });
 
 </script>
