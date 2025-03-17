@@ -1,68 +1,65 @@
-{% assign alphabet = "#" | append: "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+
 <div class="section">
   <div class="container">
     <h2>Markenverzeichnis</h2>
     
-    <!-- Alphabet-Index -->
-    <div>
-      <ul class="alphabet-nav">
-        {% for letter in alphabet %}
-          <li>
-            <a href="#{{ letter }}">{{ letter }}</a>
-          </li>
+  {% assign alphabet = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" | split: " " %}
+
+<div class="alphabet-nav">
+  {% for letter in alphabet %}
+    {% assign has_link = false %}
+    {% for item in collection %}
+      {% if item.title contains letter %}
+        {% assign has_link = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if has_link %}
+      <a href="#{{ letter }}" class="alphabet-link" onclick="scrollToAdjustedPosition('{{ letter }}')">{{ letter }}</a>
+    {% else %}
+      <a class="alphabet-unused">{{ letter }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<!-- Content Sections for Each Letter -->
+{% for letter in alphabet %}
+  {% assign has_content = false %}
+  {% for item in collection %}
+    {% if item.title contains letter %}
+      {% assign has_content = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_content %}
+    <div id="{{ letter }}" class="letter-section">
+      <h2>{{ letter }}</h2>
+      <ul>
+        {% for item in collection %}
+          {% if item.title contains letter %}
+            <li>{{ item.title }}</li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
-    
-    <!-- Markenliste -->
-    <div>
-      {% for letter in alphabet %}
-        {% assign has_brands = false %}
-        
-        <!-- Prüfen, ob mindestens eine Collection mit "Brandpage" existiert -->
-        {% for collection in collections %}
-          {% assign collection_typ = collection.metafields.custom.collection_typ %}
-          
-          {% if collection_typ == "Brandpage" %}
-            {% assign first_letter = collection.title | slice: 0 | upcase %}
-    
-            <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
-            {% assign first_char = first_letter | slice: 0, 1 %}
-            {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
-              {% assign first_letter = "#" %}
-            {% endif %}
-    
-            {% if first_letter == letter %}
-              {% assign has_brands = true %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-    
-        <!-- Falls mindestens eine Marke mit diesem Buchstaben existiert, dann anzeigen -->
-        {% if has_brands %}
-          <h3 id="{{ letter }}">{{ letter }}</h3>
-          <ul>
-            {% for collection in collections %}
-              {% assign collection_typ = collection.metafields.custom.collection_typ %}
-    
-              {% if collection_typ == "Brandpage" %}
-                {% assign first_letter = collection.title | slice: 0 | upcase %}
-                
-                <!-- Falls die Marke mit einer Zahl beginnt, unter # gruppieren -->
-                {% assign first_char = first_letter | slice: 0, 1 %}
-                {% if first_char == "0" or first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" %}
-                  {% assign first_letter = "#" %}
-                {% endif %}
-    
-                {% if first_letter == letter %}
-                  <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %}
-      {% endfor %}
-    </div>
+  {% endif %}
+{% endfor %}
+
+<script>
+  function scrollToAdjustedPosition(anchor) {
+    const element = document.getElementById(anchor);
+    if (element) {
+      const offset = 200; // Adjust this value as needed
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
   </div>
 </div>
 
