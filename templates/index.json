@@ -245,7 +245,7 @@
       "settings": {
         "title": "",
         "heading_align": "text-start",
-        "show_view_all": true,
+        "show_view_all": false,
         "collection": "fahrraeder",
         "layout": "carousel",
         "card_size_mobile": "small",
