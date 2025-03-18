@@ -120,7 +120,7 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image": "shopify://shop_images/home_highlight_momentum.jpg",
-        "image_ratio": "fill",
+        "image_ratio": "natural",
         "promo_title": "",
         "content": "",
         "link_url": "/",
