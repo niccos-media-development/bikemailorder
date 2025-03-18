@@ -103,7 +103,7 @@
 
 <div class="section{% unless section_color_scheme == 'none' %} color-scheme color-scheme--{{ section_color_scheme }} section--padded section--full-width{% endunless %} section-no-margin" style="margin-bottom;{{ section.settings.margin-bottom }};margin-top;{{ section.settings.margin-top }};">
   {%- if section.settings.title != blank or section.settings.button_label != blank -%}
-    <div class="container">
+    <div class="container hoco-media-grid">
       <div class="section__header items-center flex{% if section.settings.heading_align == 'text-center' %} flex-col text-center{% elsif section.settings.heading_align == 'text-end' %} flex-row-reverse flex-wrap{% else %} flex-row flex-wrap{% endif %} gap-x-theme"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
         {%- if section.settings.title != blank -%}
           <h2 class="h4 section__heading mb-0 flex-auto {{ section.settings.heading_align }}">
@@ -200,7 +200,10 @@
 
 {% stylesheet %}
 
-  
+ .hoco-media-grid strong {
+  background: blue;
+  padding: 0 5px;
+}
   
 {% endstylesheet %}
           
