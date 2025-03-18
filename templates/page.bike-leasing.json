@@ -93,7 +93,7 @@
         "media_wnjJXJ": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_1.jpg",
+            "image": "shopify://shop_images/leasing_2.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -112,7 +112,7 @@
         "media_zbea3f": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_2.jpg",
+            "image": "shopify://shop_images/leasing_2.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -131,7 +131,7 @@
         "media_CNhV8a": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_3.jpg",
+            "image": "shopify://shop_images/leasing_3.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -150,7 +150,7 @@
         "media_73VApM": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_4.jpg",
+            "image": "shopify://shop_images/leasing_6.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -169,7 +169,7 @@
         "media_fp7kEw": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_5.jpg",
+            "image": "shopify://shop_images/leasing_5.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -188,7 +188,7 @@
         "media_w6ErQR": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/bike_leasing_steps_6.jpg",
+            "image": "shopify://shop_images/leasing_6.jpg",
             "link_url": "",
             "columns": 1,
             "rows": 1,
@@ -217,7 +217,7 @@
         ".gallery-block__image {display: flex; flex-direction: column; align-items: center;}",
         "h3 {color: #000; font-size: 1.7rem; text-align: center;}",
         "img {transform: scale(0.7);}",
-        ".gallery-block__image-text {position: absolute; top:0;}"
+        ".gallery-block__image-text {position: absolute; top: 0;}"
       ],
       "settings": {
         "title": "",
