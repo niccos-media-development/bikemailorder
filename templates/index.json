@@ -164,7 +164,7 @@
         "overlay_position": "justify-start items-end",
         "overlay_text_align": "text-start",
         "mob_center_text": false,
-        "mobile_stacked": false,
+        "mobile_stacked": true,
         "color_scheme": "white",
         "full_width": true,
         "transparent_content_color": "#ffffff",
@@ -193,6 +193,50 @@
         "button_label": "Button",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
+      }
+    },
+    "image_banner_RACrT9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bGgwdK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fahrräder",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "button_Yw4NP4": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bGgwdK",
+        "button_Yw4NP4"
+      ],
+      "settings": {
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-start items-end",
+        "overlay_text_align": "text-start",
+        "mob_center_text": false,
+        "mobile_stacked": true,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "prevent_animation": false
       }
     },
     "hoco_media_grid_gHd4zE": {
@@ -683,6 +727,7 @@
     "featured-collection",
     "image-banner",
     "featured_collection_q6EQfd",
+    "image_banner_RACrT9",
     "hoco_media_grid_gHd4zE",
     "collection_list_PN8XCm",
     "hoco_media_grid_WdMCHj",
