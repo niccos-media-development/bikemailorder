@@ -209,10 +209,10 @@
         "button_Yw4NP4": {
           "type": "button",
           "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "",
+            "button_1_label": "Mehr Fahrräder",
+            "button_1_link": "shopify://collections/fahrraeder",
             "button_1_style": "btn btn--primary",
-            "button_2_label": "Optional button",
+            "button_2_label": "",
             "button_2_link": "",
             "button_2_style": "btn btn--primary"
           }
