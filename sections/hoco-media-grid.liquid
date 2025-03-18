@@ -120,7 +120,7 @@
 
   {% if section.settings.mobile_carousel %}<div class="gallery-mobile-carousel">{% endif %}
 
-  <div class="container container-full-width" id="{{ section.id }}">
+  <div class="container hoco-media-grid container-full-width" id="{{ section.id }}">
     <div class="gallery grid no-gap {{ grid_classes }}{% if section.settings.mobile_carousel %} slider--mobile{% endif %}">
       {%- for block in section.blocks -%}
         {%- liquid
