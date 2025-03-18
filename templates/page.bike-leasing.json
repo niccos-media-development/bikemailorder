@@ -544,6 +544,7 @@
         "logo_MMXTCH": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_eurorad.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -552,6 +553,7 @@
         "logo_wRkxtE": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_eleasa.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -560,6 +562,7 @@
         "logo_rqadeA": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_leasabike.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -568,6 +571,7 @@
         "logo_ftfDyU": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_meindiesntrad.svg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -576,6 +580,7 @@
         "logo_UChwEW": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_dienstrad.png",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -584,6 +589,7 @@
         "logo_cEanpB": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/logo_ams.jpg",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -592,22 +598,7 @@
         "logo_4z8LjM": {
           "type": "logo",
           "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_QEMFnC": {
-          "type": "logo",
-          "settings": {
-            "url": "",
-            "logo_width": 120,
-            "text": ""
-          }
-        },
-        "logo_N7YtHc": {
-          "type": "logo",
-          "settings": {
+            "image": "shopify://shop_images/logo_comnpanybike.png",
             "url": "",
             "logo_width": 120,
             "text": ""
@@ -624,9 +615,7 @@
         "logo_ftfDyU",
         "logo_UChwEW",
         "logo_cEanpB",
-        "logo_4z8LjM",
-        "logo_QEMFnC",
-        "logo_N7YtHc"
+        "logo_4z8LjM"
       ],
       "settings": {
         "title": "Über welche Anbieter kannst du bei uns leasen?",
