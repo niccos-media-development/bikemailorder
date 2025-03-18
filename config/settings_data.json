@@ -377,7 +377,7 @@
     "show_breadcrumbs_article": false,
     "show_breadcrumbs_blog": false,
     "show_breadcrumbs_blog_rss": false,
-    "pagination_style": "traditional",
+    "pagination_style": "modern",
     "pagination_infinite": false,
     "coll_card_image_ratio": "1",
     "coll_card_image_fit": "contain",
