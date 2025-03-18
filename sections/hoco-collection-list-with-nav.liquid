@@ -1,6 +1,96 @@
+{% assign collections_to_show = "collection-handle-1,collection-handle-2,collection-handle-3,collection-handle-4,collection-handle-5" | split: "," %}
+
+<div class="collection-navigation">
+  {% for collection_handle in collections_to_show %}
+    {% assign collection = collections[collection_handle] %}
+    <button class="collection-button {% if forloop.first %}active{% endif %}" data-collection="{{ collection_handle }}">
+      {{ collection.title }}
+    </button>
+  {% endfor %}
+</div>
+
+{% for collection_handle in collections_to_show %}
+  {% assign collection = collections[collection_handle] %}
+  <div class="collection-grid {% unless forloop.first %}hidden{% endunless %}" data-collection="{{ collection_handle }}">
+    <div class="grid">
+      {% for product in collection.products limit: 10 %}
+        <div class="grid-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.title }}">
+            <p>{{ product.title }}</p>
+            <p>{{ product.price | money }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+
+<style>
+  .collection-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .collection-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+
+  .collection-button.active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .collection-grid {
+    display: none;
+  }
+
+  .collection-grid.active {
+    display: block;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .grid-item {
+    flex: 1 1 calc(20% - 10px);
+    box-sizing: border-box;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.collection-button').forEach(button => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons and grids
+      document.querySelectorAll('.collection-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.collection-grid').forEach(grid => grid.classList.add('hidden'));
+
+      // Add active class to the clicked button and corresponding grid
+      const collectionHandle = this.getAttribute('data-collection');
+      this.classList.add('active');
+      document.querySelector(`.collection-grid[data-collection="${collectionHandle}"]`).classList.remove('hidden');
+    });
+  });
+</script>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "HocoCollectionListwithNav",
+    "settings": [],
+    "presets": [{"name": "Hoco Collection List with Nav"}]  
   }
 {% endschema %}
