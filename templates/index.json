@@ -223,6 +223,7 @@
         "button_Yw4NP4"
       ],
       "settings": {
+        "image_desktop": "shopify://shop_images/home_banner_bikes.jpg",
         "url": "",
         "height_mode": "auto",
         "fixed_height_desktop": 600,
@@ -235,8 +236,30 @@
         "full_width": true,
         "transparent_content_color": "#ffffff",
         "tint_color": "#000000",
-        "tint_opacity": 40,
+        "tint_opacity": 0,
         "prevent_animation": false
+      }
+    },
+    "featured_collection_NfeUEJ": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "fahrraeder",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "",
+        "content": "",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
       }
     },
     "hoco_media_grid_gHd4zE": {
@@ -728,6 +751,7 @@
     "image-banner",
     "featured_collection_q6EQfd",
     "image_banner_RACrT9",
+    "featured_collection_NfeUEJ",
     "hoco_media_grid_gHd4zE",
     "collection_list_PN8XCm",
     "hoco_media_grid_WdMCHj",
