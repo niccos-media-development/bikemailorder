@@ -109,21 +109,22 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Highlights",
+        "title": "",
         "heading_align": "text-start",
-        "show_view_all": true,
+        "show_view_all": false,
         "collection": "gravel-bikes",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
         "products_to_show": 8,
         "show_highlight_products": true,
-        "show_promo_info": false,
+        "show_promo_info": true,
+        "image": "shopify://shop_images/home_highlight_momentum.jpg",
         "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "promo_title": "",
+        "content": "",
         "link_url": "/",
-        "button_label": "Optional Button",
+        "button_label": "",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
