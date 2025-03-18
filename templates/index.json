@@ -131,16 +131,10 @@
     "image-banner": {
       "type": "image-banner",
       "blocks": {
-        "subheading_x9MdUH": {
-          "type": "subheading",
-          "settings": {
-            "text": "Platzangst"
-          }
-        },
         "banner-heading": {
           "type": "heading",
           "settings": {
-            "heading": "Womens Collection",
+            "heading": "E-Bikes",
             "heading_size": "h3",
             "heading_h1": false
           }
@@ -158,12 +152,11 @@
         }
       },
       "block_order": [
-        "subheading_x9MdUH",
         "banner-heading",
         "banner-button"
       ],
       "settings": {
-        "image_desktop": "shopify://shop_images/home_feature_desktop_platzangst_womens.jpg",
+        "image_desktop": "shopify://shop_images/home_banner_ebikes.jpg",
         "url": "",
         "height_mode": "auto",
         "fixed_height_desktop": 450,
