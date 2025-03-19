@@ -510,14 +510,16 @@
 
           {%- when 'leasing-button' -%}
             <div class="product-info__block" {{ block.shopify_attributes }}>
-              <div class="leasing-wrapper">
-                <div class="leasing-text">{{ block.settings['leasing-text'] }}</div>
-                <a href="{{ block.settings.leasing-link }}" class="leasing-button">
-                  <button class="btn leasing btn--primary w-full">
-                    {{ block.settings['leasing-text-button'] }}
-                  </button>
-                </a>
-              </div>
+              {% if product.metafields.custom.leasing_available.value == true %}
+                <div class="leasing-wrapper">
+                  <div class="leasing-text">{{ block.settings['leasing-text'] }}</div>
+                  <a href="{{ block.settings.leasing-link }}" class="leasing-button">
+                    <button class="btn leasing btn--primary w-full">
+                      {{ block.settings['leasing-text-button'] }}
+                    </button>
+                  </a>
+                </div>
+              {% endif %}
             </div>
 
           {%- when 'buy-buttons' -%}
@@ -2087,17 +2089,17 @@
         {
           "type": "text",
           "id": "leasing-text",
-          "label": "Leasing Text"
+          "label": "Leasing Text only if Metafield is true"
         },
         {
           "type": "text",
           "id": "leasing-text-button",
-          "label": "Leasing Text"
+          "label": "Leasing Button only if Metafield is true"
         },
         {
           "type": "url",
           "id": "leasing-link",
-          "label": "Leasing Button"
+          "label": "Leasing Button only if Metafield is true"
         }
       ]
     },
