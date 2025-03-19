@@ -38,6 +38,11 @@
             {%- endfor -%}
           </ul>
         </nav>
+         {%- if show_localization -%}
+              <div class="announcement__localization">
+                {% render 'localization-form', id: 'nav-localization', hide_labels: true %}
+              </div>
+            {%- endif -%}
       </div>
     </div>
   </announcement-bar>
