@@ -375,12 +375,6 @@
       {%- endcase -%}
     {%- endfor -%}
   </div>
-  {% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'gpsr_kontakt' %}
-      {% render 'gpsr-kontakt' %}
-  {% endcase %}
-{% endfor %}
 {%- endif -%}
 
 {% schema %}
