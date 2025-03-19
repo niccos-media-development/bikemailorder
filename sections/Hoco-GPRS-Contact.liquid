@@ -1,6 +1,24 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "GPSR Kontakt",
+  "settings": [],
+  "presets": [
+    {
+      "name": "GPSR Kontakt",
+      "category": "Produkt"
+    }
+  ]
+}
 {% endschema %}
+
+{%- assign pvd = product.vendor | downcase -%}
+{%- assign pvd = pvd | replace: '%', '-percent' -%}
+{%- assign pvd = pvd | replace: ' ', '-' -%}
+
+{%- assign metaobject_brand = shop.metaobjects.marken[pvd] -%}
+
+{% if metaobject_brand != blank and metaobject_brand.gpsr_kontakt != blank %}
+  <div class="gpsr-kontakt">
+    {{ metaobject_brand.gpsr_kontakt | newline_to_br }}
+  </div>
+{% endif %}
