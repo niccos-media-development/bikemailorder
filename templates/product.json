@@ -296,17 +296,10 @@
             "tab_3_text": "",
             "tab_3_page": ""
           }
-        },
-        "richtext_aERqqR": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>GPSR-Kontakt:<br/>FOCUS Bikes GmbH<br/>Rotenwaldstraße 158<br/>DE 70197, Stuttgart<br/>info@focus-bikes.com</p>"
-          }
         }
       },
       "block_order": [
-        "tabs",
-        "richtext_aERqqR"
+        "tabs"
       ],
       "custom_css": [],
       "settings": {}
