@@ -296,10 +296,17 @@
             "tab_3_text": "",
             "tab_3_page": ""
           }
+        },
+        "richtext_aERqqR": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>GPSR-Kontakt:<br/>FOCUS Bikes GmbH<br/>Rotenwaldstraße 158<br/>DE 70197, Stuttgart<br/>info@focus-bikes.com</p>"
+          }
         }
       },
       "block_order": [
-        "tabs"
+        "tabs",
+        "richtext_aERqqR"
       ],
       "custom_css": [],
       "settings": {}
@@ -314,10 +321,6 @@
         "card_size": "small",
         "products_to_show": 8
       }
-    },
-    "hoco_gprs_contact_9t8xr7": {
-      "type": "Hoco-GPRS-Contact",
-      "settings": {}
     }
   },
   "order": [
@@ -325,7 +328,6 @@
     "main",
     "icons_with_text_D49W43",
     "details",
-    "hoco_gprs_contact_9t8xr7",
     "recommendations"
   ]
 }
