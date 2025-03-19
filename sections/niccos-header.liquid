@@ -458,14 +458,22 @@
         data-menu-sensitivity="200"
       >
         <div class="panel-buttons-container" data-active-tab="1">
-          <div class="panel-button" tabindex="1">
-            <div>{% render 'icon-bicycle-helmet' %}</div>
-            <div>
-              <span class="font-bold">{{ section.settings.first_tab_text }}</span>
-            </div>
+          {% if section.settings.first_tab_text_link != blank %}
+            <a href="{{ section.settings.first_tab_text_link }}" class="panel-button" tabindex="2">
+          {% else %}
+            <div class="panel-button" tabindex="1">
+          {% endif %}
+          <div>{% render 'icon-bicycle-helmet' %}</div>
+          <div>
+            <span class="font-bold">{{ section.settings.first_tab_text }}</span>
           </div>
+          {% if section.settings.first_tab_text_link != blank %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
 
-          {% if section.settings.second_tab_text_link!= blank %}
+          {% if section.settings.second_tab_text_link != blank %}
             <a href="{{ section.settings.second_tab_text_link }}" class="panel-button" tabindex="2">
           {% else %}
             <div class="panel-button" tabindex="2">
@@ -1268,6 +1276,11 @@
       "id": "first_tab_text",
       "label": "Label",
       "default": "Bike"
+    },
+    {
+      "type": "url",
+      "id": "first_tab_text_link",
+      "label": "Link if no menu wanted"
     },
     {
       "type": "text",
