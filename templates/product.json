@@ -124,6 +124,10 @@
             "corner_radius": 10
           }
         },
+        "fbp_fast_bundle_fbt_position_AQTEaA": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/fbt_position/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "wishlist_plus_wishlist_pdp_button_MKAGQY": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
@@ -178,6 +182,7 @@
         "buy-buttons",
         "leasing_button_TfJqTN",
         "delivery_timer_D9VPkt",
+        "fbp_fast_bundle_fbt_position_AQTEaA",
         "wishlist_plus_wishlist_pdp_button_MKAGQY",
         "payment_icons_7LjxwJ",
         "social_proof_WDNz7r"
@@ -317,15 +322,6 @@
     },
     "17424675731094ba3b": {
       "type": "apps",
-      "blocks": {
-        "fbp_fast_bundle_fbt_position_64Win6": {
-          "type": "shopify://apps/fbp-fast-bundle/blocks/fbt_position/9e87fbe2-9041-4c23-acf5-322413994cef",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "fbp_fast_bundle_fbt_position_64Win6"
-      ],
       "settings": {
         "full_width": false
       }
