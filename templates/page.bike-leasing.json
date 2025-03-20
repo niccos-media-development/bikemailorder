@@ -428,7 +428,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Versicherungsschutz",
-            "text": "<p>Du kannst dein Wunschbike per Leasing-Vertrag einfach gegen Diebstahl,<br/>Material- und Produktionsfehler, Unfallschäden und Totalschaden versichern</p>",
+            "text": "<p>Du kannst dein Wunschbike per Leasing-Vertrag einfach gegen Diebstahl, Material- und Produktionsfehler, Unfallschäden und Totalschaden versichern.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -439,7 +439,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Flexible Nutzung",
-            "text": "<p>Du kannst dein Leasingrad auch privat nutzen</p>",
+            "text": "<p>Du kannst dein Leasingrad auch privat nutzen.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -461,7 +461,7 @@
             "enable_media": false,
             "media_scale": 100,
             "heading": "Fahrradzubehör",
-            "text": "<p>Kann ebenfalls geleast werden, wie zum Beispiel Pedalen, Lampen oder<br/>Schlösser</p>",
+            "text": "<p>Kann ebenfalls geleast werden, wie zum Beispiel Pedalen, Lampen oder Schlösser.</p>",
             "button_label": "",
             "button_link": ""
           }
