@@ -394,8 +394,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "Steuervorteile",
+            "text": "<p>Dein Arbeitgeber least das Fahrrad und die monatliche Leasingrate wird von deinem Bruttolohn einbehalten. Durch die Gehaltsumwandlung sparst du Geld – meist sind dies 20 -40% im Vergleich zum Direktkauf.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -405,8 +405,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Steuervorteile",
-            "text": "<p>Dein Arbeitgeber least das Fahrrad und die monatliche Leasingrate wird von deinem Bruttolohn einbehalten. Durch die Gehaltsumwandlung sparst du Geld – meist sind dies 20 -40% im Vergleich zum Direktkauf.</p>",
+            "heading": "Kosteneinsparung",
+            "text": "<p>Anders als beim Direktkauf wird der Kaufpreis nicht in einem Betrag fällig. Stattdessen werden die monatlichen Leasingraten ganz einfach von deinem Bruttolohn einbehalten und die finanzielle Belastung verteilt sich über die gesamte Leasinglaufzeit.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -416,8 +416,63 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Column",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "Flexibilität",
+            "text": "<p>Am Ende der Leasinglaufzeit kannst du das Fahrrad zu einem reduzierten Restwert kaufen oder einen neuen Leasingvertrag für ein neues Rad abschließen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_UVAVXp": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Versicherungsschutz",
+            "text": "<p>Du kannst dein Wunschbike per Leasing-Vertrag einfach gegen Diebstahl,<br/>Material- und Produktionsfehler, Unfallschäden und Totalschaden versichern</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_ALHrVh": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Flexible Nutzung",
+            "text": "<p>Du kannst dein Leasingrad auch privat nutzen</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_ixX6RV": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Jedes Bike kann geleast werden",
+            "text": "<p>Egal ob Gravelbike, Mountainbike, E-Bike oder Citybike.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_caRm33": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Fahrradzubehör",
+            "text": "<p>Kann ebenfalls geleast werden, wie zum Beispiel Pedalen, Lampen oder<br/>Schlösser</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_yzDLbw": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Umweltbewusstsein",
+            "text": "<p>Du schonst die Umwelt, indem du mit dem Rad fährst.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -426,7 +481,12 @@
       "block_order": [
         "column_bDTYDa",
         "column_P4b7Lx",
-        "column_JezqbU"
+        "column_JezqbU",
+        "column_UVAVXp",
+        "column_ALHrVh",
+        "column_ixX6RV",
+        "column_caRm33",
+        "column_yzDLbw"
       ],
       "custom_css": [
         ".card {border-radius: 25px;}"
