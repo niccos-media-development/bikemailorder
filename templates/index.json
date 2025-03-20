@@ -413,12 +413,11 @@
           "type": "media",
           "settings": {
             "image": "shopify://shop_images/header_platzangst_womens.jpg",
-            "logo": "shopify://shop_images/premium_logo_platzangst.png",
             "link_url": "",
             "columns": 2,
             "rows": 1,
             "subheading": "",
-            "title": "<p>Neue <strong>Damenkollektion</strong></p>",
+            "title": "<p>Platzangst</p>",
             "heading_size": "h4",
             "button_label": "",
             "button_link": "",
@@ -432,13 +431,12 @@
         "media_UzK7Wn": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/home_banner_ixs.jpg",
-            "logo": "shopify://shop_images/premium_logo_IXS.png",
+            "image": "shopify://shop_images/home_banner_desktop_ixsflowmerino.jpg",
             "link_url": "",
             "columns": 2,
             "rows": 1,
             "subheading": "",
-            "title": "<p>Sommer <strong>shredding</strong></p>",
+            "title": "",
             "heading_size": "h4",
             "button_label": "",
             "button_link": "",
@@ -603,8 +601,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Der Onlineshop für Fahrradzubehör & Bekleidung",
-            "text": "<p>Mit dem Kauf eines Fahrrads ist es allerdings meist nicht getan. Etwas Zubehör und ein paar Accessoires versüßen dir dein Leben als Fahrradfahrer nicht nur, sie machen es vor allem sicherer. Zur Grundausrüstung gehören ein gutes Fahrradschloss und ein sicherer Fahrradhelm. Beides kannst du bei uns kaufen. In unserem Fahrrad-Onlineshop findest du darüber hinaus Fahrradzubehör und sämtliche Ausstattung, die du unterwegs brauchst. </p><p>Besonders komfortabel wird es, wenn du auf dem Fahrrad die passende Fahrradbekleidung trägst. Auf Bike Mailorder findest du Fahrradtrikots, Fahrradhosen, Regenbekleidung, Fahrradschuhe und vieles mehr in allen möglichen Größen und für Damen, Herren und Kinder. </p>",
+            "heading": "Bike Mailorder liefert Fahrräder & E-Bikes",
+            "text": "<p>Bei uns findest du pfeilschnelle <a href=\"/collections/rennraeder\" target=\"_blank\" title=\"Rennräder\">Rennräder</a>, kilometerhungrige <a href=\"/collections/gravel-bikes\" target=\"_blank\" title=\"Gravel Bikes\">Gravel Bikes</a>, simple <a href=\"/collections/fixies-singlespeed-bikes\" target=\"_blank\" title=\"Fixies & Singlespeed Bikes\">Fixies</a> und wendige <a href=\"/collections/mountainbikes\" target=\"_blank\" title=\"Mountainbikes\">MTBs</a>, gemütliche <a href=\"/collections/citybikes\" target=\"_blank\" title=\"Citybikes\">Citybikes</a>, komfortable <a href=\"/collections/trekkingraeder\" target=\"_blank\" title=\"Trekkingräder\">Trekkingräder</a>,<a href=\"/collections/damenfahrrader\" target=\"_blank\" title=\"Damenfahrräder\"> Fahrräder für Damen</a>, <a href=\"/collections/herrenfahrraeder\" target=\"_blank\" title=\"Herrenfahrräder\">Herrenräder</a> und natürlich viele <a href=\"/collections/kinderfahrraeder\" target=\"_blank\" title=\"Kinderfahrräder\">Kinderfahrräder</a> in allen Größen, Ausstattungen und Farben. Und eine täglich wachsende Auswahl an <a href=\"/collections/e-bikes\" target=\"_blank\" title=\"E-Bikes\">E-Bikes </a>darf natürlich auch nicht fehlen!</p><p>Wir möchten, dass du das perfekte Fahrrad findest, daher erleichtern wir dir den Fahrradkauf mit ausführlichen Kaufberatungen und unser Service-Team berät dich gerne persönlich. </p><p>Falls ein Fahrrad von der Stange nicht dein Ding ist, findest du in unserem Bike-Shop alle Fahrradteile für dein individuelles Traumfahrrad, das passende Werkzeug gibt es in unserer <a href=\"/collections/fahrradwerkzeuge\" target=\"_blank\" title=\"Fahrradwerkzeuge\">Fahrradwerkzeug</a>-Abteilung. Hier kannst du alles bestellen, um dir ein neues Fahrrad zusammenzubauen oder dein altes Bike mit Ersatzteilen wieder flott zu machen</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -614,8 +612,8 @@
           "settings": {
             "enable_media": false,
             "media_scale": 100,
-            "heading": "Bike Mailorder liefert Fahrräder & E-Bikes",
-            "text": "<p>Bei uns findest du pfeilschnelle Rennräder, kilometerhungrige Gravel Bikes, simple Fixies und wendige MTBs, gemütliche Citybikes, komfortable Trekkingräder, Fahrräder für Damen, Herrenräder und natürlich viele Kinderfahrräder in allen Größen, Ausstattungen und Farben. Und eine täglich wachsende Auswahl an E-Bikes darf natürlich auch nicht fehlen!</p><p>Wir möchten, dass du das perfekte Fahrrad findest, daher erleichtern wir dir den Fahrradkauf mit ausführlichen Kaufberatungen und unser Service-Team berät dich gerne persönlich. </p><p>Falls ein Fahrrad von der Stange nicht dein Ding ist, findest du in unserem Bike-Shop alle Fahrradteile für dein individuelles Traumfahrrad, das passende Werkzeug gibt es in unserer Fahrradwerkzeug-Abteilung. Hier kannst du alles bestellen, um dir ein neues Fahrrad zusammenzubauen oder dein altes Bike mit Ersatzteilen wieder flott zu machen</p>",
+            "heading": "BMO – der Onlineshop für Fahrradzubehör & Bekleidung",
+            "text": "<p>Mit dem Kauf eines Fahrrads ist es allerdings meist nicht getan. Etwas Zubehör und ein paar Accessoires versüßen dir dein Leben als Fahrradfahrer nicht nur, sie machen es vor allem sicherer. Zur Grundausrüstung gehören ein gutes Fahrradschloss und ein sicherer Fahrradhelm. Beides kannst du bei BMO kaufen. In unserem Fahrrad-Onlineshop findest du darüber hinaus Fahrradzubehör und sämtliche Ausstattung, die du unterwegs brauchst. Vom Fahrradkorb über Kindersitze und Flaschenhalter bis hin zu Luftpumpen und Fahrradlichtern versorgen wir dich mit allem, was du unterwegs brauchst. </p><p>Besonders komfortabel wird es, wenn du auf dem Fahrrad die passende Fahrradbekleidung trägst. Auf Bike Mailorder findest du Fahrradtrikots, Fahrradhosen, Regenbekleidung, Fahrradschuhe und vieles mehr in allen möglichen Größen und für Damen, Herren und Kinder. </p>",
             "button_label": "",
             "button_link": ""
           }
