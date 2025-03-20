@@ -354,7 +354,7 @@
     "blend_product_images": true,
     "blend_bg_color": "#f5f5f5",
     "heading_font": "poppins_n7",
-    "heading_uppercase": true,
+    "heading_uppercase": false,
     "subheading_uppercase": false,
     "button_text_uppercase": false,
     "heading_scale_start": "2",
