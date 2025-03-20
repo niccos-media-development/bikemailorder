@@ -132,25 +132,29 @@
         "collection_DAU7CB": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_03.value }}"
           }
         },
         "collection_VrYUwU": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_04.value }}"
           }
         },
         "collection_agwVdF": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_05.value }}"
           }
         },
         "collection_tr74gX": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_06.value }}"
           }
         }
       },
