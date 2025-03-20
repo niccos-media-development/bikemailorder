@@ -425,7 +425,7 @@
         "column_UVAVXp": {
           "type": "column",
           "settings": {
-            "enable_media": true,
+            "enable_media": false,
             "media_scale": 100,
             "heading": "Versicherungsschutz",
             "text": "<p>Du kannst dein Wunschbike per Leasing-Vertrag einfach gegen Diebstahl,<br/>Material- und Produktionsfehler, Unfallschäden und Totalschaden versichern</p>",
@@ -436,7 +436,7 @@
         "column_ALHrVh": {
           "type": "column",
           "settings": {
-            "enable_media": true,
+            "enable_media": false,
             "media_scale": 100,
             "heading": "Flexible Nutzung",
             "text": "<p>Du kannst dein Leasingrad auch privat nutzen</p>",
@@ -447,7 +447,7 @@
         "column_ixX6RV": {
           "type": "column",
           "settings": {
-            "enable_media": true,
+            "enable_media": false,
             "media_scale": 100,
             "heading": "Jedes Bike kann geleast werden",
             "text": "<p>Egal ob Gravelbike, Mountainbike, E-Bike oder Citybike.</p>",
@@ -458,7 +458,7 @@
         "column_caRm33": {
           "type": "column",
           "settings": {
-            "enable_media": true,
+            "enable_media": false,
             "media_scale": 100,
             "heading": "Fahrradzubehör",
             "text": "<p>Kann ebenfalls geleast werden, wie zum Beispiel Pedalen, Lampen oder<br/>Schlösser</p>",
@@ -469,7 +469,7 @@
         "column_yzDLbw": {
           "type": "column",
           "settings": {
-            "enable_media": true,
+            "enable_media": false,
             "media_scale": 100,
             "heading": "Umweltbewusstsein",
             "text": "<p>Du schonst die Umwelt, indem du mit dem Rad fährst.</p>",
