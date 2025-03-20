@@ -57,31 +57,36 @@
         "collection_pyKTki": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_02.value }}"
           }
         },
         "collection_aUg3xV": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_03.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_03.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_03.value }}"
           }
         },
         "collection_UNkeW6": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_04.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_04.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_04.value }}"
           }
         },
         "collection_ztzgU4": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_05.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_05.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_05.value }}"
           }
         },
         "collection_kFKxLY": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_06.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_06.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_06.value }}"
           }
         }
       },
@@ -93,80 +98,6 @@
         "collection_ztzgU4",
         "collection_kFKxLY"
       ],
-      "custom_css": [
-        ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
-        ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
-        ".card__media.relative {width: 63%; margin: 0 auto; /*macht das Bild kleiner un zentriert ohne es zu bescheinden*/}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": false,
-        "show_border": true,
-        "color_scheme": "none",
-        "full_width": true
-      }
-    },
-    "collection_list_GjXfbJ": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_EDQU7M": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_01.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.categorie_image_01.value }}"
-          }
-        },
-        "collection_mBCMQn": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_02.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_02.value }}"
-          }
-        },
-        "collection_DAU7CB": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_03.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_03.value }}"
-          }
-        },
-        "collection_VrYUwU": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_04.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_04.value }}"
-          }
-        },
-        "collection_agwVdF": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_05.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_05.value }}"
-          }
-        },
-        "collection_tr74gX": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_06.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_06.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "collection_EDQU7M",
-        "collection_mBCMQn",
-        "collection_DAU7CB",
-        "collection_VrYUwU",
-        "collection_agwVdF",
-        "collection_tr74gX"
-      ],
-      "disabled": true,
       "custom_css": [
         ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
         ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
@@ -256,7 +187,6 @@
     "hoco_collection_description_hXaGDT",
     "collection-banner",
     "collection_list_3WJNAL",
-    "collection_list_GjXfbJ",
     "collection-products"
   ]
 }
