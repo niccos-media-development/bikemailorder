@@ -125,7 +125,8 @@
         "collection_mBCMQn": {
           "type": "collection",
           "settings": {
-            "collection": "{{ collection.metafields.custom.kategorie_02.value }}"
+            "collection": "{{ collection.metafields.custom.kategorie_02.value }}",
+            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_02.value }}"
           }
         },
         "collection_DAU7CB": {
