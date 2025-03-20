@@ -208,10 +208,30 @@
             "tint_color": "#000000",
             "tint_opacity": 20
           }
+        },
+        "image_promotion_kjFHDM": {
+          "type": "image-promotion",
+          "settings": {
+            "position": 6,
+            "view": "grid_list",
+            "hide_on_filter": true,
+            "min_height": 150,
+            "link_url": "",
+            "content": "<p>Promotion text</p>",
+            "text_type_scale": "1em",
+            "text_width": 400,
+            "text_alignment": "justify-center items-center text-center",
+            "button_label": "",
+            "button_style": "btn btn--secondary",
+            "text_color": "#ffffff",
+            "tint_color": "#000000",
+            "tint_opacity": 20
+          }
         }
       },
       "block_order": [
-        "image_promotion_xqCn7i"
+        "image_promotion_xqCn7i",
+        "image_promotion_kjFHDM"
       ],
       "settings": {
         "products_per_page": 16,
