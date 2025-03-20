@@ -79,7 +79,7 @@
           "type": "collection",
           "settings": {
             "collection": "{{ collection.metafields.custom.kategorie_05.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_05.value }}"
+            "image": "{{ collection.metafields.custom.kategorie_bild_05.value }}"
           }
         },
         "collection_kFKxLY": {
