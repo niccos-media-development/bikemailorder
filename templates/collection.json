@@ -192,7 +192,7 @@
         "image_promotion_xqCn7i": {
           "type": "image-promotion",
           "settings": {
-            "position": 7,
+            "position": 2,
             "view": "grid_list",
             "hide_on_filter": true,
             "min_height": 150,
