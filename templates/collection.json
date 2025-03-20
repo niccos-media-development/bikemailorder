@@ -216,6 +216,7 @@
             "view": "grid_list",
             "hide_on_filter": true,
             "min_height": 150,
+            "image": "{{ collection.metafields.custom.collection_promo_02.value }}",
             "link_url": "",
             "content": "<p>Promotion text</p>",
             "text_type_scale": "1em",
