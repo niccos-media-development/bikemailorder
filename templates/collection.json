@@ -212,7 +212,7 @@
         "image_promotion_kjFHDM": {
           "type": "image-promotion",
           "settings": {
-            "position": 13,
+            "position": 14,
             "view": "grid_list",
             "hide_on_filter": true,
             "min_height": 150,
