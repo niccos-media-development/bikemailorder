@@ -106,10 +106,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "fbp_fast_bundle_fbt_position_xR3GaG": {
-          "type": "shopify://apps/fbp-fast-bundle/blocks/fbt_position/9e87fbe2-9041-4c23-acf5-322413994cef",
-          "settings": {}
-        },
         "leasing_button_TfJqTN": {
           "type": "leasing-button",
           "settings": {
@@ -180,7 +176,6 @@
         "variant-picker",
         "divider-1",
         "buy-buttons",
-        "fbp_fast_bundle_fbt_position_xR3GaG",
         "leasing_button_TfJqTN",
         "delivery_timer_D9VPkt",
         "wishlist_plus_wishlist_pdp_button_MKAGQY",
@@ -319,6 +314,21 @@
         "card_size": "small",
         "products_to_show": 8
       }
+    },
+    "17424675731094ba3b": {
+      "type": "apps",
+      "blocks": {
+        "fbp_fast_bundle_fbt_position_64Win6": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/fbt_position/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "fbp_fast_bundle_fbt_position_64Win6"
+      ],
+      "settings": {
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -326,6 +336,7 @@
     "main",
     "icons_with_text_D49W43",
     "details",
-    "recommendations"
+    "recommendations",
+    "17424675731094ba3b"
   ]
 }
