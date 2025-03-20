@@ -125,6 +125,7 @@
       {%- for block in section.blocks -%}
         {%- liquid
           assign img = block.settings.image
+           assign logo = block.settings.logo
           assign overlay_position = block.settings.overlay_position | split: ' '
           assign is_link = true
           if block.settings.title contains "<a" or block.settings.button_link != blank or block.settings.link_url == blank
@@ -150,6 +151,18 @@
                 {%- else -%}
                   {{ 'lifestyle-2' | placeholder_svg_tag: 'media__placeholder img-fit' }}
                 {%- endif -%}
+                {%- if block.settings.logo != blank -%}
+                    <div class="media-logo">
+                    {% render 'image',
+                      image: logo,
+                      widths: '480, 800, 980, 1200, 1440',
+                      src_width: 800,
+                      sizes: sizes,
+                      quality: 1,
+                      section_index: section.index
+                    %}
+                  </div>
+                  {%- endif -%}   
               </div>
 
               {%- if block.settings.video_shopify != blank -%}
@@ -166,11 +179,15 @@
 
               {%- if block.settings.title != blank or block.settings.subheading != blank or block.settings.button_label != blank -%}
                 <div class="gallery-block__image-text{% if text_color_scheme == "white" %} gallery-block__image-text--transparent{% endif %} color-scheme color-scheme--{{ text_color_scheme }} text-overlay text-overlay--grow {{ block.settings.text_alignment }} relative"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+                  
+                  
+                  
                   {%- if block.settings.subheading != blank -%}
                     <p class="text-overlay__block subheading text-current">
                       {{- block.settings.subheading | escape -}}
                     </p>
                   {%- endif -%}
+              
 
                   {%- if block.settings.title != blank -%}
                     <h3 class="text-current mb-0 rte {{ block.settings.heading_size }}">
@@ -205,16 +222,21 @@
 .hoco-media-grid strong {
   background: #0888AC;
   padding: 0 5px;
-}
-
-.hoco-media-grid .p.text-overlay__block.subheading {
-  font-size: 2.1rem;
-}
-
-.hoco-media-grid .gallery-block__image-text.text-overlay {
-  max-width: 510px;
-}
   
+}
+.hoco-media-grid .media-logo {
+  position: absolute;
+  height: 100px;
+  width:100%;
+  left: 43px;
+    top: 0;
+}
+.hoco-media-grid .media-logo img {
+  object-fit: contain;
+  object-position: 0%!important;
+  height: -webkit-fill-available;
+  filter: brightness(0) invert(1);
+}
 {% endstylesheet %}
           
 {% schema %}
@@ -415,6 +437,11 @@
           "id": "video_shopify",
           "label": "Video upload (optional)",
           "info": "Hosted by Shopify. Video will autoplay and be muted. [Read more](https://cleancanvas.co.uk/support/enterprise/using-videos)"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
         },
         {
           "type": "url",
