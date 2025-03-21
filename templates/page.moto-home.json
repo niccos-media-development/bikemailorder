@@ -137,25 +137,18 @@
         "heading_qhFcVP": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Moto Helme",
             "heading_size": "h1",
             "heading_h1": false
-          }
-        },
-        "text_E9yeYr": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
           }
         },
         "button_cyDQXV": {
           "type": "button",
           "settings": {
-            "button_1_label": "Optional button",
-            "button_1_link": "",
+            "button_1_label": "Motorrad",
+            "button_1_link": "shopify://collections/motorrad",
             "button_1_style": "btn btn--primary",
-            "button_2_label": "Optional button",
+            "button_2_label": "",
             "button_2_link": "",
             "button_2_style": "btn btn--primary"
           }
@@ -163,16 +156,15 @@
       },
       "block_order": [
         "heading_qhFcVP",
-        "text_E9yeYr",
         "button_cyDQXV"
       ],
       "settings": {
         "url": "",
-        "height_mode": "auto",
-        "fixed_height_desktop": 600,
+        "height_mode": "fixed",
+        "fixed_height_desktop": 530,
         "fixed_height_mobile": 350,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
+        "overlay_position": "justify-start items-end",
+        "overlay_text_align": "text-start",
         "mob_center_text": false,
         "mobile_stacked": false,
         "color_scheme": "white",
