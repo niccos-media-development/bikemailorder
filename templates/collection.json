@@ -11,6 +11,7 @@
   "sections": {
     "niccos_breadcrumbs_LNPFaj": {
       "type": "niccos-breadcrumbs",
+      "disabled": true,
       "settings": {
         "custom_class": "container",
         "separator_class": "arrows",
@@ -86,7 +87,7 @@
           "type": "collection",
           "settings": {
             "collection": "{{ collection.metafields.custom.kategorie_06.value }}",
-            "image": "{{ block.settings.collection.metafields.custom.kategorie_bild_06.value }}"
+            "image": "{{ collection.metafields.custom.kategorie_bild_06.value }}"
           }
         }
       },
@@ -98,6 +99,7 @@
         "collection_ztzgU4",
         "collection_kFKxLY"
       ],
+      "disabled": true,
       "custom_css": [
         ".card__media {border-radius: 15px; /* Passt die Abrundung an */ overflow: hidden; /* Stellt sicher, dass der Inhalt nicht überlappt */}",
         ".card__media img {border-radius: 15px; /* Rundet das Bild ebenfalls ab */ width: 100%; object-fit: cover; /* Stellt sicher, dass das Bild den Bereich gut ausfüllt */}",
@@ -165,6 +167,7 @@
         "image_promotion_xqCn7i",
         "image_promotion_kjFHDM"
       ],
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "card_size_mobile": "small",
